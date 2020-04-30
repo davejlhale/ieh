@@ -8,33 +8,116 @@ SetTitleMatchMode, 2
 DetectHiddenWindows, On
 
 
-clickPoints := {}
-Loop, read, offsets.txt
+global debug:=0
+global begin_x, begin_y, end_x, end_y
+global gameX,gameY
+global startTime:=A_now
+
+loadClickPoints()
+
+While mapGameContainer() 
 {
-    Loop, parse, A_LoopReadLine, %A_Tab%
-    {
-        
-		Switch A_Index
+	if (A_now-startTime > 10)
+	{
+		MsgBox Click the game window then press Alt + F1 to start
+		break
+	}
+}
+
+
+
+!F1::
+	mapGameContainer()
+	return
+	
+!F2::
+	showGameContainer()
+	return
+
+Escape::
+	ExitApp
+	Return	
+	
+	
+	
+mapGameContainer()
+{
+	WinGetPos, xZero, yZero, winWidth, winHeight, A
+	mid:=winHeight*0.5
+	
+	PixelSearch, begin_x, temp, 0, %mid%, %winWidth%, %mid%, 0xB5B5B5, 3, Fast
+	if ErrorLevel {
+		return 1
+	}
+
+	;find top left
+	PixelSearch, begin_x, begin_y, %begin_x%, %mid%, %begin_x%, 0, 0x000000, 0, Fast
+	if ErrorLevel {
+		return 1
+	}
+	begin_y:=begin_y+1
+	
+
+	;find top right
+	PixelSearch, end_x, begin_y, %begin_x%, %begin_y%, %winWidth%, begin_y, 0x000000, 0, Fast
+	if ErrorLevel {
+		return 1
+	}
+	end_x:=end_x-1
+	
+	
+	PixelSearch, end_x, end_y, %end_x%, %begin_y%, %end_x%, winHeight, 0x000000, 0, Fast
+	if ErrorLevel {
+		return 1
+	}
+	end_y:=end_y-1
+	
+	gameX:=Abs(begin_x-end_x)
+	gameY:=Abs(begin_y-end_y)
+	
+	showGameContainer()
+	return 0
+}
+
+showGameContainer()
+{
+	mousemove, begin_x,begin_y,30
+	mousemove, end_x,begin_y,30
+	mousemove, end_x,end_y,30
+	mousemove, begin_x,end_y,30
+	mousemove, begin_x,begin_y,30
+	return
+}
+
+
+loadClickPoints()
+{
+	clickPoints := {}
+	Loop, read, offsets.txt
+	{
+		Loop, parse, A_LoopReadLine, %A_Tab%
 		{
-			Case "1":
-				 name:= A_LoopField
-				
-			Case "2":
-				 x:= A_LoopField
-				
-			Case "3":
-				 y:= A_LoopField
-				
-			Default:							
+			
+			Switch A_Index
+			{
+				Case "1":
+					 name:= A_LoopField
+					
+				Case "2":
+					 x:= A_LoopField
+					
+				Case "3":
+					 y:= A_LoopField
+					
+				Default:							
+			}
 		}
 		
-    }
-	
-	%name% :=new ClickPoint(name,x,y)
-	clickPoints.insert(name, {name:name, x:x, y:y})
-	Msgbox, % name "X="%name%.x "Y="%name%.y
-	
-	
+		%name% :=new ClickPoint(name,x,y)
+		clickPoints.insert(name, {name:name, x:x, y:y})
+		;Msgbox, % name " X="%name%.x "Y="%name%.y
+	}
+	return
 }
 
 class ClickPoint
@@ -51,7 +134,19 @@ class ClickPoint
 	}
 }
 
-Escape::
-	ExitApp
+;calcualtes games clickpoint cords with respect to the clients resolution
+;prob dont needs move and click but...
+gClick(XPos,YPos)
+{
+	global gameX,gameY
+
+	gameClickX := (gameX * XPos)+begin_x
+	gameClickY := (gameY * Ypos)+begin_Y
 	
-	Return
+	mousemove, gameClickX, gameClickY
+	sleep, 10
+	click, L,gameClickX, gameClickY
+	sleep, 10
+	return
+}
+

@@ -8,88 +8,185 @@ SetTitleMatchMode, 2
 DetectHiddenWindows, On
 
 
+
 global debug:=0
+global developer:=1
+
 global begin_x, begin_y, end_x, end_y
-global gameX,gameY
+global gameX:=0,gameY:=0
 global startTime:=A_now
 
+
+#include gui.txt
+
+
 loadClickPoints()
+
 
 While mapGameContainer() 
 {
 	if (A_now-startTime > 10)
 	{
-		MsgBox Click the game window then press Alt + F1 to start
-		break
+		MsgBox Click the game window then press Alt + F1 to start `nor Escape to quit
+		startTime:=A_now
 	}
 }
 
+menu := new GUIMenu("home")
 
+/*
+*****************************
+***  testing hotkeys area ***
+*/
 
-!F1::
-	mapGameContainer()
+t::
+	gClick(upgrade_nitro_pixel_start)
+	gClick(menu1)
+	gClick(fg)
 	return
-	
-!F2::
-	showGameContainer()
-	return
 
+/*
+********************
+*** common usage ***
+*/
+
+Exit:
 Escape::
 	ExitApp
 	Return	
+
 	
+/*
+*****************************
+*** developer menu driven ***
+*/	
+
+DevTool:
+	menu.change("dev")
+	return	
+
+showGameWindow:
+!F2::
+	showGameContainer()
+	return
 	
+findGameWindow:
+!F1::
+	mapGameContainer()
+	showGameContainer()
+	return
 	
+Coords:
+	Coords()
+	return
+
+
+/*
+*********************************
+*** Home / Player menu driven ***
+*/
+playerMenu:
+	menu.change("home")
+	return		
+	
+/*
+*********************************
+***      end of hotkeys       ***
+*********************************
+*/	
+	
+;dev tool help function
+showGameContainer()
+{
+		WinGetTitle, Title, A
+		mousemove, begin_x,begin_y,20
+		mousemove, end_x,begin_y,20
+		mousemove, end_x,end_y,20
+		mousemove, begin_x,end_y,20
+		mousemove, begin_x,begin_y,20
+		return
+}
+
 mapGameContainer()
 {
+	global begin_x:=0, begin_y:=0, end_x:=0, end_y:=0
+	global gameX:=0,gameY:=0
+
+	WinGetTitle, Title, A
+	if ! instr(Title,"play incremental epic hero",false)
+		return 1
+	
 	WinGetPos, xZero, yZero, winWidth, winHeight, A
 	mid:=winHeight*0.5
 	
-	PixelSearch, begin_x, temp, 0, %mid%, %winWidth%, %mid%, 0xB5B5B5, 3, Fast
-	if ErrorLevel {
-		return 1
-	}
+	;check for left game border
+	PixelSearch, abegin_x, temp, 0, %mid%, %winWidth%, %mid%, 0xB5B5B5, 3, Fast
+	if ErrorLevel 	
+		return 1 
 
 	;find top left
-	PixelSearch, begin_x, begin_y, %begin_x%, %mid%, %begin_x%, 0, 0x000000, 0, Fast
-	if ErrorLevel {
+	PixelSearch, abegin_x, abegin_y, %abegin_x%, %mid%, %abegin_x%, 0, 0x000000, 0, Fast
+	if ErrorLevel 	
+		return 1 
+	abegin_y:=abegin_y+1
+	;check not run offscreen
+	PixelSearch, abegin_x, abegin_y, %abegin_x%, %abegin_y%, %abegin_x%, %abegin_y%, 0xB5B5B5, 10, Fast
+	if ErrorLevel 	
 		return 1
-	}
-	begin_y:=begin_y+1
 	
-
+	
+	
 	;find top right
-	PixelSearch, end_x, begin_y, %begin_x%, %begin_y%, %winWidth%, begin_y, 0x000000, 0, Fast
-	if ErrorLevel {
+	PixelSearch, aend_x, abegin_y, %abegin_x%, %abegin_y%, %winWidth%, abegin_y, 0x000000, 0, Fast
+	if ErrorLevel 	
+		return 1 
+	aend_x:=aend_x-1
+	;check not run offscreen
+	PixelSearch, aend_x, abegin_y, %aend_x%, %abegin_y%, %aend_x%, %abegin_y%, 0xB5B5B5, 10, Fast
+	if ErrorLevel 	
 		return 1
-	}
-	end_x:=end_x-1
+		
+
 	
-	
-	PixelSearch, end_x, end_y, %end_x%, %begin_y%, %end_x%, winHeight, 0x000000, 0, Fast
-	if ErrorLevel {
+	;find bottom right
+	PixelSearch, aend_x, aend_y, %aend_x%, %abegin_y%, %aend_x%, winHeight, 0x000000, 0, Fast
+	if ErrorLevel 	
+		return 1 
+	aend_y:=aend_y-1
+	;check not run offscreen
+	PixelSearch, aend_x, aend_y, %aend_x%, %aend_y%, %aend_x%, %aend_y%, 0xB5B5B5, 10, Fast
+	if ErrorLevel 	
 		return 1
-	}
-	end_y:=end_y-1
+
+
+	end_x:=aend_x
+	end_y:=aend_y
+	begin_Y:=abegin_y
+	begin_x:=abegin_x
 	
+	;game resolution
 	gameX:=Abs(begin_x-end_x)
 	gameY:=Abs(begin_y-end_y)
 	
-	showGameContainer()
 	return 0
 }
 
-showGameContainer()
-{
-	mousemove, begin_x,begin_y,30
-	mousemove, end_x,begin_y,30
-	mousemove, end_x,end_y,30
-	mousemove, begin_x,end_y,30
-	mousemove, begin_x,begin_y,30
-	return
-}
 
-
+/*
+*** function loadClickPoints()
+*** load offset.txt into a key paired array - clickPoints 
+*** (name (name,x,y) )
+***
+*** creates dynamicly named objects with the object named the same as the offest name in file
+*** offsetname.name
+*** offsetname.x
+*** offsetname.y
+***
+*** objects used as
+*** gClick(upgrade_nitro_pixel_start.x,upgrade_nitro_pixel_start.y)
+***
+*** checkPoints array for ease of itterating in app changes and writing back to file
+*/
 loadClickPoints()
 {
 	clickPoints := {}
@@ -97,28 +194,24 @@ loadClickPoints()
 	{
 		Loop, parse, A_LoopReadLine, %A_Tab%
 		{
-			
 			Switch A_Index
 			{
 				Case "1":
-					 name:= A_LoopField
-					
+					 name:= A_LoopField	
 				Case "2":
-					 x:= A_LoopField
-					
+					 x:= A_LoopField	
 				Case "3":
-					 y:= A_LoopField
-					
+					 y:= A_LoopField	
 				Default:							
 			}
 		}
 		
 		%name% :=new ClickPoint(name,x,y)
 		clickPoints.insert(name, {name:name, x:x, y:y})
-		;Msgbox, % name " X="%name%.x "Y="%name%.y
 	}
 	return
 }
+
 
 class ClickPoint
 {
@@ -132,16 +225,24 @@ class ClickPoint
 		this.x:=ax
 		this.y:=ay
 	}
+	__Get(class)
+	{
+	return "ClickPoint"
+	}
 }
 
 ;calcualtes games clickpoint cords with respect to the clients resolution
 ;prob dont needs move and click but...
-gClick(XPos,YPos)
+gClick(aClickPoint)
 {
 	global gameX,gameY
 
-	gameClickX := (gameX * XPos)+begin_x
-	gameClickY := (gameY * Ypos)+begin_Y
+	if ! isObject(aClickPoint) && aClickPoint.class!="ClickPoint"
+		return
+		
+	
+	gameClickX := (gameX * aClickPoint.x)+begin_x
+	gameClickY := (gameY * aClickPoint.y)+begin_Y
 	
 	mousemove, gameClickX, gameClickY
 	sleep, 10
@@ -150,3 +251,31 @@ gClick(XPos,YPos)
 	return
 }
 
+
+WatchCursor:
+{
+	global CoordsToggle
+	if (CoordsToggle)
+	{ 
+		MouseGetPos, xpos, ypos
+		PixelGetColor, OutputVar, xpos, ypos
+		tt_msg = x: %xpos%   y: %ypos% `ncolor:  %OutputVar% 
+	}
+	ToolTip, %tt_msg%
+	return
+}
+
+;toggles x,y,pixel color
+Coords()
+{
+	global CoordsToggle 
+	CoordsToggle := !CoordsToggle
+	if (CoordsToggle)
+		SetTimer, WatchCursor, 100
+	else
+	{
+		ToolTip
+		SetTimer, WatchCursor, Delete
+	}
+	return
+}

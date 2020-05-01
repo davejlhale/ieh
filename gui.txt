@@ -1,0 +1,83 @@
+
+
+class GUIMenu 
+{
+	dev:=		"showGameWindow,findGameWindow,Record,Stop,Play,Exit,Coords,playerMenu"
+	home:=		"[F2]Warrior, [F3]Wizard, [F4]Angel, [F5]Nitro   , [F6]Upgrades  , [F12]DevTool"
+	angel:=		"[F1]Home"
+	warrior:=	"[F1]Home"
+	wizard:=	"[F1]Home"
+	
+	
+	__new(aName="dev")
+	{
+		switch aName
+		{
+		case "dev":
+			this.addGUI(this.dev)
+		case "angel":
+			this.addGUI(this.angel)
+		case "warrior":
+			this.addGUI(this.warrior)
+		case "wizard":
+			this.addGUI(this.wizard)
+		case "home":
+			this.addGUI(this.home)
+		default:
+			this.addGUI(this.home)
+		}
+	}
+	
+	
+	change(aMenu)
+	{
+		this.__new(aMenu)
+		return
+	}
+	
+	addGUI(sMsg)
+	{
+		this.removeGUI()
+		this.initGUI()
+		For i,v in StrSplit(sMsg, ",")
+		{
+		  j:=i=1 ? "":"x+0", j.=InStr(v,"Pause") ? " vPause":""
+		  Gui, Add, Button, %j% geGUI, %v%
+		}
+		Gui, Show, NA y0, Macro Recorder
+		OnMessage(0x200,"WM_MOUSEMOVE")
+		return	
+	}
+	
+	removeGUI()
+	{
+		Gui, Destroy
+		return
+	}
+	
+	
+	initGUI()
+	{
+		Gui, +AlwaysOnTop -Caption +ToolWindow +E0x08000000 +Hwndgui_id
+		Gui, Margin, 0, 0
+		Gui, Font, s12
+		
+		SetTimer, OnTop, 2000
+		OnTop:
+		Gui, +AlwaysOnTop
+		return
+	}
+}
+
+eGUI:
+	if IsLabel(k:=RegExReplace(RegExReplace(A_GuiControl,".*]"),"\W"))
+	{
+		Goto, %k%
+		return
+	}
+
+
+
+
+
+

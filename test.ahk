@@ -113,6 +113,44 @@ findGameWindow:
 Coords:
 	Coords()
 	return
+	
+KingFarm:
+	if (kfToggle=1 or kfToggle=0)
+		kfToggle:=!kfToggle
+	else
+		kfToggle:=1
+
+	if (kfToggle)
+	{
+		gClick(menu4)
+		gClick(challenge_1)
+		gClick(challenge_start)
+		
+		send, {s down}
+	}
+	else
+	{
+		send, {s up}
+	}
+
+	Return
+	
+JustRun:
+	if (jrToggle=1 or jrToggle=0)
+		jrToggle:=!jrToggle
+	else
+		jrToggle:=1
+
+	if (jrToggle)
+	{
+		send, {w down}
+	}
+	else
+	{
+		send, {w up}
+	}
+	
+	return
 
 /*****************************
 ***   wizard menu driven   ***
@@ -123,7 +161,7 @@ BuffCycle:
 	if (buffCycleToggle=1 or buffCycleToggle=0)
 		buffCycleToggle:=!buffCycleToggle
 	else
-		buffCycleToggle=1
+		buffCycleToggle:=1
 	
 	if (buffCycleToggle)
 	{

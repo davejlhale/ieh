@@ -1,13 +1,10 @@
 
-
 /* comment ot exapmle before include 
-
-
 */
 
 
 gui1:=new gIcon("u",400,300,"test")
-;gui2:=new gIcon("d",450,300,"test2")
+gui2:=new gIcon("d",450,300,"test2")
 
 Escape::
     ExitApp
@@ -42,23 +39,23 @@ class  gIcon
         
         CoordMode, Mouse, Screen
         
-        GUI,  +HWNDhIcon
-        Gui, Margin, 2, 2
+        GUI,  %aImage%:+HWNDhIcon
+        Gui, %aImage%:Margin, 2, 2
 
-        Gui, +AlwaysOnTop -Caption +ToolWindow
+        Gui, %aImage%:+AlwaysOnTop -Caption +ToolWindow
         
        
         
          this.Icon:=aImage
         
         if IsLabel(aSub) {
-            Gui, Add, picture, w32 h32 g%aSub% , %aImage%.png
+            Gui, %aImage%:Add, picture, w32 h32 g%aSub% , %aImage%.png
             
         }
         Else {
-            Gui, Add, picture, w32 h-1  ,  %aImage%.png
+            Gui, %aImage%:Add, picture, w32 h-1  ,  %aImage%.png
         }
-        Gui,  Show,x%aX% y%aY% , NoActivate
+        Gui,  %aImage%:Show,x%aX% y%aY% , NoActivate
 
        
        
@@ -156,6 +153,12 @@ class  gIcon
 test:
     msgbox test hotkey subroutine down bottom of source triggered this
     gui1.toggle()
+    ;gui1.Stop()
+    ;gui1.start()
+return
+test2:
+    msgbox test hotkey subroutine down bottom of source triggered this
+    gui2.toggle()
     ;gui1.Stop()
     ;gui1.start()
 return

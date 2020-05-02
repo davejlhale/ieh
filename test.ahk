@@ -7,8 +7,6 @@ CoordMode, ToolTip
 SetTitleMatchMode, 2
 DetectHiddenWindows, On
 
-
-
 global debug:=0
 global developer:=1
 
@@ -16,380 +14,373 @@ global begin_x, begin_y, end_x, end_y
 global gameX:=0,gameY:=0
 global startTime:=A_now
 
-
 loadClickPoints()
 While mapGameContainer() 
 {
-	if (A_now-startTime > 10)
-	{
-		MsgBox Click the game window then press Alt + F1 to start `nor Escape to quit
-		startTime:=A_now
-	}
+    if (A_now-startTime > 10)
+    {
+        MsgBox Click the game window then press Alt + F1 to start `nor Escape to quit
+        startTime:=A_now
+    }
 }
 menu := new GUIMenu("home")
 
-
 ;MUST HAVE INCLUDES BELOW FLOW
 #include gui.txt
+
+#Include lib/gIcon.txt
 #include genaral.txt
 /*
 *****************************
-***  testing hotkeys area ***
-
-
+*** testing hotkeys area ***
 
 ;*/
 t::
-	;gClick(upgrade_nitro_pixel_start)
-	;gClick(menu1)
-	;gClick(fg)
-	;return
-	gClick(menu2)
-	gClick(st_angel)
-	gClick(st_slot_8)
-	gClick(skillbar_class_top_1)
-	gClick(st_slot_9)
-	gClick(skillbar_class_bottom_1)
-	gClick(st_slot_9_stance)
-	return
+    ;gClick(upgrade_nitro_pixel_start)
+    ;gClick(menu1)
+    ;gClick(fg)
+    ;return
+    gClick(menu2)
+    gClick(st_angel)
+    gClick(st_slot_8)
+    gClick(skillbar_class_top_1)
+    gClick(st_slot_9)
+    gClick(skillbar_class_bottom_1)
+    gClick(st_slot_9_stance)
+return
 /*
-
-
-
-*************************
-*** home menu driven  ***
+/*************************
+*** home menu driven ***
 */
 
 Exit:
 Escape::
-	ExitApp
-	Return		
+    ExitApp
+Return		
 
 msgbox 1	
 DevTools:
-	menu.change("dev")
-	return	
+    menu.change("dev")
+return	
 
 Wizard:
-	menu.change("wizard")
-	return
-	
+    menu.change("wizard")
+return
+
 Warrior:
-	menu.change("warrior")
-	return
-		
+    menu.change("warrior")
+return
+
 Angel:
-	menu.change("angel")
-	return	
-	
+    menu.change("angel")
+return	
+
 Nitro:
-	Return
+Return
 Upgrades:
-	Return
-	
-	
-	
-		
+Return
+
 /*
 *****************************
 *** developer menu driven ***
 */	
 Home:
 PlayerMenu:
-	menu.change("home")
-	return
+    menu.change("home")
+return
 
 showGameWindow:
 !F2::
-	showGameContainer()
-	return
-	
+    showGameContainer()
+return
+
 findGameWindow:
 !F1::
-	mapGameContainer()
-	showGameContainer()
-	return
-	
+    mapGameContainer()
+    showGameContainer()
+return
+
 Coords:
-	Coords()
-	return
-	
+    Coords()
+return
+
 KingFarm:
-	if (kfToggle=1 or kfToggle=0)
-		kfToggle:=!kfToggle
-	else
-		kfToggle:=1
+    if (kfToggle=1 or kfToggle=0)
+        kfToggle:=!kfToggle
+    else
+        kfToggle:=1
+    
+    if (kfToggle)
+    {
+        gClick(menu4)
+        gClick(challenge_1)
+        gClick(challenge_start)
+        
+        send, {s down}
+    }
+    else
+    {
+        send, {s up}
+    }
+    
+Return
 
-	if (kfToggle)
-	{
-		gClick(menu4)
-		gClick(challenge_1)
-		gClick(challenge_start)
-		
-		send, {s down}
-	}
-	else
-	{
-		send, {s up}
-	}
-
-	Return
-	
 JustRun:
-	if (jrToggle=1 or jrToggle=0)
-		jrToggle:=!jrToggle
-	else
-		jrToggle:=1
-
-	if (jrToggle)
-	{
-		send, {w down}
-	}
-	else
-	{
-		send, {w up}
-	}
-	
-	return
+    if (jrToggle=1 or jrToggle=0)
+        jrToggle:=!jrToggle
+    else
+        jrToggle:=1
+    
+    if (jrToggle)
+    {
+        send, {w down}
+    }
+    else
+    {
+        send, {w up}
+    }
+    
+return
 
 /*****************************
-***   wizard menu driven   ***
+*** wizard menu driven ***
 */	
 
 BuffCycle:
-{
-	if (buffCycleToggle=1 or buffCycleToggle=0)
-		buffCycleToggle:=!buffCycleToggle
-	else
-		buffCycleToggle:=1
-	
-	if (buffCycleToggle)
-	{
-		gosub updateIcon
-		gosub generalBuffCycle
-		SetTimer, generalBuffCycle, 30000
-		
-	}
-	else
-	{
-		GUI, updateIcon:destroy
-		SetTimer, generalBuffCycle, Delete
-	}
-	return
-}
-	
-	
-
-/*****************************
-***  warrior menu driven   ***
-*/
-	
-
-/*
-*********************************
-*** Home / Player menu driven ***
-*/
-	
-	
-/*
-*********************************
-***      end of hotkeys       ***
-*********************************
-*/	
-	
-	
-	
-;dev tool help function
-showGameContainer()
-{
-		WinGetTitle, Title, A
-		mousemove, begin_x,begin_y,20
-		mousemove, end_x,begin_y,20
-		mousemove, end_x,end_y,20
-		mousemove, begin_x,end_y,20
-		mousemove, begin_x,begin_y,20
-		return
-}
-
-mapGameContainer()
-{
-	global begin_x:=0, begin_y:=0, end_x:=0, end_y:=0
-	global gameX:=0,gameY:=0
-
-	WinGetTitle, Title, A
-	if ! instr(Title,"play incremental epic hero",false)
-		return 1
-	
-	WinGetPos, xZero, yZero, winWidth, winHeight, A
-	mid:=winHeight*0.5
-	
-	;check for left game border
-	PixelSearch, abegin_x, temp, 0, %mid%, %winWidth%, %mid%, 0xB5B5B5, 3, Fast
-	if ErrorLevel 	
-		return 1 
-
-	;find top left
-	PixelSearch, abegin_x, abegin_y, %abegin_x%, %mid%, %abegin_x%, 0, 0x000000, 0, Fast
-	if ErrorLevel 	
-		return 1 
-	abegin_y:=abegin_y+1
-	;check not run offscreen
-	PixelSearch, abegin_x, abegin_y, %abegin_x%, %abegin_y%, %abegin_x%, %abegin_y%, 0xB5B5B5, 10, Fast
-	if ErrorLevel 	
-		return 1
-	
-	
-	
-	;find top right
-	PixelSearch, aend_x, abegin_y, %abegin_x%, %abegin_y%, %winWidth%, abegin_y, 0x000000, 0, Fast
-	if ErrorLevel 	
-		return 1 
-	aend_x:=aend_x-1
-	;check not run offscreen
-	PixelSearch, aend_x, abegin_y, %aend_x%, %abegin_y%, %aend_x%, %abegin_y%, 0xB5B5B5, 10, Fast
-	if ErrorLevel 	
-		return 1
-		
-
-	
-	;find bottom right
-	PixelSearch, aend_x, aend_y, %aend_x%, %abegin_y%, %aend_x%, winHeight, 0x000000, 0, Fast
-	if ErrorLevel 	
-		return 1 
-	aend_y:=aend_y-1
-	;check not run offscreen
-	PixelSearch, aend_x, aend_y, %aend_x%, %aend_y%, %aend_x%, %aend_y%, 0xB5B5B5, 10, Fast
-	if ErrorLevel 	
-		return 1
-
-
-	end_x:=aend_x
-	end_y:=aend_y
-	begin_Y:=abegin_y
-	begin_x:=abegin_x
-	
-	;game resolution
-	gameX:=Abs(begin_x-end_x)
-	gameY:=Abs(begin_y-end_y)
-	
-	return 0
-}
-
-
-/*
-*** function loadClickPoints()
-*** load offset.txt into a key paired array - clickPoints 
-*** (name (name,x,y) )
-***
-*** creates dynamicly named objects with the object named the same as the offest name in file
-*** offsetname.name
-*** offsetname.x
-*** offsetname.y
-***
-*** objects used as
-*** gClick(upgrade_nitro_pixel_start.x,upgrade_nitro_pixel_start.y)
-***
-*** checkPoints array for ease of itterating in app changes and writing back to file
-*/
-loadClickPoints()
-{
-	clickPoints := {}
-	Loop, read, offsets.txt
-	{
-		Loop, parse, A_LoopReadLine, %A_Tab%
-		{
-			Switch A_Index
-			{
-				Case "1":
-					 name:= A_LoopField	
-				Case "2":
-					 x:= A_LoopField	
-				Case "3":
-					 y:= A_LoopField	
-				Default:							
-			}
-		}
-		
-		%name% :=new ClickPoint(name,x,y)
-		clickPoints.insert(name, {name:name, x:x, y:y})
-	}
-	return
-}
-
-
-class ClickPoint
-{
-	name := none
-	x:=0
-	y:=0
-	
-	__New(aname,ax,ay)
-	{
-		this.name:=aname
-		this.x:=ax
-		this.y:=ay
-	}
-	__Get(class)
-	{
-	return "ClickPoint"
-	}
-}
-
-;calcualtes games clickpoint cords with respect to the clients resolution
-
-gClick(aClickPoint)
-{
-	WinGetTitle, Title, A
-	if ! instr(Title,"play incremental epic hero",false)
-		return 1
-
-	global gameX,gameY
-	CoordMode, Mouse, client 
-	Sendmode Input
-	if ! isObject(aClickPoint) && aClickPoint.class!="ClickPoint"
-	{
-		msgbox error finding objects
-		return
-	}
-		
-	
-	gameClickX := (gameX * aClickPoint.x)+begin_x
-	gameClickY := (gameY * aClickPoint.y)+begin_Y
-	
-	
-	Send {click, %gameClickX%, %gameClickY%}
-	sleep, 100
-	
-	
-	
-	return
-}
-
-
-WatchCursor:
-{
-	global CoordsToggle
-	if (CoordsToggle)
-	{ 
-		MouseGetPos, xpos, ypos
-		PixelGetColor, OutputVar, xpos, ypos
-		tt_msg = x: %xpos%   y: %ypos% `ncolor:  %OutputVar% 
-	}
-	ToolTip, %tt_msg%
-	return
-}
-
-;toggles x,y,pixel color
-Coords()
-{
-	global CoordsToggle 
-	CoordsToggle := !CoordsToggle
-	if (CoordsToggle)
-		SetTimer, WatchCursor, 100
-	else
-	{
-		ToolTip
-		SetTimer, WatchCursor, Delete
-	}
-	return
-}
+    {
+        if (buffCycleToggle=1 or buffCycleToggle=0)
+            buffCycleToggle:=!buffCycleToggle
+        else
+            buffCycleToggle:=1
+        
+        if (buffCycleToggle)
+        {
+            gosub updateIcon
+            gosub generalBuffCycle
+            SetTimer, generalBuffCycle, 30000
+            
+        }
+        else
+        {
+            GUI, updateIcon:destroy
+            SetTimer, generalBuffCycle, Delete
+        }
+        return
+    }
+    
+    
+    
+    /*****************************
+    *** warrior menu driven ***
+    */
+    
+    
+    /*
+    *********************************
+    *** Home / Player menu driven ***
+    */
+    
+    
+    /*
+    *********************************
+    *** end of hotkeys ***
+    *********************************
+    */	
+    
+    
+    
+    ;dev tool help function
+    showGameContainer()
+    {
+        WinGetTitle, Title, A
+        mousemove, begin_x,begin_y,20
+        mousemove, end_x,begin_y,20
+        mousemove, end_x,end_y,20
+        mousemove, begin_x,end_y,20
+        mousemove, begin_x,begin_y,20
+        return
+    }
+    
+    mapGameContainer()
+    {
+        global begin_x:=0, begin_y:=0, end_x:=0, end_y:=0
+        global gameX:=0,gameY:=0
+        
+        WinGetTitle, Title, A
+        if ! instr(Title,"play incremental epic hero",false)
+            return 1
+        
+        WinGetPos, xZero, yZero, winWidth, winHeight, A
+        mid:=winHeight*0.5
+        
+        ;check for left game border
+        PixelSearch, abegin_x, temp, 0, %mid%, %winWidth%, %mid%, 0xB5B5B5, 3, Fast
+        if ErrorLevel 	
+            return 1 
+        
+        ;find top left
+        PixelSearch, abegin_x, abegin_y, %abegin_x%, %mid%, %abegin_x%, 0, 0x000000, 0, Fast
+        if ErrorLevel 	
+            return 1 
+        abegin_y:=abegin_y+1
+        ;check not run offscreen
+        PixelSearch, abegin_x, abegin_y, %abegin_x%, %abegin_y%, %abegin_x%, %abegin_y%, 0xB5B5B5, 10, Fast
+        if ErrorLevel 	
+            return 1
+        
+        
+        
+        ;find top right
+        PixelSearch, aend_x, abegin_y, %abegin_x%, %abegin_y%, %winWidth%, abegin_y, 0x000000, 0, Fast
+        if ErrorLevel 	
+            return 1 
+        aend_x:=aend_x-1
+        ;check not run offscreen
+        PixelSearch, aend_x, abegin_y, %aend_x%, %abegin_y%, %aend_x%, %abegin_y%, 0xB5B5B5, 10, Fast
+        if ErrorLevel 	
+            return 1
+        
+        
+        
+        ;find bottom right
+        PixelSearch, aend_x, aend_y, %aend_x%, %abegin_y%, %aend_x%, winHeight, 0x000000, 0, Fast
+        if ErrorLevel 	
+            return 1 
+        aend_y:=aend_y-1
+        ;check not run offscreen
+        PixelSearch, aend_x, aend_y, %aend_x%, %aend_y%, %aend_x%, %aend_y%, 0xB5B5B5, 10, Fast
+        if ErrorLevel 	
+            return 1
+        
+        
+        end_x:=aend_x
+        end_y:=aend_y
+        begin_Y:=abegin_y
+        begin_x:=abegin_x
+        
+        ;game resolution
+        gameX:=Abs(begin_x-end_x)
+        gameY:=Abs(begin_y-end_y)
+        
+        return 0
+    }
+    
+    
+    /*
+    *** function loadClickPoints()
+    *** load offset.txt into a key paired array - clickPoints 
+    *** (name (name,x,y) )
+    ***
+    *** creates dynamicly named objects with the object named the same as the offest name in file
+    *** offsetname.name
+    *** offsetname.x
+    *** offsetname.y
+    ***
+    *** objects used as
+    *** gClick(upgrade_nitro_pixel_start.x,upgrade_nitro_pixel_start.y)
+    ***
+    *** checkPoints array for ease of itterating in app changes and writing back to file
+        */
+    loadClickPoints()
+    {
+        clickPoints := {}
+        Loop, read, offsets.txt
+        {
+            Loop, parse, A_LoopReadLine, %A_Tab%
+            {
+                Switch A_Index
+                {
+                    Case "1":
+                        name:= A_LoopField	
+                    Case "2":
+                        x:= A_LoopField	
+                    Case "3":
+                        y:= A_LoopField	
+                        Default:							
+                    }
+                }
+                
+                %name% :=new ClickPoint(name,x,y)
+                clickPoints.insert(name, {name:name, x:x, y:y})
+            }
+            return
+        }
+        
+        
+        class ClickPoint
+        {
+            name := none
+            x:=0
+            y:=0
+            
+            __New(aname,ax,ay)
+            {
+                this.name:=aname
+                this.x:=ax
+                this.y:=ay
+            }
+            __Get(class)
+            {
+                return "ClickPoint"
+            }
+        }
+        
+        ;calcualtes games clickpoint cords with respect to the clients resolution
+        
+        gClick(aClickPoint)
+        {
+            WinGetTitle, Title, A
+            if ! instr(Title,"play incremental epic hero",false)
+                return 1
+            
+            global gameX,gameY
+            CoordMode, Mouse, client 
+            Sendmode Input
+            if ! isObject(aClickPoint) && aClickPoint.class!="ClickPoint"
+            {
+                msgbox error finding objects
+                return
+            }
+            
+            
+            gameClickX := (gameX * aClickPoint.x)+begin_x
+            gameClickY := (gameY * aClickPoint.y)+begin_Y
+            
+            
+            Send {click, %gameClickX%, %gameClickY%}
+            sleep, 100
+            
+            
+            
+            return
+        }
+        
+        
+        WatchCursor:
+            {
+                global CoordsToggle
+                if (CoordsToggle)
+                { 
+                    MouseGetPos, xpos, ypos
+                    PixelGetColor, OutputVar, xpos, ypos
+                    tt_msg = x: %xpos% y: %ypos% `ncolor: %OutputVar% 
+                }
+                ToolTip, %tt_msg%
+                return
+            }
+            
+            ;toggles x,y,pixel color
+            Coords()
+            {
+                global CoordsToggle 
+                CoordsToggle := !CoordsToggle
+                if (CoordsToggle)
+                    SetTimer, WatchCursor, 100
+                else
+                {
+                    ToolTip
+                    SetTimer, WatchCursor, Delete
+                }
+                return
+            }
+            

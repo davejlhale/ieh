@@ -5,8 +5,9 @@
 
 */
 
+
 gui1:=new gIcon("u",400,300,"test")
-gui2:=new gIcon("d",450,300,"test2")
+;gui2:=new gIcon("d",450,300,"test2")
 
 Escape::
     ExitApp
@@ -16,6 +17,7 @@ return
 
 /*
 */
+
 
 
 
@@ -29,18 +31,20 @@ return
 ;uses gui.toggle() to force icon change
 ;use gui.stop() to end / lock right click moving
 
-class gIcon
+
+class  gIcon
 { 
     __new(aImage:="",aX:="",aY:="",aSub:="") {
         this.bMoveIcon := false
         this.startPointX:=aX
-        this.startPointY:=aY 
-        this.isactive:=0
+        this.startPointY:=a Y 
+        this.isactive:= 0
         
-        CoordMode, Mouse,Screen
+        CoordMode, Mouse, Screen
         
         GUI,  +HWNDhIcon
         Gui, Margin, 2, 2
+
         Gui, +AlwaysOnTop -Caption +ToolWindow
         
        
@@ -52,7 +56,7 @@ class gIcon
             
         }
         Else {
-            Gui, Add, picture, w32 h32  ,  %aImage%.png
+            Gui, Add, picture, w32 h-1  ,  %aImage%.png
         }
         Gui,  Show,x%aX% y%aY% , NoActivate
 

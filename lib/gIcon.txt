@@ -24,11 +24,12 @@ updateIcon:
     
     #If IsWinUnderMouse(hGui1)
         *RButton::
-        
+        {
         bMoveWin := true
         MouseGetPos, x, y
         startPointX := x
         startPointY := y	
+        }
     return
     
     *RButton Up::
@@ -42,7 +43,6 @@ updateIcon:
             deltaY := startPointY - y
             WinGetPos, currentX, currentY,,, ahk_id %hGui1%
             WinMove, ahk_id %hGui1%,, currentX - deltaX, currentY - deltaY
-            
             startPointX := x
             startPointY := y
         }

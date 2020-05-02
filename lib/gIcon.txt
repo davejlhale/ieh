@@ -8,13 +8,17 @@ updateIcon:
         myY := (gameY * skillbar_automove.y)+begin_y-20
         
         Gui, updateIcon:+AlwaysOnTop -Caption +ToolWindow +LastFound
-        hGui1 := WinExist()
+ 
         Gui, updateIcon:Margin, 0, 0
         Gui updateIcon:Add, Picture, gBuffCycle w32 h32, u.png
         Gui updateIcon:Show, x%myX% y%myY% NoActivate
-        
+        hGui1 := WinExist()
+
         SetTimer, MoveTimer, 100
         return
+
+
+
     }
     
     

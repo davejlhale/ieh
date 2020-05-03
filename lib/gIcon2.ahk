@@ -49,11 +49,10 @@ class gIcon
         
         this.movement:= objbindmethod(this,"move")
         this.timer:= objbindmethod(this,"watch")
-       
+        
         global _parent 
         WinGetActiveTitle, _parent
-        msgbox %_parent%
-       
+        
         GUI, %aImage%:+HWNDhIcon
         this.ahwnd := hIcon 
         Gui, %aImage%:Margin, 2, 2
@@ -71,16 +70,28 @@ class gIcon
     }
     
     toggle() { 
+        
+        if this.isactive 
+            this.turnOff() 
+        Else
+            this.turnOn() 
+        
+        this.focusWindow()
+        return
+    }
+    
+    focusWindow(){
         global _parent
+        window= %_parent
+        sleep 20
         #WinActivateForce
-        if this.isactive ? this.turnOff() : this.turnOn() 
-        if WinExist(_parent)
+        if WinExist(window)
         {
             WinActivate, %_parent%
-            WinRestore,  %_parent% 
+            WinRestore, %_parent% 
             WinWaitActive, %_parent% 
-        }   
-            return
+        } 
+        return
     }
     
     turnOff() {
@@ -103,6 +114,7 @@ class gIcon
         movement:=this.movement
         SetTimer, %timer%, off
         SetTimer, %movement%, off 
+        return
     }
     
     ;unlocks right mouse icon movement
@@ -111,19 +123,18 @@ class gIcon
         movement:=this.movement
         SetTimer, %timer%, 50
         SetTimer, %movement%, 60 
+        return
     }
     
     ;use as private
     watch(){
-
-        t:=this.isactive
-        ToolTip, %t%
         global movingIcon
         CoordMode, Mouse, Screen
         ;if this icon moving but rb release
         if this.bMoveWin && !GetKeyState("RButton") { 
             movingIcon:=false
             this.bMoveWin := false 
+            this.focusWindow()
             return
         }
         
@@ -134,7 +145,7 @@ class gIcon
             MouseGetPos, mx, my
             this.startPointX:=mx
             this.startPointY:=my 
-        }    
+        } 
         return
     }
     
@@ -153,7 +164,8 @@ class gIcon
         WinMove, ahk_id %hwnd%,, currentX - deltaX, currentY - deltaY 
         
         this.startPointX:=mx
-        this.startPointY:=my    
+        this.startPointY:=my 
+        
     }
     
     ;use as private

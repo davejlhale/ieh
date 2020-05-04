@@ -69,7 +69,7 @@ return
         ToolTip PAUSE, 200, 250 
     else 
         ToolTip
-
+    
     Pause ,, 1
     BlockInput, mousemoveoff
 return
@@ -315,13 +315,12 @@ loadClickPoints()
     }
     
     ;calcualtes games clickpoint cords with respect to the clients resolution
-    gClick(aClickPoint){ 
+    gClick(aClickPoint,aClickCount:=1,aDelay:=50){ 
+        
         if ! isObject(aClickPoint) && aClickPoint.class!="ClickPoint"{
-            eClickPoint:= aClickPoint.name
-            msgbox error finding objects %eClickPoint%
+            msgbox error finding ClickPoint
             return
         }
-        vClickPoint =aClickPoint.name
         
         global winTitle
         global gameX,gameY
@@ -331,10 +330,15 @@ loadClickPoints()
         if ! instr(Title,winTitle,false)
             return 1
         
-        gameClickX :=round( (gameX * aClickPoint.x)+begin_x)
+        gameClickX :=round((gameX * aClickPoint.x)+begin_x)
         gameClickY := round((gameY * aClickPoint.y)+begin_y)
-        Send {click, %gameClickX%, %gameClickY%}
-        sleep 50
+        
+        
+        loop %aClickCount%
+        {
+            Send {click, %gameClickX%, %gameClickY%}
+            sleep %aDelay%
+        }
         return
     }
     

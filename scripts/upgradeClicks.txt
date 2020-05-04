@@ -16,14 +16,9 @@ upgradeCycle:
         timedupgradeCycle:
             BlockInput mousemove
             MouseGetPos tx, ty
-            gClick(menu1)
-            sleep 20
-            gClick(menu1)
-            sleep 20
-            gClick(sb_GoBack)
-            sleep 20
-            gClick(sb_GoBack)
-            gClick(upgrade_upgradeMax)
+            gClick(menu1,2)
+            gClick(sb_GoBack,2)
+            gClick(upgrade_upgradeMax,2)
             gClick(upgrade_pickaxe4)
             gClick(upgrade_rake4)
             gClick(upgrade_lab4)
@@ -42,7 +37,7 @@ upgradeCycle:
             gClick(upgrade_exp_bonus) 
             gClick(upgrade_gold_bonus)
             gClick(upgrade_expand_equip)
-            gClick(upgrade_upgrade1)
+            gClick(upgrade_upgrade1,2)
             gClick(upgrade_mystery_box)
             
             mousemove tx,ty

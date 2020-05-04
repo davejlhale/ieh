@@ -82,7 +82,7 @@ class gIcon
     
     focusWindow(){
         global _parent
-        window= %_parent
+        window= %_parent%
         sleep 20
         #WinActivateForce
         if WinExist(window)

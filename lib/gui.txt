@@ -1,6 +1,6 @@
 class GUIMenu 
 {
-    dev:=		"showGameWindow,findGameWindow,Record,Stop,Play,Exit,Coords,Player Menu"
+    dev:=		"showGameWindow,findGameWindow,Record,Stop,Play,Exit,Screen Info,Player Menu"
     home:=		"[F2]Warrior, [F3]Wizard, [F4]Angel, [F5]Nitro , [F6]Upgrades ,[F7]King Farm ,[F8]Just Run ,[F11]Exit ,[F12]Dev Tools"
     angel:=		"[F1]Home"
     warrior:=	"[F1]Home"

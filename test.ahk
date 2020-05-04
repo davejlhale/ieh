@@ -3,7 +3,7 @@ SetBatchLines, -1
 Thread, NoTimers
 SetTitleMatchMode, 2
 DetectHiddenWindows, On
-Sendmode Input
+;Sendmode Input
 
 ;to_Make_clickpoint_name_visible_when_scripting_add_this_to_top_of_file
 cpNames:=["menu1","menu2","menu3","menu4","menu5","menu6","menu7","menu8","explore","explore_map1","explore_map2","explore_map3","explore_map4","explore_map5","explore_map6","explore_map7","explore_map8","explore_area1","explore_area2","explore_area3","explore_area4","explore_area5","explore_area6","explore_area7","explore_area8","explore_dungeon1","explore_dungeon2","explore_dungeon3","explore_dungeon4","explore_dungeon5","explore_bestiary","bestiary_lootAll","bestiary_close","upgrade","upgrade_mining1","upgrade_mining2","upgrade_mining3","upgrade_synt1","upgrade_synt2","upgrade_synt3","upgrade_gathering1","upgrade_gathering2","upgrade_gathering3","upgrade_pickaxe1","upgrade_pickaxe2","upgrade_pickaxe3","upgrade_pickaxe4","upgrade_lab1","upgrade_lab2","upgrade_lab3","upgrade_lab4","upgrade_rake1","upgrade_rake2","upgrade_rake3","upgrade_rake4","upgrade_gold_bonus","upgrade_exp_bonus","upgrade_expand_equip","upgrade_stone_ritual","upgrade_crystal_ritual","upgrade_leaf_ritual","upgrade_mystery_box","upgrade_8","upgrade_16","upgrade_24","upgrade_32","upgrade_upgrade1","upgrade_upgrade10","upgrade_upgrade25","upgrade_upgradeMax","upgrade_nitro","upgrade_nitro_pixel_start","upgrade_nitro_pixel_end","upgrade_slime_bank","upgrade_dark_ritual","sb_GoBack","sb_withdraw","sb_withdrawConfirm","sb_times1","sb_times10","sb_times25","sb_timesMax","sb_donate","sb_purifucation","sb_efficiency","sb_exchange","sb_interest","sb_cap","sb_et_stone","sb_et_crystal","sb_et_leaf","sb_strength","sb_mind","sb_healty_captue","sb_enhanced_capture","sb_monster_counter","sb_graduates","sb_ledger","sb_nitro_generators","sb_18","sb_19","sb_20","sb_21","sb_22","sb_23","sb_24","sb_25","sb_26","sb_27","sb_28","sb_29","sb_30","sb_31","sb_32","craft_equip_d_toggle","craft_equip_c_toggle","craft_equip_b_toggle","craft_equip1_level_button","craft_equip2_level_button","craft_equip3_level_button","craft_equip4_level_button","craft_equip5_level_button","craft_equip6_level_button","craft_equip7_level_button","craft_equip8_level_button","craft_craft_confirm_Box","craft_Alchemy_confirm_Box","craft_inventory_confirm_Box","alchemy_size_1ml","alchemy_size_10ml","alchemy_size_100ml","alchemy_size_1L","alchemy_size_10L","alchemy_size_100L","alchemy_size_1kL","alchemy_size_10kL","alchemy_size_100kL","alchemy_size_1mill","alchemy_size_10mill","alchemy_size_100mill","alchemy_size_1BL","alchemy_size_10BL","alchemy_auto","alchemy_plus_button","alchemy_use_all","alchemy_potion_option_1","alchemy_potion_option_2","alchemy_potion_option_3","alchemy_potion_option_4","alchemy_potion_option_5","alchemy_potion_option_6","alchemy_potion_option_7","alchemy_potion_option_8","alchemy_potion_option_9","alchemy_potion_option_10","alchemy_potion_option_11","alchemy_potion_option_12","alchemy_potion_option_13","alchemy_potion_option_14","alchemy_potion_option_15","alchemy_potion_option_16","alchemy_potion_inventory_slot_1","alchemy_potion_inventory_slot_2","alchemy_potion_inventory_slot_3","alchemy_potion_inventory_slot_4","alchemy_potion_inventory_slot_5","alchemy_potion_inventory_slot_6","alchemy_potion_inventory_slot_7","alchemy_potion_inventory_slot_8","alchemy_potion_inventory_slot_9","alchemy_potion_inventory_slot_10","alchemy_potion_inventory_slot_11","alchemy_potion_inventory_slot_12","alchemy_potion_inventory_slot_13","alchemy_potion_inventory_slot_14","alchemy_potion_inventory_slot_15","alchemy_potion_inventory_slot_16","challenge_1","challenge_2","challenge_3","challenge_4","challenge_5","challenge_retryBox","challenge_start","challenge_quit","st_warrior","st_wizard","st_angel","st_slot_1","st_slot_2","st_slot_3","st_slot_4","st_slot_5","st_slot_6","st_slot_7","st_slot_8","st_slot_9","st_slot_10","st_slot_1_stance","st_slot_2_stance","st_slot_3_stance","st_slot_4_stance","st_slot_5_stance","st_slot_6_stance","st_slot_7_stance","st_slot_8_stance","st_slot_9_stance","st_slot_10_stance","st_slot_1_chargeUp","st_slot_2_chargeUp","st_slot_3_chargeUp","st_slot_4_chargeUp","st_slot_5_chargeUp","st_slot_6_chargeUp","st_slot_7_chargeUp","st_slot_8_chargeUp","st_slot_9_chargeUp","st_slot_10_chargeUp","skillbar_class_top_1","skillbar_class_top_2","skillbar_class_top_3","skillbar_class_bottom_1","skillbar_class_bottom_2","skillbar_class_bottom_3","skillbar_global_top_1","skillbar_global_top_2","skillbar_global_top_3","skillbar_global_bottom_1","skillbar_global_bottom_2","skillbar_global_bottom_3","skillbar_active_skill","skillbar_automove"]
@@ -61,7 +61,6 @@ Escape::
     ExitApp
 Return		
 
-msgbox 1	
 DevTools:
     menu.change("dev")
 return	
@@ -159,8 +158,8 @@ BuffCycle:
     }
     else {
         ;call this label on interval
-        SetTimer, generalBuffCycle, 10000
-    }  
+        SetTimer, generalBuffCycle, 28000
+    } 
 return
 
 /*****************************
@@ -181,21 +180,27 @@ return
 ;dev tool help function
 showGameContainer()
 {
-    WinGetTitle, Title, A
-    mousemove, begin_x,begin_y,20
-    mousemove, end_x,begin_y,20
-    mousemove, end_x,end_y,20
-    mousemove, begin_x,end_y,20
-    mousemove, begin_x,begin_y,20
+    global begin_x, begin_y, end_x, end_y
+    mousemove, begin_x,begin_y,10
+    
+    mousemove, end_x,begin_y,10
+    
+    mousemove, end_x,end_y,10
+    
+    mousemove, begin_x,end_y,10
+    
+    mousemove, begin_x,begin_y,10
+    
+    ; msgbox % begin_x " " begin_y " " end_x " " end_y Title
 return
 }
 
 mapGameContainer()
 {
     WinGetTitle, Title, A
-     if ! instr(Title,winTitle,false)
+    if ! instr(Title,winTitle,false)
         return 1
-
+    
     global begin_x:=0, begin_y:=0, end_x:=0, end_y:=0
     global gameX:=0,gameY:=0
     global winTitle
@@ -240,13 +245,13 @@ mapGameContainer()
     
     end_x:=aend_x
     end_y:=aend_y
-    begin_Y:=abegin_y
+    begin_y:=abegin_y
     begin_x:=abegin_x
     
     ;game resolution
     gameX:=Abs(begin_x-end_x)
     gameY:=Abs(begin_y-end_y)
-
+    ;msgbox % gameX gamey
 return 0
 }
 
@@ -268,7 +273,7 @@ return 0
 loadClickPoints()
 {
     clickPoints := {}
-    Loop, read, offsets.txt
+    Loop, read, offsets.txt 
     {
         Loop, parse, A_LoopReadLine, %A_Tab%
         {
@@ -291,8 +296,7 @@ loadClickPoints()
     }
     
     
-    class ClickPoint
-    {
+    class ClickPoint{
         name := none
         x:=0
         y:=0
@@ -310,32 +314,27 @@ loadClickPoints()
     }
     
     ;calcualtes games clickpoint cords with respect to the clients resolution
-    
-    gClick(aClickPoint)
-    {  
+    gClick(aClickPoint){ 
         if ! isObject(aClickPoint) && aClickPoint.class!="ClickPoint"{
             msgbox error finding objects
             return
         }
-
+        
         global winTitle
         global gameX,gameY
         CoordMode, Mouse, screen 
-
+        
         WinGetTitle, Title, A
         if ! instr(Title,winTitle,false)
             return 1
         
         gameClickX :=round( (gameX * aClickPoint.x)+begin_x)
-        gameClickY := round((gameY * aClickPoint.y)+begin_Y)
-        
-     
-      MouseGetPos tx, ty
+        gameClickY := round((gameY * aClickPoint.y)+begin_y)
         Send {click, %gameClickX%, %gameClickY%}
-        mousemove tx,ty
+        sleep 50
         return
     }
- 
+    
     WatchCursor:
         {
             global CoordsToggle
@@ -350,8 +349,7 @@ loadClickPoints()
         }
         
         ;toggles x,y,pixel color
-        Coords()
-        {
+        Coords(){
             global CoordsToggle 
             CoordsToggle := !CoordsToggle
             if (CoordsToggle)
@@ -363,6 +361,7 @@ loadClickPoints()
             }
             return
         }
+        
     test:
         msgbox test hotkey subroutine down bottom of source triggered this
         gui1.toggle()
@@ -375,3 +374,8 @@ loadClickPoints()
         ;gui1.Stop()
         ;gui1.start()
     return 
+    
+    
+    
+    
+    

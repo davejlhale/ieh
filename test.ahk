@@ -31,12 +31,13 @@ menu := new GUIMenu("home")
 gui2:=new gIcon("d",450,300,"test2")
 
 buffCycleIcon := new gIcon("BuffCycle",760,830,"BuffCycle")
-upgradeCycleIcon :=new gIcon("u",808,830,"upgradeCycle")
-
+upgradeCycleIcon :=new gIcon("upgradeCycle",808,830,"upgradeCycle")
+lootBestiaryIcon :=new gIcon("LootBestiary",856,830,"lootBestiary")
 ;MUST HAVE INCLUDES BELOW FLOW
 ;;so labeled routines arent in autoexc above
 return
 #Include lib/gIcon2.ahk
+#include scripts/lootBestiary.txt
 #Include scripts/upgradeClicks.txt
 #include scripts/genaral.txt
 #include lib/gui.txt
@@ -176,6 +177,8 @@ return
 *********************************
 *** Home / Player menu driven ***
 */
+
+
 
 /*
 *********************************
@@ -322,6 +325,7 @@ loadClickPoints()
             return
         }
         
+
         global winTitle
         global gameX,gameY
         CoordMode, Mouse, screen 

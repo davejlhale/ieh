@@ -43,15 +43,12 @@ class gIcon
         global movingIcon:=false
         this.bMoveIcon := false
         this.startPointX:=aX
-        this.startPointY:=a Y 
+        this.startPointY:=aY 
         this.isactive:= false
         this.Icon:=aImage
         
         this.movement:= objbindmethod(this,"move")
         this.timer:= objbindmethod(this,"watch")
-        
-        global _parent 
-        WinGetActiveTitle, _parent
         
         GUI, %aImage%:+HWNDhIcon
         this.ahwnd := hIcon 
@@ -59,7 +56,7 @@ class gIcon
         Gui, %aImage%:+AlwaysOnTop -Caption +ToolWindow
         
         if IsLabel(aSub) {
-            Gui, %aImage%:Add, picture, w32 h32 g%aSub% , images/%aImage%.png 
+            Gui, %aImage%:Add, picture, w32 h-1 g%aSub% , images/%aImage%.png 
         }
         Else {
             Gui, %aImage%:Add, picture, w32 h-1 , images/%aImage%.png
@@ -81,16 +78,15 @@ class gIcon
     }
     
     focusWindow(){
-        global _parent
-        window= %_parent%
-        sleep 20
+        global parentID
+        window= ahk_id %parentID%
+    
         #WinActivateForce
         if WinExist(window)
         {
-            WinActivate, %_parent%
-            WinRestore, %_parent% 
-            WinWaitActive, %_parent% 
-        } 
+            WinActivate, %window%
+            WinRestore, %window% 
+        }    
         return
     }
     

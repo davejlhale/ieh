@@ -31,7 +31,7 @@ menu := new GUIMenu("home")
 gui2:=new gIcon("d",450,300,"test2")
 
 buffCycleIcon := new gIcon("BuffCycle",760,830,"BuffCycle")
-upgradeIcon :=new gIcon("u",808,830,"upgradeClicks")
+upgradeCycleIcon :=new gIcon("u",808,830,"upgradeCycle")
 
 ;MUST HAVE INCLUDES BELOW FLOW
 ;;so labeled routines arent in autoexc above

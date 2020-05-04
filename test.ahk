@@ -61,6 +61,7 @@ return
 *** general hotkeys ***
 */
 
+!p::
 ~RButton & LButton::
     Suspend 
     pauseToggle:=!pauseToggle

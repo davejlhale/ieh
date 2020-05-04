@@ -58,6 +58,25 @@ t::
 return
 
 /*************************
+*** general hotkeys ***
+*/
+
+~RButton & LButton::
+    Suspend 
+    pauseToggle:=!pauseToggle
+    if pauseToggle 
+        ToolTip PAUSE, 200, 250 
+    else 
+        ToolTip
+
+    Pause ,, 1
+    BlockInput, mousemoveoff
+return
+
+;Pause ; Assign the toggle-pause function to the "pause" key...
+;p::Pause ; ... or assign it to Win+p or some other hotkey.
+
+/*************************
 *** home menu driven ***
 */
 
@@ -181,11 +200,11 @@ mapGameContainer()
     if ! instr(Title,winTitle,false)
         return 1
     WinGet _parentID,id,A
-    global parentID  :=_parentID
+    global parentID :=_parentID
     global begin_x:=0, begin_y:=0, end_x:=0, end_y:=0
     global gameX:=0,gameY:=0
     global winTitle 
-
+    
     WinGetPos, xZero, yZero, winWidth, winHeight, A
     mid:=winHeight*0.5
     

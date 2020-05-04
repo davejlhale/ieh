@@ -39,7 +39,7 @@ return
 #Include lib/gIcon2.ahk
 #Include scripts/upgradeClicks.txt
 #include scripts/genaral.txt
-#include gui.txt
+#include lib/gui.txt
 
 /*
 *****************************

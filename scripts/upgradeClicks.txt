@@ -17,6 +17,9 @@ upgradeCycle:
             BlockInput mousemove
             MouseGetPos tx, ty
             gClick(menu1)
+            sleep 20
+            gClick(menu1)
+            sleep 20
             gClick(upgrade_upgradeMax)
             gClick(upgrade_pickaxe4)
             gClick(upgrade_rake4)

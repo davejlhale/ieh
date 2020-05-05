@@ -170,8 +170,8 @@ ScavangeChiili:
     {
         settimer, scavangetimerloop
         scavangetimerloop:
-            Send, {d 3}{w 5}
-            sleep 30
+            Send, {d 2}{w 5}
+            
         return
         
     }
@@ -361,14 +361,13 @@ ScavangeChiili:
             }
             
             ;calcualtes games clickpoint cords with respect to the clients resolution
-            gClick(aClickPoint,aClickCount:=1,aDelay:=50){ 
+            gClick(aClickPoint,aClickCount:=1,aDelay:=20){ 
                         Critical on
 
                 if ! isObject(aClickPoint) && aClickPoint.class!="ClickPoint"{
                     msgbox error finding ClickPoint
                     return
                 }
-                
                 
                 global winTitle
                 global gameX,gameY

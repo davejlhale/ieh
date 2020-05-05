@@ -3,7 +3,7 @@
 
 upgradeCycle:
     {
-        
+        Critical on
         upgradeCycleIcon.toggle()
         if !(upgradeCycleIcon.isactive) {
             SetTimer, timedupgradeCycle, off

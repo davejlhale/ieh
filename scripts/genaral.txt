@@ -3,6 +3,7 @@
 
 BuffCycle:
 {
+        Critical on
 
 	buffCycleIcon.toggle()
 	if !(buffCycleIcon.isactive) {

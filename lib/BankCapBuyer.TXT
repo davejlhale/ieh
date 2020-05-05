@@ -1,0 +1,144 @@
+
+
+;;for settimer glabel
+bankscanner :=func("bankpicker")
+
+                                                                                                                                                                                             
+bankpicker()
+{     
+    static currentBank:=0
+    msgbox current bank %currentbank%
+  
+    ;switch to get banks scanpoint
+    switch currentBank {
+        
+        case 0: {
+            ;goldbank 
+            gosub changeToWatchGoldBank
+            msgbox got gb coords %bankx%  %banky%
+        }
+        case 1: {
+            ;sc bank
+            gosub changeToWatchSCBank
+            msgbox got sc coords %bankx%  %banky%
+        }
+    }
+    
+    ; currentBank tags 0 gold : 1 sc 
+    funcreturn := bankread(bankx,banky)
+    ;returned bank read matches last read
+    if (funcreturn) {
+        
+        if currentBank {
+            DllCall("winmm.dll\PlaySound", AStr, A_WinDir "\Media\" snd ".wav", uint, 0, uint, 0) 
+            gosub buySCbankItems
+        }
+        ;swap bank to watch
+        currentBank:=!currentBank
+
+    }   
+} 
+
+bankread(x,y) 
+{
+    CoordMode, Pixel, Screen
+    static lastpixline:=[]
+    colors:={}
+    msgbox %x% %y%
+    colors.insert("black" , { R:0, g:0, b:0})
+    colors.insert("white" , { R:255, g:255, b:255})
+    distances:={}
+    pixline:=[]
+    pixline2:=[]
+    pixCount:=0
+    
+    ;move to safe read start
+    Loop { ;till we hit 1st black
+        PixelGetColor col, x++, y
+        pixCount+=1
+        MouseMove, x,y,20
+        
+    } until (col == 0X000000) or (pixCount > 100)
+    pixCount:=0
+    Loop { ;till we hit first none black
+        PixelGetColor col, x++, y
+        pixCount+=1
+    } until (col != 0X000000) or (pixCount > 100)
+    
+    
+    
+    Loop 10 { ;smaller capture width - needle
+        vred := (col & 0xFF)
+        vgreen := ((col & 0xFF00) >> 8)
+        vblue := ((col & 0xFF0000) >> 16)
+        col:=[vred,vgreen,vblue]
+        pixline.=dist2(col)
+        PixelGetColor col, x++, y
+    } 
+    ; msgbox % instr(lastpixline,pixline)
+    
+    ; msgbox %lastpixline%
+    if (instr(lastpixline,pixline)) {
+        lastpixline:=pixline
+        return true 
+    }
+    else
+    {
+        lastpixline:=pixline
+        return false
+    }
+}
+
+dist2(col)
+{
+    distances:={}
+    colors:={} 
+    colors.insert("black" , { R:0, g:0, b:0} )
+    colors.insert("white" , { R:255, g:255, b:255})
+    
+    for stockcolour, v in colors { 
+        ret :=mathdist(v,col) 
+        st = %stockcolour%
+        distances.insert(stockcolour,ret)
+        ;msgbox storing st %stockcolour% %ret% 
+    }
+    
+    mincolor := ""
+    minval := 2**30 
+    for key,val in distances 
+    {
+        if (val < minval) {
+            ; msgbox smaller %key% - v %val% minval := %minval%
+            minval := val
+            mincolor = %key% 
+            markAs = 1
+        }
+        Else
+        {
+            ; msgbox larger %key% - v %val% minval := %minval%
+            markAs = 0
+        }
+    }
+    string = %string%%markAs%
+    ; msgbox closest color is %mincolor%
+    return string 
+}
+mathdist(v,vCol) {
+    a:= (v["R"]-vCol[1])**2
+    b:=(v["G"]-vCol[2])**2
+    c:=(v["B"]-vCol[3])**2
+    return Sqrt(a +b +c)
+} 
+; SetTitleMatchMode, 2
+; WinActivate, Notepad ;
+; sleep 100
+; Send {Enter}%pixline%
+; Send {Enter}%pixline2%{enter}
+
+esc::
+    ExitApp, 
+return
+
+cani:
+msgbox yes 
+return

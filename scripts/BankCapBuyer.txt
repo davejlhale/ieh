@@ -1,0 +1,28 @@
+
+#include lib/BankCapBuyer.txt
+
+BankCapBuyer:
+    {
+        Critical on
+
+        BankCapBuyerIcon.toggle()
+        if !(BankCapBuyerIcon.isactive) {
+            SetTimer, bankpicker, off
+            return
+        }
+        else {
+            ;call this label on interval - 30000000 = 5mins
+            SetTimer, bankpicker, 300
+            return
+        } 
+    }
+
+    changeToWatchSCBank:
+    msgbox checking sc bank
+    return
+    changeToWatchGoldBank:
+    msgbox checking gold bank
+    return
+    buySCbankItems:
+    msgbox buying sc buySCbankItems
+    return

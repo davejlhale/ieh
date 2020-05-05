@@ -417,26 +417,27 @@ ScavangeChiili:
                     checkPoints.push( "slime_bank","dark_ritual")
                     checkPoints.push( "sb_GoBack","sb_withdraw","sb_withdrawConfirm")
                     checkPoints.push( "sb_times1","sb_times10","sb_times25","sb_timesMax")
-                    checkPoints.push( "sb_donate","sb_purifucation","sb_efficiency","sb_exchange","sb_interest","sb_cap","sb_et_stone","sb_et_crystal","sb_et_leaf","sb_strength","sb_mind","sb_healty_captue","sb_enhanced_capture","sb_monster_counter","sb_graduates","sb_ledger","sb_nitro_generators")
+                   checkPoints.push( "sb_donate","sb_purifucation","sb_efficiency","sb_exchange","sb_interest","sb_cap","sb_et_stone","sb_et_crystal","sb_et_leaf","sb_strength","sb_mind","sb_healty_captue","sb_enhanced_capture","sb_monster_counter","sb_graduates","sb_ledger","sb_nitro_generators")
                     checkPoints.push( "sb_monster_taming","sb_powder_store","sb_explorers_capacity","sb_21","sb_22","sb_23","sb_24","sb_25","sb_26","sb_27","sb_28","sb_29","sb_30","sb_31","sb_32")
                     checkPoints.push( "craft_check_Box","Alchemy_check_Box","inventory_check_Box")
                     checkPoints.push( "alchemy_1ml","alchemy_10ml","alchemy_100ml","alchemy_1L","alchemy_10L","alchemy_100L","alchemy_1kL","alchemy_10kL","alchemy100kL","alchemy_1mill","alchemy_10mill","alchemy_100mill","alchemy_1BL","alchemy_10BL")
                     checkPoints.push( "alchemy_auto_button","alchemy_plus_button","alchemy_use_all")
-                    checkPoints.push( "alchemy_potion_option_1","alchemy_potion_option_2","alchemy_potion_option_3","alchemy_potion_option_4","alchemy_potion_option_5","alchemy_potion_option_6","alchemy_potion_option_7","alchemy_potion_option_8","alchemy_potion_option_9","alchemy_potion_option_10","alchemy_potion_option_11","alchemy_potion_option_12","alchemy_potion_option_13","alchemy_potion_option_14","alchemy_potion_option_15","alchemy_potion_option_16")
-                    checkPoints.push( "alchemy_potion_inventory_slot_1","alchemy_potion_inventory_slot_2","alchemy_potion_inventory_slot_3","alchemy_potion_inventory_slot_4","alchemy_potion_inventory_slot_5","alchemy_potion_inventory_slot_6","alchemy_potion_inventory_slot_7","alchemy_potion_inventory_slot_8","alchemy_potion_inventory_slot_9","alchemy_potion_inventory_slot_10","alchemy_potion_inventory_slot_11","alchemy_potion_inventory_slot_12","alchemy_potion_inventory_slot_13","alchemy_potion_inventory_slot_14","alchemy_potion_inventory_slot_15","alchemy_potion_inventory_slot_16")
-                    checkPoints.push( "challenge_1","challenge_2","challenge_3","challenge_4","challenge5","challenge6","challenge7","challenge8")
-                    checkPoints.push( "challenge_retryBox","challenge_start","challenge_quit")
-                    checkPoints.push( "warrior","wizard","angel")
-                    checkPoints.push( "st_slot_1","st_slot_2","st_slot_3","st_slot_4","st_slot_5","st_slot_6","st_slot_7","st_slot_8","st_slot_9","st_slot_10")
-                    checkPoints.push( "skill_table_skill_1_stance","skill_table_skill_2_stance","skill_table_skill_3_stance","skill_table_skill_4_stance","skill_table_skill_5_stance","skill_table_skill_6_stance","skill_table_skill_7_stance","skill_table_skill_8_stance","skill_table_skill_9_stance","skill_table_skill_10_stance")
-                    checkPoints.push( "skill_table_skill_1_chargeUp","skill_table_skill_2_chargeUp","skill_table_skill_3_chargeUp","skill_table_skill_4_chargeUp","skill_table_skill_5_chargeUp","skill_table_skill_6_chargeUp","skill_table_skill_7_chargeUp","skill_table_skill_8_chargeUp","skill_table_skill_9_chargeUp","skill_table_skill_10_chargeUp")
-                    checkPoints.push( "skillbar_class_top_1","skillbar_class_top_2","skillbar_class_top_3","skillbar_class_bottom_1","skillbar_class_bottom_2","skillbar_class_bottom_3")
-                    checkPoints.push( "skillbar_global_top_1","skillbar_global_top_2","skillbar_global_top_3","skillbar_global_top_4")
-                    checkPoints.push( "skillbar_global_bottom_1","skillbar_global_bottom_2","skillbar_global_bottom_3","skillbar_global_bottom_4")
-                    checkPoints.push( "skillbar_active_skill","skillbar_automove")
-                    checkPoints.push( "equip1","equip2","equip3","equip4","equip5","equip6","equip7","equip8")
-                    checkPoints.push( "equip1_levelUp","equip2_levelUp","equip3_levelUp","equip4_levelUp","equip5_levelUp","equip6_levelUp","equip7_levelUp","equip8_levelUp")
-                    checkPoints.push( "equip_classD","equip_classC","equip_classB")
+                   checkPoints.push( "alchemy_potion_option_1","alchemy_potion_option_2","alchemy_potion_option_3","alchemy_potion_option_4","alchemy_potion_option_5","alchemy_potion_option_6","alchemy_potion_option_7","alchemy_potion_option_8","alchemy_potion_option_9","alchemy_potion_option_10","alchemy_potion_option_11","alchemy_potion_option_12","alchemy_potion_option_13","alchemy_potion_option_14","alchemy_potion_option_15","alchemy_potion_option_16")
+                   checkPoints.push( "alchemy_potion_inventory_slot_1","alchemy_potion_inventory_slot_2","alchemy_potion_inventory_slot_3","alchemy_potion_inventory_slot_4","alchemy_potion_inventory_slot_5","alchemy_potion_inventory_slot_6","alchemy_potion_inventory_slot_7","alchemy_potion_inventory_slot_8","alchemy_potion_inventory_slot_9","alchemy_potion_inventory_slot_10","alchemy_potion_inventory_slot_11","alchemy_potion_inventory_slot_12","alchemy_potion_inventory_slot_13","alchemy_potion_inventory_slot_14","alchemy_potion_inventory_slot_15","alchemy_potion_inventory_slot_16")
+                   checkPoints.push( "challenge_1","challenge_2","challenge_3","challenge_4","challenge5","challenge6","challenge7","challenge8")
+                   checkPoints.push( "challenge_retryBox","challenge_start","challenge_quit")
+                   checkPoints.push( "warrior","wizard","angel")
+                   checkPoints.push( "st_slot_1","st_slot_2","st_slot_3","st_slot_4","st_slot_5","st_slot_6","st_slot_7","st_slot_8","st_slot_9","st_slot_10")
+                   checkPoints.push( "skill_table_skill_1_stance","skill_table_skill_2_stance","skill_table_skill_3_stance","skill_table_skill_4_stance","skill_table_skill_5_stance","skill_table_skill_6_stance","skill_table_skill_7_stance","skill_table_skill_8_stance","skill_table_skill_9_stance","skill_table_skill_10_stance")
+                   checkPoints.push( "skill_table_skill_1_chargeUp","skill_table_skill_2_chargeUp","skill_table_skill_3_chargeUp","skill_table_skill_4_chargeUp","skill_table_skill_5_chargeUp","skill_table_skill_6_chargeUp","skill_table_skill_7_chargeUp","skill_table_skill_8_chargeUp","skill_table_skill_9_chargeUp","skill_table_skill_10_chargeUp")
+                   checkPoints.push( "skillbar_class_top_1","skillbar_class_top_2","skillbar_class_top_3","skillbar_class_bottom_1","skillbar_class_bottom_2","skillbar_class_bottom_3")
+                   checkPoints.push( "skillbar_global_top_1","skillbar_global_top_2","skillbar_global_top_3","skillbar_global_top_4")
+                   checkPoints.push( "skillbar_global_bottom_1","skillbar_global_bottom_2","skillbar_global_bottom_3","skillbar_global_bottom_4")
+                   checkPoints.push( "skillbar_active_skill","skillbar_automove")
+                   checkPoints.push( "equip1","equip2","equip3","equip4","equip5","equip6","equip7","equip8","equip9","equip10")
+                   checkPoints.push( "equip1_levelUp","equip2_levelUp","equip3_levelUp","equip4_levelUp","equip5_levelUp","equip6_levelUp","equip7_levelUp","equip8_levelUp","equip9_levelUp","equip10_levelUp")
+                   checkPoints.push( "equip_classD","equip_classC","equip_classB")
+                   msgbox this will ask for you to click points and the app will write the (name x y) to notepad. format like offsets.txt is then swap them
                     
                     
                     For index, value in checkPoints
@@ -455,9 +456,9 @@ ScavangeChiili:
                         WinActivate, Notepad ;
                         sleep 100
                         
-                        Send {Enter}%value% `t%xOffsetRation% `t%yOffsetRation%		
+                        Send {Enter}%value% %xOffsetRation% %yOffsetRation%		
                     }
-                    tooltip,
+                    showtip("")
                     return
                 }
                 

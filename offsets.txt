@@ -246,4 +246,5 @@ equip10_levelUp	0.370412	0.584570
 equip_classD	0.290323	0.342730
 equip_classC	0.325918	0.341246
 equip_classB	0.355951	0.341246
-
+SC_ScanPoint 0.037531 0.462736
+GB_ScanPoint 0.055046 0.209121

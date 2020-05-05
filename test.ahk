@@ -440,10 +440,7 @@ ScavangeChiili:
                     
                     
                     For index, value in checkPoints
-                    {
-                        ;todo: add this to a gui so it can be updated and stay set location
-                        ;or tooltip follow mouse needs timer interuption, 
-                        ToolTip, %value% , 400,300
+                    {                       
                         msg= Right Click   %value%
                         ShowTip(msg , pos:="y35", color:="Red|00FFFF")
                         KeyWait, RButton, D

@@ -14,8 +14,9 @@ BankCapBuyer:
             return
         }
         else {
-            ;call this label on interval - 30000000 = 5mins
-            SetTimer, bankpicker, 300000
+            ;call this label on interval -600000 = 1mins
+            SetTimer, bankpicker, 30000
+             bankpicker()
             return
         } 
     }
@@ -41,10 +42,13 @@ changeToWatchGoldBank:
    ; msgbox checking gold bank
 return
 
+
+;*** gclick click count = number bought !be warned over multiple clicks to ensure register
+
 buySCbankItems:
     BlockInput mousemove
     MouseGetPos tx, ty
-    gclick(sb_donate,2,100)
+    gclick(sb_donate,10,100)
     mousemove tx,ty
     BlockInput mousemoveoff
     ;msgbox buying sc buySCbankItems

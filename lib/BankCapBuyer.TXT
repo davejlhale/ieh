@@ -70,7 +70,7 @@ bankread(x,y)
     
     
     ;length to check
-    Loop 120 { ;smaller capture width - needle
+    Loop 50 { ;smaller capture width - needle
         vred := (col & 0xFF)
         vgreen := ((col & 0xFF00) >> 8)
         vblue := ((col & 0xFF0000) >> 16)

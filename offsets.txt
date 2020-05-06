@@ -147,10 +147,10 @@ alchemy_potion_option_13	0.327030	0.553412
 alchemy_potion_option_14	0.389321	0.557864
 alchemy_potion_option_15	0.051168	0.63056
 alchemy_potion_option_16	0.109010	0.626113
-challenge_1	0.053393	0.362018
-challenge_2	0.113459	0.363501
-challenge_3	0.182425	0.364985
-challenge_4	0.250278	0.362018
+challenge1	0.053393	0.362018
+challenge2	0.113459	0.363501
+challenge3	0.182425	0.364985
+challenge4	0.250278	0.362018
 challenge5	0.313682	0.363501
 challenge6	0.380423	0.367953
 challenge7	0.047831	0.470326

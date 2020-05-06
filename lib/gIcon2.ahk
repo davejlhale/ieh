@@ -49,7 +49,7 @@ class gIcon
         
         this.movement:= objbindmethod(this,"move")
         this.timer:= objbindmethod(this,"watch")
-        
+      
         GUI, %aImage%:+HWNDhIcon
         this.ahwnd := hIcon 
         Gui, %aImage%:Margin, 2, 2
@@ -65,14 +65,12 @@ class gIcon
         
         this.start() 
     }
-    
+  
     toggle() { 
-        
         if this.isactive 
             this.turnOff() 
         Else
             this.turnOn() 
-        
         this.focusWindow()
         return
     }
@@ -82,8 +80,7 @@ class gIcon
         window= ahk_id %parentID%
     
         #WinActivateForce
-        if WinExist(window)
-        {
+        if WinExist(window){
             WinActivate, %window%
             WinRestore, %window% 
         }    
@@ -93,14 +90,14 @@ class gIcon
     turnOff() {
         this.isactive:= 0
         img:= this.Icon
-        GuiControl, ,%img%.png, images/%img%.png 
+        GuiControl, %img%:,%img%.png, images/%img%.png 
         return
     }
     
     turnOn() {
         this.isactive:= 1
-        img:=this.Icon
-        GuiControl, ,%img%.png, images/on%img%.png
+        img:=this.Icon       
+        GuiControl,%img%: ,%img%.png, images/on%img%.png
         return
     }
     
@@ -161,7 +158,7 @@ class gIcon
         
         this.startPointX:=mx
         this.startPointY:=my 
-        
+   return    
     }
     
     ;use as private

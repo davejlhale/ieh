@@ -38,7 +38,6 @@ bankpicker()
         }
         ;swap bank to watch
         currentBank:=!currentBank
-
     }   
 } 
 
@@ -132,17 +131,11 @@ mathdist(v,vCol) {
     b:=(v["G"]-vCol[2])**2
     c:=(v["B"]-vCol[3])**2
     return Sqrt(a +b +c)
-} 
+}
 ; SetTitleMatchMode, 2
 ; WinActivate, Notepad ;
 ; sleep 100
 ; Send {Enter}%pixline%
 ; Send {Enter}%pixline2%{enter}
 
-esc::
-    ExitApp, 
-return
 
-cani:
-msgbox yes 
-return

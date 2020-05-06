@@ -122,7 +122,6 @@ class gIcon
     ;use as private
     watch(){
         global movingIcon
-        CoordMode, Mouse, Screen
         ;if this icon moving but rb release
         if this.bMoveWin && !GetKeyState("RButton") { 
             movingIcon:=false
@@ -147,7 +146,6 @@ class gIcon
         if !(this.bMoveWin) 
             return
         
-        CoordMode, Mouse, Screen
         hwnd:=this.ahwnd
         MouseGetPos, mx, my
         deltaX := this.startPointX - mx

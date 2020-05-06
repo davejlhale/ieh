@@ -24,7 +24,7 @@ exampleIcon := new gIcon("d",100,100,"example")
 */
     
 ;can also be key triggered 
-t:: 
+;t:: 
 example:
 
     {

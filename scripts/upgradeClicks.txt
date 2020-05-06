@@ -14,8 +14,8 @@ upgradeCycle:
         timedupgradeCycle:
             BlockInput mousemove
             MouseGetPos tx, ty
-            gClick(menu1,2)
-            gClick(sb_GoBack,2)
+            gClick(menu1,2,200)
+            gClick(sb_GoBack,2,200)
             gClick(upgrade_upgradeMax,2)
             gClick(upgrade_pickaxe4)
             gClick(upgrade_rake4)

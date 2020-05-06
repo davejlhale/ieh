@@ -1,13 +1,13 @@
 class GUIMenu 
 {
     dev:=		" showGameWindow , findGameWindow , Set Click Points,Record , Stop , Play , Exit , Screen Info , Player Menu"
-    home:=		"[F2]Warrior, [F3] Wizard , [F4] Angel , [F7] King Farm ,[F8] Just Run , [F11] Exit , [F12] Dev Tools"
+    home:=		"[F2]Warrior, [F3] Wizard , [F4] Angel , [F7] King Farm ,[F8] Just Run , [F9] Chilli , [F11] Exit , [F12] Dev Tools"
     angel:=		"[F1]Home"
     warrior:=	"[F1]Home"
     wizard:=	"[F1]Home"
     
     
-    __new(aName="dev")
+    __new(aName="home")
     {
         switch aName
         {
@@ -35,32 +35,33 @@ class GUIMenu
         
         addGUI(sMsg)
         {
-            this.removeGUI()
+            Gui, menu:Destroy
+            
             this.initGUI()
             For i,v in StrSplit(sMsg, ",")
             {
                 j:=i=1 ? "":"x+0", j.=InStr(v,"Pause") ? " vPause":""
-                Gui, Add, Button, %j% geGUI, %v%
+                Gui, menu:Add, Button, %j% geGUI, %v%
             }
-            Gui, Show, NA y0, Macro Recorder
+            Gui, menu:Show, NA y0, Macro Recorder
             return	
         }
         
         removeGUI()
         {
-            Gui, Destroy
+            
             return
         }
         
         
         initGUI()
         {
-            Gui, +AlwaysOnTop -Caption +ToolWindow +E0x08000000 +Hwndgui_id
-            Gui, Margin, 0, 0
-            Gui, Font, s12
+            Gui, menu:+AlwaysOnTop -Caption +ToolWindow +E0x08000000 +Hwndgui_id
+            Gui, menu:Margin, 0, 0
+            Gui, menu:Font, s12
             SetTimer, OnTop, 2000
             OnTop:
-                Gui, +AlwaysOnTop
+                Gui, menu:+AlwaysOnTop
             return
         }
         

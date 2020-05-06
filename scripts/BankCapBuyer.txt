@@ -26,10 +26,10 @@ BankCapBuyer:
 changeToWatchSCBank:
     BlockInput mousemove
     MouseGetPos tx, ty
-    gclick(menu1,2,100)
-    gclick(sb_GoBack,2,100)
-    gclick(slime_bank,2,100)
-    gclick(SC_ScanPoint,2,100)
+    gclick(menu1,2,200)
+    gclick(sb_GoBack,2,200)
+    gclick(slime_bank,2,200)
+    gclick(SC_ScanPoint,1,100)
    ; msgbox checking sc bank
 return
 

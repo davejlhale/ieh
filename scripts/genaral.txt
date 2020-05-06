@@ -16,8 +16,8 @@ BuffCycle:
 timedBuffCycle:
 	BlockInput mousemove
 	MouseGetPos tx, ty
-	gClick(menu2,2,100)
-	gClick(angel,2,100)
+	gClick(menu2,2,200)
+	gClick(angel,2,220)
 	gClick(st_slot_3,2,20)
 	gClick(skillbar_global_top_1,2)
 	gClick(st_slot_4,2,20)

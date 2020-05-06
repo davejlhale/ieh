@@ -43,7 +43,6 @@ bankpicker()
 
 bankread(x,y) 
 {
-    CoordMode, Pixel, Screen
     static lastpixline:=[]
     colors:={}
     ; msgbox %x% %y%

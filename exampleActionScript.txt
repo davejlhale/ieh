@@ -22,15 +22,18 @@ exampleIcon := new gIcon("d",100,100,"example")
 ************
 ************
 */
-
+    
+;can also be key triggered 
+t:: 
 example:
+
     {
         ;so your actions arnt interupted
         Critical on
         
         ;called to swap icon image and mark it as active or inactive
         exampleIcon.toggle()
-        
+
         ;if its just been clicked off turn of exampleAction repeating
         if !(exampleIcon.isactive) {
             SetTimer, exampleAction, off
@@ -48,8 +51,9 @@ example:
             ;exampleIcon.toggle()
             return
         } 
+        return
     }
-    
+
 ;action label
 exampleAction:
     ;remember where the users mouse is and prevent them moving mouse while click actions preformed
@@ -75,16 +79,16 @@ exampleAction:
     ;any other program logic can be added eg. gosub / adding new hotkeys / function calls etc
     
     gclick(menu1,2,100)
-    gclick(sb_GoBack,2)
-    gclick(slime_bank,2)
-    gclick(SC_ScanPoint,2,100)
-    sleep 2000
-    gClick(menu2)
-    sleep 2000
-    gClick(menu3)
-    sleep 2000
-    gClick(menu4)
-    sleep 2000
+    gclick(sb_GoBack,2,50)
+    gclick(slime_bank,2,50)
+    gclick(SC_ScanPoint,1,1000)
+    
+    gClick(menu2,1,1000)
+    
+    gClick(menu3,1,1000)
+   
+    gClick(menu4,1,1000)
+    
     
     ;move back to where the user was and turn their mouse back on
     mousemove tx,ty

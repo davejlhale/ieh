@@ -56,10 +56,10 @@ class gIcon
         Gui, %aImage%:+AlwaysOnTop -Caption +ToolWindow
         
         if IsLabel(aSub) {
-            Gui, %aImage%:Add, picture, w32 h-1 g%aSub% , images/%aImage%.png 
+            Gui, %aImage%:Add, picture, w32 h32 g%aSub% , images/%aImage%.png 
         }
         Else {
-            Gui, %aImage%:Add, picture, w32 h-1 , images/%aImage%.png
+            Gui, %aImage%:Add, picture, w32 h32 , images/%aImage%.png
         }
         Gui, %aImage%:Show,x%aX% y%aY% , NoActivate
         

@@ -1,8 +1,10 @@
 ;;clicks on aClickponit, aClickCountTimes with aDelay between clicks
 gClick( aClickPoint,aClickCount:=1,aDelay:=20){ 
+            CoordMode, Mouse, Client
             Critical on
             global gWinTitle
             global gameX,gameY
+            global begin_x, begin_y
             
             if ! isObject(aClickPoint) && aClickPoint.class!="ClickPoint"
                 return

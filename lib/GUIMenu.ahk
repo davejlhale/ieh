@@ -1,3 +1,5 @@
+
+
 class GUIMenu 
 {
     currentMenu:=""
@@ -20,7 +22,9 @@ class GUIMenu
         this.readMenuConfig()
         this.show(aMenu)
     } 
-    
+    checkCurrentMenu(){
+        return this.currentMenu
+    }
     show(aMenu) { 
         vMenus:=this.aMenus
         if !vMenus.haskey(aMenu)
@@ -29,7 +33,7 @@ class GUIMenu
         this.currentMenu:=aMenu
         vMenuOptions:=vMenus[aMenu]
         this.addGUI(vMenuOptions)
-        return
+        return this.currentMenu
     }
     
     addGUI(sMsg){

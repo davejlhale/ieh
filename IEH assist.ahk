@@ -27,6 +27,7 @@ While findKongGameContainer() {
 
 ;;add menus and gui
 menu := new GUIMenu("home")
+EquipIcon :=new gIcon("EquipIcon",956,830,"Equip")
 BankCapBuyerIcon:=new gIcon("d",908,830,"BankCapBuyer")
 buffCycleIcon := new gIcon("BuffCycle",760,830,"BuffCycle")
 upgradeCycleIcon :=new gIcon("upgradeCycle",808,830,"upgradeCycle")
@@ -49,7 +50,7 @@ return
 #Include upgradeClicks.txt
 #include genaral.txt
 #include bankCapBuyer.txt
-
+#include PutOnEquip.ahk
 /*
 **************************
 *** hotkeys ***
@@ -67,33 +68,38 @@ Escape::
 Return		
 
 DevTools:
-    menu.show("dev")
+  currentMenu:=  menu.show("dev")
 return	
 
 F1::	
 Home:
 PlayerMenu:
-    menu.show("home")
+   currentMenu:= menu.show("home")
 return
 
 F3::
 Wizard:
-    menu.show("wizard")
+   currentMenu:= menu.show("wizard")
 return
 
 F2::
 Warrior:
-    menu.show("warrior")
+   currentMenu:= menu.show("warrior")
 return
 
 F4::
 Angel:
-    menu.show("angel")
+  currentMenu:=  menu.show("angel")
 return	
 
 F5::
 General:
-    menu.show("general")
+  currentMenu:=  menu.show("general")
+return
+
+!e::
+Equip: ;supplying a named equipment set here will put that on over default war/angel/wiz/general setups
+    PutOnEquip()
 return
 
 F7::

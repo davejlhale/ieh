@@ -12,7 +12,7 @@ PutOnEquip(aEquipmeentSet:="general")
     }
     
     ;call this label on interval -600000 = 1mins
-    SetTimer, putOnEquipAction, 30000
+    SetTimer, putOnEquipAction, 10000
     vEquipmentSet:= checkEquipConfig(aEquipmeentSet)
     ToolTip, vEquipmentSet - %vEquipmentSet% 
     
@@ -23,29 +23,47 @@ PutOnEquip(aEquipmeentSet:="general")
         gClick(menu5,2,100)
         gClick(craft_check_Box2,100)
         sleep 10
+        Contents:=0
+        FileRead, Contents, configs/EquipmentSets.ini
         
-        Loop, read, configs/EquipmentSets.ini
+        
+        AEsets:=[]
+        loop, read, configs/EquipmentSets.ini
         {
+            if SubStr(A_LoopReadLine, 1, 1) != ";"
+                AEsets.push(A_LoopReadLine)
+            
+        }
+        
+        
+        
+        
+        
+        
+        Loop, read, AEsets;configs/EquipmentSets.ini
+        {
+            outer = %A_index%
+            useMe:=true
+            msgbox, %A_LoopReadLine%
             Loop, parse, A_LoopReadLine, %A_Tab%
             { 
+                tooltip inner %A_index% outer %outer%
+                sleep 50
                 if (A_index==1) && (A_loopfield != vEquipmentSet) 
-                    passOver:=true
-               
-                   
-                
-                if !passover {
+                    useMe:=false
+                else if (A_index==1) && (A_loopfield == vEquipmentSet) 
+                    useMe:=true
+                if useMe {
                     if Mod(A_index,2) ;equipment class
                         gClick(A_loopfield,2,50)
                     else ;equipment slot
                         gClick(A_loopfield,2,50) 
                 }
+                
             }
-             passover:=False
-            
             mousemove tx,ty
             BlockInput mousemoveoff
-            critical off
-            
+            critical off 
         } 
     return
 }

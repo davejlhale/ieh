@@ -14,33 +14,38 @@ PutOnEquip(aEquipmeentSet:="general")
     ;call this label on interval -600000 = 1mins
     SetTimer, putOnEquipAction, 30000
     vEquipmentSet:= checkEquipConfig(aEquipmeentSet)
-    
+    ToolTip, vEquipmentSet - %vEquipmentSet% 
     
     putOnEquipAction:
+        Critical, on
+        MouseGetPos tx, ty
+        BlockInput mousemove
         gClick(menu5,2,100)
         gClick(craft_check_Box2,100)
         sleep 10
         
         Loop, read, configs/EquipmentSets.ini
         {
-            Critical, on
-            MouseGetPos tx, ty
-            BlockInput mousemove
-
             Loop, parse, A_LoopReadLine, %A_Tab%
             { 
                 if (A_index==1) && (A_loopfield != vEquipmentSet) 
-                    Break
- 
-                if Mod(A_index,2) ;equipment class
-                    gClick(A_loopfield,2,50)
-                else ;equipment slot
-                    gClick(A_loopfield,2,50)  
+                    passOver:=true
+               
+                   
+                
+                if !passover {
+                    if Mod(A_index,2) ;equipment class
+                        gClick(A_loopfield,2,50)
+                    else ;equipment slot
+                        gClick(A_loopfield,2,50) 
+                }
             }
-
+             passover:=False
+            
             mousemove tx,ty
             BlockInput mousemoveoff
             critical off
-        }   
+            
+        } 
     return
 }

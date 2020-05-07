@@ -35,13 +35,20 @@ return
 ;;end of autoexec 
 ;MUST HAVE INCLUDES with subs BELOW autoexec
 
-#Include lib/gIcon2.ahk
-#include scripts/lootBestiary.txt
-#Include scripts/upgradeClicks.txt
-#include scripts/genaral.txt
-#include lib/gui.txt
-#include scripts/bankCapBuyer.txt
 #include exampleActionScript.txt
+
+#include lib
+#include GUIMenu.ahk
+#Include gIcon2.ahk
+#include bankCapBuyer.txt
+
+#include ..\scripts
+#include lootBestiary.txt
+#Include upgradeClicks.txt
+#include genaral.txt
+#include bankCapBuyer.txt
+
+
 /*************************
 *** general hotkeys ***
 */
@@ -65,29 +72,34 @@ Escape::
 Return		
 
 DevTools:
-    menu.change("dev")
+    menu.show("dev")
 return	
 
 F1::	
 Home:
 PlayerMenu:
-    menu.change("home")
+    menu.show("home")
 return
 
 F3::
 Wizard:
-    menu.change("wizard")
+    menu.show("wizard")
 return
 
 F2::
 Warrior:
-    menu.change("warrior")
+    menu.show("warrior")
 return
 
 F4::
 Angel:
-    menu.change("angel")
+    menu.show("angel")
 return	
+
+F5::
+General:
+    menu.show("general")
+    return
 
 F7::
 KingFarm:
@@ -156,12 +168,12 @@ ScavangeChiili:
     !F1::
     findGameWindow:
         mapGameContainer()
-        showGameContainer()
+        showBox(begin_x, begin_y, end_x, end_y) 
     return
     
     !F2::
-    showGameWindow:
-        showGameContainer()
+        showGameWindow: 
+        showBox(begin_x, begin_y, end_x, end_y) 
     return
     
     
@@ -190,16 +202,6 @@ ScavangeChiili:
             SetTimer, ScreenInfoTimer, off
         } 
         return
-        
-        showGameContainer(){
-            global begin_x, begin_y, end_x, end_y
-            mousemove, begin_x,begin_y,10
-            mousemove, end_x,begin_y,10
-            mousemove, end_x,end_y,10
-            mousemove, begin_x,end_y,10
-            mousemove, begin_x,begin_y,10
-            return
-        }
         
         mapGameContainer(){
             Critical on

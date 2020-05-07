@@ -1,4 +1,7 @@
 ;;loads clickpoints from offsets.txt into dynamicly named instances of class ClickPoint
+  
+    global clickPoints := {}
+
 loadClickPoints()
 {
     Critical on
@@ -19,6 +22,7 @@ loadClickPoints()
                     Default:							
                 }
             } 
+            
             %name% :=new ClickPoint(name,x,y)
         }
         return
@@ -29,6 +33,7 @@ loadClickPoints()
         name := none
         x:=0
         y:=0
+        class:="ClickPoint"
         
         __New(aname,ax,ay)
         {

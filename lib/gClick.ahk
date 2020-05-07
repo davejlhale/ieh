@@ -1,0 +1,23 @@
+;;clicks on aClickponit, aClickCountTimes with aDelay between clicks
+gClick( aClickPoint,aClickCount:=1,aDelay:=20){ 
+            Critical on
+            global gWinTitle
+            global gameX,gameY
+            
+            if ! isObject(aClickPoint) && aClickPoint.class!="ClickPoint"
+                return
+            
+            WinGetTitle, Title, A
+            if ! instr(Title,gWinTitle,false)
+                return 1
+            
+            gameClickX :=round((gameX * aClickPoint.x)+begin_x)
+            gameClickY := round((gameY * aClickPoint.y)+begin_y)
+            
+            loop %aClickCount%
+            {
+                Send {click, %gameClickX%, %gameClickY%}
+                sleep %aDelay%
+            }
+            return
+        } 

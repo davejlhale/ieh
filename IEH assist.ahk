@@ -52,18 +52,13 @@ return
 *** general hotkeys ***
 */
 
+
 !p::
 ~RButton & LButton::
-    Suspend 
-    pauseToggle:=!pauseToggle
-    if pauseToggle 
-        ShowTip("Paused")
-    else 
-        ShowTip("")
-    
-    Pause ,, 1
-    BlockInput, mousemoveoff
+    paused()
 return
+
+
 
 Exit:
 Escape::
@@ -101,7 +96,7 @@ General:
 return
 
 F7::
-    KingFarm: 
+KingFarm:
     MouseGetPos vX,Vy
     BlockInput, On
     kfToggle:=!kfToggle
@@ -174,92 +169,10 @@ ScavangeChiili:
         showBox(begin_x, begin_y, end_x, end_y) 
     return
     
-    
-    
-    
-    
-    
     ;;adds basic info to onscreen tooltip
     ScreenInfo:
         showScreenInfo()
     return
-    
-    
-    findKongGameContainer(){
-        Critical on
-        
-        WinGetTitle, Title, A
-        if ! instr(Title,gWinTitle,false)
-            return 1
-        WinGet _parentID,id,A
-        global parentID :=_parentID
-        global begin_x:=0, begin_y:=0, end_x:=0, end_y:=0
-        global gameX:=0,gameY:=0
-        global gWinTitle 
-        
-        WinGetPos, xZero, yZero, winWidth, winHeight, A
-        mid:=winHeight*0.5
-        
-        ;check for left game border
-        PixelSearch, abegin_x, temp, 0, %mid%, %winWidth%, %mid%, 0xB5B5B5, 3, Fast
-        if ErrorLevel 
-            return ErrorLevel
-        ;find top left
-        PixelSearch, abegin_x, abegin_y, %abegin_x%, %mid%, %abegin_x%, 0, 0x000000, 0, Fast
-        if ErrorLevel 
-            return ErrorLevel
-        abegin_y:=abegin_y+1
-        ;check not run offscreen
-        PixelSearch, abegin_x, abegin_y, %abegin_x%, %abegin_y%, %abegin_x%, %abegin_y%, 0xB5B5B5, 10, Fast
-        if ErrorLevel 
-            return ErrorLevel
-        ;find top right
-        PixelSearch, aend_x, abegin_y, %abegin_x%, %abegin_y%, %winWidth%, abegin_y, 0x000000, 0, Fast
-        if ErrorLevel 
-            return ErrorLevel
-        aend_x:=aend_x-1
-        ;check not run offscreen
-        PixelSearch, aend_x, abegin_y, %aend_x%, %abegin_y%, %aend_x%, %abegin_y%, 0xB5B5B5, 10, Fast
-        if ErrorLevel 
-            return ErrorLevel
-        ;find bottom right
-        PixelSearch, aend_x, aend_y, %aend_x%, %abegin_y%, %aend_x%, winHeight, 0x000000, 0, Fast
-        if ErrorLevel 
-            return ErrorLevel
-        aend_y:=aend_y-1
-        ;check not run offscreen
-        PixelSearch, aend_x, aend_y, %aend_x%, %aend_y%, %aend_x%, %aend_y%, 0xB5B5B5, 10, Fast
-        if ErrorLevel 
-            return ErrorLevel
-        
-        end_x:=aend_x
-        end_y:=aend_y
-        begin_y:=abegin_y
-        begin_x:=abegin_x
-        
-        ;game resolution
-        gameX:=Abs(begin_x-end_x)
-        gameY:=Abs(begin_y-end_y)
-        
-    return 0
-}
-
-/*
-*** function loadClickPoints()
-*** load offset.txt into a key paired array - clickPoints 
-*** (name (name,x,y) )
-***
-*** creates dynamicly named objects with the object named the same as the offest name in file
-*** offsetname.name
-*** offsetname.x
-*** offsetname.y
-***
-*** objects used as
-*** gClick(upgrade_nitro_pixel_start.x,upgrade_nitro_pixel_start.y)
-***
-*** checkPoints array for ease of itterating in app changes and writing back to file
-    */
-
     
     
     
@@ -333,30 +246,6 @@ ScavangeChiili:
         
         
         
-        ShowTip(s:="", pos:="y35", color:="Red|00FFFF") {
-            static bak, idx
-            if (bak=color "," pos "," s)
-                return
-            bak:=color "," pos "," s
-            SetTimer, ShowTip_ChangeColor, Off
-            Gui, ShowTip: Destroy
-            if (s="")
-                return
-            ; WS_EX_NOACTIVATE:=0x08000000, WS_EX_TRANSPARENT:=0x20
-            Gui, ShowTip: +LastFound +AlwaysOnTop +ToolWindow -Caption +E0x08000020
-            Gui, ShowTip: Color, FFFFF0
-            WinSet, TransColor, FFFFF0 150
-            Gui, ShowTip: Margin, 10, 5
-            Gui, ShowTip: Font, Q3 s20 bold
-            Gui, ShowTip: Add, Text,, %s%
-            Gui, ShowTip: Show, NA %pos%, ShowTip
-            SetTimer, ShowTip_ChangeColor, 1000
-            ShowTip_ChangeColor:
-                Gui, ShowTip: +AlwaysOnTop
-                r:=StrSplit(SubStr(bak,1,InStr(bak,",")-1),"|")
-                Gui, ShowTip: Font, % "Q3 c" r[idx:=Mod(Round(idx),r.length())+1]
-                GuiControl, ShowTip: Font, Static1
-            return
-        } 
+        
         
         

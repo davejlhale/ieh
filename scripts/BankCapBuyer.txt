@@ -5,21 +5,39 @@
 /* TO CHANGE WHAT YOU BUY WHEN FULL GO DOWN TO YOU SEE MY EXAMPLES 
 */
 
+;*** gclick click count = number bought !be warned over multiple clicks to ensure register
+; sb_variables are :: > sb_donate , sb_purifucation , sb_efficiency , sb_exchange 
+; sb_interest , sb_cap , sb_et_stone , sb_et_crystal , sb_et_leaf , sb_strength , 
+; sb_mind , sb_healty_captue , sb_enhanced_capture , sb_monster_counter , sb_graduates 
+; sb_ledger , sb_nitro_generators , sb_monster_taming , sb_powder_store , sb_explorers_capacity
+;
+;  exampls of line below to change
+;  gclick(sb_donate,10,100) - 10 donations when bank full
+;  gclick(sb_interest,2,100) - 2 bank interest when bank full
+;  gclick(sb_cap,1,100) - 1 bank cap when full
+buySCbankItems:
+    BlockInput mousemove
+    MouseGetPos tx, ty
+    gclick(sb_nitro_generators,2,100) ;<<<<<<<< CHANGE THE sb_donate AND quantiy 10 to what you want when banks full 
+                             ;- leave the 100 as it is
+    mousemove tx,ty
+    BlockInput mousemoveoff
+    ;msgbox buying sc buySCbankItems
+return
+
 BankCapBuyer:
     {
         Critical on
-        
         BankCapBuyerIcon.toggle()
         if !(BankCapBuyerIcon.isactive) {
             SetTimer, bankpicker, off
-            return
         }
         else {
             ;call this label on interval -600000 = 1mins
             SetTimer, bankpicker, 30000
              bankpicker()
-            return
         } 
+        return
     }
     
 ;blobk and mouse memory not used as pixel scan needs to mouseget
@@ -31,7 +49,6 @@ changeToWatchSCBank:
     gclick(sb_GoBack,2,200)
     gclick(slime_bank,2,200)
     gclick(SC_ScanPoint,,100)
-   ; msgbox checking sc bank
 return
 
 ;blobk and mouse memory not used as pixel scan needs to mouseget
@@ -40,24 +57,7 @@ changeToWatchGoldBank:
     BlockInput mousemove
     MouseGetPos tx, ty
     gclick(GB_ScanPoint,2,100)
-   ; msgbox checking gold bank
 return
 
 
-;*** gclick click count = number bought !be warned over multiple clicks to ensure register
-; sb_variables are :: > sb_donate , sb_purifucation , sb_efficiency , sb_exchange 
-; sb_interest , sb_cap , sb_et_stone , sb_et_crystal , sb_et_leaf , sb_strength , sb_mind , sb_healty_captue , sb_enhanced_capture , sb_monster_counter , sb_graduates , sb_ledger , sb_nitro_generators , sb_monster_taming , sb_powder_store , sb_explorers_capacity
-;
-;exampls of line below to change
-;  gclick(sb_donate,10,100) - 10 donations when bank full
-;  gclick(sb_interest,2,100) - 2 bank interest when bank full
-;  gclick(sb_cap,1,100) - 1 bank cap when full
-buySCbankItems:
-    BlockInput mousemove
-    MouseGetPos tx, ty
-    gclick(sb_donate,10,100) ;<<<<<<<< CHANGE THE sb_donate AND quantiy 10 to what you want when banks full 
-                             ;- leave the 100 as it is
-    mousemove tx,ty
-    BlockInput mousemoveoff
-    ;msgbox buying sc buySCbankItems
-return
+

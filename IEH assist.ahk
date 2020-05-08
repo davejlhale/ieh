@@ -48,6 +48,7 @@ return
 #include genaral.txt
 #include bankCapBuyer.txt
 #include PutOnEquip.ahk
+#include golemFarmer.ahk
 /*
 **************************
 *** hotkeys ***
@@ -55,45 +56,8 @@ return
 */
 
 golem:
-global Alchemy_check_Box, alchemy_10L, alchOption_8,alchInv16
-global challenge_start, challenge_2
-global menu5,menu4
-golemRepeat := 60000
-
-    golemToggle:=!golemToggle
-    if !golemToggle {
-        showTip("")
-        setTimer, golemTimer,Off
-        return
-    }
-    settimer, golemTimer,20000,golemRepeat
-    showTip("Golem farming")
-golemTimer:
-Critical on
- BlockInput mousemove
-            MouseGetPos tx, ty
-    gClick(menu5,2,100)
-    sleep 1000
-    gclick(Alchemy_check_Box,2,100)
-       sleep 1000
-    gclick(alchemy_10L,2,50)
-       sleep 1000
-    gclick(alchOption_8,2,50)
-       sleep 1000
-    gclick(alchInv16,2,50)
-       sleep 1000
-    gclick(menu4,2,100)
-       sleep 1000
-    gclick(challenge_2)
-       sleep 1000
-    gclick(challenge_start)
-       sleep 1000
-        
-            mousemove tx,ty
-            BlockInput mousemoveoff
-            Critical off
+golemFarmer(40000)
 return
-
 !p::
 ~RButton & LButton::
     pause()

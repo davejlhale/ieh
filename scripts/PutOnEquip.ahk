@@ -1,6 +1,6 @@
 
 global equip1 , equip2 , equip3 , equip4 , equip5 , equip6 , equip7 , equip8 , equip9 , equip10 
-global equipClassD , equipClassC , equipClassB ,menu5,craft_check_Box2
+global equipClassD , equipClassC , equipClassB ,menu5,craft_check_Box
 PutOnEquip(aEquipmeentSet:="general")
 {
     global EquipIcon
@@ -22,7 +22,7 @@ PutOnEquip(aEquipmeentSet:="general")
         MouseGetPos tx, ty
         BlockInput mousemove
         gClick(menu5,2,100)
-        gClick(craft_check_Box2,100)
+        gClick(craft_check_Box,2,100)
         sleep 10
         
         Loop, read, configs/EquipmentSets.ini

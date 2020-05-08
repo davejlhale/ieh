@@ -94,16 +94,16 @@ ChallengeFarmers:
 return
 
 KingFarm:
-    kingFarmer(20000)
+    kingFarmer(50000)
 return
 GolemFarm:
-    golemFarmer(20000)
+    golemFarmer(250000)
 return
 SpiderFarm:
-    spiderFarmer(20000)
+    spiderFarmer(50000)
 return
 FairyFarm:
-    fairyFarmer(20000)
+    fairyFarmer(50000)
 return
 
 F7::

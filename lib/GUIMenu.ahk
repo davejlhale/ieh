@@ -13,7 +13,7 @@ class GUIMenu
         this.aMenus.insert("angel",(" [F1] Home , [e] Equip , [s] skills , [r] rebirth" ))
         this.aMenus.insert("warrior",(" [F1] Home , [e] Equip , [s] skills , [r] rebirth" ))
         this.aMenus.insert("wizard",(" [F1] Home , [e] Equip , [s] skills , [r] rebirth" ))
-        this.aMenus.insert("general",(" [F1] Home , [F7] King Farm ,[F8] Just Run , [F9] Chilli " )) 
+        this.aMenus.insert("general",(" [F1] Home , golem , [F7] King Farm ,[F8] Just Run , [F9] Chilli " )) 
         return 
     }
     

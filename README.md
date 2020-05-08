@@ -1,33 +1,38 @@
 # ieh
-to use, download and install ahk.
-download this repo and extract. run test.ahk by double click the file icon
-should work out the box when clicking test.ahk.
+to use, download and install ahk https://www.autohotkey.com/
+then download this project 
+to start "ieh assist.ahk" by double click the file icon
+should work out the box and starts as soon as you click your game window
 
 
-keys as shown in menu + F9(see below)
-left click mouse on icons to turn on off.
-right click+hold+drag to move icons
+keys as shown in menu 
+Alt + p  = pause
+Alt + e = equip selected equipment set
+left click mouse /menu on icons to turn on off.
+right click+hold then drag to move icons
 
-right click + hold + left mouse click to pause running scripts. or toggle with icons
+hold right button down + left mouse click to pause running scripts.
+
+currently
+one time equip of configuarable equipment set (4 via file config)
+auto farm any one the first 4 challanges 
+extra exp only farm of king
+auto bestiary loot
+auto click upgrades
+auto weave angel buffs in global slot 1
+auto watch sc bank and buy reputation when full (can configure to buy your coice via 1 word change in file)
+simple chilli script - runs to location repeatedly - best with favourite zone or dungeon run 
+
+basic example script included to make your own
 
 
 
 
-
-check in the dev tools menu for 
+problems with click location check in the dev tools menu for 
 'showgamewindow' to make sure its found your game
-
 use findgamewindow if you resize/move the game window
 
 set-click-points is used to map where it clicks - offset.txt file contains relative positions. should be no need to use this option
 
 screen-info for x,p color in writting pixel checks (later)
 
-F9 is start of a chilli hunt script. needs work but works to a fashion
-king run just enters challange 1, moves back and lets minions babies die (if you can kill them) - no visual cue its running so needs turned off to get back  notmal movement
-just run, just holds down w key
-
-icons
-buffs angel buffs in global slot 1 every 30s
-u - spams upgrade clicks
-bestiary loot collection every 20mins

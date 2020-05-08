@@ -97,7 +97,7 @@ KingFarm:
     kingFarmer(50000)
 return
 GolemFarm:
-    golemFarmer(250000)
+    golemFarmer(50000)
 return
 SpiderFarm:
     spiderFarmer(50000)

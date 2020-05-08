@@ -7,7 +7,6 @@ DetectHiddenWindows, On
 CoordMode, Mouse, Client
 CoordMode, Pixel, Client
 
-
 global gWinTitle:="play incremental epic hero"
 
 loadClickPoints()
@@ -33,9 +32,7 @@ lootBestiaryIcon :=new gIcon("LootBestiary",856,830,"lootBestiary")
 ;;end of autoexec 
 return
 
-;KEEP INCLUDES BELOW autoexec
-
-#include exampleActionScript.txt
+;;KEEP INCLUDES BELOW autoexec
 
 #include lib
 #include GUIMenu.ahk
@@ -49,15 +46,11 @@ return
 #include bankCapBuyer.txt
 #include PutOnEquip.ahk
 #include golemFarmer.ahk
-/*
-**************************
-*** hotkeys ***
-**************************
-*/
+#include kingFarmer.ahk
+#include spiderFarmer.ahk
+#include fairyFarmer.ahk
 
-golem:
-golemFarmer(40000)
-return
+;;general hotkeys
 !p::
 ~RButton & LButton::
     pause()
@@ -68,43 +61,53 @@ Escape::
     ExitApp
 Return		
 
+;;menu swappers
 DevTools:
     currentMenu:= menu.show("dev")
 return	
-
 F1::	
 Home:
 PlayerMenu:
     currentMenu:= menu.show("home")
 return
-
 F3::
 Wizard:
     currentMenu:= menu.show("wizard")
 return
-
 F2::
 Warrior:
     currentMenu:= menu.show("warrior")
 return
-
 F4::
 Angel:
     currentMenu:= menu.show("angel")
 return	
-
 F5::
 General:
     currentMenu:= menu.show("general")
 return
 
-!e::
-    Equip: ;supplying a named equipment set here will put that on over default war/angel/wiz/general setups
-    PutOnEquip()
+;;challenge farmers
+F6::
+ChallengeFarmers:
+    currentMenu:= menu.show("farmers")
+return
+
+KingFarm:
+    kingFarmer(20000)
+return
+GolemFarm:
+    golemFarmer(20000)
+return
+SpiderFarm:
+    spiderFarmer(20000)
+return
+FairyFarm:
+    fairyFarmer(20000)
 return
 
 F7::
-KingFarm:
+KingExpFarm:
     MouseGetPos vX,Vy
     BlockInput, On
     kfToggle:=!kfToggle
@@ -125,6 +128,11 @@ KingFarm:
     MouseMove, Vx,Vy
     BlockInput, Off 
 Return
+
+!e::
+    Equip: ;supplying a named equipment set here will put that on over default war/angel/wiz/general setups
+    PutOnEquip()
+return
 
 F8::
 JustRun:
@@ -162,7 +170,7 @@ Chilli:
     }
     return
     
-    
+    ;;dev hotkeys
     !F1::
     findGameWindow:
         findKongGameContainer()
@@ -174,12 +182,9 @@ Chilli:
         showBox(begin_x, begin_y, end_x, end_y) 
     return
     
-    ;;adds basic info to onscreen tooltip
     ScreenInfo:
         showScreenInfo()
     return
-    
-    
     
     SetClickPoints:
         setClickPoints()

@@ -1,22 +1,22 @@
 
 ;;sets golem farming at interval
-golemFarmer(pDelay:=60000) 
+kingFarmer(pDelay:=60000) 
 {
-    global Alchemy_check_Box, alchemy_10L, alchOption_8,alchInv16
-    global challenge_start, challenge2
+    global Alchemy_check_Box, alchemy_10L, alchOption_7,alchInv16
+    global challenge_start, challenge1
     global menu5,menu4
-    golemRepeat := pDelay
-   static golemToggle:=false
+    kingRepeat := pDelay
+   static kingToggle:=false
 
-    golemToggle:=!golemToggle
-    if !golemToggle {
+    kingToggle:=!kingToggle
+    if !kingToggle {
         showTip("")
-        setTimer, golemLoop,Off
+        setTimer, kingLoop,Off
         return
     }
-    settimer, golemLoop,%golemRepeat%
-    showTip("Golem farming")
-    golemLoop:
+    settimer, kingLoop,%kingRepeat%
+    showTip("King farming")
+   kingLoop:
         Critical on
         BlockInput mousemove
         MouseGetPos tx, ty
@@ -26,13 +26,13 @@ golemFarmer(pDelay:=60000)
        
         gclick(alchemy_10L,2,50)
      
-        gclick(alchOption_8,2,50)
+        gclick(alchOption_7,2,50)
     
         gclick(alchInv16,2,50)
      
         gclick(menu4,2,300)
       
-        gclick(challenge2,3,300)
+        gclick(challenge1,3,300)
         
         gclick(challenge_start,2,100)
         

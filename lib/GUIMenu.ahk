@@ -9,11 +9,12 @@ class GUIMenu
     ;;reads in menu strings from a config file
     readMenuConfig() {
         this.aMenus.insert("dev", (" showGameWindow , findGameWindow , Set Click Points,Record , Stop , Play , Exit , Screen Info , Player Menu" ))
-        this.aMenus.insert("home",(" [F2] Warrior , [F3] Wizard , [F4] Angel , [F5] General , [F11] Exit , [F12] Dev Tools" ))
+        this.aMenus.insert("home",(" [F2] Warrior , [F3] Wizard , [F4] Angel , [F5] General ,[F11] Exit , [F12] Dev Tools" ))
         this.aMenus.insert("angel",(" [F1] Home , [e] Equip , [s] skills , [r] rebirth" ))
         this.aMenus.insert("warrior",(" [F1] Home , [e] Equip , [s] skills , [r] rebirth" ))
         this.aMenus.insert("wizard",(" [F1] Home , [e] Equip , [s] skills , [r] rebirth" ))
-        this.aMenus.insert("general",(" [F1] Home , golem , [F7] King Farm ,[F8] Just Run , [F9] Chilli " )) 
+        this.aMenus.insert("general",(" [F1] Home , golem , [F6] Challenge Farmers ,[F8] Just Run , [F9] Chilli " )) 
+        this.aMenus.insert("farmers",("[7] King Exp Farm , King Farm , Golem Farm , Spider Farm , Fairy Farm "))
         return 
     }
     

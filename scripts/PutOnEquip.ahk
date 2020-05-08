@@ -31,21 +31,18 @@ PutOnEquip(aEquipmeentSet:="general")
         loop, read, configs/EquipmentSets.ini
         {
             if SubStr(A_LoopReadLine, 1, 1) != ";"
-                AEsets.push(A_LoopReadLine)
+        Array := StrSplit(A_LoopReadLine ,  [A_Tab,A_Space,","],, MaxParts := 2)
             
         }
         
-        
-        
-        
-        
-        
-        Loop, read, AEsets;configs/EquipmentSets.ini
+         for i,eSet in Array
         {
-            outer = %A_index%
-            useMe:=true
-            msgbox, %A_LoopReadLine%
-            Loop, parse, A_LoopReadLine, %A_Tab%
+            msgbox i %i%  v%eSet%
+        }
+        for i,eSet in Array
+        {
+            
+            for isn,v in %A_Tab%%A_Space%,`,
             { 
                 tooltip inner %A_index% outer %outer%
                 sleep 50

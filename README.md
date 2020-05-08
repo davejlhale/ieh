@@ -1,19 +1,11 @@
-# ieh
+
 to use, download and install ahk https://www.autohotkey.com/
-then download this project 
-to start "ieh assist.ahk" by double click the file icon
+then download this project https://github.com/davejlhale/ieh.git
+start "ieh assist.ahk" by double click the file icon
 should work out the box and starts as soon as you click your game window
 
-
-keys as shown in menu 
-Alt + p  = pause
-Alt + e = equip selected equipment set
-left click mouse /menu on icons to turn on off.
-right click+hold then drag to move icons
-
-hold right button down + left mouse click to pause running scripts.
-
 currently
+
 one time equip of configuarable equipment set (4 via file config)
 auto farm any one the first 4 challanges 
 extra exp only farm of king
@@ -25,6 +17,15 @@ simple chilli script - runs to location repeatedly - best with favourite zone or
 
 basic example script included to make your own
 
+
+
+keys as shown in menu
+
+Alt + p  = pause
+Alt + e = equip selected equipment set
+left click mouse /menu on icons to turn on off.
+right click+hold then drag to move icons
+hold right button down + left mouse click to pause running scripts.
 
 
 

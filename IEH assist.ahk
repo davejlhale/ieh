@@ -23,11 +23,11 @@ While findKongGameContainer() {
 
 ;;add menus and gui
 menu := new GUIMenu("home")
-EquipIcon :=new gIcon("EquipIcon",956,830,"Equip")
-BankCapBuyerIcon:=new gIcon("d",908,830,"BankCapBuyer")
-buffCycleIcon := new gIcon("BuffCycle",760,830,"BuffCycle")
-upgradeCycleIcon :=new gIcon("upgradeCycle",808,830,"upgradeCycle")
-lootBestiaryIcon :=new gIcon("LootBestiary",856,830,"lootBestiary")
+EquipIcon :=new gIcon("EquipIcon",956,830,"Equip","Equip Hero Gear")
+BankCapBuyerIcon:=new gIcon("d",908,830,"BankCapBuyer","Buy Slime Bank itme when Full")
+buffCycleIcon := new gIcon("BuffCycle",760,830,"BuffCycle","Weave Angels buffs in global slot 1")
+upgradeCycleIcon :=new gIcon("upgradeCycle",808,830,"upgradeCycle","Clicks your upgrades for you")
+lootBestiaryIcon :=new gIcon("LootBestiary",856,830,"lootBestiary","Auto Loots Bestiary every so often")
 
 ;;end of autoexec 
 return

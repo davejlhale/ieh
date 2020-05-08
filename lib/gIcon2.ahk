@@ -38,7 +38,7 @@ return
 
 class gIcon
 { 
-    __new(aImage:="",aX:="",aY:="",aSub:="") {
+    __new(aImage:="",aX:="",aY:="",aSub:="",pTooltipMsg:="Surprise") {
         
         global movingIcon:=false
         this.bMoveIcon := false
@@ -49,7 +49,8 @@ class gIcon
         
         this.movement:= objbindmethod(this,"move")
         this.timer:= objbindmethod(this,"watch")
-      
+        this.addTooltip(pTooltipMsg)
+
         GUI, %aImage%:+HWNDhIcon
         this.ahwnd := hIcon 
         Gui, %aImage%:Margin, 2, 2
@@ -65,7 +66,7 @@ class gIcon
         
         this.start() 
     }
-  
+    
     toggle() { 
         if this.isactive 
             this.turnOff() 
@@ -78,12 +79,12 @@ class gIcon
     focusWindow(){
         global parentID
         window= ahk_id %parentID%
-    
+        
         #WinActivateForce
         if WinExist(window){
             WinActivate, %window%
             WinRestore, %window% 
-        }    
+        } 
         return
     }
     
@@ -96,7 +97,7 @@ class gIcon
     
     turnOn() {
         this.isactive:= 1
-        img:=this.Icon       
+        img:=this.Icon 
         GuiControl,%img%: ,%img%.png, images/on%img%.png
         return
     }
@@ -132,13 +133,17 @@ class gIcon
         }
         
         ;if no icon moving and this one right clicked
-        If this.IsWinUnderMouse(this.ahwnd) && GetKeyState("RButton") && !movingIcon {
-            movingIcon:=true
-            this.bMoveWin := true
-            MouseGetPos, mx, my
-            this.startPointX:=mx
-            this.startPointY:=my 
-        } 
+        If this.IsWinUnderMouse(this.ahwnd) && !movingIcon {
+                this.showTooltip()
+            if GetKeyState("RButton") {
+                
+                movingIcon:=true
+                this.bMoveWin := true
+                MouseGetPos, mx, my
+                this.startPointX:=mx
+                this.startPointY:=my 
+            } 
+        }
         return
     }
     
@@ -158,9 +163,24 @@ class gIcon
         
         this.startPointX:=mx
         this.startPointY:=my 
-   return    
+        return 
     }
-    
+    addTooltip(pMsg){
+        msgbox %pMsg%
+        this.toolTipMsg:=pMsg
+        return
+    }
+    ;;shows hover tooltip
+    showTooltip()
+    {
+        msg := this.toolTipMsg
+        Tooltip %msg%
+        settimer, removeTooltip,-50
+        return
+        removeTooltip:
+        tooltip,
+        return
+    }
     ;use as private
     IsWinUnderMouse(hwnd) { 
         MouseGetPos,,, hWinUnderMouse

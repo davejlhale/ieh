@@ -15,7 +15,7 @@ global gWinTitle:="play incremental epic hero"
 loadClickPoints()
 While findKongGameContainer() { 
     if !startTime 
-        startTime:= A_nows
+        startTime:= A_now
     else if (A_now-startTime > 10) {
         MsgBox,36,IEH Asist , Click the game window to start 
         ifmsgbox No

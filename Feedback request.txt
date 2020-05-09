@@ -1,0 +1,20 @@
+any feedback welcome,
+dtemp room 1
+
+half way through an auto rebirth. have it identifying the hero who loads
+in so we can select the equipment and skill sets to loadout. needs a good code clean and 
+optimising / testing before i add the auto skills into the mix.
+
+Todo
+auto nitro
+auto .4 .8 repeated dungeon crawl toggles
+auto skill sets
+
+auto net makeing + capture
+^auto check alchemy level and raise if needed for tincture or Nets 
+expand auto slime bank so if primary option in config is too expensive default to secondary+
+
+refine equipment sets so can have unlimited setnames
+refine skill sets once implemented to do the same
+
+gui config window 

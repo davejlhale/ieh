@@ -166,7 +166,6 @@ class gIcon
         return 
     }
     addTooltip(pMsg){
-        msgbox %pMsg%
         this.toolTipMsg:=pMsg
         return
     }

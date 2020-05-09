@@ -14,7 +14,7 @@ class GUIMenu
         this.aMenus.insert("warrior",(" [F1] Home , [e] Equip , [s] skills , [r] rebirth" ))
         this.aMenus.insert("wizard",(" [F1] Home , [e] Equip , [s] skills , [r] rebirth" ))
         this.aMenus.insert("general",(" [F1] Home , golem , [F6] Challenge Farmers ,[F8] Just Run , [F9] Chilli " )) 
-        this.aMenus.insert("farmers",("[F1] Home , [7] King Exp Farm , King Farm , Golem Farm , Spider Farm , Fairy Farm "))
+        this.aMenus.insert("farmers",("[F1] Home , [F7] King Exp Farm , King Farm , Golem Farm , Spider Farm , Fairy Farm "))
         return 
     }
     

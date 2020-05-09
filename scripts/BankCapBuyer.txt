@@ -42,7 +42,6 @@ BankCapBuyer:
         }
         else {
             ;call this label on interval -600000 = 1mins
-            msgbox %checkBanksFullDelay% 
             SetTimer, bankpicker, %checkBanksFullDelay%
             bankpicker()
         } 

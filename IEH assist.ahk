@@ -7,13 +7,10 @@ DetectHiddenWindows, On
 CoordMode, Mouse, Client
 CoordMode, Pixel, Client
 
-
 global gWinTitle:="play incremental epic hero"
-
 
 #include configs
 #include general.ini
-
 
 loadClickPoints()
 While findKongGameContainer() { 
@@ -27,17 +24,13 @@ While findKongGameContainer() {
     }
 }
 
-
-
 ;;add menus and gui
 menu := new GUIMenu("home")
 EquipIcon :=new gIcon("EquipIcon",956,830,"Equip","Equip Hero Gear")
 BankCapBuyerIcon:=new gIcon("d",908,830,"BankCapBuyer","Buy Slime Bank item when Full")
 buffCycleIcon := new gIcon("BuffCycle",760,830,"BuffCycle","Weave Angels buffs in global slot 1")
 upgradeCycleIcon :=new gIcon("upgradeCycle",808,830,"upgradeCycle","Clicks your upgrades for you")
-lootBestiaryIcon :=new gIcon("LootBestiary",856,830,"lootBestiary","Auto Loots Bestiary every so often")
-
-
+    lootBestiaryIcon :=new gIcon("LootBestiary",856,830,"lootBestiary","Auto Loots Bestiary every so often")
 
 ;;end of autoexec 
 return
@@ -59,6 +52,7 @@ return
 #include kingFarmer.ahk
 #include spiderFarmer.ahk
 #include fairyFarmer.ahk
+#Include, kingExpFarm.ahk
 
 ;;general hotkeys
 !p::
@@ -118,25 +112,7 @@ return
 
 F7::
 KingExpFarm:
-    MouseGetPos vX,Vy
-    BlockInput, On
-    kfToggle:=!kfToggle
-    if (kfToggle) { 
-        showTip("Challenging Slime KIng")
-        gClick(menu4)
-        gClick(challenge1)
-        gClick(challenge_start)
-        send, {s down}
-    }
-    else{
-        showTip("")
-        send, {s up}
-        gClick(menu4)
-        gClick(challenge1)
-        gClick(challenge_quit)
-    }
-    MouseMove, Vx,Vy
-    BlockInput, Off 
+    kingExpFarm()
 Return
 
 !e::

@@ -1,54 +1,26 @@
-
-/* comment out exapmle before include 
-*
-
-gui1:=new gIcon("u",400,300,"test")
-gui2:=new gIcon("d",450,300,"test2")
-test:
-    msgbox test hotkey subroutine down bottom of source triggered this
-    gui1.toggle()
-    ;gui1.Stop()
-    ;gui1.start()
-return
-test2:
-    msgbox test hotkey subroutine down bottom of source triggered this
-    gui2.toggle()
-    ;gui1.Stop()
-    ;gui1.start()
-return
-
-Escape::
-    ExitApp
-return
-
-return
-
-/*
-*/
-
-;eg. gui1:=new gIcon("u",100,100,"test")
-;to use just #include this file
-;images saved as png. dont supply file extention in constructor paramater
-;then add code line
+; eg. gui1:=new gIcon("u",100,100,"test")
+; to use just #include this file
+; images saved as png. dont supply file extention in constructor paramater
+; then add code line
 ; myIcon := new gIcon("dir/file path",x,y,"label/hotkey")
-;right click + hold allows movement of icon
+; right click + hold allows movement of icon
 ; icons are named with 'on' prefix for when 'click on'subroutine called
-;uses gui.toggle() to force icon change
-;use gui.stop() to end / lock right click moving
+; uses gui.toggle() to force icon change
+; use gui.stop() to end / lock right click moving
 
 class gIcon
 { 
     __new(aImage:="",aX:="",aY:="",aSub:="",pTooltipMsg:="Surprise") {
         
         global movingIcon:=false
-        this.bMoveIcon := false
         this.startPointX:=aX
         this.startPointY:=aY 
         this.isactive:= false
         this.Icon:=aImage
-        
         this.movement:= objbindmethod(this,"move")
         this.timer:= objbindmethod(this,"watch")
+
+        
         this.addTooltip(pTooltipMsg)
 
         GUI, %aImage%:+HWNDhIcon

@@ -1,41 +1,37 @@
 
-                                                                                                                                                                                           
+
 bankpicker()
-{   
+{ 
     global tx,ty
     static currentBank:=0
-    ; msgbox current bank %currentbank%
-  
-    ;switch to get banks scanpoint
-    switch currentBank {
-        
+    global interestIncomeOnly
+    if interestIncomeOnly
+        currentBank:=1
+    
+    switch currentBank { 
         case 0: {
-            ;goldbank 
             gosub changeToWatchGoldBank
             MouseGetPos, bankx,banky
-            ; msgbox got gb coords %bankx%  %banky%
         }
         case 1: {
-            ;sc bank
             gosub changeToWatchSCBank
-             MouseGetPos, bankx,banky
-            ; msgbox got sc coords %bankx%  %banky%
+            MouseGetPos, bankx,banky
         }
     }
     mousemove tx,ty
     BlockInput mousemoveoff
-    ; currentBank tags 0 gold : 1 sc 
+    
     funcreturn := bankread(bankx,banky)
-    ;returned bank read matches last read
+    ; returned bank read matches last read
     if (funcreturn) {
         
         if currentBank {
-           ; DllCall("winmm.dll\PlaySound", AStr, A_WinDir "\Media\" snd ".wav", uint, 0, uint, 0) 
+            ; DllCall("winmm.dll\PlaySound", AStr, A_WinDir "\Media\" snd ".wav", uint, 0, uint, 0) 
             gosub buySCbankItems
         }
         ;swap bank to watch
         currentBank:=!currentBank
-    }   
+    } 
 } 
 
 bankread(x,y) 
@@ -49,20 +45,6 @@ bankread(x,y)
     pixline2:=[]
     pixCount:=0
     
-    ;move to safe read start
-    ; Loop { ;till we hit 1st black
-    ;     PixelGetColor col, x++, y
-    ;     pixCount+=1
-    ;     MouseMove, x,y,20
-        
-    ; } until (col == 0X000000) or (pixCount > 100)
-    ; pixCount:=0
-    ; Loop { ;till we hit first none black
-    ;     PixelGetColor col, x++, y
-    ;     pixCount+=1
-    ; } until (col != 0X000000) or (pixCount > 100)
-    
-    
     ;length to check
     Loop 50 { ;smaller capture width - needle
         vred := (col & 0xFF)
@@ -71,17 +53,12 @@ bankread(x,y)
         col:=[vred,vgreen,vblue]
         pixline.=dist2(col)
         PixelGetColor col, x++, y
-       ;MouseMove, x,y
     } 
-    ; msgbox % instr(lastpixline,pixline)
-    
-    ; msgbox %lastpixline%
     if (instr(lastpixline,pixline)) {
         lastpixline:=pixline
         return true 
     }
-    else
-    {
+    else {
         lastpixline:=pixline
         return false
     }
@@ -98,39 +75,28 @@ dist2(col)
         ret :=mathdist(v,col) 
         st = %stockcolour%
         distances.insert(stockcolour,ret)
-        ;msgbox storing st %stockcolour% %ret% 
     }
-    
     mincolor := ""
     minval := 2**30 
     for key,val in distances 
     {
         if (val < minval) {
-            ; msgbox smaller %key% - v %val% minval := %minval%
             minval := val
             mincolor = %key% 
             markAs = 1
         }
-        Else
-        {
-            ; msgbox larger %key% - v %val% minval := %minval%
+        Else {
             markAs = 0
         }
     }
     string = %string%%markAs%
-    ; msgbox closest color is %mincolor%
     return string 
 }
+
 mathdist(v,vCol) {
     a:= (v["R"]-vCol[1])**2
     b:=(v["G"]-vCol[2])**2
     c:=(v["B"]-vCol[3])**2
     return Sqrt(a +b +c)
 }
-; SetTitleMatchMode, 2
-; WinActivate, Notepad ;
-; sleep 100
-; Send {Enter}%pixline%
-; Send {Enter}%pixline2%{enter}
-
 

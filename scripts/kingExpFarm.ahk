@@ -3,12 +3,11 @@ kingExpFarm()
 {
     
     global menu4, challenge1,challenge_start,challenge_quit
-    critical on
     static kfToggle:= false
-    MouseGetPos vX,Vy
-    BlockInput, On
     global gameX,gameY
     global begin_x, begin_y
+    global kingEXPLoopTimer
+    
     kfToggle:=!kfToggle
     
     x:=round((gameX * menu7.x)+begin_x)
@@ -18,21 +17,33 @@ kingExpFarm()
     if ! ErrorLevel
         return
     
-    if (kfToggle) { 
-        showTip("Challenging Slime KIng")
-        gClick(menu4,2,100)
-        gClick(challenge1,2,100)
-        gClick(challenge_start,2,100)
-        send, {s down}
-    }
-    else{
+    critical on
+    MouseGetPos vX,Vy
+    BlockInput, On
+    
+    if ! kfToggle
+    {
         showTip("")
         send, {s up}
         gClick(menu4)
         gClick(challenge1,2,100)
         gClick(challenge_quit,2,100)
+        SetTimer, kingExpLoop,off
+        return
     }
-    MouseMove, Vx,Vy
-    BlockInput, Off
-    critical off
+    Else{
+        SetTimer, kingExpLoop,%kingEXPLoopTimer%
+        kingExpLoop:
+            MouseGetPos vX,Vy
+            BlockInput, On
+            showTip("Challenging Slime KIng")
+            gClick(menu4,2,100)
+            gClick(challenge1,2,100)
+            gClick(challenge_start,2,100)
+            send, {s down} 
+            MouseMove, Vx,Vy
+            BlockInput, Off
+            critical off
+        return
+    }
 }

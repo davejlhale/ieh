@@ -42,7 +42,6 @@ bankread(x,y)
 {
     static lastpixline:=[]
     colors:={}
-     msgbox %x% %y%
     colors.insert("black" , { R:0, g:0, b:0})
     colors.insert("white" , { R:255, g:255, b:255})
     distances:={}

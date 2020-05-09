@@ -47,7 +47,6 @@ BankCapBuyer:
         else {
             ;call this label on interval -600000 = 1mins
             SetTimer, bankpicker, %checkBanksFullDelay%
-            msgbox wtf
             bankpicker()
         } 
         return

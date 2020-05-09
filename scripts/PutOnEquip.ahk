@@ -27,7 +27,7 @@ PutOnEquip(aEquipmeentSet:="general")
         
         Loop, read, configs/EquipmentSets.ini
         {
-            Loop, parse, A_LoopReadLine, %A_Tab%
+            Loop, parse, A_LoopReadLine, %A_Tab%%A_Space%
             { 
                 if (A_index==1) && (A_loopfield != vEquipmentSet) 
                     passOver:=true

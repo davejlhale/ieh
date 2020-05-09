@@ -1,14 +1,23 @@
 
 kingExpFarm() 
 {
-
+    
     global menu4, challenge1,challenge_start,challenge_quit
     critical on
     static kfToggle:= false
     MouseGetPos vX,Vy
     BlockInput, On
-    
+    global gameX,gameY
+    global begin_x, begin_y
     kfToggle:=!kfToggle
+    
+    x:=round((gameX * menu7.x)+begin_x)
+    y := round((gameY * menu7.y)+begin_y)
+    PixelSearch, , , x, y, x, y, 0x001800 , 5
+    ;;if menu button covers color
+    if ! ErrorLevel
+        return
+    
     if (kfToggle) { 
         showTip("Challenging Slime KIng")
         gClick(menu4,2,100)

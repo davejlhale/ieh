@@ -54,8 +54,8 @@ class gIcon
         
         #WinActivateForce
         if WinExist(window){
-            WinActivate, %window%
-            WinRestore, %window% 
+         ;   WinActivate, %window%
+         ;   WinRestore, %window% 
         } 
         return
     }
@@ -94,7 +94,6 @@ class gIcon
     
     ;use as private
     watch(){
-        CoordMode, Mouse,Screen
         global movingIcon
         ;if this icon moving but rb release
         if this.bMoveWin && !GetKeyState("RButton") { 
@@ -121,7 +120,6 @@ class gIcon
     
     ;use as private
     move(){ 
-        CoordMode, Mouse,Screen
         if !(this.bMoveWin) 
             return
         

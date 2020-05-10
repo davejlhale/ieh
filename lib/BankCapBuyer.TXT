@@ -2,25 +2,30 @@
 
 bankpicker()
 { 
-    global tx,ty
+    global vMouseMemoryX,vMouseMemoryY
     static currentBank:=0
     global interestIncomeOnly
+    global SC_ScanPoint	, GB_ScanPoint
+    global gameX,gameY, begin_x, begin_y
     if interestIncomeOnly
         currentBank:=1
     
     switch currentBank { 
         case 0: {
             gosub changeToWatchGoldBank
-            MouseGetPos, bankx,banky
+            bankx :=round((gameX * GB_ScanPoint.x)+begin_x)
+            banky := round((gameY * GB_ScanPoint.y)+begin_y)
+            ; MouseGetPos, bankx,banky
         }
         case 1: {
             gosub changeToWatchSCBank
-            MouseGetPos, bankx,banky
+            bankx :=round((gameX * SC_ScanPoint.x)+begin_x)
+            banky := round((gameY * SC_ScanPoint.y)+begin_y)
+            ; MouseGetPos, bankx,banky
         }
     }
-    mousemove tx,ty
+    mousemove vMouseMemoryX,vMouseMemoryY
     BlockInput mousemoveoff
-    
     funcreturn := bankread(bankx,banky)
     ; returned bank read matches last read
     if (funcreturn) {

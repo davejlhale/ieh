@@ -4,9 +4,9 @@
 
 buySCbankItems:
     BlockInput mousemove
-    MouseGetPos tx, ty
-    gclick(slimeBankItemToBuy,slimeBankBuyQuantity,100) 
-    mousemove tx,ty
+    MouseGetPos vMouseMemoryX, vMouseMemoryY
+    gclick(slimeBankItemToBuy,slimeBankBuyQuantivMouseMemoryY,100) 
+    mousemove vMouseMemoryX,vMouseMemoryY ,0
     BlockInput mousemoveoff
 return
 
@@ -14,19 +14,19 @@ return
 ;released in bankcapbuyer lib file
 changeToWatchSCBank:
     BlockInput mousemove
-    MouseGetPos tx, ty
+    MouseGetPos vMouseMemoryX, vMouseMemoryY
     gclick(menu1,2,200)
     gclick(sb_GoBack,2,200)
     gclick(slime_bank,2,200)
-    gclick(SC_ScanPoint,,100)
+   ; gclick(SC_ScanPoint,,100)
 return
 
 ;blobk and mouse memory not used as pixel scan needs to mouseget
 ;released in bankcapbuyer lib file
 changeToWatchGoldBank:
     BlockInput mousemove
-    MouseGetPos tx, ty
-    gclick(GB_ScanPoint,2,100)
+    MouseGetPos vMouseMemoryX, vMouseMemoryY
+   ; gclick(GB_ScanPoint,2,100)
 return
 
 BankCapBuyer:

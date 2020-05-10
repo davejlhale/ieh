@@ -28,7 +28,7 @@ spiderFarmer(pDelay:=60000)
     spiderLoop:
         Critical on
         BlockInput mousemove
-        MouseGetPos tx, ty
+        MouseGetPos vMouseMemoryX, vMouseMemoryY
         gClick(menu5,2,100)
         
         gclick(Alchemy_check_Box,2,100)
@@ -46,7 +46,7 @@ spiderFarmer(pDelay:=60000)
         gclick(challenge_start,2,100)
         
         
-        mousemove tx,ty
+        mousemove vMouseMemoryX, vMouseMemoryY,0
         BlockInput mousemoveoff
         Critical off
     return

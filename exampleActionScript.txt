@@ -58,7 +58,7 @@ example:
 exampleAction:
     ;remember where the users mouse is and prevent them moving mouse while click actions preformed
     BlockInput mousemove
-    MouseGetPos tx, ty
+    MouseGetPos vMouseMemoryX, vMouseMemoryY
     
     /* 
     ************
@@ -91,6 +91,6 @@ exampleAction:
     
     
     ;move back to where the user was and turn their mouse back on
-    mousemove tx,ty
+    mousemove vMouseMemoryX,vMouseMemoryY
     BlockInput mousemoveoff
 return

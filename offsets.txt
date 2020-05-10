@@ -248,3 +248,6 @@ EquipClassC	0.325918	0.341246
 EquipClassB	0.355951	0.341246
 SC_ScanPoint	0.037531	0.462736
 GB_ScanPoint	0.055046	0.209121
+warriorColorScanLocation	0.112747	0.160268
+angelColorScanLocation	0.110092	0.146830
+wizardColorScanLocation	0.074229	0.160067

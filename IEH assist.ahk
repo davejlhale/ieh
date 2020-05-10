@@ -8,21 +8,21 @@ CoordMode, Mouse, Client
 CoordMode, Pixel, Client
 
 global gWinTitle:="play incremental epic hero"
+global startTime:= A_TickCount
 
 #include configs
 #include general.ini
 
 loadClickPoints()
 While findKongGameContainer() { 
-    if !startTime 
-        startTime:= A_now
-    else if (A_now-startTime > 10) {
+    if (A_TickCount-startTime > 10000) {
         MsgBox,36,IEH Asist , Click the game window to start 
         ifmsgbox No
         ExitApp
-        startTime:=A_now
+        startTime:=A_TickCount
     }
 }
+rebirthWatch()
 
 ;;add menus and gui
 menu := new GUIMenu("home")
@@ -30,7 +30,7 @@ EquipIcon :=new gIcon("EquipIcon",956,830,"Equip","Equip Hero Gear")
 BankCapBuyerIcon:=new gIcon("d",908,830,"BankCapBuyer","Buy Slime Bank item when Full")
 buffCycleIcon := new gIcon("BuffCycle",760,830,"BuffCycle","Weave Angels buffs in global slot 1")
 upgradeCycleIcon :=new gIcon("upgradeCycle",808,830,"upgradeCycle","Clicks your upgrades for you")
-lootBestiaryIcon :=new gIcon("LootBestiary",856,830,"lootBestiary","Auto Loots Bestiary every so often")
+    lootBestiaryIcon :=new gIcon("LootBestiary",856,830,"lootBestiary","Auto Loots Bestiary every so often")
 
 ;;end of autoexec 
 return
@@ -115,8 +115,16 @@ KingExpFarm:
     kingExpFarm()
 Return
 
+;; misc hero hotkey
+
+ReturnFromRebirth:
+    gosub Equip
+    ;rebirth()
+return
 !e::
-    Equip: ;supplying a named equipment set here will put that on over default war/angel/wiz/general setups
+Equip:
+
+    ;supplying a named equipment set here will put that on over default war/angel/wiz/general setups
     PutOnEquip()
 return
 
@@ -133,11 +141,12 @@ JustRun:
     } 
 return
 
-F9::
 ScavangeChiili:
+F9::
 Chilli:
     scToggle:=!scToggle
-    if scToggle{
+    if scToggle 
+    {
         settimer, scavangetimerloop,10
         ShowTip("My Precious! if only someone would help me look !!")
         scavangetimerloop:
@@ -150,7 +159,8 @@ Chilli:
             Send, {w 2}
         return
     }
-    else {
+    else 
+    {
         ShowTip("")
         settimer, scavangetimerloop, delete 
     }

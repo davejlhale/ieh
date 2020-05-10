@@ -41,7 +41,7 @@ kingExpFarm()
             gClick(challenge1,2,100)
             gClick(challenge_start,2,100)
             send, {s down} 
-            MouseMove, Vx,Vy
+            MouseMove, Vx,Vy,0
             BlockInput, Off
             critical off
         return

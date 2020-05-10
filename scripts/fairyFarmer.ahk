@@ -31,7 +31,7 @@ fairyFarmer(pDelay:=60000)
     fairyLoop:
         Critical on
         BlockInput mousemove
-        MouseGetPos tx, ty
+        MouseGetPos vMouseMemoryX,vMouseMemoryY
         gClick(menu5,2,100)
         gclick(Alchemy_check_Box,2,100)
         gclick(alchemy_10L,2,50)
@@ -40,7 +40,7 @@ fairyFarmer(pDelay:=60000)
         gclick(menu4,2,330)
         gclick(challenge4,3,300)
         gclick(challenge_start,2,100)
-        mousemove tx,ty
+        mousemove vMouseMemory,vMouseMemoryY,0
         BlockInput mousemoveoff
         Critical off
     return

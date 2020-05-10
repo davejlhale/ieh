@@ -13,7 +13,7 @@ upgradeCycle:
         } 
         timedupgradeCycle:
             BlockInput mousemove
-            MouseGetPos tx, ty
+            MouseGetPos vMouseMemoryX, vMouseMemoryY
             gClick(menu1,2,200)
             gClick(sb_GoBack,2,200)
             gClick(upgrade_upgradeMax,2)
@@ -38,7 +38,7 @@ upgradeCycle:
             gClick(upgrade_upgrade1,2)
             gClick(upgrade_mystery_box)
             
-            mousemove tx,ty
+            mousemove vMouseMemoryX, vMouseMemoryY,0
             BlockInput mousemoveoff
         return
     }

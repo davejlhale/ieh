@@ -15,7 +15,7 @@ BuffCycle:
 
 timedBuffCycle:
 	BlockInput mousemove
-	MouseGetPos tx, ty
+	MouseGetPos vMouseMemoryX, vMouseMemoryY
 	gClick(menu2,2,200)
 	gClick(angel,2,220)
 	gClick(st_slot_3,2,20)
@@ -34,7 +34,7 @@ timedBuffCycle:
 	gClick(skillbar_global_top_1,2)
 	gClick(st_slot_10,2,20)
 	gClick(skillbar_global_top_1,2)
-	 mousemove tx,ty
+	 mousemove vMouseMemoryX,vMouseMemoryY,0
 	 BlockInput mousemoveoff
 	return
 }

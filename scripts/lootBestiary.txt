@@ -15,14 +15,14 @@ lootBestiary:
         } 
         timedlootBestiary:
             BlockInput mousemove
-            MouseGetPos tx, ty
+            MouseGetPos vMouseMemoryX , vMouseMemoryY
             
             gClick(menu3,2,200)
             gclick(explore_bestiary,2,100)
             gclick(bestiary_lootAll,2,100)
             gclick(bestiary_close,2,200)
             
-            mousemove tx,ty
+            mousemove vMouseMemoryX, vMouseMemoryY,0
             BlockInput mousemoveoff
         return
     }

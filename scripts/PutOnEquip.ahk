@@ -7,7 +7,8 @@ PutOnEquip(aEquipmeentSet:="general")
     static vputOnToggle:=False
     global gameX,gameY
     global begin_x, begin_y
-    
+    Critical, on
+
     EquipIcon.Toggle()
     if !(EquipIcon.isactive) {
         SetTimer, putOnEquipAction, off
@@ -17,15 +18,11 @@ PutOnEquip(aEquipmeentSet:="general")
     ;call this label on interval -600000 = 1mins
     SetTimer, putOnEquipAction, 30000
     vEquipmentSet:= checkEquipConfig(aEquipmeentSet)
-    ToolTip, vEquipmentSet - %vEquipmentSet% 
-    
+   
     putOnEquipAction:
-        Critical, on
-        MouseGetPos tx, ty
-        BlockInput mousemove
         
-        ;not there color
-        ;menuColorCheck:= 0x001800
+        MouseGetPos vMouseMemoryX, vMouseMemoryY
+        BlockInput mousemove
         
         x:=round((gameX * menu7.x)+begin_x)
         y := round((gameY * menu7.y)+begin_y)
@@ -54,11 +51,12 @@ PutOnEquip(aEquipmeentSet:="general")
             }
             passover:=False
             
-            mousemove tx,ty
+            mousemove vMouseMemoryX,vMouseMemoryY,0
             BlockInput mousemoveoff
-            critical off
+           
             
         } 
+         critical off
     return
 }
 
@@ -82,7 +80,7 @@ PutOnEquip(aEquipmeentSet:="general")
 
 ; putOnEquipAction:
 ; Critical, on
-; MouseGetPos tx, ty
+; MouseGetPos vMouseMemoryX, vMouseMemoryY
 ; BlockInput mousemove
 ; gClick(menu5,2,100)
 ; gClick(craft_check_Box2,100)
@@ -121,7 +119,7 @@ PutOnEquip(aEquipmeentSet:="general")
 ; }
 
 ; }
-; mousemove tx,ty
+; mousemove vMouseMemoryX,ty
 ; BlockInput mousemoveoff
 ; critical off 
 ; } 

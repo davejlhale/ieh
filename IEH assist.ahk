@@ -21,7 +21,8 @@ While findKongGameContainer() {
         vStartTime:=A_TickCount
     }
 }
-rebirthWatch()
+;not fully tested / implemented
+;rebirthWatch()
 
 ;;add menus and gui
 menu := new GUIMenu("home")

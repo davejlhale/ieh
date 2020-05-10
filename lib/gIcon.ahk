@@ -11,18 +11,19 @@
 class gIcon
 { 
     __new(aImage:="",aX:="",aY:="",aSub:="",pTooltipMsg:="Surprise") {
-        
+        CoordMode, Mouse,Screen
         global movingIcon:=false
         this.startPointX:=aX
         this.startPointY:=aY 
         this.isactive:= false
         this.Icon:=aImage
+        
         this.movement:= objbindmethod(this,"move")
         this.timer:= objbindmethod(this,"watch")
-
+        
         
         this.addTooltip(pTooltipMsg)
-
+        
         GUI, %aImage%:+HWNDhIcon
         this.ahwnd := hIcon 
         Gui, %aImage%:Margin, 2, 2
@@ -44,21 +45,10 @@ class gIcon
             this.turnOff() 
         Else
             this.turnOn() 
-        this.focusWindow()
         return
     }
     
-    focusWindow(){
-        global parentID
-        window= ahk_id %parentID%
-        
-        #WinActivateForce
-        if WinExist(window){
-         ;   WinActivate, %window%
-         ;   WinRestore, %window% 
-        } 
-        return
-    }
+    
     
     turnOff() {
         this.isactive:= 0
@@ -99,13 +89,12 @@ class gIcon
         if this.bMoveWin && !GetKeyState("RButton") { 
             movingIcon:=false
             this.bMoveWin := false 
-            this.focusWindow()
             return
         }
         
         ;if no icon moving and this one right clicked
         If this.IsWinUnderMouse(this.ahwnd) && !movingIcon {
-                this.showTooltip()
+            this.showTooltip()
             if GetKeyState("RButton") {
                 
                 movingIcon:=true
@@ -147,7 +136,7 @@ class gIcon
         settimer, removeTooltip,-50
         return
         removeTooltip:
-        tooltip,
+            tooltip,
         return
     }
     ;use as private

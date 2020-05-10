@@ -1,26 +1,27 @@
 
 
-bankpicker()
+
+BankBalanceScanner()
 { 
     global vMouseMemoryX,vMouseMemoryY
     static currentBank:=0
     global interestIncomeOnly
     global SC_ScanPoint	, GB_ScanPoint
-    global gameX,gameY, begin_x, begin_y
+    global vGameContainerWidth,vGameContainerHeight, begin_x, begin_y
     if interestIncomeOnly
         currentBank:=1
     
     switch currentBank { 
         case 0: {
             gosub changeToWatchGoldBank
-            bankx :=round((gameX * GB_ScanPoint.x)+begin_x)
-            banky := round((gameY * GB_ScanPoint.y)+begin_y)
+            bankx :=round((vGameContainerWidth * GB_ScanPoint.x)+begin_x)
+            banky := round((vGameContainerHeight * GB_ScanPoint.y)+begin_y)
             ; MouseGetPos, bankx,banky
         }
         case 1: {
             gosub changeToWatchSCBank
-            bankx :=round((gameX * SC_ScanPoint.x)+begin_x)
-            banky := round((gameY * SC_ScanPoint.y)+begin_y)
+            bankx :=round((vGameContainerWidth * SC_ScanPoint.x)+begin_x)
+            banky := round((vGameContainerHeight * SC_ScanPoint.y)+begin_y)
             ; MouseGetPos, bankx,banky
         }
     }
@@ -41,6 +42,7 @@ bankpicker()
 
 bankread(x,y) 
 {
+    global vHwnd
     static lastpixline:=[]
     colors:={}
     colors.insert("black" , { R:0, g:0, b:0})
@@ -49,6 +51,20 @@ bankread(x,y)
     pixline:=[]
     pixline2:=[]
     pixCount:=0
+   
+        
+        if WinExist( vWinTitle) {
+            #WinActivateForce
+            WinActivate,  %vWinTitle%
+           ; WinRestore,   %vWinTitle%
+            sleep 100
+        }
+        
+        
+        ;CoordMode, Pixel,client
+        ;coordmode mouse, client
+    
+    
     
     ;length to check
     Loop 50 { ;smaller capture width - needle
@@ -58,15 +74,17 @@ bankread(x,y)
         col:=[vred,vgreen,vblue]
         pixline.=dist2(col)
         PixelGetColor col, x++, y
+        tooltip %col%
+        ;mousemove x,y
     } 
     if (instr(lastpixline,pixline)) {
         lastpixline:=pixline
-        return true 
-    }
-    else {
-        lastpixline:=pixline
-        return false
-    }
+    return true 
+}
+else {
+    lastpixline:=pixline
+    return false
+}
 }
 
 dist2(col)
@@ -103,5 +121,6 @@ mathdist(v,vCol) {
     b:=(v["G"]-vCol[2])**2
     c:=(v["B"]-vCol[3])**2
     return Sqrt(a +b +c)
+    return
 }
 

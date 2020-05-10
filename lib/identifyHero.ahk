@@ -1,7 +1,6 @@
 identifyHero()
-{
-    CoordMode, Mouse, Client 
-    global gWinTitle
+{ 
+    global vWinTitle
     global warriorColorScanLocation
     global angelColorScanLocation
     global wizardColorScanLocation

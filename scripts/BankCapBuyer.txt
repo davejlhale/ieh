@@ -3,30 +3,28 @@
 */
 
 buySCbankItems:
-    BlockInput mousemove
-    MouseGetPos vMouseMemoryX, vMouseMemoryY
-    gclick(slimeBankItemToBuy,slimeBankBuyQuantivMouseMemoryY,100) 
-    mousemove vMouseMemoryX,vMouseMemoryY ,0
-    BlockInput mousemoveoff
+    MovementBlock()
+    vMsg := "buying" . %slimeBankItemToBuy%
+    ShowTip(vMsg)
+    ;traceLog.write("File:BankCapBuyer fun:buySCbankItems  item " slimeBankItemToBuy  "quantity "slimeBankBuyQuantity )
+    settimer,forceOff,-2500
+    gclick(slimeBankItemToBuy,slimeBankBuyQuantity,100) 
+    UnblockMovement()
 return
 
 ;blobk and mouse memory not used as pixel scan needs to mouseget
 ;released in bankcapbuyer lib file
 changeToWatchSCBank:
-    BlockInput mousemove
-    MouseGetPos vMouseMemoryX, vMouseMemoryY
+    MovementBlock()
     gclick(menu1,2,200)
     gclick(sb_GoBack,2,200)
     gclick(slime_bank,2,200)
-   ; gclick(SC_ScanPoint,,100)
+    UnblockMovement()
 return
 
 ;blobk and mouse memory not used as pixel scan needs to mouseget
 ;released in bankcapbuyer lib file
 changeToWatchGoldBank:
-    BlockInput mousemove
-    MouseGetPos vMouseMemoryX, vMouseMemoryY
-   ; gclick(GB_ScanPoint,2,100)
 return
 
 BankCapBuyer:
@@ -34,11 +32,11 @@ BankCapBuyer:
         Critical on
         BankCapBuyerIcon.toggle()
         if !(BankCapBuyerIcon.isactive) {
-            SetTimer, bankpicker, off
+            SetTimer, BankBalanceScanner, off
         }
         else {
-            SetTimer, bankpicker, %checkBanksFullDelay%
-            bankpicker()
+            SetTimer, BankBalanceScanner, %checkBanksFullDelay%
+            BankBalanceScanner()
         } 
         return
     }

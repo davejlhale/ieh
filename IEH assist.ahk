@@ -4,22 +4,21 @@ global menu1,menu2,menu3,menu4,menu5,menu6,menu7,menu8,explore,explore_map1,expl
 SetBatchLines, -1
 SetTitleMatchMode, 2
 DetectHiddenWindows, On
-CoordMode, Mouse, Client
-CoordMode, Pixel, Client
-
-global gWinTitle:="play incremental epic hero"
-global startTime:= A_TickCount
-
+coordMode, Mouse, client
+coordMode, Pixel, Client
+global vWinTitle:="Incremental Epic Hero"
+global vStartTime:= A_TickCount
+ FileOpen("logs\traceLog.txt", "w `n")
 #include configs
 #include general.ini
 
 loadClickPoints()
 While findKongGameContainer() { 
-    if (A_TickCount-startTime > 10000) {
+    if (A_TickCount-vStartTime > 10000) {
         MsgBox,36,IEH Asist , Click the game window to start 
         ifmsgbox No
         ExitApp
-        startTime:=A_TickCount
+        vStartTime:=A_TickCount
     }
 }
 rebirthWatch()
@@ -30,17 +29,16 @@ EquipIcon :=new gIcon("EquipIcon",956,830,"Equip","Equip Hero Gear")
 BankCapBuyerIcon:=new gIcon("d",908,830,"BankCapBuyer","Buy Slime Bank item when Full")
 buffCycleIcon := new gIcon("BuffCycle",760,830,"BuffCycle","Weave Angels buffs in global slot 1")
 upgradeCycleIcon :=new gIcon("upgradeCycle",808,830,"upgradeCycle","Clicks your upgrades for you")
-    lootBestiaryIcon :=new gIcon("LootBestiary",856,830,"lootBestiary","Auto Loots Bestiary every so often")
+lootBestiaryIcon :=new gIcon("LootBestiary",856,830,"lootBestiary","Auto Loots Bestiary every so often")
 
 ;;end of autoexec 
 return
 
 ;;KEEP INCLUDES BELOW autoexec
-
 #include ..\lib
 #include GUIMenu.ahk
 #Include gIcon.ahk
-#include bankCapBuyer.txt
+#include BankBalanceScanner.ahk
 
 #include ..\scripts
 #include lootBestiary.txt
@@ -52,7 +50,8 @@ return
 #include kingFarmer.ahk
 #include spiderFarmer.ahk
 #include fairyFarmer.ahk
-#Include, kingExpFarm.ahk
+#Include kingExpFarm.ahk
+#include ChilliScavanger.ahk
 
 ;;general hotkeys
 !p::
@@ -122,8 +121,7 @@ ReturnFromRebirth:
     ;rebirth()
 return
 !e::
-Equip:
-
+Equip: 
     ;supplying a named equipment set here will put that on over default war/angel/wiz/general setups
     PutOnEquip()
 return
@@ -144,53 +142,27 @@ return
 ScavangeChiili:
 F9::
 Chilli:
-    scToggle:=!scToggle
-    if scToggle 
-    {
-        settimer, scavangetimerloop,10
-        ShowTip("My Precious! if only someone would help me look !!")
-        scavangetimerloop:
-            Send, {w }
-            Send, {d 1}{w 2} 
-            Send, {d 1}{w 2} 
-            Send, {w 2}
-            Send, {d 1}{w 2} 
-            Send, {d 1}{w 2} 
-            Send, {w 2}
-        return
-    }
-    else 
-    {
-        ShowTip("")
-        settimer, scavangetimerloop, delete 
-    }
-    return
+    ChilliScavanger()
+return
+
+;;dev hotkeys
+!F1::
+findGameWindow:
+    findKongGameContainer()
+    showBox(begin_x, begin_y, end_x, end_y) 
+return
+
+!F2::
+    showGameWindow: 
+    showBox(begin_x, begin_y, end_x, end_y) 
+return
+
+ScreenInfo:
+    showScreenInfo()
     
-    ;;dev hotkeys
-    !F1::
-    findGameWindow:
-        findKongGameContainer()
-        showBox(begin_x, begin_y, end_x, end_y) 
-    return
-    
-    !F2::
-        showGameWindow: 
-        showBox(begin_x, begin_y, end_x, end_y) 
-    return
-    
-    ScreenInfo:
-        showScreenInfo()
-    return
-    
-    SetClickPoints:
-        setClickPoints()
-    return
-    
-    
-    
-    
-    
-    
-    
-    
-    
+return
+
+SetClickPoints:
+    setClickPoints()
+return
+

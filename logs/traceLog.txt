@@ -1,0 +1,32 @@
+gclick
+click menu1 x:179 y:1018
+click menu1 x:179 y:1018
+gclick
+click sb_GoBack x:556 y:423
+click sb_GoBack x:556 y:423
+gclick
+click slime_bank x:432 y:963
+click slime_bank x:432 y:963
+start lootBestiary
+gclick
+click menu3 x:436 y:1018
+click menu3 x:436 y:1018
+gclick
+click explore_bestiary x:533 y:428
+click explore_bestiary x:533 y:428
+gclick
+click bestiary_lootAll x:363 y:288
+click bestiary_lootAll x:363 y:288
+gclick
+click bestiary_close x:1135 y:291
+click bestiary_close x:1135 y:291
+end ok
+gclick
+click menu1 x:179 y:1018
+click menu1 x:179 y:1018
+gclick
+click sb_GoBack x:556 y:423
+click sb_GoBack x:556 y:423
+gclick
+click slime_bank x:432 y:963
+click slime_bank x:432 y:963

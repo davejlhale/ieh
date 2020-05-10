@@ -11,6 +11,6 @@ pause(){
         ShowTip("")
     
     Pause ,, 1
-    BlockInput, mousemoveoff
+   ; BlockInput, mousemoveoff
 return
 }

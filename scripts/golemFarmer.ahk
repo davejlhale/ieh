@@ -7,7 +7,7 @@ golemFarmer(pDelay:=60000)
     global menu5,menu4
     golemRepeat := pDelay
     static golemToggle:=false
-    global gameX,gameY
+    global vGameContainerWidth,vGameContainerHeight
     global begin_x, begin_y
     
     golemToggle:=!golemToggle
@@ -16,8 +16,8 @@ golemFarmer(pDelay:=60000)
         setTimer, golemLoop,Off
         return
     }
-    x:=round((gameX * menu7.x)+begin_x)
-    y := round((gameY * menu7.y)+begin_y)
+    x:=round((vGameContainerWidth * menu7.x)+begin_x)
+    y := round((vGameContainerHeight * menu7.y)+begin_y)
     PixelSearch, , , x, y, x, y, 0x001800 , 5
     ;;if menu button covers color
     if ! ErrorLevel
@@ -27,8 +27,7 @@ golemFarmer(pDelay:=60000)
     showTip("Golem farming")
     golemLoop:
         Critical on
-        BlockInput mousemove
-        MouseGetPos vMouseMemoryX, vMouseMemoryY
+        MovementBlock()
         gClick(menu5,2,100)
         
         gclick(Alchemy_check_Box,2,100)
@@ -44,10 +43,8 @@ golemFarmer(pDelay:=60000)
         gclick(challenge2,3,300)
         
         gclick(challenge_start,2,100)
-        
-        
-        mousemove vMouseMemoryX, vMouseMemoryY,0
-        BlockInput mousemoveoff
+        UnblockMovement()
+  
         Critical off
     return
 }

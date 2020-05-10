@@ -57,9 +57,7 @@ example:
 ;action label
 exampleAction:
     ;remember where the users mouse is and prevent them moving mouse while click actions preformed
-    BlockInput mousemove
-    MouseGetPos vMouseMemoryX, vMouseMemoryY
-    
+   
     /* 
     ************
     ************
@@ -77,7 +75,7 @@ exampleAction:
     
     ;your click actions sequence
     ;any other program logic can be added eg. gosub / adding new hotkeys / function calls etc
-    
+    MovementBlock()
     gclick(menu1,2,100)
     gclick(sb_GoBack,2,50)
     gclick(slime_bank,2,50)
@@ -90,7 +88,4 @@ exampleAction:
     gClick(menu4,1,1000)
     
     
-    ;move back to where the user was and turn their mouse back on
-    mousemove vMouseMemoryX,vMouseMemoryY
-    BlockInput mousemoveoff
 return

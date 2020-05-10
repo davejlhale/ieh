@@ -4,14 +4,14 @@ kingExpFarm()
     
     global menu4, challenge1,challenge_start,challenge_quit
     static kfToggle:= false
-    global gameX,gameY
+    global vGameContainerWidth,vGameContainerHeight
     global begin_x, begin_y
     global kingEXPLoopTimer
     
     kfToggle:=!kfToggle
     
-    x:=round((gameX * menu7.x)+begin_x)
-    y := round((gameY * menu7.y)+begin_y)
+    x:=round((vGameContainerWidth * menu7.x)+begin_x)
+    y := round((vGameContainerHeight * menu7.y)+begin_y)
     PixelSearch, , , x, y, x, y, 0x001800 , 5
     ;;if menu button covers color
     if ! ErrorLevel
@@ -19,30 +19,30 @@ kingExpFarm()
     
     critical on
     MouseGetPos vX,Vy
-    BlockInput, On
+    ; BlockInput, On
     
     if ! kfToggle
     {
         showTip("")
         send, {s up}
+        MovementBlock()
         gClick(menu4)
         gClick(challenge1,2,100)
         gClick(challenge_quit,2,100)
         SetTimer, kingExpLoop,off
+        UnblockMovement()
         return
     }
     Else{
         SetTimer, kingExpLoop,%kingEXPLoopTimer%
         kingExpLoop:
-            MouseGetPos vX,Vy
-            BlockInput, On
+            MovementBlock()
             showTip("Challenging Slime KIng")
             gClick(menu4,2,100)
             gClick(challenge1,2,100)
             gClick(challenge_start,2,100)
             send, {s down} 
-            MouseMove, Vx,Vy,0
-            BlockInput, Off
+            UnblockMovement()
             critical off
         return
     }

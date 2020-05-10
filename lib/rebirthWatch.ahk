@@ -8,13 +8,14 @@ rebirthWatch()
     global vRebirthed:=true
     global rHero
     global vFoundHero
-    global startTime
+    global vStartTime
+    global vWinTitle
     
     settimer, reBirthWatch, 120000
     
     reBirthWatch:
         WinGetTitle, Title, A
-        if ! instr(Title,gWinTitle,false){
+        if ! instr(Title,vWinTitle,false){
             lostFocus:=true
             return
         }
@@ -35,8 +36,8 @@ rebirthWatch()
                 settimer forceOff,-5000 ;label in ShowTip 
             } else if vRebirthed { ;check rebirthTime
                 
-                if (A_TickCount-startTime < 900000) { ;;15mins life before potential rebirth to same hero
-                    startTime:=A_TickCount
+                if (A_TickCount-vStartTime < 900000) { ;;15mins life before potential rebirth to same hero
+                    vStartTime:=A_TickCount
                     vRebirthed:=false
                 } else {
                     showtip("Hey where did you go!")

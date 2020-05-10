@@ -3,7 +3,7 @@ setClickPoints(){
     Critical on
     
     global begin_x, begin_y
-    global gameX, gameY
+    global vGameContainerWidth, vGameContainerHeight
     global tt_msg
     checkPoints:=[]
     ; checkPoints.push( "menu1","menu2","menu3","menu4","menu5","menu6","menu7","menu8")
@@ -58,8 +58,8 @@ setClickPoints(){
         MouseGetPos, xpos, ypos
         clickXabs:=Abs(begin_x-xpos)
         clickYabs:=Abs(begin_y-ypos)
-        xOffsetRation:=clickXabs/gameX
-        yOffsetRation:=clickYabs/gameY
+        xOffsetRation:=clickXabs/vGameContainerWidth
+        yOffsetRation:=clickYabs/vGameContainerHeight
         
         SetTitleMatchMode, 2
         WinActivate, Notepad ;

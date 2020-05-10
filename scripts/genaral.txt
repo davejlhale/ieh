@@ -1,40 +1,38 @@
 
 BuffCycle:
-{
+    {
         Critical on
-
-	buffCycleIcon.toggle()
-	if !(buffCycleIcon.isactive) {
-        SetTimer, timedBuffCycle, off
-        return
+        
+        buffCycleIcon.toggle()
+        if !(buffCycleIcon.isactive) {
+            SetTimer, timedBuffCycle, off
+            return
+        }
+        else {
+            ;call this label on interval
+            SetTimer, timedBuffCycle, 27000
+        } 
+        
+        timedBuffCycle:
+            MovementBlock()
+            gClick(menu2,2,100)
+            gClick(angel,2,220)
+            gClick(st_slot_3,2,20)
+            gClick(skillbar_global_top_1,2)
+            gClick(st_slot_4,2,20)
+            gClick(skillbar_global_top_1,2)
+            gClick(st_slot_5,2,20)
+            gClick(skillbar_global_top_1,2)
+            gClick(st_slot_6,2,20)
+            gClick(skillbar_global_top_1,2)
+            gClick(st_slot_7,2,20)
+            gClick(skillbar_global_top_1,2)
+            gClick(st_slot_8,2,20)
+            gClick(skillbar_global_top_1,2)
+            gClick(st_slot_9,2,20)
+            gClick(skillbar_global_top_1,2)
+            gClick(st_slot_10,2,20)
+            gClick(skillbar_global_top_1,2)
+            UnblockMovement()
+        return	
     }
-    else {
-        ;call this label on interval
-        SetTimer, timedBuffCycle, 27000
-    } 
-
-timedBuffCycle:
-	BlockInput mousemove
-	MouseGetPos vMouseMemoryX, vMouseMemoryY
-	gClick(menu2,2,200)
-	gClick(angel,2,220)
-	gClick(st_slot_3,2,20)
-	gClick(skillbar_global_top_1,2)
-	gClick(st_slot_4,2,20)
-	gClick(skillbar_global_top_1,2)
-	gClick(st_slot_5,2,20)
-	gClick(skillbar_global_top_1,2)
-	gClick(st_slot_6,2,20)
-	gClick(skillbar_global_top_1,2)
-	gClick(st_slot_7,2,20)
-	gClick(skillbar_global_top_1,2)
-	gClick(st_slot_8,2,20)
-	gClick(skillbar_global_top_1,2)
-	gClick(st_slot_9,2,20)
-	gClick(skillbar_global_top_1,2)
-	gClick(st_slot_10,2,20)
-	gClick(skillbar_global_top_1,2)
-	 mousemove vMouseMemoryX,vMouseMemoryY,0
-	 BlockInput mousemoveoff
-	return
-}

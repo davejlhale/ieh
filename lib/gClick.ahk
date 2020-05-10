@@ -6,7 +6,8 @@ gClick( aClickPoint,aClickCount:=1,aDelay:=20) {
     global vHwnd
     global vGameContainerWidth,vGameContainerHeight
     global begin_x, begin_y
- 
+    global vMouseBlocked
+    
     TraceLog("gclick")
     if ! isObject(aClickPoint) {
         aClickPoint :=%aClickPoint%.clone()
@@ -19,18 +20,23 @@ gClick( aClickPoint,aClickCount:=1,aDelay:=20) {
     
     gameClickX :=round((vGameContainerWidth * aClickPoint.x)+begin_x)
     gameClickY := round((vGameContainerHeight * aClickPoint.y)+begin_y)
-    
-    MovementBlock()
-    
     loop %aClickCount%
-    { 
+    {
         TraceLog("click " . aClickpoint.name . " x:" . gameClickX . " y:" . gameClickY )
-        PostMessage, 0x200, 0, gameClickX&0xFFFF | gameClickY<<16,, ahk_id %vHwnd% ; WM_MOUSEMOVE
-        sleep %aDelay%
-        PostMessage, 0x201, 0, gameClickX&0xFFFF | gameClickY<<16,, ahk_id %vHwnd% ; WM_LBUTTONDOWN 
-        sleep 20
-        PostMessage, 0x202, 0, gameClickX&0xFFFF | gameClickY<<16,, ahk_id %vHwnd% ; WM_LBUTTONUP 
-        sleep 20
+        MovementBlock()
+        if (vMouseBlocked)
+        {
+            Send {click, %gameClickX%, %gameClickY%}
+            sleep %aDelay%
+            ShowTip("Mouse Movement Suspended")
+
+        } else {
+            PostMessage, 0x200, 0, gameClickX&0xFFFF | gameClickY<<16,, ahk_id %vHwnd% ; WM_MOUSEMOVE
+            PostMessage, 0x201, 0, gameClickX&0xFFFF | gameClickY<<16,, ahk_id %vHwnd% ; WM_LBUTTONDOWN 
+            PostMessage, 0x202, 0, gameClickX&0xFFFF | gameClickY<<16,, ahk_id %vHwnd% ; WM_LBUTTONUP 
+            sleep %aDelay% 
+
+        }
     }
     return
 } 

@@ -1,17 +1,25 @@
 
 upgradeCycle:
     {
+        
+        global initialUpdateDelay
+        
         Critical on
         upgradeCycleIcon.toggle()
         if !(upgradeCycleIcon.isactive) {
             SetTimer, timedupgradeCycle, off
+            repeatTime:=initialUpdateDelay
             return
         }
         else {
+            if (!repeatTime)
+                repeatTime := initialUpdateDelay
             ;call this label on interval
-            SetTimer, timedupgradeCycle, 10000
+            SetTimer, timedupgradeCycle, %repeatTime%
         } 
         timedupgradeCycle:
+        repeatTime+=%UpdateDelaySlowdownRate%
+        SetTimer, timedupgradeCycle, %repeatTime%
             MovementBlock()
             gClick(menu1,2,200)
             gClick(sb_GoBack,2,200)

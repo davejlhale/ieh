@@ -10,7 +10,7 @@ BuffCycle:
         }
         else {
             ;call this label on interval
-            SetTimer, timedBuffCycle, 27000
+            SetTimer, timedBuffCycle, %AngelWeaveInterval%
         } 
         
         timedBuffCycle:

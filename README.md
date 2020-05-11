@@ -1,39 +1,32 @@
 
-to use, download and install ahk https://www.autohotkey.com/
-then download this project https://github.com/davejlhale/ieh.git
-start "ieh assist.ahk" by double click the file icon
-should work out the box and starts as soon as you click your game window
+to use, download and install ahk https://www.autohotkey.com/	
+download and extract this project  https://github.com/davejlhale/ieh.git	
+start "ieh assist.ahk" by double clicking the file icon		
+should work out the box 		
 
-currently
-
-one time equip of configuarable equipment set (4 via file config)
-auto farm any one the first 4 challanges 
-extra exp only farm of king
-auto bestiary loot
-auto click upgrades
-auto weave angel buffs in global slot 1
-auto watch sc bank and buy reputation when full (can configure to buy your coice via 1 word change in file)
-simple chilli script - runs to location repeatedly - best with favourite zone or dungeon run 
-
-basic example script included to make your own
+Currently 
+(@ can run in background * currently needs focus)		
+	@ one time equip of equipment set (4 configurable)		
+	@ auto bestiary loot		
+	@ auto click upgrades		
+	@ auto weave angel buffs in global slot 1		
+	* auto farm any one the first 4 challanges 		
+	* extra exp only farm of king		
+	* auto watch sc bank and buy reputation when full (can configure to buy your choice via 1 word change in file)		
+	* simple chilli script - runs to location repeatedly - best with favourite zone or dungeon run 		
 
 
+Keys + Menu / Icon Driven	
 
-keys as shown in menu
-
-Alt + p  = pause
-Alt + e = equip selected equipment set
-left click mouse /menu on icons to turn on off.
-right click+hold then drag to move icons
-hold right button down + left mouse click to pause running scripts.
-
+	Alt + p  = pause	
+	Alt + e = equip selected equipment set		
+	left click mouse on icons to turn on off.	
+	hold right mouse and drag to move icons	
+	hold right button down + left mouse click to pause running scripts.	
 
 
-problems with click location check in the dev tools menu for 
-'showgamewindow' to make sure its found your game
-use findgamewindow if you resize/move the game window
+Dev Tools		
+	use showgamewindow to make sure its found your game	
+	use findgamewindow if you resize/move the game window	
 
-set-click-points is used to map where it clicks - offset.txt file contains relative positions. should be no need to use this option
-
-screen-info for x,p color in writting pixel checks (later)
 

@@ -1,25 +1,19 @@
 
 to use, download and install ahk https://www.autohotkey.com/	
 download and extract this project  https://github.com/davejlhale/ieh.git	
-start "ieh assist.ahk" by double clicking the file icon		
+start "ieh assist.ahk" by double clicking the file icon	
 should work out the box 		
 
 Currently 
 (@ can run in background * currently needs focus)		
+	
 	@ one time equip of equipment set (4 configurable)
-	
-	@ auto bestiary loot	
-	
+	@ auto bestiary loot
 	@ auto click upgrades	
-	
 	@ auto weave angel buffs in global slot 1	
-	
-	* auto farm any one the first 4 challanges 	
-	
+	* auto farm any one the first 4 challanges 
 	* extra exp only farm of king	
-	
 	* auto watch sc bank and buy reputation when full (can configure to buy your choice via 1 word change in file)		
-	
 	* simple chilli script - runs to location repeatedly - best with favourite zone or dungeon run 
 	
 

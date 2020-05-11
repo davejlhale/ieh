@@ -8,10 +8,10 @@ gClick( aClickPoint,aClickCount:=1,aDelay:=20) {
     global begin_x, begin_y
     global vMouseBlocked
     
-    TraceLog("gclick")
+    
     if ! isObject(aClickPoint) {
         aClickPoint :=%aClickPoint%.clone()
-        TraceLog("clone " . aClickPoint.name)
+        TraceLog("gclick clone " . aClickPoint.name)
         if ! isObject(aClickPoint) && aClickPoint.class!="ClickPoint" {
             TraceLog("failed cloning" . %aClickPoint%)
             return
@@ -20,14 +20,13 @@ gClick( aClickPoint,aClickCount:=1,aDelay:=20) {
     
     gameClickX :=round((vGameContainerWidth * aClickPoint.x)+begin_x)
     gameClickY := round((vGameContainerHeight * aClickPoint.y)+begin_y)
+   MovementBlock()
+     TraceLog("gclick " . aClickCount . " - " aClickpoint.name . " x:" . gameClickX . " y:" . gameClickY )
     loop %aClickCount%
     {
-        TraceLog("click " . aClickpoint.name . " x:" . gameClickX . " y:" . gameClickY )
-        MovementBlock()
         if (vMouseBlocked)
         {
             Send {click, %gameClickX%, %gameClickY%}
-            sleep %aDelay%
             ShowTip("Mouse Movement Suspended")
 
         } else {

@@ -17,13 +17,11 @@ MovementBlock() {
     global vMouseBlocked
     global vMouseMemoryX,vMouseMemoryY
     
-    ; WinGet, id, ,%vWinTitle%
-    ; vHwnd:=id
-    MouseGetPos,,, hWinUnderMouse
-    ;if im over game winow
-    if (vHwnd == hWinUnderMouse)
-    {
-        if (!vMouseBlocked) {
+    if (!vMouseBlocked) {     
+        MouseGetPos,,, hWinUnderMouse
+        ;if im over game winow
+        if (vHwnd == hWinUnderMouse)
+        { 
             ;and not blocked then
             vMouseBlocked:=true
             MouseGetPos, vMouseMemoryX,vMouseMemoryY
@@ -32,13 +30,10 @@ MovementBlock() {
             CoordMode, mouse,client ;set mouse movements to the window
             return true
         } 
-        else {
-            ;over game and mouse blocked following clicks
-        } 
+       ; else {} ;over game and mouse blocked following clicks
+         
     }
-    if !(vHwnd == hWinUnderMouse) {
-        
-    }
+ 
     
     
     

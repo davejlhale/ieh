@@ -1,6 +1,6 @@
 
-to use, download and install ahk https://www.autohotkey.com/	
-download and extract this project  https://github.com/davejlhale/ieh.git	
+to use, download and install ahk https://www.autohotkey.com/
+download and extract this project  https://github.com/davejlhale/ieh.git
 start "ieh assist.ahk" by double clicking the file icon	
 should work out the box 		
 

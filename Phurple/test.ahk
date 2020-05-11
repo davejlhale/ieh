@@ -16,9 +16,9 @@ escape::
 return	
 
 !1::
-    CoordMode, Mouse, Client
-    CoordMode, Pixel, Client
-    CoordMode, Tooltip, Client
+    CoordMode, Mouse, screen
+    CoordMode, Pixel, screen
+    CoordMode, Tooltip, screen
     t := 200
     
     While(!getKeyState("Left")) {
@@ -31,9 +31,9 @@ return
 return
 
 !2::
-    CoordMode, Mouse, Client
-    CoordMode, Pixel, Client
-    CoordMode, Tooltip, Client
+    CoordMode, Mouse, screen
+    CoordMode, Pixel, screen
+    CoordMode, Tooltip, screen
     t := 100
     
     doUpgrades()
@@ -42,9 +42,9 @@ return
 
 !3::
     
-    CoordMode, Mouse, Client
-    CoordMode, Pixel, Client
-    CoordMode, Tooltip, Client
+    CoordMode, Mouse, screen
+    CoordMode, Pixel, screen
+    CoordMode, Tooltip, screen
     t := 200
     
     While(!getKeyState("Left")) {
@@ -60,9 +60,9 @@ return
 return
 
 !4::
-    CoordMode, Mouse, Client
-    CoordMode, Pixel, Client
-    CoordMode, Tooltip, Client
+    CoordMode, Mouse, screen
+    CoordMode, Pixel, screen
+    CoordMode, Tooltip, screen
     t := 100
     
     doUpgradesAsAngel()
@@ -216,9 +216,9 @@ buyUpgrade() {
 
 !5::
     
-    CoordMode, Mouse, Client
-    CoordMode, Pixel, Client
-    CoordMode, Tooltip, Client
+    CoordMode, Mouse, screen
+    CoordMode, Pixel, screen
+    CoordMode, Tooltip, screen
     t := 50
     
     MCS(316, 648, t) ;water
@@ -233,9 +233,9 @@ return
 
 !6::
     
-    CoordMode, Mouse, Client
-    CoordMode, Pixel, Client
-    CoordMode, Tooltip, Client
+    CoordMode, Mouse, screen
+    CoordMode, Pixel, screen
+    CoordMode, Tooltip, screen
     t := 100
     z := 0
     x := 0 
@@ -278,9 +278,9 @@ return
 ; viconNmw:= new gIcon("offImageName",760,830,"scriptLabel")
 
 !7::
-    CoordMode, Mouse, Client
-    CoordMode, Pixel, Client
-    CoordMode, Tooltip, Client
+    CoordMode, Mouse, screen
+    CoordMode, Pixel, screen
+    CoordMode, Tooltip, screen
     t := 150
     z := 9999 
     
@@ -365,9 +365,9 @@ checkNitroOnUpgrade() {
 
 ;farm white fox 
 !8::
-    CoordMode, Mouse, Client
-    CoordMode, Pixel, Client
-    CoordMode, Tooltip, Client
+    CoordMode, Mouse, screen
+    CoordMode, Pixel, screen
+    CoordMode, Tooltip, screen
     t := 100 
     
     MCS(2413, 929, t) ;explore 
@@ -388,9 +388,9 @@ return
 
 ;capture white fox 
 ;!8::
-CoordMode, Mouse, Client
-CoordMode, Pixel, Client
-CoordMode, Tooltip, Client
+CoordMode, Mouse, screen
+CoordMode, Pixel, screen
+CoordMode, Tooltip, screen
 t := 100 
 while(!GetKeyState("Left")) {
     
@@ -595,9 +595,9 @@ setupSkillsForAngel() {
 }
 
 !9::
-    CoordMode, Mouse, Client
-    CoordMode, Pixel, Client
-    CoordMode, Tooltip, Client
+    CoordMode, Mouse, screen
+    CoordMode, Pixel, screen
+    CoordMode, Tooltip, screen
     t := 100
     rebirthType := 2 ;0-warrior, 1-wizard, 2-angel 
     
@@ -692,7 +692,7 @@ setupSkillsForAngel() {
         sleep, 100 
         MCS(380, 563, t) ;2 
         sleep, 100 
-        loop, 6 { ;prevent challenge not starting because in result Client
+        loop, 6 { ;prevent challenge not starting because in result screen
             MCS(325, 649, t) ;2-1
             sleep, 500 
         }
@@ -763,9 +763,9 @@ setupSkillsForAngel() {
 return 
 
 !0::
-    CoordMode, Mouse, Client
-    CoordMode, Pixel, Client
-    CoordMode, Tooltip, Client
+    CoordMode, Mouse, screen
+    CoordMode, Pixel, screen
+    CoordMode, Tooltip, screen
     t := 50
     z := 0
     
@@ -801,9 +801,9 @@ checkUpgrades() {
 ;Used by pressing alt ` it writes in notepad++
 ;the function to click at that spot
 !`::
-    CoordMode, Mouse, Client
-    CoordMode, Pixel, Client
-    CoordMode, Tooltip, Client
+    CoordMode, Mouse, screen
+    CoordMode, Pixel, screen
+    CoordMode, Tooltip, screen
     MouseGetPos, xpos, ypos
     WinGetTitle, Title, A
     StringGetPos, pos, Title, Notepad++
@@ -814,8 +814,8 @@ checkUpgrades() {
 return
 
 !q::
-    CoordMode, Mouse, Client
-    CoordMode, Pixel, Client
+    CoordMode, Mouse, screen
+    CoordMode, Pixel, screen
     MouseGetPos, xpos, ypos
     WinGetTitle, Title, A
     StringGetPos, pos, Title, Notepad++
@@ -826,8 +826,8 @@ return
 return
 
 !w::
-    CoordMode, Mouse, Client
-    CoordMode, Pixel, Client
+    CoordMode, Mouse, screen
+    CoordMode, Pixel, screen
     MouseGetPos, xpos, ypos
     PixelGetColor, color, %xpos%, %ypos%
     WinGetTitle, Title, A

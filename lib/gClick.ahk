@@ -27,6 +27,7 @@ gClick( aClickPoint,aClickCount:=1,aDelay:=20) {
         if (vMouseBlocked)
         {
             Send {click, %gameClickX%, %gameClickY%}
+            sleep %aDelay%
             ShowTip("Mouse Movement Suspended")
 
         } else {

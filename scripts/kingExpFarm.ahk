@@ -7,7 +7,7 @@ kingExpFarm()
     global vGameContainerWidth,vGameContainerHeight
     global begin_x, begin_y
     global kingEXPLoopTimer
-    
+    global vWinTitle
     kfToggle:=!kfToggle
     
     x:=round((vGameContainerWidth * menu7.x)+begin_x)
@@ -41,6 +41,13 @@ kingExpFarm()
             gClick(menu4,2,100)
             gClick(challenge1,2,100)
             gClick(challenge_start,2,100)
+            
+            
+            WinActivate, %vWinTitle%
+            ControlSend,,{s down},%vWinTitle%
+            
+            
+            
             send, {s down} 
             UnblockMovement()
             critical off

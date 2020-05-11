@@ -9,7 +9,7 @@ findKongGameContainer(){
     
     WinGet, id, ,%vWinTitle%
     global vHwnd :=id
-    WinActivate, %vWinTitle%
+    WinActivate, ahk_id %vHwnd%
    
     WinGetPos, xZero, yZero, winWidth, winHeight, A
     mid:=winHeight*0.5

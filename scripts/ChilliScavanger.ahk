@@ -1,5 +1,5 @@
 ChilliScavanger(){
-    
+    static scToggle
     scToggle:=!scToggle
     if scToggle 
     {

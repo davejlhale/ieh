@@ -1,6 +1,7 @@
 UnblockMovement(){
     global vMouseBlocked
     global vMouseMemoryX,vMouseMemoryY
+    gClick(GB_ScanPoint)
     if (vMouseBlocked){
         CoordMode, mouse,Screen
         BlockInput, MouseMoveOff

@@ -8,6 +8,7 @@ buySCbankItems:
     ShowTip(vMsg)
     ;traceLog.write("File:BankCapBuyer fun:buySCbankItems  item " slimeBankItemToBuy  "quantity "slimeBankBuyQuantity )
     settimer,forceOff,-2500
+    gclick(sb_times1,2,40)
     gclick(slimeBankItemToBuy,slimeBankBuyQuantity,100) 
     UnblockMovement()
 return

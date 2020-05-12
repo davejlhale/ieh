@@ -25,7 +25,7 @@ While findKongGameContainer() {
 }
 
 ;not fully tested / implemented
-;rebirthWatch()
+rebirthWatch()
 
 ;;add menus and gui
 menu := new GUIMenu("home")
@@ -35,7 +35,8 @@ buffCycleIcon := new gIcon("BuffCycle",760,830,"BuffCycle","Weave Angels buffs i
 upgradeCycleIcon :=new gIcon("upgradeCycle",808,830,"upgradeCycle","Clicks your upgrades for you")
 lootBestiaryIcon :=new gIcon("LootBestiary",856,830,"lootBestiary","Auto Loots Bestiary every so often")
 CaptureIcon :=new gIcon("Capture",1004,830,"Capture","Auto captures mobs selected in MonsterList config")
-
+NitroIcon:=new gIcon("Nitro",1052,830,"doNitro","Auto Nitro")
+;rebirthWatch()
 ;;end of autoexec 
 return
 
@@ -62,32 +63,16 @@ return
 #include ChilliScavanger.ahk
 #include ..\Phurple\test.ahk
 
+!7::
 Capture:
     Capture()
 return
     
-!7::
-    Critical, on
-    if trapperToggle {
-        trapperToggle:=!trapperToggle
-        SetTimer, doNitro,off
-        SetTimer, TrapMaker,off
-        SetTimer, MonsterSearch,off
-        SetTimer, ConvertSCtoG,off
-        UnblockMovement()
-        TraceLog("end caputre hotkey ok") 
-        return
-    }
-    trapperToggle:=True
-    SetTimer, doNitro,60000
-    SetTimer, TrapMaker,5000
-    settimer, ConvertSCtoG,60000
-    SetTimer, MonsterSearch,600
-    TraceLog("Start Capture hotkey")
-return
 
+    
 !n::
-    doNitro()
+doNitro:
+    doNitro2()
 return
 
 ;;general hotkeys

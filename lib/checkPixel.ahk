@@ -1,17 +1,20 @@
-checkPixel(pHero,pcolor,pdimention:=5)
+checkPixel(ColorScanLocation,pcolor,pdimentionX:=3,pdimentionY:=8)
 {
     global vGameContainerWidth,vGameContainerHeight
     global begin_x, begin_y
     global vHwnd
-
-    X :=round((vGameContainerWidth * pHero.x)+begin_x)
-    Y := round((vGameContainerHeight * pHero.y)+begin_y)
-    pdimention:=round(pdimention/2)
-    X2:=X+pdimention
-    Y2:=Y+pdimention
+    WinActivate, ahk_id %vHwnd%
     
     
-    PixelSearch, , , %X%, %Y%, %X2%, %Y2%, pColor , 20
-    ;0 = found
-    return ErrorLevel 
+    X :=round((vGameContainerWidth * ColorScanLocation.x)+begin_x)
+    Y := round((vGameContainerHeight * ColorScanLocation.y)+begin_y)
+    X2:=X+pdimentionX
+    Y2:=Y+pdimentionY
+    
+    ;mousemove X,Y
+    PixelGetColor,col, X,Y
+    PixelSearch, , , %X%, %Y%, %X2%, %Y2%, pColor , 5
+    msg="pixelSearch on id " %vHwnd% %ErrorLevel% %X% %Y% %X2% %Y2% %pColor% %pVariance% "color found " %col% "end"
+    traceLog(msg)
+    return ErrorLevel ;0 = found
 }

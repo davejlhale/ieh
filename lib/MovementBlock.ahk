@@ -24,6 +24,7 @@ MovementBlock() {
             vMouseBlocked:=true
             MouseGetPos, vMouseMemoryX,vMouseMemoryY
             BlockInput, MouseMove ;block me moving mouse
+             ShowTip("Mouse Movement Suspended")
             return true
         } 
        ; else {} ;not over game 

@@ -28,8 +28,6 @@ gClick( aClickPoint,aClickCount:=1,aDelay:=20) {
         {
             Send {click, %gameClickX%, %gameClickY%}
             sleep %aDelay%
-            ShowTip("Mouse Movement Suspended")
-
         } else {
             PostMessage, 0x200, 0, gameClickX&0xFFFF | gameClickY<<16,, ahk_id %vHwnd% ; WM_MOUSEMOVE
             PostMessage, 0x201, 0, gameClickX&0xFFFF | gameClickY<<16,, ahk_id %vHwnd% ; WM_LBUTTONDOWN 

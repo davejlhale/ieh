@@ -8,7 +8,7 @@ showBox(X1:=0, Y1:=0, X2:=0, Y2:=0,Speed:=10)
         global vWinTitle
         WinActivate, %vWinTitle%
         if ErrorLevel
-        msgbox error finding client
+        return
         global begin_x, begin_y, end_x, end_y
         ;  %begin_x%, %begin_y%, %end_x%, %end_y%
         mousemove, X1,Y1,Speed

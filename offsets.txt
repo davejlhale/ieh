@@ -251,5 +251,5 @@ GB_ScanPoint	0.055046	0.209121
 warriorColorScanLocation	0.112747	0.160268
 angelColorScanLocation	0.110092	0.146830
 wizardColorScanLocation	0.074229	0.160067
-trapAreaTL	0.515430	0.161290
-trapAreaBR	0.919099	0.630701
+trapAreaTL	0.565430	0.161290
+trapAreaBR	0.849099	0.560701

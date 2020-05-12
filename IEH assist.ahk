@@ -33,7 +33,7 @@ EquipIcon :=new gIcon("EquipIcon",956,830,"Equip","Equip Hero Gear")
 BankCapBuyerIcon:=new gIcon("d",908,830,"BankCapBuyer","Buy Slime Bank item when Full")
 buffCycleIcon := new gIcon("BuffCycle",760,830,"BuffCycle","Weave Angels buffs in global slot 1")
 upgradeCycleIcon :=new gIcon("upgradeCycle",808,830,"upgradeCycle","Clicks your upgrades for you")
-    lootBestiaryIcon :=new gIcon("LootBestiary",856,830,"lootBestiary","Auto Loots Bestiary every so often")
+lootBestiaryIcon :=new gIcon("LootBestiary",856,830,"lootBestiary","Auto Loots Bestiary every so often")
 CaptureIcon :=new gIcon("Capture",1004,830,"Capture","Auto captures mobs selected in MonsterList config")
 
 ;;end of autoexec 

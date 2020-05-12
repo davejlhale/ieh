@@ -72,7 +72,7 @@ return
     
 !n::
 doNitro:
-    doNitro2()
+    doNitro()
 return
 
 ;;general hotkeys

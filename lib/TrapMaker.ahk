@@ -23,11 +23,12 @@ TrapMaker() {
         gclick(alchemy_1L,1,88)             ;
         gClick(alchemy_plus_button,1,50) 	;stuck on below 1L will raise
         
-        PixelSearch, , , %alchOption_14_x%, %alchOption_14_y%, %alchOption_14_x2%, %alchOption_14_y2%, %vTrapColor% ,10 
+        PixelSearch, , , %alchOption_14_x%, %alchOption_14_y%, %alchOption_14_x2%, %alchOption_14_y2%, %vTrapColor% ,6 
         if ! errorlevel { ; 0= found = trap at option 14 ie 1L
             MouseClick, Right , alchOption_14_x,alchOption_14_y ,2,0
             skipAlchProgress:=true ;can make these now so speed up by skipping steps above
         } 
+        
     }
     unblockmovement()
     return 

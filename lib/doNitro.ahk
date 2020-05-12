@@ -1,20 +1,15 @@
 doNitro() { ;+- offsets allowing for slight error in other clients
     
-    
-    
     critical on
     global vNitroBarBlueColor
     global nitro, nitro_pixel_start, NitroIcon
     global vGameContainerWidth,vGameContainerHeight
     global begin_x, begin_y ,vHwnd
     
-    
+   
     if ! (A_GuiEvent) {
-        
-    msgbox key
     NitroIcon.Toggle()
 } else {
-    msgbox click
     NitroIcon.Toggle()
 }
 

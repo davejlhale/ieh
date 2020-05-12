@@ -1,399 +1,27 @@
-#NoEnv ; Recommended for performance and compatibility with future AutoHotkey releases.
-SendMode Input ; Recommended for new scripts due to its superior speed and reliability.
-SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
+; Recommended for performance and compatibility with future AutoHotkey releases.
+; Recommended for new scripts due to its superior speed and reliability.
+; Ensures a consistent starting directory.
 
 ;Made by Phurple/Stop_Sign
 ;
 ;This script runs on AutoHotkey (AHK), a free, low-size download
 ;for keyboard I/O
 ;If you want help setting up, ask
-global vWinTitle:="Incremental Epic Hero"
-WinGet, id, ,%vWinTitle%
-global vHwnd :=id
 
-escape::
-    ExitApp, 
-return	
+;global menu1,menu2,menu3,menu4,menu5,menu6,menu7,menu8,explore,explore_map1,explore_map2,explore_map3,explore_map4,explore_map5,explore_map6,explore_map7,explore_map8,explore_area1,explore_area2,explore_area3,explore_area4,explore_area5,explore_area6,explore_area7,explore_area8,dungeon1,dungeon2,dungeon3,dungeon4,dungeon5,dungeon6,dungeon7,dungeon8,explore_bestiary,bestiary_lootAll,bestiary_close,upgrade,upgrade_mining1,upgrade_mining2,upgrade_mining3,upgrade_gathering3,upgrade_pickaxe1,upgrade_pickaxe2,upgrade_pickaxe3,upgrade_pickaxe4,upgrade_synt1,upgrade_synt2,upgrade_synt3,upgrade_lab1,upgrade_lab2,upgrade_lab3,upgrade_lab4,upgrade_gathering1,upgrade_gathering2,upgrade_rake1,upgrade_rake2,upgrade_rake3,upgrade_rake4,upgrade_gold_bonus,upgrade_exp_bonus,upgrade_expand_equip,upgrade_stone_ritual,upgrade_crystal_ritual,upgrade_leaf_ritual,upgrade_mystery_box,upgrade_upgrade1,upgrade_upgrade10,upgrade_upgrade25,upgrade_upgradeMax,nitro,nitro_pixel_start,nitro_pixel_end,slime_bank,dark_ritual,sb_GoBack,sb_withdraw,sb_withdrawConfirm,sb_times1,sb_times10,sb_times25,sb_timesMax,sb_donate,sb_purifucation,sb_efficiency,sb_exchange,sb_interest,sb_cap,sb_et_stone,sb_et_crystal,sb_et_leaf,sb_strength,sb_mind,sb_healty_captue,sb_enhanced_capture,sb_monster_counter,sb_graduates,sb_ledger,sb_nitro_generators,sb_monster_taming,sb_powder_store,sb_explorers_capacity,sb21,sb22,sb23,sb24,sb25,sb26,sb27,sb28,sb29,sb30,sb31,sb32,craft_check_Box,Alchemy_check_Box,inventory_check_Box,alchemy_1ml,alchemy_10ml,alchemy_100ml,alchemy_1L,alchemy_10L,alchemy_100L,alchemy_1kL,alchemy_10kL,alchemy100kL,alchemy_1mill,alchemy_10mill,alchemy_100mill,alchemy_1BL,alchemy_10BL,alchemy_auto_button,alchemy_plus_button,alchemy_use_all,alchOption_1,alchOption_2,alchOption_3,alchOption_4,alchOption_5,alchOption_6,alchOption_7,alchOption_8,alchOption_9,alchOption_10,alchOption_11,alchOption_12,alchOption_13,alchOption_14,alchOption_15,alchOption_16,challenge1,challenge2,challenge3,challenge4,challenge5,challenge6,challenge7,challenge8,challenge_retryBox,challenge_start,challenge_quit,warrior,wizard,angel,st_slot_1,st_slot_2,st_slot_3,st_slot_4,st_slot_5,st_slot_6,st_slot_7,st_slot_8,st_slot_9,st_slot_10,skill_table_skill_1_stance,skill_table_skill_2_stance,skill_table_skill_3_stance,skill_table_skill_4_stance,skill_table_skill_5_stance,skill_table_skill_6_stance,skill_table_skill_7_stance,skill_table_skill_8_stance,skill_table_skill_9_stance,skill_table_skill_10_stance,skill_table_skill_1_chargeUp,skill_table_skill_2_chargeUp,skill_table_skill_3_chargeUp,skill_table_skill_4_chargeUp,skill_table_skill_5_chargeUp,skill_table_skill_6_chargeUp,skill_table_skill_7_chargeUp,skill_table_skill_8_chargeUp,skill_table_skill_9_chargeUp,skill_table_skill_10_chargeUp,skillbar_class_top_1,skillbar_class_top_2,skillbar_class_top_3,skillbar_class_bottom_1,skillbar_class_bottom_2,skillbar_class_bottom_3,skillbar_global_top_1,skillbar_global_top_2,skillbar_global_top_3,skillbar_global_top_4,skillbar_global_bottom_1,skillbar_global_bottom_2,skillbar_global_bottom_3,skillbar_global_bottom_4,skillbar_active_skill,skillbar_automove,alchInv1,alchInv2,alchInv3,alchInv4,alchInv5,alchInv6,alchInv7,alchInv8,alchInv9,alchInv10,alchInv11,alchInv12,alchInv13,alchInv14,alchInv15,alchInv16,equip1,equip2,equip3,equip4,equip5,equip6,equip7,equip8,equip9,equip10,equip1LevelUp,equip2LevelUp,equip3LevelUp,equip4LevelUp,equip5LevelUp,equip6LevelUp,equip7LevelUp,equip8LevelUp,equip9LevelUp,equip10LevelUp,EquipClassD,EquipClassC,EquipClassB,SC_ScanPoint,GB_ScanPoint
+;lines 155
+#include ..\Phurple/converted.ahk
+#Include, ..\Phurple/convertedGScripts.ahk
+#include ..\Phurple/convertedHK.ahk
 
-!1::
-    CoordMode, Mouse, screen
-    CoordMode, Pixel, screen
-    CoordMode, Tooltip, screen
-    t := 200
-    
-    While(!getKeyState("Left")) {
-        doUpgrades()
-        doNitro()
-        sleep, 15000
-        ;doOvernightUpgrades()
-    }
-    
-return
 
-!2::
-    CoordMode, Mouse, screen
-    CoordMode, Pixel, screen
-    CoordMode, Tooltip, screen
-    t := 100
-    
-    doUpgrades()
-    
-return
 
-!3::
-    
-    CoordMode, Mouse, screen
-    CoordMode, Pixel, screen
-    CoordMode, Tooltip, screen
-    t := 200
-    
-    While(!getKeyState("Left")) {
-        doUpgradesAsAngel()
-        doNitro()
-        ;doAlchemy()
-        ;doOvernightUpgrades()
-        ;buyUpgrade()
-        sleep, 15000
-        
-    }
-    
-return
 
-!4::
-    CoordMode, Mouse, screen
-    CoordMode, Pixel, screen
-    CoordMode, Tooltip, screen
-    t := 100
-    
-    doUpgradesAsAngel()
-    
-return
-
-doUpgrades() {
-    global t 
-    MCS(2323, 926, t) ;skill table
-    MCS(2323, 926, t) ;skill table
-    sleep, 100
-    MCS(2313, 896, t) ;angel
-    sleep, 100
-    
-    
-    MCS(2252, 673, t) ;muscle
-    MCS(2895, 880, t) ;global slot 3 
-    MCS(2405, 623, t) ;god bless
-    MCS(2895, 880, t) ;global slot 3 
-    MCS(2249, 720, t) ;protect
-    MCS(2895, 880, t) ;global slot 3 
-    MCS(2399, 721, t) ;haste
-    MCS(2895, 880, t) ;global slot 3 
-    MCS(2252, 774, t) ;gold
-    MCS(2895, 880, t) ;global slot 3 
-    ;MCS(2399, 773, t) ;skill
-    ;MCS(2895, 880, t) ;global slot 3 
-    MCS(2403, 664, t) ;magic
-    MCS(2895, 880, t) ;global slot 3 
-    
-    
-    
-    
-    ;MCS(2329, 831, t) ;warrior
-    ;sleep, 100
-    ;MCS(2249, 774, t) ;shield attack 
-    
-    ;MCS(2243, 566, t) ;wing attack 
-    ;MCS(2408, 572, t) ;wing shoot 
-    
-    MCS(2244, 626, t) ;heal
-    
-    MCS(2895, 880, t) ;global slot 3 
-}
-
-doUpgradesAsAngel() {
-    global t 
-    MCS(2323, 926, t) ;skill table
-    sleep, 100
-    MCS(2313, 896, t) ;angel
-    sleep, 100
-    
-    MCS(2405, 623, t) ;god bless
-    MCS(2716, 889, t) ;slot 3 
-    ;MCS(2252, 673, t) ;muscle
-    ;MCS(2716, 889, t) ;slot 3 
-    MCS(2403, 664, t) ;magic
-    MCS(2716, 889, t) ;slot 3 
-    MCS(2249, 720, t) ;protect
-    MCS(2716, 889, t) ;slot 3 
-    MCS(2399, 773, t) ;skill
-    MCS(2716, 889, t) ;slot 3 
-    ;MCS(2399, 721, t) ;haste
-    ;MCS(2716, 889, t) ;slot 3 
-    
-    
-    MCS(2408, 572, t) ;wing shoot 
-    ;MCS(2254, 627, t) ;heal
-    MCS(2716, 889, t) ;slot 3 
-    
-}
-
-doNitro() {
-    global t 
-    
-    MCS(2239, 925, t) ;upgrade 
-    sleep, 100 
-    if(colorIsVisibleQuick(2319, 897, 0x000042)) {
-        
-        MCS(2238, 946, t) ;craft 
-        sleep, 100 
-        MCS(2323, 533, t) ;alch 
-        MCS(2323, 533, t) ;alch 
-        sleep, 100 
-        MCS(2233, 560, t) ;1ml
-        MCS(2233, 560, t) ;1ml
-        sleep, 100 
-        MCS(2425, 649, t) ;nitro gen 
-        Send mm
-        sleep, 100
-        MCS(2503, 820, t) ;
-        MCS(2503, 820, t) ;use all 
-    }
-}
-
-doAlchemy() {
-    global t 
-    
-    MCS(329, 912, t) ;craft
-    MCS(403, 499, t) ;alchemy
-    MCS(315, 526, t) ;1ml
-    
-    MCS(317, 610, t) ;
-    Send m 
-    sleep, 100 
-    MCS(590, 786, t) ;use all
-    MCS(590, 786, t) ;use all
-}
-
-doOvernightUpgrades() {
-    global t
-    
-    MCS(2240, 928, t) ;upgrade
-    sleep, 300 
-    MCS(2412, 890, t) ;slime bank
-    sleep, 300 
-    MCS(2432, 780, t) ;bank cap 
-    MCS(2487, 529, t) ;sleep, 100 
-    
-}
-
-buyUpgrade() {
-    global t 
-    
-    MCS(324, 894, t) ;upgrade
-    sleep, 300 
-    
-    
-    MCS(551, 696, t) ;mine 4 
-    MCS(553, 736, t) ;crys 4 
-    MCS(552, 776, t) ;gather 4 
-    MCS(510, 692, t) ;m 3 
-    MCS(510, 737, t) ;c 3 
-    MCS(513, 775, t) ;g 3 
-    MCS(473, 696, t) ;m 2 
-    MCS(476, 740, t) ;c 2 
-    MCS(478, 775, t) ;g 2 
-    MCS(436, 697, t) ;m 1 
-    MCS(433, 736, t) ;c 1 
-    MCS(433, 779, t) ;g 1 
-    
-    MCS(316, 814, t) ;gold 
-    MCS(356, 812, t) ;
-    MCS(400, 813, t) ;
-    MCS(435, 811, t) ;
-    MCS(476, 812, t) ;
-    MCS(515, 810, t) ;
-    MCS(552, 807, t) ;mystery
-    
-}
-
-!5::
-    
-    CoordMode, Mouse, screen
-    CoordMode, Pixel, screen
-    CoordMode, Tooltip, screen
-    t := 50
-    
-    MCS(316, 648, t) ;water
-    while(!GetKeyState("Left")) {
-        Send m 
-        sleep, 50 
-        Send u 
-        sleep, 50 
-    }
-    
-return
-
-!6::
-    
-    CoordMode, Mouse, screen
-    CoordMode, Pixel, screen
-    CoordMode, Tooltip, screen
-    t := 100
-    z := 0
-    x := 0 
-    
-    MCS(581, 891, t) ;challenge
-    sleep, 100 
-    
-    
-    ;doUpgrades()
-    while(!GetKeyState("Left")) {
-        if(colorIsVisibleQuick(406, 841, 0x20A7D3)) {
-            if(z > 150) {
-                MCS(322, 912, t) ;craft 
-                sleep, 100 
-                MCS(500, 526, t) ;10L
-                sleep, 100 
-                if(colorIsNotVisibleQuick(311, 807, 0x98D6D6)) {
-                    ;MCS(311, 660, t) ;craft golem tincture 
-                    ;MCS(364, 662, t) ;deathpider tincture 
-                    MCS(408, 664, t) ;fairy tincture 
-                }
-                MCS(320, 815, t) ;use
-                ;doUpgrades()
-                MCS(581, 891, t) ;challenge
-                sleep, 100 
-            }
-            MCS(378, 841, t) ;start
-            safeSpot()
-            z := 0
-        } else {
-            z++
-        }
-        Tooltip, %z%, 87, 611
-        
-    }
-    
-return
-
-; include path/gicon2 
-; viconNmw:= new gIcon("offImageName",760,830,"scriptLabel")
-
-!7::
-    CoordMode, Mouse, screen
-    CoordMode, Pixel, screen
-    CoordMode, Tooltip, screen
-    t := 150
-    z := 9999 
-    
-    while(!GetKeyState("Left")) {
-        ;if(rClickOn(636, 472, 1063, 609, 0x00C339)) { ;green spider 
-        ;if(rClickOn(636, 472, 1063, 609, 0x00B5AA)) { ;yellow spider 
-        ;if(rClickOn(636, 472, 1063, 609, 0xAB0025)) { ;blue spider 
-        ;if(rClickOn(636, 472, 1063, 609, 0x000087)) { ;red spider 
-        if(rClickOn(636, 472, 1063, 609, 0x650B4B)) { ;normal spider 
-            ;if(rClickOn(636, 472, 1063, 609, 0x63B2FF)) { ;orange fox 
-            ;if(rClickOn(636, 472, 1063, 609, 0x7BE7FF)) { ;yellow fox 
-            ;if(rClickOn(636, 472, 1063, 609, 0xB5DB7B)) { ;green fox 
-            ;if(rClickOn(636, 440, 1063, 587, 0xFFFFFF)) { ;white fox 
-            ;if(rClickOn(636, 472, 1063, 609, 0x546725)) { ;green faerie 
-            ;if(rClickOn(636, 472, 1063, 609, 0x00A2E7)) { ;yellow faerie 
-            ;if(rClickOn(636, 472, 1063, 609, 0xAD2429)) { ;blue faerie 
-            ;if(rClickOn(636, 472, 1063, 609, 0x6B226C)) { ;purple faerie 
-            ;if(rClickOn(636, 472, 1063, 609, 0xFF7552)) { ;blue m'slime
-            ;if(rClickOn(636, 472, 1063, 609, 0x8CFFFF)) { ;yellow m'slime
-            ;if(rClickOn(636, 472, 1063, 609, 0x6B8AFF)) { ;red bat
-            ;if(rClickOn(636, 472, 1063, 609, 0x6B8AFF)) { ;red slime
-            if(colorIsNotVisibleQuick(314, 844, 0xA1A4A5)) {
-                MCS(596, 695, t) ;buy trap 
-                safeSpot()
-            }
-            
-        }
-        
-        
-        
-        z++
-        Tooltip, %z%, 2007, 749
-        if(z > 200) {
-            MCS(322, 929, t) ;upgrade 
-            sleep, 100 
-            z := 0 
-            MCS(477, 895, t) ;slime bank 
-            MCSHR(471, 771, t) ;SC upgrade right click 
-            MCSHR(471, 771, t) ;SC upgrade right click 
-            
-            MCS(573, 527, t) ;go back 
-            sleep, 100
-            
-            ;nitro 
-            if(checkNitroOnUpgrade()) {
-                MCS(320, 949, t) ;craft 
-                sleep, 100 
-                MCS(456, 560, t) ;1L 
-                sleep, 100 
-            }
-            
-            MCS(320, 949, t) ;craft 
-            sleep, 100 
-        }
-        sleep, 10 
-        
-    }
-    
-    
-return
-
-checkNitroOnUpgrade() {
-    global t
-    if(colorIsVisibleQuick(390, 895, 0x000042)) { 
-        
-        MCS(323, 950, t) ;craft 
-        sleep, 100 
-        MCS(404, 531, t) ;alch 
-        sleep, 100 
-        MCS(309, 558, t) ;1ml
-        sleep, 100 
-        MCS(499, 651, t) ;nitro gen 
-        Send mm
-        sleep, 100F
-        MCS(579, 821, t) ;use all 
-        
-        MCS(323, 929, t) ;upgrade 
-        sleep, 100 
-        return 1 
-    }
-}
-
-;farm white fox 
-!8::
-    CoordMode, Mouse, screen
-    CoordMode, Pixel, screen
-    CoordMode, Tooltip, screen
-    t := 100 
-    
-    MCS(2413, 929, t) ;explore 
-    sleep, 200 
-    MCS(2247, 585, t) ;5 
-    sleep, 100 
-    Send {a down} 
-    sleep, 300 
-    Send { a up} 
-    MCS(2401, 648, t) ;5-4 
-    
-    while(!GetKeyState("Left")) {
-        MCS(2401, 648, 500) ;5-4 
-    }
-    
-    
-return 
 
 ;capture white fox 
 ;!8::
-CoordMode, Mouse, screen
-CoordMode, Pixel, screen
-CoordMode, Tooltip, screen
 t := 100 
-while(!GetKeyState("Left")) {
-    
+while(!GetKeyState("Left")) { 
     MCSHR(2634, 891, t) ; remove blizzard 
     MCSHR(2868, 887, t) ; remove fan swing 
     
@@ -422,6 +50,8 @@ while(!GetKeyState("Left")) {
         MCS(2261, 950, t) ;click craft 
         sleep, 100 
         sleep, 200
+        UnblockMovement()
+        traceLog("end ok") 
     }
     
     MCS(2413, 929, t) ;explore 
@@ -444,17 +74,17 @@ while(!GetKeyState("Left")) {
     MCS(2634, 887, t) ;slot 1 
     
     sleep, 25000
+    UnblockMovement()
+    traceLog("end ok") 
 }
 
 return 
 
 setupGearAfterRebirth() {
     global t 
-    MCS(578, 930, t) ;craft 
-    sleep, 100 
-    MCS(578, 930, t) ;craft 
-    MCS(511, 564, t) ;D
+    gClick(menu5,2,200)
     
+    gclick(EquipClassD,2,100)
     MCS(576, 607, t) ;
     MCS(329, 675, t) ;
     MCS(397, 680, t) ;
@@ -464,8 +94,7 @@ setupGearAfterRebirth() {
     MCS(511, 681, t) ;
     sleep, 100
     
-    MCS(538, 563, t) ;C
-    MCS(538, 563, t) ;C
+    gclick(EquipClassC,2,100)
     MCS(517, 605, t) ;
     MCS(579, 606, t) ;
     MCS(333, 677, t) ;
@@ -474,8 +103,7 @@ setupGearAfterRebirth() {
     MCS(579, 683, t) ;
     sleep, 100
     
-    MCS(565, 563, t) ;B
-    MCS(565, 564, t) ;B
+    gclick(EquipClassB,2,100)
     MCS(331, 608, t) ;
     MCS(389, 602, t) ;
     MCS(454, 610, t) ;
@@ -484,14 +112,15 @@ setupGearAfterRebirth() {
     MCS(509, 673, t) ;
     MCS(573, 678, t) ;
     MCS(516, 681, t) ;
+    UnblockMovement()
+    traceLog("end ok") 
 }
 
 setupSkillsForWarrior() {
     global t
-    MCS(395, 927, t) ;skill 
-    sleep, 100 
+    gclick(menu2,2,200) ;skill 
+    
     MCS(399, 897, t) ;angel 
-    sleep, 100 
     MCS(482, 720, t) ;speed 
     MCS(974, 887, t) ;slot 3 
     MCS(328, 773, t) ;gold 
@@ -500,15 +129,14 @@ setupSkillsForWarrior() {
     MCS(907, 915, t) ;slot 5 
     MCS(476, 620, t) ;god bless 
     MCS(942, 916, t) ;slot 6 
+    
     MCS(389, 865, t) ;wizard 
-    sleep, 100 
     MCS(324, 778, t) ;double thunder ball 
     MCS(910, 885, t) ;slot 1
     MCS(327, 722, t) ;blizzard
     MCS(942, 884, t) ;slot 2 
-    MCS(383, 832, t) ;warrior 
-    sleep, 100 
     
+    MCS(383, 832, t) ;warrior 
     MCS(331, 780, t) ;shield attack 
     MCS(713, 887, t) ;slot 1 
     MCS(479, 722, t) ;fan swing 
@@ -517,14 +145,16 @@ setupSkillsForWarrior() {
     MCS(789, 891, t) ;slot 3 
     MCS(337, 718, t) ;charge swing 
     MCS(709, 932, t) ;slot 4
+    
+    UnblockMovement()
+    traceLog("end ok") 
 }
 
 setupSkillsForWizard() {
-    global t
-    MCS(406, 930, t) ;skill 
-    sleep, 100 
-    MCS(383, 834, t) ;warrior 
-    sleep, 100 
+    MovementBlock()
+    gclick(menu2,2,200)
+    
+    gClick(warrior,2,100) ;warrior 
     MCS(331, 780, t) ;shield attack 
     MCS(910, 885, t) ;slot 1
     MCS(479, 722, t) ;fan swing 
@@ -533,19 +163,16 @@ setupSkillsForWizard() {
     MCS(1009, 884, t) ;slot 4
     
     MCS(399, 897, t) ;angel 
-    sleep, 100
     MCS(482, 720, t) ;speed 
     MCS(974, 887, t) ;slot 3 
     MCS(325, 676, t) ;muscle 
     MCS(907, 915, t) ;slot 5 
     MCS(476, 620, t) ;god bless 
     MCS(942, 916, t) ;slot 6 
-    MCS(389, 865, t) ;wizard 
-    sleep, 100 
     
+    gClick(wizard,2,100) ;wizard 
     MCS(330, 626, t) ;firestorm 
     MCS(713, 887, t) ;slot 1 
-    
     MCS(485, 571, t) ;fireball 
     MCS(753, 889, t) ;slot 2 
     MCS(324, 778, t) ;double thunder ball 
@@ -555,32 +182,31 @@ setupSkillsForWizard() {
     MCS(483, 772, t) ;lightning thunder 
     MCS(755, 929, t) ;slot 5 
     MCS(591, 567, t) ;fire stance on 
+    UnblockMovement()
+    traceLog("end ok") 
 }
 
 setupSkillsForAngel() {
-    global t
-    MCS(395, 927, t) ;skill 
-    sleep, 100 
-    MCS(389, 865, t) ;wizard 
-    sleep, 100 
+    MovementBlock()
+    gClick(menu2,2,200)
+    
+    gClick(wizard,2,100) ;wizard 
     MCS(483, 772, t) ;lightning thunder 
     MCS(910, 885, t) ;gslot 1
     MCS(327, 722, t) ;blizzard
     MCS(942, 884, t) ;gslot 2 
     MCS(324, 778, t) ;double thunder ball 
     MCS(974, 887, t) ;gslot 3 
-    MCS(383, 834, t) ;warrior 
-    sleep, 100 
+    
+    gClick(warrior,2,100) ;warrior 
     MCS(331, 780, t) ;shield attack 
     MCS(1009, 884, t) ;gslot 4
     MCS(479, 722, t) ;fan swing 
     MCS(907, 915, t) ;gslot 5 
     MCS(337, 718, t) ;charge swing 
     MCS(942, 916, t) ;gslot 6 
-    sleep, 100 
     
     MCS(399, 897, t) ;angel 
-    sleep, 100 
     MCS(482, 720, t) ;speed 
     MCS(713, 887, t) ;slot 1 
     MCS(328, 773, t) ;gold 
@@ -590,14 +216,13 @@ setupSkillsForAngel() {
     MCS(476, 620, t) ;god bless 
     MCS(709, 932, t) ;slot 4
     MCS(483, 669, t) ;magic 
-    MCS(749, 924, t) ;slot 5
-    
+    MCS(749, 924, t) ;slot 5 
+    UnblockMovement()
+    traceLog("end ok") 
 }
 
 !9::
-    CoordMode, Mouse, screen
-    CoordMode, Pixel, screen
-    CoordMode, Tooltip, screen
+    MovementBlock()
     t := 100
     rebirthType := 2 ;0-warrior, 1-wizard, 2-angel 
     
@@ -608,7 +233,7 @@ setupSkillsForAngel() {
         sleep, 100 
         clickOn(308, 664, 311, 668, 0x202020) ;autoprogress on 
         sleep, 100 
-        if(colorIsNotVisible(694, 846, 696, 851, 0xFFFFFF)) {
+        if(colorIsNotVisible(694, 846, 696, 851, 0xFFFFFF)) { ;am toggle
             MCS(699, 842, t) ;automove on 
         }
         
@@ -697,9 +322,6 @@ setupSkillsForAngel() {
             sleep, 500 
         }
         
-        
-        
-        
         MCS(579, 930, t) ;challenge
         sleep, 100 
         MCS(323, 574, t) ;select slime boss 
@@ -730,28 +352,25 @@ setupSkillsForAngel() {
         }
         
         ;do more nitro in the middle 
-        MCS(321, 927, t) ;upgrade 
-        sleep, 100 
+        gClick(menu1,2,200) ;upgrade 
         checkNitroOnUpgrade()
-        MCS(579, 930, t) ;challenge
-        sleep, 100 
+        gClick(menu4,2,200) ;challenge
+        
         
         loop, 10 {
             if(colorIsVisibleQuick(403, 878, 0x24AAD5)) {
-                MCS(364, 883, t) ;start
+                gClick(challenge_start,2,100) ;start
                 Send {S down}
-                sleep, 500 
-                Send {S up}
-                MCS(655, 826, t) ;use special attack 
+                gClick(skillbar_active_skill,2,50) ;use special attack 
             }
             sleep, 1000
+            Send {S up}
         }
         
-        MCS(321, 927, t) ;upgrade 
-        sleep, 100 
+        gClick(menu1,2,200) ;upgrade 
         checkNitroOnUpgrade()
         
-        MCS(699, 847, t) ;auto move back on 
+        gClick(skillbar_automove,1,200) ;auto move back on 
         Tooltip, 
         
         rebirthType++ ;cycle between all 3 rebirths 
@@ -759,23 +378,6 @@ setupSkillsForAngel() {
             rebirthType = 0
         }
     }
-    
-return 
-
-!0::
-    CoordMode, Mouse, screen
-    CoordMode, Pixel, screen
-    CoordMode, Tooltip, screen
-    t := 50
-    z := 0
-    
-    while(!GetKeyState("Left")) {
-        z++
-        checkNitroOnUpgrade()
-        checkUpgrades()
-        Tooltip, %z%, 2007, 749
-    }
-    
     
 return 
 
@@ -797,311 +399,42 @@ checkUpgrades() {
     clickOn(549, 799, 557, 805, 0x6C9695) ;3-4
     
 }
-
-;Used by pressing alt ` it writes in notepad++
-;the function to click at that spot
-!`::
-    CoordMode, Mouse, screen
-    CoordMode, Pixel, screen
-    CoordMode, Tooltip, screen
-    MouseGetPos, xpos, ypos
-    WinGetTitle, Title, A
-    StringGetPos, pos, Title, Notepad++
-    if(pos < 0)
-        MCSH(422, 1059, 100) ;notepad++ icon
-    Send {Enter}MCS(%xpos%, %ypos%, t){Space}{;}
-    MouseMove, xpos, ypos, 0
-return
-
-!q::
-    CoordMode, Mouse, screen
-    CoordMode, Pixel, screen
-    MouseGetPos, xpos, ypos
-    WinGetTitle, Title, A
-    StringGetPos, pos, Title, Notepad++
-    if(pos < 0)
-        MCSH(422, 1059, 100) ;notepad++ icon
-    Send %xpos%, %ypos%
-    MouseMove, xpos, ypos, 0
-return
-
-!w::
-    CoordMode, Mouse, screen
-    CoordMode, Pixel, screen
-    MouseGetPos, xpos, ypos
-    PixelGetColor, color, %xpos%, %ypos%
-    WinGetTitle, Title, A
-    StringGetPos, pos, Title, Notepad++
-    if(pos < 0)
-        MCSH(422, 1059, 100) ;notepad++ icon
-    Send %color%
-    MouseMove, xpos, ypos, 0
-return
-
-MS(x, y, t) {
-    if(GetKeyState("left"))
-        return
-    MouseMove, %x%, %y%, 0
-    Sleep, %t%
-}
-
-MCS(x, y, t) {
-    if(GetKeyState("left"))
-        return
-    PostMessage, 0x200, 0, x&0xFFFF | y<<16,, ahk_id %vHwnd% ; WM_MOUSEMOVE
-    PostMessage, 0x201, 0, x&0xFFFF | y<<16,, ahk_id %vHwnd% ; WM_LBUTTONDOWN 
-    PostMessage, 0x202, 0, x&0xFFFF | y<<16,, ahk_id %vHwnd% ; WM_LBUTTONUP 
-    MouseMove x,y
-    sleep 500
-    Sleep, %t%
-}
-
-MCSD(x, y, t) {
-    if(GetKeyState("left"))
-        return
-    loop 3 {
-        PostMessage, 0x200, 0, x&0xFFFF | y<<16,, ahk_id %vHwnd% ; WM_MOUSEMOVE
-        PostMessage, 0x201, 0, x&0xFFFF | y<<16,, ahk_id %vHwnd% ; WM_LBUTTONDOWN 
-        PostMessage, 0x202, 0, x&0xFFFF | y<<16,, ahk_id %vHwnd% ; WM_LBUTTONUP 
-    }
-    Sleep, %t%
-}
-
-MCSH(x, y, t) {
-    if(GetKeyState("left"))
-        return
-    PostMessage, 0x200, 0, x&0xFFFF | y<<16,, ahk_id %vHwnd% ; WM_MOUSEMOVE
-    PostMessage, 0x201, 0, x&0xFFFF | y<<16,, ahk_id %vHwnd% ; WM_LBUTTONDOWN 
-    PostMessage, 0x202, 0, x&0xFFFF | y<<16,, ahk_id %vHwnd% ; WM_LBUTTONUP 
+!6::
     
-    Sleep, %t%
-}
-
-MCSHR(x, y, t) {
-    if(GetKeyState("left"))
-        return
-    MouseMove, %x%, %y%, 0
-    Send {RButton down}
-    sleep, 25
-    Send {RButton up}
-    Sleep, %t%
-}
-
-MCSHH(x, y, t) {
-    if(GetKeyState("left"))
-        return
-    MouseMove, %x%, %y%, 0
-    heavyClick() 
-    Sleep, %t%
-}
-
-heavyClick(t:=200) {
-    PostMessage, 0x200, 0, x&0xFFFF | y<<16,, ahk_id %vHwnd% ; WM_MOUSEMOVE
-    PostMessage, 0x201, 0, x&0xFFFF | y<<16,, ahk_id %vHwnd% ; WM_LBUTTONDOWN 
-    PostMessage, 0x202, 0, x&0xFFFF | y<<16,, ahk_id %vHwnd% ; WM_LBUTTONUP 
-    Sleep, %t%
-}
-
-MCSHT(x, y, time) {
-    global t
-    if(GetKeyState("left"))
-        return
-    PostMessage, 0x200, 0, x&0xFFFF | y<<16,, ahk_id %vHwnd% ; WM_MOUSEMOVE
-    PostMessage, 0x201, 0, x&0xFFFF | y<<16,, ahk_id %vHwnd% ; WM_LBUTTONDOWN 
-    PostMessage, 0x202, 0, x&0xFFFF | y<<16,, ahk_id %vHwnd% ; WM_LBUTTONUP 
+    t := 100
+    z := 0
+    x := 0 
     
-    Sleep, %t%
-    count = 1
-    loop, %time%
-    {
-        if(GetKeyState("left"))
-            return
-        if(GetKeyState("Home")) {
-            stableTooltip("continuing...", 0)
-            sleep, 1000
-            Tooltip
-            return
+    MCS(581, 891, t) ;challenge
+    sleep, 100 
+    
+    ;doUpgrades()
+    while(!GetKeyState("Left")) {
+        if(colorIsVisibleQuick(406, 841, 0x20A7D3)) {
+            if(z > 150) {
+                MCS(322, 912, t) ;craft 
+                sleep, 100 
+                MCS(500, 526, t) ;10L
+                sleep, 100 
+                if(colorIsNotVisibleQuick(311, 807, 0x98D6D6)) {
+                    ;MCS(311, 660, t) ;craft golem tincture 
+                    ;MCS(364, 662, t) ;deathpider tincture 
+                    MCS(408, 664, t) ;fairy tincture 
+                }
+                MCS(320, 815, t) ;use
+                ;doUpgrades()
+                MCS(581, 891, t) ;challenge
+                sleep, 100 
+            }
+            MCS(378, 841, t) ;start
+            safeSpot()
+            z := 0
+        } else {
+            z++
         }
-        stableTooltip(%count% + "out of" + %time%, 0)
-        sleep, 1000
-        count++
+        Tooltip, %z%, 87, 611
+        UnblockMovement()
+        traceLog("end ok") 
     }
-    Tooltip,
-}
-
-stableTooltip(theString, isSafeAfter) {
-    global tooltipX
-    global tooltipY
-    Tooltip, %theString%, %tooltipX%, %tooltipY%
-    if(isSafeAfter)
-        MCSH(348, 478, 50)
-}
-
-waitMultipleForColorNotVisibleQuick(x, y, color) {
-    while(!GetKeyState("left")) {
-        colorIsVisibleQuick(x, y, color)
-        waitForColorNotVisibleQuick(x, y, color)
-        
-    }
-}
-
-waitForColorVisibleQuick(x, y, color) {
-    x2 := x+15
-    y2 := y+15
-    waitForColorVisible(x, y, x2, y2, color)
-}
-
-waitForColorVisible(x, y, x2, y2, theColor) {
-    ;safeSpot() ;If game tooltips interrupt you
-    z := 0
-    while (!GetKeyState("left")) {
-        PixelSearch, Px, Py, %x%, %y%, %x2%, %y2%, %theColor%, 3, Fast
-        if ErrorLevel {
-            sleep, 10
-            z++ ;How long you've waited
-            ;Tooltip, %z%
-        }
-        else {
-            return
-        }
-    }
-    Tooltip
-}
-
-waitForColorNotVisibleQuick(x, y, color) {
-    x2 := x+15
-    y2 := y+15
-    waitForColorNotVisible(x, y, x2, y2, color)
-}
-
-waitForColorNotVisible(x, y, x2, y2, color) {
-    ;safeSpot()
-    z := 0
-    while(!GetKeyState("left")) {
-        PixelSearch, Px, Py, %x%, %y%, %x2%, %y2%, %color%, 3, Fast
-        if ErrorLevel {
-            return 1
-        }
-        else {
-            sleep, 10
-            z++ ;How long you've waited
-            ;Tooltip, %z%
-        }
-    }
-}
-
-colorIsVisibleQuick(x, y, color) {
-    x2 := x+15
-    y2 := y+15 
-return colorIsVisible(x, y, x2, y2, color)
-}
-
-; isColorVisible
-colorIsVisible(x, y, x2, y2, color) {
-    PixelSearch, Px, Py, %x%, %y%, %x2%, %y2%, %color%, 8, Fast
-    if ErrorLevel {
-        return 0
-    }
-    else {
-        return 1
-    }
-}
-
-colorIsNotVisibleQuick(x, y, color) {
-    x2 := x+15
-    y2 := y+15 
-return colorIsNotVisible(x, y, x2, y2, color)
-}
-
-colorIsNotVisible(x, y, x2, y2, color) {
-    PixelSearch, Px, Py, %x%, %y%, %x2%, %y2%, %color%, 3, Fast
-    if ErrorLevel {
-        return 1
-    }
-    else {
-        return 0
-    }
-}
-
-clickUntilColorVisible(x1, y1, x2, y2, color) {
-    while(!colorIsVisibleQuick(x2, y2, color)) {
-        PostMessage, 0x200, 0, x&0xFFFF | y<<16,, ahk_id %vHwnd% ; WM_MOUSEMOVE
-        PostMessage, 0x201, 0, x&0xFFFF | y<<16,, ahk_id %vHwnd% ; WM_LBUTTONDOWN 
-        PostMessage, 0x202, 0, x&0xFFFF | y<<16,, ahk_id %vHwnd% ; WM_LBUTTONUP 
-        
-        Sleep, %t%
-    }
-}
-
-clickOn(x, y, x2, y2, theColor) {
-    global t
-    PixelSearch, Px, Py, %x%, %y%, %x2%, %y2%, %theColor%, 3, Fast
-    if ErrorLevel {
-        return false
-    } else {
-        Px2 := Px + 1
-        Py2 := Py + 1
-        ;MouseGetPos, xpos, ypos 
-        MCS(Px2, Py2, t)
-        ;MouseMove, xpos, ypos, 0
-        safeSpot()
-        return true
-    }
-}
-
-rClickOn(x, y, x2, y2, theColor) {
-    global t
-    PixelSearch, Px, Py, %x%, %y%, %x2%, %y2%, %theColor%, 3, Fast
-    if ErrorLevel {
-        return false
-    } else {
-        Px2 := Px + 1
-        Py2 := Py + 1
-        ;MouseGetPos, xpos, ypos 
-        MCSHR(Px2, Py2, t)
-        ;MouseMove, xpos, ypos, 0
-        return true
-    }
-}
-
-safeSpot() {
-    if(GetKeyState("left"))
-        return 
-    MouseMove, 526, 402, 0
-    sleep, 100
-}
-
-clickScrollBar(x, y ,t:=50) {
-    if(GetKeyState("left"))
-        return
-    MouseMove, %x%, %y%, 0
-    loop, 4 {
-        PostMessage, 0x200, 0, x&0xFFFF | y<<16,, ahk_id %vHwnd% ; WM_MOUSEMOVE
-        PostMessage, 0x201, 0, x&0xFFFF | y<<16,, ahk_id %vHwnd% ; WM_LBUTTONDOWN 
-        PostMessage, 0x202, 0, x&0xFFFF | y<<16,, ahk_id %vHwnd% ; WM_LBUTTONUP 
-        
-        Sleep, %t%
-    }
-}
-
-down4() {
-    if(GetKeyState("left"))
-        return
-    sleep, 50
-    loop, 4 {
-        Send {WheelDown}
-        sleep, 50
-    }
-    sleep, 50
-}
-
-down3() {
-    if(GetKeyState("left"))
-        return
-    sleep, 150
-    loop, 3 {
-        Send {WheelDown}
-        sleep, 50
-    }
-    sleep, 150
-}
+    
+return

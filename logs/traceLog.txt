@@ -1,130 +1,84 @@
-gclick
-click menu1 x:170 y:1008
-click menu1 x:170 y:1008
-gclick
-click sb_GoBack x:547 y:413
-click sb_GoBack x:547 y:413
-gclick
-click slime_bank x:423 y:953
-click slime_bank x:423 y:953
-gclick
-click menu1 x:170 y:1008
-click menu1 x:170 y:1008
-gclick
-click sb_GoBack x:547 y:413
-click sb_GoBack x:547 y:413
-gclick
-click slime_bank x:423 y:953
-click slime_bank x:423 y:953
-gclick
-click menu1 x:170 y:1008
-click menu1 x:170 y:1008
-gclick
-click sb_GoBack x:547 y:413
-click sb_GoBack x:547 y:413
-gclick
-click upgrade_upgradeMax x:543 y:669
-click upgrade_upgradeMax x:543 y:669
-gclick
-click upgrade_crystal_ritual x:400 y:882
-gclick
-click upgrade_stone_ritual x:343 y:885
-gclick
-click upgrade_leaf_ritual x:459 y:885
-gclick
-click upgrade_rake4 x:515 y:825
-gclick
-click upgrade_pickaxe4 x:516 y:717
-gclick
-click upgrade_lab4 x:516 y:776
-gclick
-click upgrade_rake3 x:458 y:828
-gclick
-click upgrade_pickaxe3 x:454 y:714
-gclick
-click upgrade_lab3 x:455 y:773
-gclick
-click upgrade_rake2 x:399 y:832
-gclick
-click upgrade_pickaxe2 x:396 y:718
-gclick
-click upgrade_lab2 x:398 y:777
-gclick
-click upgrade_rake1 x:343 y:829
-gclick
-click upgrade_pickaxe1 x:336 y:716
-gclick
-click upgrade_lab1 x:343 y:778
-gclick
-click upgrade_exp_bonus x:226 y:881
-gclick
-click upgrade_gold_bonus x:167 y:882
-gclick
-click upgrade_expand_equip x:284 y:881
-gclick
-click upgrade_upgrade1 x:359 y:669
-click upgrade_upgrade1 x:359 y:669
-gclick
-click upgrade_mystery_box x:514 y:884
-gclick
-click menu1 x:170 y:1008
-click menu1 x:170 y:1008
-gclick
-click sb_GoBack x:547 y:413
-click sb_GoBack x:547 y:413
-gclick
-click slime_bank x:423 y:953
-click slime_bank x:423 y:953
-gclick
-clone sb_nitro_generators
-click sb_nitro_generators x:167 y:882
-gclick
-click menu1 x:170 y:1008
-click menu1 x:170 y:1008
-gclick
-click sb_GoBack x:547 y:413
-click sb_GoBack x:547 y:413
-gclick
-click upgrade_upgradeMax x:543 y:669
-click upgrade_upgradeMax x:543 y:669
-gclick
-click upgrade_crystal_ritual x:400 y:882
-gclick
-click upgrade_stone_ritual x:343 y:885
-gclick
-click upgrade_leaf_ritual x:459 y:885
-gclick
-click upgrade_rake4 x:515 y:825
-gclick
-click upgrade_pickaxe4 x:516 y:717
-gclick
-click upgrade_lab4 x:516 y:776
-gclick
-click upgrade_rake3 x:458 y:828
-gclick
-click upgrade_pickaxe3 x:454 y:714
-gclick
-click upgrade_lab3 x:455 y:773
-gclick
-click upgrade_rake2 x:399 y:832
-gclick
-click upgrade_pickaxe2 x:396 y:718
-gclick
-click upgrade_lab2 x:398 y:777
-gclick
-click upgrade_rake1 x:343 y:829
-gclick
-click upgrade_pickaxe1 x:336 y:716
-gclick
-click upgrade_lab1 x:343 y:778
-gclick
-click upgrade_exp_bonus x:226 y:881
-gclick
-click upgrade_gold_bonus x:167 y:882
-gclick
-click upgrade_expand_equip x:284 y:881
-gclick
-click upgrade_upgrade1 x:359 y:669
-click upgrade_upgrade1 x:359 y:669
-gclick
-click upgrade_mystery_box x:514 y:884
+gclick 2 - menu1 x:104 y:988
+gclick 2 - sb_GoBack x:519 y:333
+gclick 2 - upgrade_upgradeMax x:514 y:615
+gclick 1 - upgrade_crystal_ritual x:357 y:850
+gclick 1 - upgrade_stone_ritual x:294 y:853
+gclick 1 - upgrade_leaf_ritual x:422 y:853
+gclick 1 - upgrade_rake4 x:484 y:787
+gclick 1 - upgrade_pickaxe4 x:485 y:668
+gclick 1 - upgrade_lab4 x:485 y:732
+gclick 1 - upgrade_rake3 x:420 y:790
+gclick 1 - upgrade_pickaxe3 x:416 y:665
+gclick 1 - upgrade_lab3 x:418 y:729
+gclick 1 - upgrade_rake2 x:356 y:794
+gclick 1 - upgrade_pickaxe2 x:353 y:669
+gclick 1 - upgrade_lab2 x:354 y:734
+gclick 1 - upgrade_rake1 x:294 y:791
+gclick 1 - upgrade_pickaxe1 x:287 y:666
+gclick 1 - upgrade_lab1 x:294 y:735
+gclick 1 - upgrade_exp_bonus x:165 y:848
+gclick 1 - upgrade_gold_bonus x:101 y:850
+gclick 1 - upgrade_expand_equip x:230 y:848
+gclick 2 - upgrade_upgrade1 x:312 y:615
+gclick 1 - upgrade_mystery_box x:482 y:851
+gclick 1 - GB_ScanPoint x:112 y:260
+
+start lootBestiary
+gclick 2 - menu3 x:387 y:988
+gclick 2 - explore_bestiary x:494 y:339
+gclick 2 - bestiary_lootAll x:306 y:185
+gclick 2 - bestiary_close x:1156 y:188
+gclick 1 - GB_ScanPoint x:112 y:260
+end ok
+gclick 2 - menu1 x:104 y:988
+gclick 2 - sb_GoBack x:519 y:333
+gclick 2 - slime_bank x:382 y:928
+gclick 1 - GB_ScanPoint x:112 y:260
+gclick 2 - menu1 x:104 y:988
+gclick 2 - sb_GoBack x:519 y:333
+gclick 2 - upgrade_upgradeMax x:514 y:615
+gclick 1 - upgrade_crystal_ritual x:357 y:850
+gclick 1 - upgrade_stone_ritual x:294 y:853
+gclick 1 - upgrade_leaf_ritual x:422 y:853
+gclick 1 - upgrade_rake4 x:484 y:787
+gclick 1 - upgrade_pickaxe4 x:485 y:668
+gclick 1 - upgrade_lab4 x:485 y:732
+gclick 1 - upgrade_rake3 x:420 y:790
+gclick 1 - upgrade_pickaxe3 x:416 y:665
+gclick 1 - upgrade_lab3 x:418 y:729
+gclick 1 - upgrade_rake2 x:356 y:794
+gclick 1 - upgrade_pickaxe2 x:353 y:669
+gclick 1 - upgrade_lab2 x:354 y:734
+gclick 1 - upgrade_rake1 x:294 y:791
+gclick 1 - upgrade_pickaxe1 x:287 y:666
+gclick 1 - upgrade_lab1 x:294 y:735
+gclick 1 - upgrade_exp_bonus x:165 y:848
+gclick 1 - upgrade_gold_bonus x:101 y:850
+gclick 1 - upgrade_expand_equip x:230 y:848
+gclick 2 - upgrade_upgrade1 x:312 y:615
+gclick 1 - upgrade_mystery_box x:482 y:851
+gclick 1 - GB_ScanPoint x:112 y:260
+gclick 2 - menu1 x:104 y:988
+gclick 2 - sb_GoBack x:519 y:333
+gclick 2 - upgrade_upgradeMax x:514 y:615
+gclick 1 - upgrade_crystal_ritual x:357 y:850
+gclick 1 - upgrade_stone_ritual x:294 y:853
+gclick 1 - upgrade_leaf_ritual x:422 y:853
+gclick 1 - upgrade_rake4 x:484 y:787
+gclick 1 - upgrade_pickaxe4 x:485 y:668
+gclick 1 - upgrade_lab4 x:485 y:732
+gclick 1 - upgrade_rake3 x:420 y:790
+gclick 1 - upgrade_pickaxe3 x:416 y:665
+gclick 1 - upgrade_lab3 x:418 y:729
+gclick 1 - upgrade_rake2 x:356 y:794
+gclick 1 - upgrade_pickaxe2 x:353 y:669
+gclick 1 - upgrade_lab2 x:354 y:734
+gclick 1 - upgrade_rake1 x:294 y:791
+gclick 1 - upgrade_pickaxe1 x:287 y:666
+gclick 1 - upgrade_lab1 x:294 y:735
+gclick 1 - upgrade_exp_bonus x:165 y:848
+gclick 1 - upgrade_gold_bonus x:101 y:850
+gclick 1 - upgrade_expand_equip x:230 y:848
+gclick 2 - upgrade_upgrade1 x:312 y:615
+gclick 1 - upgrade_mystery_box x:482 y:851
+gclick 1 - GB_ScanPoint x:112 y:260

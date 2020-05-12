@@ -74,7 +74,6 @@ bankread(x,y)
         col:=[vred,vgreen,vblue]
         pixline.=dist2(col)
         PixelGetColor col, x++, y
-        tooltip %col%
         ;mousemove x,y
     } 
     if (instr(lastpixline,pixline)) {

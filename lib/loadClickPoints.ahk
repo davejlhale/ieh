@@ -35,7 +35,7 @@ loadClickPoints()
         y:=0
         class:="ClickPoint"
         
-        __New(aname,ax,ay)
+        __New(aname:="nameless",ax:=0,ay:=0)
         {
             this.name:=aname
             this.x:=ax

@@ -8,6 +8,9 @@ SetTitleMatchMode, 2
 DetectHiddenWindows, On
 coordMode, Mouse, client
 coordMode, Pixel, Client
+SysGet, vMonitorCount, MonitorCount
+
+
 global vWinTitle:="Incremental Epic Hero"
 global vStartTime:= A_TickCount
 FileOpen("logs\traceLog.txt", "w `n")
@@ -30,12 +33,12 @@ rebirthWatch()
 ;;add menus and gui
 menu := new GUIMenu("home")
 EquipIcon :=new gIcon("EquipIcon",956,830,"Equip","Equip Hero Gear")
-BankCapBuyerIcon:=new gIcon("d",908,830,"BankCapBuyer","Buy Slime Bank item when Full")
+BankCapBuyerIcon:=new gIcon("d",908,830,"BankCapBuyer","Buy Slime Bank item when Full`n(needs active window)")
 buffCycleIcon := new gIcon("BuffCycle",760,830,"BuffCycle","Weave Angels buffs in global slot 1")
 upgradeCycleIcon :=new gIcon("upgradeCycle",808,830,"upgradeCycle","Clicks your upgrades for you")
 lootBestiaryIcon :=new gIcon("LootBestiary",856,830,"lootBestiary","Auto Loots Bestiary every so often")
-CaptureIcon :=new gIcon("Capture",1004,830,"Capture","Auto captures mobs selected in MonsterList config")
-NitroIcon:=new gIcon("Nitro",1052,830,"doNitro","Auto Nitro")
+CaptureIcon :=new gIcon("Capture",1004,830,"Capture","Auto captures mobs selected in MonsterList config`n(needs active window)")
+NitroIcon:=new gIcon("Nitro",1052,830,"doNitro","Auto Nitro`n(needs active window)")
 ;rebirthWatch()
 ;;end of autoexec 
 return

@@ -1,17 +1,24 @@
 doNitro() { ;+- offsets allowing for slight error in other clients
     
     critical on
-    global vNitroBarBlueColor
+    global vNitroBarBlueColor, vMonitorCount
     global nitro, nitro_pixel_start, NitroIcon
     global vGameContainerWidth,vGameContainerHeight
-    global begin_x, begin_y ,vHwnd
+    global begin_x, begin_y ,vHwnd,vWinTitle
     
-   
+    
     if ! (A_GuiEvent) {
-    NitroIcon.Toggle()
+        NitroIcon.Toggle()
 } else {
     NitroIcon.Toggle()
 }
+
+    
+    MouseGetPos,,, hWinUnderMouse
+    if (vHwnd != hWinUnderMouse && vMonitorCount ==1 )
+        return
+    WinActivate ahk_id %vHwnd%
+    WinWaitActive, ahk_id %vHwnd%
 
 MovementBlock()
 nsx :=round(vGameContainerWidth * nitro_pixel_start.x)+begin_x
@@ -20,22 +27,26 @@ nsx2:=nsx +4
 nsy2:=nsy +8
 gclick(menu1,2,100)
 gClick(sb_GoBack,2,100)
+;WinActivate %vWinTitle%
+VNitroTest:=0x112435
+nitroButtonX :=round(vGameContainerWidth * nitro.x)+begin_x -2
+nitroButtonY := round(vGameContainerHeight * nitro.y) +begin_y -2
+nitroButtonX2:=nitroButtonX +5
+nitroButtonY2:=nitroButtonY +5
 
-VNitroTest:=0x0F1922
-nitroButtonX :=round(vGameContainerWidth * nitro.x)+begin_x
-nitroButtonY := round(vGameContainerHeight * nitro.y) +begin_y
-nitroButtonX2:=nitroButtonX +6
-nitroButtonY2:=nitroButtonY +6
-
-mousemove nitroButtonX,nitroButtonY
+PixelGetColor, OutputVar, nitroButtonX, nitroButtonY
+;tooltip %OutputVar% . " - " . %nitroButtonX% . " - " . %nitroButtonY% . " - " . %nitroButtonX2% . " - " . %nitroButtonY2% . " - " . %VNitroTest%
 
 ;WinActivate, ahk_id vHwnd
-PixelSearch, , , %nitroButtonX%, %nitroButtonY%, %nitroButtonX2%, %nitroButtonY2%, %VNitroTest%, 10, Fast 
-if ErrorLevel
+PixelSearch,rx ,ry , %nitroButtonX%, %nitroButtonY%, %nitroButtonX2%, %nitroButtonY2%, %VNitroTest% ,20
+if ErrorLevel ;not fount
 {
+    ; tooltip %ErrorLevel% . " - " . %rx% . " - " . %ry% ,2
     gClick(nitro,1,150)
+}else 
+{
+    ;tooltip %ErrorLevel% . " - " . %rx% . " - " . %ry% ,2
 }
-
 PixelSearch, , , %nsx%, %nsy%, %nsx2%, %nsy2%, %vNitroBarBlueColor%, 8, Fast 
 if ErrorLevel { ;not found 
     gClick(menu5,2.100) ;craft 

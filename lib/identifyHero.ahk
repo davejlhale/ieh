@@ -5,12 +5,15 @@ identifyHero()
     global wizardColorScanLocation
     global vFoundHero
     global vHwnd
-
+  
+    
     MouseGetPos,,, hWinUnderInstance
     if (vHwnd != hWinUnderInstance){
         tracelog("identifyHero aborted - no focus")
         return 1
     } 
+    WinActivate ahk_id %vHwnd%
+    WinWaitActive, ahk_id %vHwnd%
     
     cWarrior:=0x73685D
     cWizard:=0x7683B1

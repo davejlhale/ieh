@@ -4,12 +4,12 @@
 ;uncomment to select - more = slower
 vCaptureCount++
  rClickOn(vTrapx1, vTrapx2,vTrapy1, vTrapy2, 0xB9B8B9) ; metal slime /
-; rClickOn(vTrapx1, vTrapx2,vTrapy1, vTrapy2, 0xFFFFFF) ; white fox 
-; rClickOn(vTrapx1, vTrapx2,vTrapy1, vTrapy2, 0xC4CBD3) ; black fairy 0xC4CBD3
-; rClickOn(vTrapx1, vTrapx2,vTrapy1, vTrapy2, 0x1E1E1E) ;  fairy
+ rClickOn(vTrapx1, vTrapx2,vTrapy1, vTrapy2, 0xFFFFFF) ; white fox 
+rClickOn(vTrapx1, vTrapx2,vTrapy1, vTrapy2, 0xC4CBD3) ; black fairy 0xC4CBD3
+ rClickOn(vTrapx1, vTrapx2,vTrapy1, vTrapy2, 0x1E1E1E) ;  fairy
  rClickOn(vTrapx1, vTrapx2,vTrapy1, vTrapy2, 0xDF00FF) ; pink spider
-; rClickOn(vTrapx1, vTrapx2,vTrapy1, vTrapy2, 0vTrapx262525) ; black bat 0xD5D8D5
-; rClickOn(vTrapx1, vTrapx2,vTrapy1, vTrapy2, 0xD5D8D5) ; slime boss
+ rClickOn(vTrapx1, vTrapx2,vTrapy1, vTrapy2, 0vTrapx262525) ; black bat 0xD5D8D5
+ rClickOn(vTrapx1, vTrapx2,vTrapy1, vTrapy2, 0xD5D8D5) ; slime boss
 
 
 ; rClickOn(vTrapx1, vTrapx2,vTrapy1, vTrapy2, 0xCEFF8C) ; green / magig

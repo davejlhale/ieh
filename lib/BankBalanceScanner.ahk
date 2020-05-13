@@ -1,16 +1,22 @@
 
 
-
 BankBalanceScanner()
 { 
     global vMouseMemoryX,vMouseMemoryY
     static currentBank:=0
     global interestIncomeOnly
-    global SC_ScanPoint	, GB_ScanPoint
+    global SC_ScanPoint	, GB_ScanPoint,vHwnd,vMonitorCount
     global vGameContainerWidth,vGameContainerHeight, begin_x, begin_y
     if interestIncomeOnly
         currentBank:=1
-    
+
+
+    global vHwnd
+    MouseGetPos,,, hWinUnderMouse
+    if (vHwnd != hWinUnderMouse && vMonitorCount ==1 )
+        return
+    WinActivate ahk_id %vHwnd%
+    WinWaitActive, ahk_id %vHwnd%
     switch currentBank { 
         case 0: {
             gosub changeToWatchGoldBank
@@ -51,18 +57,18 @@ bankread(x,y)
     pixline:=[]
     pixline2:=[]
     pixCount:=0
-   
-        
-        if WinExist( vWinTitle) {
-            #WinActivateForce
-            WinActivate,  %vWinTitle%
-           ; WinRestore,   %vWinTitle%
-            sleep 100
-        }
-        
-        
-        ;CoordMode, Pixel,client
-        ;coordmode mouse, client
+    
+    
+    if WinExist( vWinTitle) {
+        #WinActivateForce
+        WinActivate, %vWinTitle%
+        ; WinRestore, %vWinTitle%
+        sleep 100
+    }
+    
+    
+    ;CoordMode, Pixel,client
+    ;coordmode mouse, client
     
     
     
@@ -78,12 +84,12 @@ bankread(x,y)
     } 
     if (instr(lastpixline,pixline)) {
         lastpixline:=pixline
-    return true 
-}
-else {
-    lastpixline:=pixline
-    return false
-}
+        return true 
+    }
+    else {
+        lastpixline:=pixline
+        return false
+    }
 }
 
 dist2(col)

@@ -31,9 +31,9 @@ TrapMaker() {
         gClick(alchemy_100ml,1,88)			;
         gclick(alchemy_1L,1,88) ;
         gClick(alchemy_plus_button,1,50) 	;stuck on below 1L will raise
-        mousemove alchOption_14_x,alchOption_14_y
-        PixelGetColor, OutputVar, alchOption_14_x,alchOption_14_y
-        ToolTip, %OutputVar%
+        ; mousemove alchOption_14_x,alchOption_14_y
+        ; PixelGetColor, OutputVar, alchOption_14_x,alchOption_14_y
+        ; ToolTip, %OutputVar%
 
         PixelSearch, , , %alchOption_14_x%, %alchOption_14_y%, %alchOption_14_x2%, %alchOption_14_y2%, %vTrapColor% ,16 
         if ! errorlevel { ; 0= found = trap at option 14 ie 1L

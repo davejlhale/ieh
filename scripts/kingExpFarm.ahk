@@ -15,7 +15,7 @@ kingExpFarm()
     PixelSearch, , , x, y, x, y, 0x001800 , 5
     ;;if menu button covers color
     if ! ErrorLevel
-        return
+        kfToggle:=false
     
     critical on
     MouseGetPos vX,Vy

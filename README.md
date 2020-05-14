@@ -7,8 +7,8 @@ should work out the box
 Currently 
 (@ should run in background * currently needs focus)		
 	
-	* auto capture and net maker
-	@ one click equip of equipment set (4 configurable)
+	* auto capture and net maker (comment in/out the mobs in monsterist.ahk - config folder )
+	@ one click equip of equipment set (4 configurable equipmentsets.ini)
 	@ auto bestiary loot
 	@ auto click upgrades	
 	@ auto weave angel buffs in global slot 1	

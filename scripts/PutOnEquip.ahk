@@ -29,22 +29,26 @@ PutOnEquip(aEquipmeentSet:="general")
         y2:= y+5
         
         global vHwnd
-        if (vHwnd != hWinUnderMouse && vMonitorCount !=1 ){
+        MouseGetPos, ,,hWinUnderMouse
+        if (vHwnd != hWinUnderMouse && vMonitorCount !=1 ) or (vHwnd == hWinUnderMouse){
             WinActivate ahk_id %vHwnd%
             WinWaitActive, ahk_id %vHwnd% 
-        } else if (vHwnd == hWinUnderMouse) {
-            WinActivate ahk_id %vHwnd%
-            WinWaitActive, ahk_id %vHwnd% 
-        }
+        } 
         
         critical on
-        
-        PixelSearch, , , x, y, x2, y2, 0x001800 , 2
-        ;;if menu button covers color
-        if ErrorLevel
+        WinGet, active_id, ID, A
+        if ( active_id==vHwnd) {
+            PixelSearch, , , x, y, x2, y2, 0x001800 , 2
+            ;;if menu button covers color
+            if ErrorLevel
+                gClick(menu5,2,100)
+            else
+                gClick(menu4,2,100)
+        }
+        else {
             gClick(menu5,2,100)
-        else
-            gClick(menu4,2,100)
+            
+        }
         
         gClick(craft_check_Box,2,100)
         
@@ -52,8 +56,10 @@ PutOnEquip(aEquipmeentSet:="general")
         {
             Loop, parse, A_LoopReadLine, %A_Tab%%A_Space%
             { 
+                
                 if (A_index==1) && (A_loopfield != vEquipmentSet) {
                     passOver:=true
+    
                 }
                 
                 if !passover && (A_index!=1){

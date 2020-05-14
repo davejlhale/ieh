@@ -141,15 +141,6 @@ Return
 
 ;; misc hero hotkey
 
-ReturnFromRebirth:
-    gosub Equip
-    ;rebirth()
-return
-!e::
-    Equip: 
-    ;supplying a named equipment set here will put that on over default war/angel/wiz/general setups
-    PutOnEquip()
-return
 
 F8::
 JustRun:
@@ -191,3 +182,8 @@ SetClickPoints:
     setClickPoints()
 return
 
+!e::
+    Equip: 
+    ;supplying a named equipment set here will put that on over default war/angel/wiz/general setups
+    PutOnEquip()
+return

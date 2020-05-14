@@ -41,13 +41,7 @@ kingExpFarm()
             gClick(menu4,2,100)
             gClick(challenge1,2,100)
             gClick(challenge_start,2,100)
-            
-            
             WinActivate, %vWinTitle%
-            ControlSend,,{s down},%vWinTitle%
-            
-            
-            
             send, {s down} 
             UnblockMovement()
             critical off

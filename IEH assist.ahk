@@ -64,15 +64,14 @@ return
 #include fairyFarmer.ahk
 #Include kingExpFarm.ahk
 #include ChilliScavanger.ahk
-#include ..\Phurple\test.ahk
+;#include ..\Phurple\test.ahk
 
 !7::
+!c::
 Capture:
     Capture()
 return
-    
-
-    
+       
 !n::
 doNitro:
     doNitro()
@@ -173,11 +172,13 @@ return
     showBox(begin_x, begin_y, end_x, end_y) 
 return
 
+!F4::
 ScreenInfo:
     showScreenInfo()
     
 return
 
+!F3::
 SetClickPoints:
     setClickPoints()
 return

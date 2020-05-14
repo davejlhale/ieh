@@ -12,7 +12,6 @@ Capture() {
     traceLog("`nstart lootBestiary")
     CaptureIcon.toggle()
     if !(CaptureIcon.isactive) {
-        SetTimer, doNitro,off
         SetTimer, TrapMaker,off
         SetTimer, MonsterSearch,off
         SetTimer, ConvertSCtoG,off
@@ -42,8 +41,8 @@ Capture() {
         alchOption_14_y2:= alchOption_14_y + 8
         
         global NitroIcon
-        SetTimer, doNitro,60000
-        NitroIcon.turnOn()
+        if ! NitroIcon.isactive
+            doNitro()
         SetTimer, TrapMaker,10000
         TrapMaker()
         settimer, ConvertSCtoG,20000

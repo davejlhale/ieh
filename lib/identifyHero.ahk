@@ -20,12 +20,12 @@ identifyHero()
     cAngel:=0xCCD0C7
     
     tracelog("hero id attempt")
-    if ! checkPixel(warriorColorScanLocation,cWarrior,3,3){
+    if ! checkPixel(warriorColorScanLocation,cWarrior,4,4){
         return "warrior"
-    }else if ! checkPixel(wizardColorScanLocation,cWizard,3,3){
+    }else if ! checkPixel(wizardColorScanLocation,cWizard,7,7){
         return "wizard"
     }
-    else if ! checkPixel(angelColorScanLocation,cAngel,3,3){
+    else if ! checkPixel(angelColorScanLocation,cAngel,4,4){
         return "angel"
     }
     Else {

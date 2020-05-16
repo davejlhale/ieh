@@ -4,7 +4,6 @@ global equipClassD , equipClassC , equipClassB ,menu5,craft_check_Box, menu4, me
 PutOnEquip(aEquipmeentSet:="general")
 {
     global EquipIcon
-    static vputOnToggle:=False
     global vGameContainerWidth,vGameContainerHeight
     global begin_x, begin_y, menu7
     Critical, on

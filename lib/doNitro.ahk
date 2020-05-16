@@ -62,7 +62,20 @@ doNitroLoop(){
     }
     PixelSearch, , , %nsx%, %nsy%, %nsx2%, %nsy2%, %vNitroBarBlueColor%, 8, Fast 
     if ErrorLevel { ;not found 
-        gClick(menu5,2.100) ;craft 
+        WinGet, active_id, ID, A
+        if ( active_id==vHwnd) {
+            PixelSearch, , , x, y, x2, y2, 0x001800 , 2
+            ;;if menu button covers color
+            if ErrorLevel
+                gClick(menu5,2,100)
+            else
+                gClick(menu4,2,100)
+        }
+        else {
+            gClick(menu5,2,100)
+            
+        }
+        
         gClick(Alchemy_check_Box,2,100)
         
         gClick(alchemy_1ml,2,100)

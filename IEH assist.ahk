@@ -10,13 +10,12 @@ coordMode, Mouse, client
 coordMode, Pixel, Client
 SysGet, vMonitorCount, MonitorCount
 
-
+global rebirthscript:=off
 global vWinTitle:="Incremental Epic Hero"
 global vStartTime:= A_TickCount
 FileOpen("logs\traceLog.txt", "w `n")
 #include configs
 #include general.ini
-
 loadClickPoints()
 While findKongGameContainer() { 
     if (A_TickCount-vStartTime > 10000) {
@@ -32,13 +31,13 @@ rebirthWatch()
 
 ;;add menus and gui
 menu := new GUIMenu("home")
-EquipIcon :=new gIcon("EquipIcon",956,830,"Equip","Equip Hero Gear")
-BankCapBuyerIcon:=new gIcon("d",908,830,"BankCapBuyer","Buy Slime Bank item when Full`n(needs active window)")
-buffCycleIcon := new gIcon("BuffCycle",760,830,"BuffCycle","Weave Angels buffs in global slot 1")
-upgradeCycleIcon :=new gIcon("upgradeCycle",808,830,"upgradeCycle","Clicks your upgrades for you")
-lootBestiaryIcon :=new gIcon("LootBestiary",856,830,"lootBestiary","Auto Loots Bestiary every so often")
-CaptureIcon :=new gIcon("Capture",1004,830,"Capture","Auto captures mobs selected in MonsterList config`n(needs active window)")
-NitroIcon:=new gIcon("Nitro",1052,830,"doNitro","Auto Nitro`n(needs active window)")
+EquipIcon :=new gIcon("EquipIcon",956,730,"Equip","Equip Hero Gear")
+BankCapBuyerIcon:=new gIcon("d",908,730,"BankCapBuyer","Buy Slime Bank item when Full`n(needs active window)")
+buffCycleIcon := new gIcon("BuffCycle",760,730,"BuffCycle","Weave Angels buffs in global slot 1")
+upgradeCycleIcon :=new gIcon("upgradeCycle",808,730,"upgradeCycle","Clicks your upgrades for you")
+lootBestiaryIcon :=new gIcon("LootBestiary",856,730,"lootBestiary","Auto Loots Bestiary every so often")
+CaptureIcon :=new gIcon("Capture",1004,730,"Capture","Auto captures mobs selected in MonsterList config`n(needs active window)")
+NitroIcon:=new gIcon("Nitro",1052,730,"doNitro","Auto Nitro`n(needs active window)")
 ;rebirthWatch()
 ;;end of autoexec 
 return
@@ -64,7 +63,28 @@ return
 #include fairyFarmer.ahk
 #Include kingExpFarm.ahk
 #include ChilliScavanger.ahk
+#include autoSkills.ahk
 ;#include ..\Phurple\test.ahk
+
+
+!r::
+rebirthscript:=!rebirthscript
+tracelog("auto rebirth :" rebirthscript)
+settimer, AutoRebirth, %rebirthAfter%
+return
+
+AutoRebirth:
+critical on
+tracelog("auto rebirth")
+ gclick(menu7,2,200)
+ gclick(rebirthSelect,2,200)
+ gclick(rebirthConfirm,2,200)
+ sleep 15000
+ gclick(gameStart,2,200)
+ sleep 3000	
+return
+
+
 
 !7::
 !c::
@@ -139,6 +159,7 @@ KingExpFarm:
 Return
 
 ;; misc hero hotkey
+
 
 
 F8::

@@ -36,9 +36,9 @@
         */
         gclick(warrior,2,150) ; try put war slot 7 +8 9 war skills in class 1+2
         gclick( st_slot_7 ,2,100)
-        gclick( skillbar_class_top_2 ,2,50)
+        gclick( skillbar_class_top_1 ,2,50)
         gclick( st_slot_8 ,2,100)
-        gclick( skillbar_class_top_3 ,2,50)
+        gclick( skillbar_class_top_2 ,2,50)
         gclick( st_slot_9 ,2,100)
         gclick( skillbar_class_top_3 ,2,50)
         gclick( st_slot_6 ,2,100)

@@ -13,7 +13,7 @@ checkPixel(ColorScanLocation,pcolor,pdimentionX:=3,pdimentionY:=8)
     
     ;mousemove X,Y
     PixelGetColor,col, X,Y
-    PixelSearch, , , %X%, %Y%, %X2%, %Y2%, pColor , 5
+    PixelSearch, , , %X%, %Y%, %X2%, %Y2%, pColor , 10
     msg="pixelSearch on id " %vHwnd% %ErrorLevel% %X% %Y% %X2% %Y2% %pColor% %pVariance% "color found " %col% "end"
     traceLog(msg)
     return ErrorLevel ;0 = found

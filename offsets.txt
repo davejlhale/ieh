@@ -1,3 +1,4 @@
+gameStart	0.496756	0.411619
 menu1	0.048943	0.945104
 menu2	0.155729	0.951039
 menu3	0.263626	0.945104
@@ -253,3 +254,5 @@ angelColorScanLocation	0.095913	0.162403
 wizardColorScanLocation	0.095913	0.162403
 trapAreaTL	0.565430	0.161290
 trapAreaBR	0.849099	0.560701
+rebirthSelect	0.167748	0.894932
+rebirthConfirm	0.453197	0.791100

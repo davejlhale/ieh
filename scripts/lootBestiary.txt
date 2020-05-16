@@ -11,7 +11,7 @@ lootBestiary:
         }
         else {
             ;call this label on interval - 120000000 = 20mins
-            SetTimer, timedlootBestiary, 120000000 
+            SetTimer, timedlootBestiary, %LootBestiaryInterval%
         } 
         timedlootBestiary:
             MovementBlock()

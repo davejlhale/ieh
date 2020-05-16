@@ -43,7 +43,10 @@ setClickPoints(){
     ; checkPoints.push( "equip_classD","equip_classC","equip_classB")
     ; checkPoints.push("SC_ScanPoint","GB_ScanPoint")
     ;checkPoints.push( "warriorColorScanLocation", "angelColorScanLocation", "wizardColorScanLocation")
-    checkPoints.push("trapAreaTL","trapAreaBR")
+    ;checkPoints.push("trapAreaTL","trapAreaBR")
+
+    ;checkPoints.push("rebirthSelect","rebirthConfirm")
+    checkPoints.push("gameStart")
     msgbox, 49,,You will asked to right click points which will write them to the offsets.txt file. `neg. menu1 x y`n`nOnly use if you're sure you want this change!
         IfMsgBox, Cancel
     return

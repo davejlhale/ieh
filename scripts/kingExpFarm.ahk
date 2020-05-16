@@ -3,7 +3,7 @@ kingExpFarm()
 {
     
     global menu4, challenge1,challenge_start,challenge_quit
-    static kfToggle:= false
+    global kfToggle:= false
     global vGameContainerWidth,vGameContainerHeight
     global begin_x, begin_y
     global kingEXPLoopTimer

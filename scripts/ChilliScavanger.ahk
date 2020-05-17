@@ -1,5 +1,11 @@
 ChilliScavanger(){
-    static scToggle
+    static scToggle,vMonitorCount 
+    global vHwnd
+ 
+    tracelog("chillscavanger started")
+    WinActivate ahk_id %vHwnd%
+    WinWaitActive, ahk_id %vHwnd%
+
     scToggle:=!scToggle
     if scToggle 
     {

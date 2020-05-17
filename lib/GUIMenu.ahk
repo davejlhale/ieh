@@ -38,34 +38,44 @@ class GUIMenu
     }
     
     addGUI(sMsg){
-        Hwnd:=this.lastMenu
-        if Hwnd
-            Gui, %Hwnd%:Destroy
-        Hwnd:=this.currentMenu
- 
-        Gui, %Hwnd%:+AlwaysOnTop -Caption +ToolWindow +E0x08000000 +Hwndgui_id
-        Gui, %Hwnd%:Margin, 0, 0
-        Gui, %Hwnd%:Font, s12
-        For i,v in StrSplit(sMsg, ",")
-        {
-            j:=i=1 ? "":"x+0", j.=InStr(v,"Pause") ? " vPause":""
-            Gui, %Hwnd%:Add, Button, %j% gEventAction, %v%
-        }
-        Gui, %Hwnd%:Show, NA y0, Menu Strip
-        return	 
-    }  
+    Hwnd:=this.lastMenu
+    if Hwnd
+        Gui, %Hwnd%:Destroy
+    Hwnd:=this.currentMenu
+    
+    Gui, %Hwnd%:+AlwaysOnTop -Caption +ToolWindow +E0x08000000 +Hwndgui_id
+    Gui, %Hwnd%:Margin, 0, 0
+    Gui, %Hwnd%:Font, s12
+    For i,v in StrSplit(sMsg, ",")
+    {
+        j:=i=1 ? "":"x+0", j.=InStr(v,"Pause") ? " vPause":""
+        Gui, %Hwnd%:Add, Text, %j% gEventAction, %v%
+    }
+    Gui, %Hwnd%:Show, NA y0, Menu Strip
+    return	 
+} 
 } 
 
 EventAction:
     {
         if !A_GuiControl
             return
-        if IsLabel(k:=RegExReplace(RegExReplace(A_GuiControl,".*]"),"\W"))
+        if IsLabel(k:=RegExReplace(RegExReplace(A_GuiControl,".*]"),"\W")) 
+        {   
+            if (!%k%Color) {
+                Gui, Font, cRed
+                %k%Color:="Red"
+            }
+            Else{
+                %k%Color:=""
+                Gui, Font, cBlack
+            }
+            GuiControl, Font, %A_GuiControl%
             Goto, %k%
+        }
         Else
             msgbox %k% - not yet implemented
         return
     }
-    
     
     

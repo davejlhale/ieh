@@ -30,13 +30,15 @@ return
 
 BankCapBuyer:
     {
+        global vCheckSlimeBankFullInterval
         Critical on
         BankCapBuyerIcon.toggle()
         if !(BankCapBuyerIcon.isactive) {
             SetTimer, BankBalanceScanner, off
         }
         else {
-            SetTimer, BankBalanceScanner, %checkBanksFullDelay%
+            SetTimer, BankBalanceScanner, %vCheckSlimeBankFullInterval%
+            tracelog("BankBalanceScanner started " vCheckSlimeBankFullInterval)
             BankBalanceScanner()
         } 
         return

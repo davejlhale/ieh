@@ -2,6 +2,7 @@
 !s::
     autoSkills(){
         critical on
+        tracelog("autoskills started")
         global menu2,warrior,wizard,angel
         ;skill tags
         global st_slot_1,st_slot_2,st_slot_3,st_slot_4,st_slot_5,st_slot_6,st_slot_7,st_slot_8,st_slot_9,st_slot_10
@@ -18,7 +19,6 @@
         ;misc hotbar tags
         global skillbar_active_skill,skillbar_automove
         
-        tracelog("auto skills on") 
         MovementBlock()
         
         ;skill menu click
@@ -46,8 +46,13 @@
         gclick( st_slot_5 ,2,100)
         gclick( skillbar_class_bottom_2 ,2,50)
         gclick( skill_table_skill_1_stance ,1,150)
-        
-        
+        gclick( st_slot_9 ,2,100)
+        gclick( skillbar_global_top_2 ,2,50)
+        gclick(wizard,2,150)
+           gclick( st_slot_9 ,2,100)
+            gclick( skillbar_global_top_2 ,2,50)
+            gclick( st_slot_2 ,2,100)
+            gclick( skillbar_global_top_3 ,2,50)
         
         gclick(wizard,2,150) ;try put wiz slot skills in class 
         gclick( st_slot_2 ,2,100)

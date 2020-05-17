@@ -3,7 +3,7 @@ upgradeCycle:
     {
         
         global initialUpdateDelay
-        
+        global vCurrentUpgradCycleInterval
         Critical on
         upgradeCycleIcon.toggle()
         if !(upgradeCycleIcon.isactive) {
@@ -13,13 +13,14 @@ upgradeCycle:
         }
         else {
             if (!repeatTime)
-                repeatTime := initialUpdateDelay
+                vCurrentUpgradCycleInterval := initialUpdateDelay
             ;call this label on interval
-            SetTimer, timedupgradeCycle, %repeatTime%
+            SetTimer, timedupgradeCycle, %vCurrentUpgradCycleInterval%
+            tracelog("timedupgradeCycle started :"vCurrentUpgradCycleInterval)
         } 
         timedupgradeCycle:
-        repeatTime+=%UpdateDelaySlowdownRate%
-        SetTimer, timedupgradeCycle, %repeatTime%
+        vCurrentUpgradCycleInterval+=%UpdateDelaySlowdownRate%
+        SetTimer, timedupgradeCycle, %vCurrentUpgradCycleInterval%
             MovementBlock()
             gClick(menu1,2,200)
             gClick(sb_GoBack,2,200)

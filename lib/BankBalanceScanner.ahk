@@ -12,9 +12,8 @@ BankBalanceScanner()
 
 
     global vHwnd
-    MouseGetPos,,, hWinUnderMouse
-    if (vHwnd != hWinUnderMouse && vMonitorCount ==1 )
-        return
+
+        
     WinActivate ahk_id %vHwnd%
     WinWaitActive, ahk_id %vHwnd%
     switch currentBank { 
@@ -57,21 +56,14 @@ bankread(x,y)
     pixline:=[]
     pixline2:=[]
     pixCount:=0
-    
-    
+     
     if WinExist( vWinTitle) {
         #WinActivateForce
         WinActivate, %vWinTitle%
         ; WinRestore, %vWinTitle%
         sleep 100
     }
-    
-    
-    ;CoordMode, Pixel,client
-    ;coordmode mouse, client
-    
-    
-    
+
     ;length to check
     Loop 50 { ;smaller capture width - needle
         vred := (col & 0xFF)
@@ -91,6 +83,7 @@ bankread(x,y)
         return false
     }
 }
+
 
 dist2(col)
 {

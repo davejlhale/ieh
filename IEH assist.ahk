@@ -10,7 +10,7 @@ coordMode, Mouse, client
 coordMode, Pixel, Client
 SysGet, vMonitorCount, MonitorCount
 
-global rebirthscript:=off
+global vAutoRebirth:=off
 global vWinTitle:="Incremental Epic Hero"
 global vStartTime:= A_TickCount
 FileOpen("logs\traceLog.txt", "w `n")
@@ -33,9 +33,9 @@ rebirthWatch()
 menu := new GUIMenu("home")
 EquipIcon :=new gIcon("EquipIcon",956,730,"Equip","Equip Hero Gear")
 BankCapBuyerIcon:=new gIcon("d",908,730,"BankCapBuyer","Buy Slime Bank item when Full`n(needs active window)")
-buffCycleIcon := new gIcon("BuffCycle",760,730,"BuffCycle","Weave Angels buffs in global slot 1")
+buffCycleIcon := new gIcon("AngelWeave",760,730,"AngelWeave","Weave Angels buffs in global slot 1")
 upgradeCycleIcon :=new gIcon("upgradeCycle",808,730,"upgradeCycle","Clicks your upgrades for you")
-lootBestiaryIcon :=new gIcon("LootBestiary",856,730,"lootBestiary","Auto Loots Bestiary every so often")
+    lootBestiaryIcon :=new gIcon("LootBestiary",856,730,"lootBestiary","Auto Loots Bestiary every so often")
 CaptureIcon :=new gIcon("Capture",1004,730,"Capture","Auto captures mobs selected in MonsterList config`n(needs active window)")
 NitroIcon:=new gIcon("Nitro",1052,730,"doNitro","Auto Nitro`n(needs active window)")
 ;rebirthWatch()
@@ -54,7 +54,7 @@ return
 #include ..\scripts
 #include lootBestiary.txt
 #Include upgradeClicks.txt
-#include genaral.txt
+#include AngelWeave.ahk
 #include bankCapBuyer.txt
 #include PutOnEquip.ahk
 #include golemFarmer.ahk
@@ -66,32 +66,59 @@ return
 #include autoSkills.ahk
 ;#include ..\Phurple\test.ahk
 
-
 !r::
-rebirthscript:=!rebirthscript
-tracelog("auto rebirth :" rebirthscript)
-settimer, AutoRebirth, %rebirthAfter%
+    vAutoRebirth:=!vAutoRebirth
+    if vAutoRebirth {
+        showtip("Auto Rebirth is On every (ms) "rebirthAfter)
+        settimer, AutoRebirth, %rebirthAfter%
+    } else {
+        showtip("Auto Rebirth is Off")
+        settimer, AutoRebirth, off
+    }
+    tracelog("auto rebirth :" vAutoRebirth)
+    settimer, forceOff,5000
 return
 
 AutoRebirth:
-critical on
-tracelog("auto rebirth")
- gclick(menu7,2,200)
- gclick(rebirthSelect,2,200)
- gclick(rebirthConfirm,2,200)
- sleep 15000
- gclick(gameStart,2,200)
- sleep 3000	
+    critical on
+    tracelog("auto rebirth")
+    global menuCheck
+    
+
+    
+    quipIcon.turnOff()
+    SetTimer, putOnEquipAction, off
+    BankCapBuyerIcon.turnOff()
+    SetTimer, BankBalanceScanner, off
+    buffCycleIcon.turnOff()
+    SetTimer, vAngelWeaveLoop, off
+    upgradeCycleIcon.turnOff()
+    SetTimer, timedupgradeCycle, off
+    lootBestiaryIcon.turnOff()
+    SetTimer, timedlootBestiary, off
+    NitroIcon.turnOff()
+    SetTimer, doNitroLoop, off
+    kfToggle:=false
+    SetTimer, kingExpLoop,off
+    settimer,keyrepeat,off
+    vCurrentHero:=""
+    MovementBlock()
+    gclick(menu7,2,200)
+    gclick(rebirthSelect,2,200)
+    gclick(rebirthConfirm,2,200)
+    sleep 15000
+    gclick(gameStart,2,200)
+    sleep 5000	
+    vStartTime:=A_TickCount
+    UnblockMovement()
 return
-
-
 
 !7::
 !c::
 Capture:
     Capture()
 return
-       
+
 !n::
 doNitro:
     doNitro()
@@ -160,10 +187,13 @@ Return
 
 ;; misc hero hotkey
 
-
-
 F8::
 JustRun:
+    global vHwnd
+    tracelog("justrun started")
+    WinActivate ahk_id %vHwnd%
+    WinWaitActive, ahk_id %vHwnd%
+    
     jrToggle:=!jrToggle
     if (jrToggle){
         ShowTip("Run Forest, Run !!")

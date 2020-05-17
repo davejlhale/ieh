@@ -2,6 +2,7 @@
 
 lootBestiary:
     {
+        global LootBestiaryInterval
         Critical on
          traceLog("`nstart lootBestiary")
         lootBestiaryIcon.toggle()
@@ -12,6 +13,7 @@ lootBestiary:
         else {
             ;call this label on interval - 120000000 = 20mins
             SetTimer, timedlootBestiary, %LootBestiaryInterval%
+            traceLog("lootBestiary started :" LootBestiaryInterval)
         } 
         timedlootBestiary:
             MovementBlock()

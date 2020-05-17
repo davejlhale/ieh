@@ -20,11 +20,11 @@ gClick( aClickPoint,aClickCount:=1,aDelay:=20) {
     
     gameClickX :=round((vGameContainerWidth * aClickPoint.x)+begin_x)
     gameClickY := round((vGameContainerHeight * aClickPoint.y)+begin_y)
-   MovementBlock()
-     TraceLog("gclick " . aClickCount . " - " aClickpoint.name . " x:" . gameClickX . " y:" . gameClickY )
+   
+    TraceLog("gclick " . aClickCount . " - " aClickpoint.name . " x:" . gameClickX . " y:" . gameClickY )
     loop %aClickCount%
     {
-        if (vMouseBlocked)
+        if (MovementBlock())
         {
             Send {click, %gameClickX%, %gameClickY%}
             sleep %aDelay%

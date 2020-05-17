@@ -1,19 +1,20 @@
 
-BuffCycle:
+AngelWeave:
     {
         Critical on
-        
+        global AngelWeaveInterval
         buffCycleIcon.toggle()
         if !(buffCycleIcon.isactive) {
-            SetTimer, timedBuffCycle, off
+            SetTimer, vAngelWeaveLoop, off
             return
         }
         else {
             ;call this label on interval
-            SetTimer, timedBuffCycle, %AngelWeaveInterval%
+            SetTimer, vAngelWeaveLoop, %AngelWeaveInterval%
+            tracelog("vAngelWeaveLoop started :" AngelWeaveInterval )
         } 
         
-        timedBuffCycle:
+        vAngelWeaveLoop:
             MovementBlock()
             gClick(menu2,2,100)
             gClick(angel,2,220)
@@ -33,6 +34,10 @@ BuffCycle:
             gClick(skillbar_global_top_1,2)
             gClick(st_slot_10,2,20)
             gClick(skillbar_global_top_1,2)
+            gClick(wizard,2,220)
+            gclick( st_slot_7 ,1,100)
+            gclick( skillbar_global_top_1 ,2,50)
+        
             UnblockMovement()
         return	
     }

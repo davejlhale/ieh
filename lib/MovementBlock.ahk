@@ -1,13 +1,11 @@
 UnblockMovement(){
     global vMouseBlocked
     global vMouseMemoryX,vMouseMemoryY
-    if (vMouseBlocked){
+  
         BlockInput, MouseMoveOff
         mousemove, vMouseMemoryX,vMouseMemoryY
         vMouseBlocked:=False
-        ShowTip("")
-    }
-    
+        ShowTip("")    
 }
 
 MovementBlock() {
@@ -15,8 +13,7 @@ MovementBlock() {
     global vHwnd
     global vMouseBlocked
     global vMouseMemoryX,vMouseMemoryY
-    
-    if (!vMouseBlocked) {     
+     
         MouseGetPos,,, hWinUnderMouse
         ;if im over game winow
         if (vHwnd == hWinUnderMouse)
@@ -27,11 +24,7 @@ MovementBlock() {
              ShowTip("Mouse Movement Suspended")
             return true
         } 
-       ; else {} ;not over game 
-         
-    }
- 
-    
-    
-    
+        else { ;not over game 
+            return False
+        } ;not over game    
 }

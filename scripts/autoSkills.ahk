@@ -25,11 +25,17 @@
         gclick(menu2,2,150)
         
         ;globals slot 1 is buff weave
+        gclick(wizard,2,150)
+        gclick( st_slot_9 ,2,100)
+        gclick( skillbar_global_top_2 ,2,50)
+        gclick( st_slot_2 ,2,100)
+        gclick( skillbar_global_top_3 ,2,50)
+
         gclick(warrior,2,150) ;try put slot 7 war skills in global 2+3
         gclick(st_slot_7,2,100)
-        gclick(skillbar_global_top_2,2,100)
+        gclick(skillbar_global_top_1,2,100)
         gclick(st_slot_8,2,100)
-        gclick(skillbar_global_top_3,2,100)
+        gclick(skillbar_global_top_2,2,100)
         
         /* 
         *** class skills *** 
@@ -48,11 +54,7 @@
         gclick( skill_table_skill_1_stance ,1,150)
         gclick( st_slot_9 ,2,100)
         gclick( skillbar_global_top_2 ,2,50)
-        gclick(wizard,2,150)
-           gclick( st_slot_9 ,2,100)
-            gclick( skillbar_global_top_2 ,2,50)
-            gclick( st_slot_2 ,2,100)
-            gclick( skillbar_global_top_3 ,2,50)
+        
         
         gclick(wizard,2,150) ;try put wiz slot skills in class 
         gclick( st_slot_2 ,2,100)
@@ -80,11 +82,6 @@
         gclick( skill_table_skill_9_stance ,1,150)
         gclick( st_slot_7 ,2,100)
         gclick( skillbar_class_bottom_2 ,2,50)
-        gclick(wizard,2,150)
-        gclick( st_slot_7 ,2,100)
-        gclick( skillbar_global_top_1 ,2,50)
-        
-        
         
         
         

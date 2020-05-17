@@ -39,7 +39,7 @@ putOnEquipAction() {
     
     critical on
     
-    if (A_TickCount-vStartTime > 60000)
+    if (A_TickCount-vStartTime > 80000)
         gClick(menu5,2,100)
     else
         gClick(menu4,2,100)

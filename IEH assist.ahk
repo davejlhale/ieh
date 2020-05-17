@@ -10,6 +10,7 @@ coordMode, Mouse, client
 coordMode, Pixel, Client
 SysGet, vMonitorCount, MonitorCount
 
+
 global vAutoRebirth:=off
 global vWinTitle:="Incremental Epic Hero"
 global vStartTime:= A_TickCount

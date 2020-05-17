@@ -5,6 +5,14 @@ start "ieh assist.ahk" by double clicking the file icon
 should work out the box 		
 
 Currently 
+
+auto rebirth started with alt +r - first rebirth will happen after 10mins
+options to enable/diable autoscripts that turn on after autorebirth in general.ini
+equip skills/spells alt+s
+alt+p = pause
+F7 if mouselock + king challange 
+escape to quit
+
 (@ should run in background * currently needs focus)		
 	
 	* auto capture and net maker (comment in/out the mobs in monsterist.ahk - config folder )

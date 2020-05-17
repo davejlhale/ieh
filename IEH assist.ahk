@@ -68,6 +68,7 @@ return
 
 ;#include ..\Phurple\test.ahk
 
+!R::
 !r::
     vAutoRebirth:=!vAutoRebirth
     if vAutoRebirth {
@@ -116,17 +117,19 @@ AutoRebirth:
 return
 
 !7::
+!C::
 !c::
 Capture:
     Capture()
 return
-
+!N::
 !n::
 doNitro:
     doNitro()
 return
 
 ;;general hotkeysssssssssssssssssssssssssssssssssssssssssssssssss
+!P::
 !p::
 ~RButton & LButton::
     pause()
@@ -236,6 +239,7 @@ SetClickPoints:
     setClickPoints()
 return
 
+!E::
 !e::
     Equip: 
     ;supplying a named equipment set here will put that on over default war/angel/wiz/general setups

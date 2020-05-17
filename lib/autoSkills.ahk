@@ -1,4 +1,4 @@
-
+!S::
 !s::
     autoSkills(){
         critical on

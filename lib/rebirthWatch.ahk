@@ -53,29 +53,56 @@ rebirthWatch()
                 
                 
                 
+                global vAutoNitro,vAutoEquip,vAutoSkills,vAutoBufGlobalAngels,vAutoUgrade,vAutoLootBestiary,vAutoBankBuy,vAutoKingChallange
                 
-                
-                SetTimer, PutOnEquip, -1000
-                settimer, autosKills, -2000
-                ;passive / unfocused abled
-                if !(vCurrentHero=="angel") {
-                    SetTimer, AngelWeave, -3000
+                if vAutoEquip{
+                    tracelog("turning on PutOnEquip")
+                    SetTimer, PutOnEquip, -1000
                 }
+                
+                if vAutoSkills{
+                    tracelog("turning on autosKills")
+                    settimer, autosKills, -2000
+                }
+                
+                ;msgbox % (vCurrentHero=="angel")
+               ; msgbox % ( vCurrentHero!="angel")
+                if vAutoBufGlobalAngels {
+                    if (vCurrentHero!="angel") {
+                        tracelog("turning on AngelWeave")
+                        SetTimer, AngelWeave, -3000
+                    }
+                }
+                
+                
                 ;no icon
-                vCurrentUpgradCycleInterval:=""
-                SetTimer, upgradeCycle, -4000
+                if vAutoUgrade {
+                    tracelog("turning on upgradeCycle")
+                    vCurrentUpgradCycleInterval:=""
+                    SetTimer, upgradeCycle, -4000
+                }
                 
+                if vAutoLootBestiary{
+                    tracelog("turning on lootBestiary")
+                    SetTimer, lootBestiary, -5000
+                }
                 
-                SetTimer, lootBestiary, -5000
+                if vAutoBankBuy{
+                    tracelog("turning on BankCapBuyer")
+                    SetTimer, BankCapBuyer, -6000 
+                }
                 
-                ;needs focus
-                SetTimer, BankCapBuyer, -6000 
+                if vAutoNitro{
+                    tracelog("turning on doNitro")
+                    SetTimer, doNitro, -1000
+                }
                 
-                ;SetTimer, doNitro, -1000
-                
-                kfToggle:=""
-                global KingAfter
-                SetTimer, kingExpFarm,-%KingAfter%
+                if vAutoKingChallange {
+                    tracelog("turning on vAutoKingChallange")
+                    kfToggle:=""
+                    global KingAfter
+                    SetTimer, kingExpFarm,-%KingAfter%
+                }
                 
                 
                 return true

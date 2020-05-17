@@ -3,7 +3,7 @@ kingExpFarm()
 {
     
     global menu4, challenge1,challenge_start,challenge_quit
-    global kfToggle:= false
+    global kfToggle
     global vGameContainerWidth,vGameContainerHeight
     global begin_x, begin_y
     global kingEXPLoopTimer,KingAfter
@@ -38,15 +38,14 @@ kingExpFarm()
         SetTimer, kingExpLoop,%kingEXPLoopTimer%
         kingExpLoop:
             MovementBlock()
-            showTip("Challenging Slime KIng")
             gClick(menu4,2,100)
             gClick(challenge1,2,100)
             gClick(challenge_start,2,100)
             WinActivate, %vWinTitle%
-    keyrepeat:
+            showTip("Challenging Slime KIng press F7 to stop")
+        keyrepeat:
             send, {s down} 
             settimer,keyrepeat,50
-            UnblockMovement()
             critical off
         return
     }

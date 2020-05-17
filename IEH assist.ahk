@@ -50,6 +50,7 @@ return
 #include TrapMaker.ahk
 #include MonsterSearch.ahk
 #include ConvertSCtoG.ahk
+#include autoSkills.ahk
 
 #include ..\scripts
 #include lootBestiary.txt
@@ -63,7 +64,7 @@ return
 #include fairyFarmer.ahk
 #Include kingExpFarm.ahk
 #include ChilliScavanger.ahk
-#include autoSkills.ahk
+
 ;#include ..\Phurple\test.ahk
 
 !r::
@@ -84,9 +85,9 @@ AutoRebirth:
     tracelog("auto rebirth")
     global menuCheck
     
-
     
-    quipIcon.turnOff()
+    
+    EquipIcon.turnOff()
     SetTimer, putOnEquipAction, off
     BankCapBuyerIcon.turnOff()
     SetTimer, BankBalanceScanner, off
@@ -124,7 +125,7 @@ doNitro:
     doNitro()
 return
 
-;;general hotkeys
+;;general hotkeysssssssssssssssssssssssssssssssssssssssssssssssss
 !p::
 ~RButton & LButton::
     pause()

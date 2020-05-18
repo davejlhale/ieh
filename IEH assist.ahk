@@ -10,7 +10,6 @@ coordMode, Mouse, client
 coordMode, Pixel, Client
 SysGet, vMonitorCount, MonitorCount
 
-
 global vAutoRebirth:=off
 global vWinTitle:="Incremental Epic Hero"
 global vStartTime:= A_TickCount
@@ -68,7 +67,6 @@ return
 
 ;#include ..\Phurple\test.ahk
 
-
 !r::
     vAutoRebirth:=!vAutoRebirth
     if vAutoRebirth {
@@ -106,7 +104,11 @@ AutoRebirth:
     settimer,keyrepeat,off
     vCurrentHero:=""
     MovementBlock()
-    gclick(menu7,2,200)
+    if CheckAllMenuaAreActive() { ;returns false when cant find background ie all there
+        gclick(menu6,2,200)
+    } else{
+        gclick(menu7,2,200)
+    }
     gclick(rebirthSelect,2,200)
     gclick(rebirthConfirm,2,200)
     sleep 15000
@@ -170,16 +172,16 @@ ChallengeFarmers:
 return
 
 KingFarm:
-    kingFarmer(50000)
+    kingFarmer()
 return
 GolemFarm:
-    golemFarmer(50000)
+    golemFarmer()
 return
 SpiderFarm:
-    spiderFarmer(50000)
+    spiderFarmer()
 return
 FairyFarm:
-    fairyFarmer(50000)
+    fairyFarmer()
 return
 
 F7::

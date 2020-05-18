@@ -1,15 +1,19 @@
 
 ;;sets golem farming at interval
-golemFarmer(pDelay:=60000) 
+golemFarmer() 
 {
     global Alchemy_check_Box, alchemy_10L, alchOption_8,alchInv16
     global challenge_start, challenge2
     global menu5,menu4
-    golemRepeat := pDelay
+    global vGolemRepeatEntryInterval
     static golemToggle:=false
     global vGameContainerWidth,vGameContainerHeight
     global begin_x, begin_y
     
+       if (CheckAllMenuaAreActive()) 
+        return ;found bk col
+
+
     golemToggle:=!golemToggle
     if !golemToggle {
         showTip("")
@@ -23,7 +27,7 @@ golemFarmer(pDelay:=60000)
     if ! ErrorLevel
         return
     
-    settimer, golemLoop,%golemRepeat%
+    settimer, golemLoop,%vGolemRepeatEntryInterval%
     showTip("Golem farming")
     golemLoop:
         Critical on

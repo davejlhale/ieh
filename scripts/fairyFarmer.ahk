@@ -1,14 +1,17 @@
 
 ;;sets fairy farming at interval
-fairyFarmer(pDelay:=60000) 
+fairyFarmer() 
 {
     global Alchemy_check_Box, alchemy_10L, alchOption_10,alchInv16
     global challenge_start, challenge4
     global menu5,menu4,menu7
-    fairyRepeat := pDelay
+    global vFairyRepeatInterval 
     static fairyToggle:=false
     global vGameContainerWidth,vGameContainerHeight
     global begin_x, begin_y
+    
+    if (CheckAllMenuaAreActive()) ;found bk col
+        return
     fairyToggle:=!fairyToggle
     
     
@@ -26,7 +29,7 @@ fairyFarmer(pDelay:=60000)
         return
     
     
-    settimer, fairyLoop,%fairyRepeat%
+    settimer, fairyLoop,%vFairyRepeatInterval%
     showTip("fairy farming")
     fairyLoop:
         Critical on

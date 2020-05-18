@@ -1,11 +1,11 @@
 
 ;;sets spider farming at interval
-spiderFarmer(pDelay:=60000) 
+spiderFarmer() 
 {
     global Alchemy_check_Box, alchemy_10L, alchOption_9,alchInv16
     global challenge_start, challenge3
     global menu5,menu4
-    spiderRepeat := pDelay
+    global vSpiderRepeatInterval
     static spiderToggle:=false
     global vGameContainerWidth,vGameContainerHeight
     global begin_x, begin_y
@@ -23,7 +23,7 @@ spiderFarmer(pDelay:=60000)
     if ! ErrorLevel
         return
         
-    settimer, spiderLoop,%spiderRepeat%
+    settimer, spiderLoop,%vSpiderRepeatInterval%
     showTip("spider farming")
     spiderLoop:
         Critical on

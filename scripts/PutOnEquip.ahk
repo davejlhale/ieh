@@ -39,11 +39,13 @@ putOnEquipAction() {
     
     critical on
     
-    if (A_TickCount-vStartTime > 80000)
-        gClick(menu5,2,100)
-    else
-        gClick(menu4,2,100)
+  
     
+
+    if CheckAllMenuaAreActive()
+        gClick(menu4,2,100) 
+        else
+        gClick(menu5,2,100)
     
     gClick(craft_check_Box,2,100)
     

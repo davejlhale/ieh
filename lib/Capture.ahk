@@ -9,18 +9,17 @@ Capture() {
     global vTrapColor
     global alchInv1, alchOption_14 
     
-    traceLog("`nstart lootBestiary")
+    traceLog("`nstop capture")
     CaptureIcon.toggle()
     if !(CaptureIcon.isactive) {
         SetTimer, TrapMaker,off
         SetTimer, MonsterSearch,off
         SetTimer, ConvertSCtoG,off
         UnblockMovement()
-        TraceLog("end caputre hotkey ok") 
         return
     }
     else {
-
+        TraceLog("Start Capture hotkey")
         ;defining here as they dont change
         global vTrapx1 , vTrapy1 , vTrapx2 , vTrapy2 
         vTrapx1 := round((vGameContainerWidth * trapAreaTL.x)+begin_x)
@@ -41,13 +40,13 @@ Capture() {
         alchOption_14_y2:= alchOption_14_y + 8
         
         global NitroIcon
-        if ! NitroIcon.isactive
+        if ! NitroIcon.isactive && vDoAutoNitroWhileCaputre
             doNitro()
         SetTimer, TrapMaker,10000
         TrapMaker()
-        settimer, ConvertSCtoG,20000
+        if vAutoConvertSCtoG
+            settimer, ConvertSCtoG,20000
         SetTimer, MonsterSearch,200
-        TraceLog("Start Capture hotkey")
         return 
     } 
 }

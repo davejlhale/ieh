@@ -8,6 +8,10 @@ kingExpFarm()
     global begin_x, begin_y
     global kingEXPLoopTimer,KingAfter
     global vWinTitle
+
+   
+    if (CheckAllMenuaAreActive()) ;found bk col
+        return
     kfToggle:=!kfToggle
     
     x:=round((vGameContainerWidth * menu7.x)+begin_x)

@@ -7,7 +7,7 @@ loadClickPoints()
     Critical on
     
     clickPoints := {}
-    Loop, read, offsets.txt 
+    Loop, read, configs\offsets.txt 
     {
         Loop, parse, A_LoopReadLine, %A_Tab%
         {

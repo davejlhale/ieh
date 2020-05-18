@@ -5,11 +5,15 @@ kingFarmer(pDelay:=60000)
     global Alchemy_check_Box, alchemy_10L, alchOption_7,alchInv16
     global challenge_start, challenge1
     global menu5,menu4
-    kingRepeat := pDelay
+    global vKingRepeatInterval 
     static kingToggle:=false
     global vGameContainerWidth,vGameContainerHeight
     global begin_x, begin_y
     
+
+       if (CheckAllMenuaAreActive()) ;found bk col
+        return
+
     kingToggle:=!kingToggle
     if !kingToggle {
         showTip("")
@@ -22,7 +26,7 @@ kingFarmer(pDelay:=60000)
     ;;if menu button covers color
     if ! ErrorLevel
         return
-    settimer, kingLoop,%kingRepeat%
+    settimer, kingLoop,%vKingRepeatInterval%
     showTip("King farming")
     kingLoop:
         Critical on

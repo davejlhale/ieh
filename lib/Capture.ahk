@@ -40,12 +40,14 @@ Capture() {
         alchOption_14_y2:= alchOption_14_y + 8
         
         global NitroIcon
-        if ! NitroIcon.isactive && vDoAutoNitroWhileCaputre
+        if ! NitroIcon.isactive && vDoAutoNitroWhileCaputre {
             doNitro()
+        }
         SetTimer, TrapMaker,10000
         TrapMaker()
-        if vAutoConvertSCtoG
+        if vAutoConvertSCtoG {
             settimer, ConvertSCtoG,20000
+        }
         SetTimer, MonsterSearch,200
         return 
     } 

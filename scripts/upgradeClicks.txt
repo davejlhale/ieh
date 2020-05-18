@@ -8,11 +8,11 @@ upgradeCycle:
         upgradeCycleIcon.toggle()
         if !(upgradeCycleIcon.isactive) {
             SetTimer, timedupgradeCycle, off
-            repeatTime:=initialUpdateDelay
+            vCurrentUpgradCycleInterval:=initialUpdateDelay
             return
         }
         else {
-            if (!repeatTime)
+            if (!vCurrentUpgradCycleInterval)
                 vCurrentUpgradCycleInterval := initialUpdateDelay
             ;call this label on interval
             SetTimer, timedupgradeCycle, %vCurrentUpgradCycleInterval%

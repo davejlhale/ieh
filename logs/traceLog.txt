@@ -4,114 +4,163 @@ hero id attempt
 "pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 found wizard
 
-nitro start
+start lootBestiary
+lootBestiary started :600000
+gclick 2 - menu3 x:488 y:933
+gclick 2 - explore_bestiary x:576 y:402
+gclick 2 - bestiary_lootAll x:422 y:276
+gclick 2 - bestiary_close x:1117 y:278
+end ok
+BankBalanceScanner started 90000
 gclick 2 - menu1 x:257 y:933
 gclick 2 - sb_GoBack x:596 y:397
-gclick 1 - nitro x:239 y:874
-gclick 2 - menu5 x:254 y:958
-gclick 2 - Alchemy_check_Box x:365 y:398
-gclick 2 - alchemy_1ml x:250 y:434
-gclick 20 - alchOption_5 x:494 y:556
-gclick 2 - alchemy_use_all x:614 y:790
-end nitro ok
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-gclick 2 - menu1 x:257 y:933
-gclick 2 - sb_GoBack x:596 y:397
-gclick 1 - nitro x:239 y:874
-gclick 2 - menu5 x:254 y:958
-gclick 2 - Alchemy_check_Box x:365 y:398
-gclick 2 - alchemy_1ml x:250 y:434
-gclick 20 - alchOption_5 x:494 y:556
-gclick 2 - alchemy_use_all x:614 y:790
-end nitro ok
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-gclick 2 - menu1 x:257 y:933
-gclick 2 - sb_GoBack x:596 y:397
-gclick 1 - nitro x:239 y:874
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-gclick 2 - menu1 x:257 y:933
-gclick 2 - sb_GoBack x:596 y:397
-gclick 1 - nitro x:239 y:874
-gclick 2 - menu5 x:254 y:958
-gclick 2 - Alchemy_check_Box x:365 y:398
-gclick 2 - alchemy_1ml x:250 y:434
-gclick 20 - alchOption_5 x:494 y:556
-gclick 2 - alchemy_use_all x:614 y:790
-end nitro ok
-
-nitro start
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+gclick 2 - slime_bank x:485 y:883
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
 
-nitro start
-gclick 2 - menu1 x:257 y:933
-gclick 2 - sb_GoBack x:596 y:397
-gclick 1 - nitro x:239 y:874
-gclick 2 - menu5 x:254 y:958
-gclick 2 - Alchemy_check_Box x:365 y:398
-gclick 2 - alchemy_1ml x:250 y:434
-gclick 20 - alchOption_5 x:494 y:556
-gclick 2 - alchemy_use_all x:614 y:790
-end nitro ok
-
-nitro start
+start lootBestiary
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-
-nitro start
-gclick 2 - menu1 x:257 y:933
-gclick 2 - sb_GoBack x:596 y:397
-gclick 1 - nitro x:239 y:874
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-
-nitro start
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-
-nitro start
-gclick 2 - menu1 x:257 y:933
-gclick 2 - sb_GoBack x:596 y:397
-gclick 1 - nitro x:239 y:874
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-
-nitro start
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
 hero id attempt
 "pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
@@ -179,6 +228,602 @@ client not main focus - hero id aborted - vCurrentHero: wizard
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
 rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+checking menu button:7
+menu id hwnd0xec11b2 check for:0x001800 x:488 y:958 result:1
+gclick 2 - menu5 x:254 y:958
+gclick 2 - Alchemy_check_Box x:365 y:398
+gclick 2 - alchemy_10L x:492 y:437
+gclick 2 - alchOption_8 x:254 y:621
+gclick 2 - alchInv16 x:619 y:885
+gclick 2 - menu4 x:608 y:934
+gclick 3 - challenge2 x:326 y:462
+gclick 2 - challenge_start x:334 y:868
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+checking menu button:7
+menu id hwnd0xec11b2 check for:0x001800 x:488 y:958 result:1
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+gclick 2 - menu5 x:254 y:958
+gclick 2 - Alchemy_check_Box x:365 y:398
+gclick 2 - alchemy_10L x:492 y:437
+gclick 2 - alchOption_9 x:323 y:616
+gclick 2 - alchInv16 x:619 y:885
+gclick 2 - menu4 x:608 y:934
+gclick 3 - challenge3 x:401 y:463
+gclick 2 - challenge_start x:334 y:868
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
@@ -197,73 +842,413 @@ hero id attempt
 "pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
 "pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
 rebirthWatch

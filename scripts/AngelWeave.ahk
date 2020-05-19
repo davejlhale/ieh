@@ -5,16 +5,15 @@ AngelWeave:
         global AngelWeaveInterval
         buffCycleIcon.toggle()
         if !(buffCycleIcon.isactive) {
-            SetTimer, vAngelWeaveLoop, off
+            SetTimer, AngelWeaveLoop, off
             return
-        }
-        else {
+        } else {
             ;call this label on interval
-            SetTimer, vAngelWeaveLoop, %AngelWeaveInterval%
-            tracelog("vAngelWeaveLoop started :" AngelWeaveInterval )
+            SetTimer, AngelWeaveLoop, %AngelWeaveInterval%
+            tracelog("AngelWeaveLoop started :" AngelWeaveInterval )
         } 
         
-        vAngelWeaveLoop:
+        AngelWeaveLoop:
             MovementBlock()
             gClick(menu2,2,100)
             gClick(angel,2,220)
@@ -37,7 +36,7 @@ AngelWeave:
             gClick(wizard,2,220)
             gclick( st_slot_7 ,1,100)
             gclick( skillbar_global_top_1 ,2,50)
-        
+            
             UnblockMovement()
         return	
     }

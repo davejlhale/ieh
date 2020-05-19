@@ -3,6 +3,7 @@ global trapAreaTL,trapAreaBR,menu1,menu2,menu3,menu4,menu5,menu6,menu7,menu8,exp
 
 #NoEnv
 #SingleInstance, force
+
 SetBatchLines, -1
 SetTitleMatchMode, 2
 DetectHiddenWindows, On
@@ -16,6 +17,7 @@ global vStartTime:= A_TickCount
 FileOpen("logs\traceLog.txt", "w `n")
 #include configs
 #include general.ini
+
 loadClickPoints()
 While findKongGameContainer() { 
     if (A_TickCount-vStartTime > 10000) {
@@ -26,23 +28,25 @@ While findKongGameContainer() {
     }
 }
 
-;not fully tested / implemented
 rebirthWatch()
 
 ;;add menus and gui
 menu := new GUIMenu("home")
-EquipIcon :=new gIcon("EquipIcon",956,730,"Equip","Equip Hero Gear")
-BankCapBuyerIcon:=new gIcon("d",908,730,"BankCapBuyer","Buy Slime Bank item when Full`n(needs active window)")
+lootBestiaryIcon := new gIcon("LootBestiary",856,730,"lootBestiary","Auto Loots Bestiary every so often")
+EquipIcon  := new gIcon("EquipIcon",956,730,"Equip","Equip Hero Gear")
+BankCapBuyerIcon:= new gIcon("d",908,730,"BankCapBuyer","Buy Slime Bank item when Full`n(needs active window)")
 buffCycleIcon := new gIcon("AngelWeave",760,730,"AngelWeave","Weave Angels buffs in global slot 1")
-upgradeCycleIcon :=new gIcon("upgradeCycle",808,730,"upgradeCycle","Clicks your upgrades for you")
-    lootBestiaryIcon :=new gIcon("LootBestiary",856,730,"lootBestiary","Auto Loots Bestiary every so often")
-CaptureIcon :=new gIcon("Capture",1004,730,"Capture","Auto captures mobs selected in MonsterList config`n(needs active window)")
-NitroIcon:=new gIcon("Nitro",1052,730,"doNitro","Auto Nitro`n(needs active window)")
-;rebirthWatch()
+CaptureIcon := new gIcon("Capture",1004,730,"Capture","Auto captures mobs selected in MonsterList config`n(needs active window)")
+NitroIcon := new gIcon("Nitro",1052,730,"doNitro","Auto Nitro`n(needs active window)")
+AutoRebirthIcon :=new gIcon("AutoRebirth",1100,730,"AutoRebithToggle","Auto Rebirths after set time. see general.ini for several options")
+    upgradeCycleIcon := new gIcon("upgradeCycle",808,730,"upgradeCycle","Clicks your upgrades for you")
+    
+
 ;;end of autoexec 
 return
 
 ;;KEEP INCLUDES BELOW autoexec
+
 #include ..\lib
 #include GUIMenu.ahk
 #Include gIcon.ahk
@@ -64,58 +68,12 @@ return
 #include fairyFarmer.ahk
 #Include kingExpFarm.ahk
 #include ChilliScavanger.ahk
-
+#include AutoRebirth.ahk
 ;#include ..\Phurple\test.ahk
 
 !r::
-    vAutoRebirth:=!vAutoRebirth
-    if vAutoRebirth {
-        showtip("Auto Rebirth is On every (ms) "rebirthAfter)
-        settimer, AutoRebirth, %rebirthAfter%
-    } else {
-        showtip("Auto Rebirth is Off")
-        settimer, AutoRebirth, off
-    }
-    tracelog("auto rebirth :" vAutoRebirth)
-    settimer, forceOff,5000
-return
-
-AutoRebirth:
-    critical on
-    tracelog("auto rebirth")
-    global menuCheck
-    
-    
-    
-    EquipIcon.turnOff()
-    SetTimer, putOnEquipAction, off
-    BankCapBuyerIcon.turnOff()
-    SetTimer, BankBalanceScanner, off
-    buffCycleIcon.turnOff()
-    SetTimer, vAngelWeaveLoop, off
-    upgradeCycleIcon.turnOff()
-    SetTimer, timedupgradeCycle, off
-    lootBestiaryIcon.turnOff()
-    SetTimer, timedlootBestiary, off
-    NitroIcon.turnOff()
-    SetTimer, doNitroLoop, off
-    kfToggle:=false
-    SetTimer, kingExpLoop,off
-    settimer,keyrepeat,off
-    vCurrentHero:=""
-    MovementBlock()
-    if CheckAllMenuaAreActive() { ;returns false when cant find background ie all there
-        gclick(menu6,2,200)
-    } else{
-        gclick(menu7,2,200)
-    }
-    gclick(rebirthSelect,2,200)
-    gclick(rebirthConfirm,2,200)
-    sleep 15000
-    gclick(gameStart,2,200)
-    sleep 5000	
-    vStartTime:=A_TickCount
-    UnblockMovement()
+AutoRebithToggle:
+    AutoRebirthToggle()
 return
 
 !Left::
@@ -131,8 +89,6 @@ return
     MoveToChilli(-1,0)
 return
 
-
-
 !7::
 !c::
 Capture:
@@ -143,7 +99,7 @@ doNitro:
     doNitro()
 return
 
-;;general hotkeysssssssssssssssssssssssssssssssssssssssssssssssss
+;;general hotkeys
 !p::
 ~RButton & LButton::
     pause()

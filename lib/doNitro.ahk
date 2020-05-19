@@ -3,8 +3,8 @@ doNitro() { ;+- offsets allowing for slight error in other clients
     critical on
     global vNitroBarBlueColor, vMonitorCount
     global nitro, nitro_pixel_start, NitroIcon
-    global vGameContainerWidth,vGameContainerHeight
-    global begin_x, begin_y ,vHwnd,vWinTitle
+    global vGameContainerWidth,vGameContainerHeight,vNirtoInterval
+    global vGameContainerX1, vGameContainerY1 ,vHwnd,vWinTitle
     
     
     Critical on
@@ -16,7 +16,7 @@ doNitro() { ;+- offsets allowing for slight error in other clients
     }
     else {
         ;call this label on interval - 120000 = 2mins
-        SetTimer, doNitroLoop, 120000
+        SetTimer, doNitroLoop, %vNirtoInterval%
         doNitroLoop()
     } 
     
@@ -26,7 +26,7 @@ doNitroLoop(){
     global vNitroBarBlueColor, vMonitorCount
     global nitro, nitro_pixel_start, NitroIcon
     global vGameContainerWidth,vGameContainerHeight
-    global begin_x, begin_y ,vHwnd,vWinTitle
+    global vGameContainerX1, vGameContainerY1 ,vHwnd,vWinTitle
     MouseGetPos,,, hWinUnderMouse
     if (vHwnd != hWinUnderMouse && vMonitorCount ==1 )
         return
@@ -34,16 +34,16 @@ doNitroLoop(){
     WinWaitActive, ahk_id %vHwnd%
     
     MovementBlock()
-    nsx :=round(vGameContainerWidth * nitro_pixel_start.x)+begin_x
-    nsy := round(vGameContainerHeight * nitro_pixel_start.y)+begin_y
+    nsx :=round(vGameContainerWidth * nitro_pixel_start.x)+vGameContainerX1
+    nsy := round(vGameContainerHeight * nitro_pixel_start.y)+vGameContainerY1
     nsx2:=nsx +4
     nsy2:=nsy +8
     gclick(menu1,2,100)
     gClick(sb_GoBack,2,100)
     ;WinActivate %vWinTitle%
     VNitroTest:=0x112435
-    nitroButtonX :=round(vGameContainerWidth * nitro.x)+begin_x -2
-    nitroButtonY := round(vGameContainerHeight * nitro.y) +begin_y -2
+    nitroButtonX :=round(vGameContainerWidth * nitro.x)+vGameContainerX1 -2
+    nitroButtonY := round(vGameContainerHeight * nitro.y) +vGameContainerY1 -2
     nitroButtonX2:=nitroButtonX +5
     nitroButtonY2:=nitroButtonY +5
     

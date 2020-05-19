@@ -9,7 +9,7 @@ kingExpFarm()
     global kingEXPLoopTimer,KingAfter
     global vWinTitle
 
-   
+   tracelog("kingexp farm try")
     if (CheckAllMenuaAreActive()) ;found bk col
         return
     kfToggle:=!kfToggle
@@ -42,9 +42,9 @@ kingExpFarm()
         SetTimer, kingExpLoop,%kingEXPLoopTimer%
         kingExpLoop:
             MovementBlock()
-            gClick(menu4,2,100)
-            gClick(challenge1,2,100)
-            gClick(challenge_start,2,100)
+            gClick(menu4,2,150)
+            gClick(challenge1,3,150)
+            gClick(challenge_start,4,160)
             WinActivate, %vWinTitle%
             showTip("Challenging Slime KIng press F7 to stop")
         keyrepeat:

@@ -1,7 +1,7 @@
 
 global equip1 , equip2 , equip3 , equip4 , equip5 , equip6 , equip7 , equip8 , equip9 , equip10 
 global equipClassD , equipClassC , equipClassB ,menu5,craft_check_Box, menu4, menu5, menu7
-PutOnEquip(aEquipmeentSet:="general")
+PutOnEquipToggle(aEquipmeentSet:="general")
 {
     global EquipIcon, vCheckEquipInterval
     Critical, on

@@ -8,12 +8,12 @@ identifyHero()
   
     
     MouseGetPos,,, hWinUnderInstance
-    if (vHwnd != hWinUnderInstance){
+    if (vHwnd != hWinUnderMouse && vMonitorCount ==1 ) {
         tracelog("identifyHero aborted - no focus")
         return 1
     } 
     WinActivate ahk_id %vHwnd%
-    WinWaitActive, ahk_id %vHwnd%
+    
     
     cWarrior:=0x73685D
     cWizard:=0x7683B1

@@ -1,5 +1,5 @@
 ChilliScavanger(){
-    static scToggle,vMonitorCount 
+    static scToggle, 
     global vHwnd,vChilliFarmAreaRefresh
     
     tracelog("chillscavanger started")

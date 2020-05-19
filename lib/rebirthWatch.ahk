@@ -7,9 +7,9 @@ rebirthWatch(){
     reBirthWatch:
         critical on
         tracelog("rebirthWatch")
-        ;if not over game winow
+        ;if not over game winowsss
         MouseGetPos,,, hWinUnderMouse
-        if (vHwnd != hWinUnderMouse){
+        if (vHwnd != hWinUnderMouse && vMonitorCount ==1 ) {
             ;"client not main focus - hero id aborted currnetHero" . vCurrentHero
             tracelog("client not main focus - hero id aborted - vCurrentHero: " . vCurrentHero)
             settimer, reBirthWatch, 1000
@@ -47,7 +47,7 @@ rebirthWatch(){
                 
                 if vAutoEquip{
                     tracelog("turning on PutOnEquip")
-                    SetTimer, PutOnEquip, -1000
+                    SetTimer, PutOnEquipToggle, -1000
                 }
                 
                 if vAutoSkills{
@@ -55,8 +55,6 @@ rebirthWatch(){
                     settimer, autosKills, -2000
                 }
                 
-                ;msgbox % (vCurrentHero=="angel")
-                ; msgbox % ( vCurrentHero!="angel")
                 if vAutoBufGlobalAngels {
                     if (vCurrentHero!="angel") {
                         tracelog("turning on AngelWeave")

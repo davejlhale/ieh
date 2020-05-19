@@ -51,7 +51,6 @@ return
 #include GUIMenu.ahk
 #Include gIcon.ahk
 #include BankBalanceScanner.ahk
-#include TrapMaker.ahk
 #include MonsterSearch.ahk
 #include ConvertSCtoG.ahk
 #include autoSkills.ahk
@@ -69,8 +68,7 @@ return
 #Include kingExpFarm.ahk
 #include ChilliScavanger.ahk
 #include AutoRebirth.ahk
-;#include ..\Phurple\test.ahk
-
+#include TrapMaker.ahk
 !r::
 ToggleAutoRebith:
     AutoRebirthToggle()
@@ -212,5 +210,5 @@ return
 !e::
     Equip: 
     ;supplying a named equipment set here will put that on over default war/angel/wiz/general setups
-    PutOnEquip()
+    PutOnEquipToggle()
 return

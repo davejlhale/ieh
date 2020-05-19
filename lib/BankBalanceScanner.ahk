@@ -4,16 +4,18 @@ BankBalanceScanner()
 { 
     static currentBank:=0
     global interestIncomeOnly
-    global SC_ScanPoint	, GB_ScanPoint,vHwnd,vMonitorCount
+    global SC_ScanPoint	, GB_ScanPoint,vHwnd
     global vGameContainerWidth,vGameContainerHeight, vGameContainerX1, vGameContainerY1
     if interestIncomeOnly
         currentBank:=1
 
 
     global vHwnd
-
-        
-    WinActivate ahk_id %vHwnd%
+    MouseGetPos,,, hWinUnderMouse
+        if (vHwnd != hWinUnderMouse && vMonitorCount ==1 ) {
+        tracelog("Game focus not availiable")
+        return
+        }
     WinWaitActive, ahk_id %vHwnd%
     switch currentBank { 
         case 0: {

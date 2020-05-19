@@ -1,31 +1,37 @@
 ;;loads clickpoints from offsets.txt into dynamicly named instances of class ClickPoint
-  
-    global clickPoints := {}
+
+global clickPoints := {}
 
 loadClickPoints()
 {
     Critical on
-    
-    clickPoints := {}
-    Loop, read, configs\offsets.txt 
-    {
-        Loop, parse, A_LoopReadLine, %A_Tab%
+    try {
+        clickPoints := {}
+       if ! FileExist("configs\offsets.txt") 
+       throw "Cant Load offsets.txt"
+        Loop, read, configs\offsets.txt 
         {
-            Switch A_Index 
+            Loop, parse, A_LoopReadLine, %A_Tab%
             {
-                Case "1":
-                    name:= A_LoopField	
-                Case "2":
-                    x:= A_LoopField	
-                Case "3":
-                    y:= A_LoopField	
-                    Default:							
-                }
-            } 
-            
-            %name% :=new ClickPoint(name,x,y)
+                Switch A_Index 
+                {
+                    Case "1":
+                        name:= A_LoopField	
+                    Case "2":
+                        x:= A_LoopField	
+                    Case "3":
+                        y:= A_LoopField	
+                        Default:							
+                    }
+                } 
+                
+                %name% :=new ClickPoint(name,x,y)
+            }
+            tracelog("Clickpoints loaded")
+            return
+        } catch, e {
+            tracelog(e)
         }
-        return
     }
     
     ;;simple class to hold click point name, x and y

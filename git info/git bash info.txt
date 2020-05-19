@@ -1,5 +1,0 @@
-git add path/file
-git commit -m "comment" path/file
-git push -u origin master
-
-git status

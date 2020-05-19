@@ -2,7 +2,7 @@
 AngelWeave:
     {
         Critical on
-        global AngelWeaveInterval
+        global AngelWeaveInterval, vAddBlizardToEndOfAngelWeave
         buffCycleIcon.toggle()
         if !(buffCycleIcon.isactive) {
             SetTimer, AngelWeaveLoop, off
@@ -33,9 +33,11 @@ AngelWeave:
             gClick(skillbar_global_top_1,2)
             gClick(st_slot_10,2,20)
             gClick(skillbar_global_top_1,2)
+            if vAddBlizardToEndOfAngelWeave {
             gClick(wizard,2,220)
             gclick( st_slot_7 ,1,100)
             gclick( skillbar_global_top_1 ,2,50)
+            }
             
             UnblockMovement()
         return	

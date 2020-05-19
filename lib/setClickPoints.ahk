@@ -46,12 +46,13 @@ setClickPoints(){
     ;checkPoints.push("trapAreaTL","trapAreaBR")
 
     ;checkPoints.push("rebirthSelect","rebirthConfirm")
-    checkPoints.push("gameStart")
+   ; checkPoints.push("gameStart")
+   checkPoints.push("ChilliScanPoint")
     msgbox, 49,,You will asked to right click points which will write them to the offsets.txt file. `neg. menu1 x y`n`nOnly use if you're sure you want this change!
         IfMsgBox, Cancel
     return
     
-    Run Edit "offsets.txt"
+    Run Edit "configs\offsets.txt"
     For index, value in checkPoints
     { 
         msg= Right Click %value%

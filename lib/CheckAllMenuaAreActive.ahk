@@ -1,6 +1,6 @@
 CheckAllMenuaAreActive(pMenuNumber:=7)
 {
-    tracelog("checking menu button:" pMenuNumber)
+    tracelog("checking menu button:" . pMenuNumber)
     vMenu :=menu%pMenuNumber%
     
     global vGameContainerWidth,vGameContainerHeight,vGameContainerX1,vGameContainerY1,vMenuColor,vHwnd

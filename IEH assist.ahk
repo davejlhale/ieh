@@ -38,7 +38,7 @@ BankCapBuyerIcon:= new gIcon("d",908,730,"BankCapBuyer","Buy Slime Bank item whe
 buffCycleIcon := new gIcon("AngelWeave",760,730,"AngelWeave","Weave Angels buffs in global slot 1")
 CaptureIcon := new gIcon("Capture",1004,730,"Capture","Auto captures mobs selected in MonsterList config`n(needs active window)")
 NitroIcon := new gIcon("Nitro",1052,730,"doNitro","Auto Nitro`n(needs active window)")
-AutoRebirthIcon :=new gIcon("AutoRebirth",1100,730,"AutoRebithToggle","Auto Rebirths after set time. see general.ini for several options")
+AutoRebirthIcon :=new gIcon("AutoRebirth",1100,730,"ToggleAutoRebith","Auto Rebirths after set time. see general.ini for several options")
     upgradeCycleIcon := new gIcon("upgradeCycle",808,730,"upgradeCycle","Clicks your upgrades for you")
     
 
@@ -72,7 +72,7 @@ return
 ;#include ..\Phurple\test.ahk
 
 !r::
-AutoRebithToggle:
+ToggleAutoRebith:
     AutoRebirthToggle()
 return
 

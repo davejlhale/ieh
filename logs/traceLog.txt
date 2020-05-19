@@ -3,6 +3,1201 @@ hero id attempt
 "pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
 "pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 found wizard
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 1 307 299 314 306 0x7683B1  "color found " 0x060405 "end"
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0xCCD0C7  "color found " 0x818EBE "end"
+auto rebirth :1
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: Rebirthing
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+found wizard
+vAutoRebirth started
+turning on PutOnEquip
+turning on autosKills
+turning on AngelWeave
+turning on upgradeCycle
+turning on lootBestiary
+turning on BankCapBuyer
+turning on vAutoKingChallange
+putOnEquipAction started
+Checking equipment every :340000
+checking menu button:7
+menu id hwnd0xec11b2 check for:0x001800 x:488 y:958 result:1
+gclick 2 - menu5 x:254 y:958
+gclick 2 - craft_check_Box x:248 y:400
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip6
+gclick 2 - equip6 x:278 y:595
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip7
+gclick 2 - equip7 x:358 y:592
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip8
+gclick 2 - equip8 x:436 y:600
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip9
+gclick 2 - equip9 x:521 y:595
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip10
+gclick 2 - equip10 x:606 y:592
+gclick clone EquipClassD
+gclick 2 - EquipClassD x:517 y:445
+gclick clone equip5
+gclick 2 - equip5 x:595 y:498
+gclick clone EquipClassC
+gclick 2 - EquipClassC x:556 y:444
+gclick clone equip6
+gclick 2 - equip6 x:278 y:595
+gclick clone EquipClassC
+gclick 2 - EquipClassC x:556 y:444
+gclick clone equip7
+gclick 2 - equip7 x:358 y:592
+gclick clone EquipClassC
+gclick 2 - EquipClassC x:556 y:444
+gclick clone equip8
+gclick 2 - equip8 x:436 y:600
+gclick clone EquipClassC
+gclick 2 - EquipClassC x:556 y:444
+gclick clone equip10
+gclick 2 - equip10 x:606 y:592
+gclick clone EquipClassC
+gclick 2 - EquipClassC x:556 y:444
+gclick clone equip5
+gclick 2 - equip5 x:595 y:498
+gclick clone EquipClassD
+gclick 2 - EquipClassD x:517 y:445
+gclick clone equip6
+gclick 2 - equip6 x:278 y:595
+gclick clone EquipClassD
+gclick 2 - EquipClassD x:517 y:445
+gclick clone equip7
+gclick 2 - equip7 x:358 y:592
+gclick clone EquipClassD
+gclick 2 - EquipClassD x:517 y:445
+gclick clone equip8
+gclick 2 - equip8 x:436 y:600
+gclick clone EquipClassD
+gclick 2 - EquipClassD x:517 y:445
+gclick clone equip9
+gclick 2 - equip9 x:521 y:595
+gclick clone EquipClassD
+gclick 2 - EquipClassD x:517 y:445
+gclick clone equip10
+gclick 2 - equip10 x:606 y:592
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip1
+gclick 2 - equip1 x:274 y:494
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip2
+gclick 2 - equip2 x:349 y:494
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip3
+gclick 2 - equip3 x:440 y:496
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip4
+gclick 2 - equip4 x:515 y:497
+gclick clone EquipClassC
+gclick 2 - EquipClassC x:556 y:444
+gclick clone equip4
+gclick 2 - equip4 x:515 y:497
+autoskills started for: wizard
+gclick 2 - menu2 x:372 y:937
+gclick 2 - wizard x:340 y:841
+Setting wizard skills
+gclick 2 - st_slot_2 x:472 y:451
+gclick 2 - skillbar_class_top_1 x:793 y:881
+gclick 2 - st_slot_7 x:265 y:654
+gclick 2 - skillbar_class_top_2 x:847 y:879
+gclick 2 - st_slot_9 x:266 y:727
+gclick 2 - skillbar_class_top_3 x:901 y:876
+gclick 2 - st_slot_5 x:265 y:589
+gclick 2 - skillbar_class_bottom_1 x:792 y:936
+gclick 2 - st_slot_10 x:469 y:726
+gclick 2 - skillbar_class_bottom_2 x:839 y:936
+gclick 1 - skill_table_skill_2_stance x:628 y:446
+gclick 2 - warrior x:340 y:798
+gclick 2 - st_slot_7 x:265 y:654
+gclick 2 - skillbar_global_top_2 x:1097 y:871
+gclick 2 - st_slot_8 x:472 y:655
+gclick 2 - skillbar_global_top_3 x:1140 y:871
+AngelWeaveLoop started :29000
+gclick 2 - menu2 x:372 y:937
+gclick 2 - angel x:340 y:888
+gclick 2 - st_slot_3 x:272 y:521
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_4 x:476 y:524
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_5 x:265 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_6 x:464 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_7 x:265 y:654
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_8 x:472 y:655
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_9 x:266 y:727
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_10 x:469 y:726
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+timedupgradeCycle started :20000
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 2 - upgrade_upgradeMax x:593 y:628
+gclick 1 - upgrade_exp_bonus x:307 y:819
+gclick 1 - upgrade_gold_bonus x:254 y:820
+gclick 1 - upgrade_expand_equip x:360 y:819
+gclick 1 - upgrade_crystal_ritual x:464 y:820
+gclick 1 - upgrade_stone_ritual x:413 y:822
+gclick 1 - upgrade_leaf_ritual x:517 y:822
+gclick 1 - upgrade_rake4 x:568 y:768
+gclick 1 - upgrade_pickaxe4 x:569 y:671
+gclick 1 - upgrade_lab4 x:569 y:724
+gclick 1 - upgrade_rake3 x:516 y:771
+gclick 1 - upgrade_pickaxe3 x:512 y:669
+gclick 1 - upgrade_lab3 x:514 y:721
+gclick 1 - upgrade_rake2 x:463 y:774
+gclick 1 - upgrade_pickaxe2 x:461 y:672
+gclick 1 - upgrade_lab2 x:462 y:725
+gclick 1 - upgrade_rake1 x:413 y:772
+gclick 1 - upgrade_pickaxe1 x:407 y:670
+gclick 1 - upgrade_lab1 x:413 y:726
+gclick 2 - upgrade_upgrade1 x:427 y:628
+gclick 1 - upgrade_mystery_box x:566 y:821
+
+start lootBestiary
+lootBestiary started :600000
+gclick 2 - menu3 x:488 y:933
+gclick 2 - explore_bestiary x:576 y:402
+gclick 2 - bestiary_lootAll x:422 y:276
+gclick 2 - bestiary_close x:1117 y:278
+end ok
+BankBalanceScanner started 90000
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 2 - slime_bank x:485 y:883
+auto rebirth :0
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x353A4E "end"
+"pixelSearch on id " 0xec11b2 1 307 299 314 306 0x7683B1  "color found " 0x353A4E "end"
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0xCCD0C7  "color found " 0x353A4E "end"
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: Rebirthing
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: Rebirthing
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: Rebirthing
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x353A4E "end"
+"pixelSearch on id " 0xec11b2 1 307 299 314 306 0x7683B1  "color found " 0x353A4E "end"
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0xCCD0C7  "color found " 0x353A4E "end"
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 2 - upgrade_upgradeMax x:593 y:628
+gclick 1 - upgrade_exp_bonus x:307 y:819
+gclick 1 - upgrade_gold_bonus x:254 y:820
+gclick 1 - upgrade_expand_equip x:360 y:819
+gclick 1 - upgrade_crystal_ritual x:464 y:820
+gclick 1 - upgrade_stone_ritual x:413 y:822
+gclick 1 - upgrade_leaf_ritual x:517 y:822
+gclick 1 - upgrade_rake4 x:568 y:768
+gclick 1 - upgrade_pickaxe4 x:569 y:671
+gclick 1 - upgrade_lab4 x:569 y:724
+gclick 1 - upgrade_rake3 x:516 y:771
+gclick 1 - upgrade_pickaxe3 x:512 y:669
+gclick 1 - upgrade_lab3 x:514 y:721
+gclick 1 - upgrade_rake2 x:463 y:774
+gclick 1 - upgrade_pickaxe2 x:461 y:672
+gclick 1 - upgrade_lab2 x:462 y:725
+gclick 1 - upgrade_rake1 x:413 y:772
+gclick 1 - upgrade_pickaxe1 x:407 y:670
+gclick 1 - upgrade_lab1 x:413 y:726
+gclick 2 - upgrade_upgrade1 x:427 y:628
+gclick 1 - upgrade_mystery_box x:566 y:821
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+found wizard
+gclick 2 - menu2 x:372 y:937
+gclick 2 - angel x:340 y:888
+gclick 2 - st_slot_3 x:272 y:521
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_4 x:476 y:524
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_5 x:265 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_6 x:464 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_7 x:265 y:654
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_8 x:472 y:655
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_9 x:266 y:727
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_10 x:469 y:726
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+auto rebirth :1
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 2 - upgrade_upgradeMax x:593 y:628
+gclick 1 - upgrade_exp_bonus x:307 y:819
+gclick 1 - upgrade_gold_bonus x:254 y:820
+gclick 1 - upgrade_expand_equip x:360 y:819
+gclick 1 - upgrade_crystal_ritual x:464 y:820
+gclick 1 - upgrade_stone_ritual x:413 y:822
+gclick 1 - upgrade_leaf_ritual x:517 y:822
+gclick 1 - upgrade_rake4 x:568 y:768
+gclick 1 - upgrade_pickaxe4 x:569 y:671
+gclick 1 - upgrade_lab4 x:569 y:724
+gclick 1 - upgrade_rake3 x:516 y:771
+gclick 1 - upgrade_pickaxe3 x:512 y:669
+gclick 1 - upgrade_lab3 x:514 y:721
+gclick 1 - upgrade_rake2 x:463 y:774
+gclick 1 - upgrade_pickaxe2 x:461 y:672
+gclick 1 - upgrade_lab2 x:462 y:725
+gclick 1 - upgrade_rake1 x:413 y:772
+gclick 1 - upgrade_pickaxe1 x:407 y:670
+gclick 1 - upgrade_lab1 x:413 y:726
+gclick 2 - upgrade_upgrade1 x:427 y:628
+gclick 1 - upgrade_mystery_box x:566 y:821
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x353A4E "end"
+"pixelSearch on id " 0xec11b2 1 307 299 314 306 0x7683B1  "color found " 0x353A4E "end"
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0xCCD0C7  "color found " 0x353A4E "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x353A4E "end"
+"pixelSearch on id " 0xec11b2 1 307 299 314 306 0x7683B1  "color found " 0x353A4E "end"
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0xCCD0C7  "color found " 0x605021 "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x605021 "end"
+"pixelSearch on id " 0xec11b2 1 307 299 314 306 0x7683B1  "color found " 0x605021 "end"
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0xCCD0C7  "color found " 0x605021 "end"
+gclick 2 - menu2 x:372 y:937
+gclick 2 - angel x:340 y:888
+gclick 2 - st_slot_3 x:272 y:521
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_4 x:476 y:524
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_5 x:265 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_6 x:464 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_7 x:265 y:654
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_8 x:472 y:655
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_9 x:266 y:727
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_10 x:469 y:726
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+found wizard
+vAutoRebirth started
+turning on PutOnEquip
+turning on autosKills
+turning on AngelWeave
+turning on upgradeCycle
+turning on lootBestiary
+turning on BankCapBuyer
+turning on vAutoKingChallange
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 2 - upgrade_upgradeMax x:593 y:628
+gclick 1 - upgrade_exp_bonus x:307 y:819
+gclick 1 - upgrade_gold_bonus x:254 y:820
+gclick 1 - upgrade_expand_equip x:360 y:819
+gclick 1 - upgrade_crystal_ritual x:464 y:820
+gclick 1 - upgrade_stone_ritual x:413 y:822
+gclick 1 - upgrade_leaf_ritual x:517 y:822
+gclick 1 - upgrade_rake4 x:568 y:768
+gclick 1 - upgrade_pickaxe4 x:569 y:671
+gclick 1 - upgrade_lab4 x:569 y:724
+gclick 1 - upgrade_rake3 x:516 y:771
+gclick 1 - upgrade_pickaxe3 x:512 y:669
+gclick 1 - upgrade_lab3 x:514 y:721
+gclick 1 - upgrade_rake2 x:463 y:774
+gclick 1 - upgrade_pickaxe2 x:461 y:672
+gclick 1 - upgrade_lab2 x:462 y:725
+gclick 1 - upgrade_rake1 x:413 y:772
+gclick 1 - upgrade_pickaxe1 x:407 y:670
+gclick 1 - upgrade_lab1 x:413 y:726
+gclick 2 - upgrade_upgrade1 x:427 y:628
+gclick 1 - upgrade_mystery_box x:566 y:821
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+autoskills started for: wizard
+gclick 2 - menu2 x:372 y:937
+gclick 2 - wizard x:340 y:841
+Setting wizard skills
+gclick 2 - st_slot_2 x:472 y:451
+gclick 2 - skillbar_class_top_1 x:793 y:881
+gclick 2 - st_slot_7 x:265 y:654
+gclick 2 - skillbar_class_top_2 x:847 y:879
+gclick 2 - st_slot_9 x:266 y:727
+gclick 2 - skillbar_class_top_3 x:901 y:876
+gclick 2 - st_slot_5 x:265 y:589
+gclick 2 - skillbar_class_bottom_1 x:792 y:936
+gclick 2 - st_slot_10 x:469 y:726
+gclick 2 - skillbar_class_bottom_2 x:839 y:936
+gclick 1 - skill_table_skill_2_stance x:628 y:446
+gclick 2 - warrior x:340 y:798
+gclick 2 - st_slot_7 x:265 y:654
+gclick 2 - skillbar_global_top_2 x:1097 y:871
+gclick 2 - st_slot_8 x:472 y:655
+gclick 2 - skillbar_global_top_3 x:1140 y:871
+
+start lootBestiary
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+timedupgradeCycle started :20000
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 2 - upgrade_upgradeMax x:593 y:628
+gclick 1 - upgrade_exp_bonus x:307 y:819
+gclick 1 - upgrade_gold_bonus x:254 y:820
+gclick 1 - upgrade_expand_equip x:360 y:819
+gclick 1 - upgrade_crystal_ritual x:464 y:820
+gclick 1 - upgrade_stone_ritual x:413 y:822
+gclick 1 - upgrade_leaf_ritual x:517 y:822
+gclick 1 - upgrade_rake4 x:568 y:768
+gclick 1 - upgrade_pickaxe4 x:569 y:671
+gclick 1 - upgrade_lab4 x:569 y:724
+gclick 1 - upgrade_rake3 x:516 y:771
+gclick 1 - upgrade_pickaxe3 x:512 y:669
+gclick 1 - upgrade_lab3 x:514 y:721
+gclick 1 - upgrade_rake2 x:463 y:774
+gclick 1 - upgrade_pickaxe2 x:461 y:672
+gclick 1 - upgrade_lab2 x:462 y:725
+gclick 1 - upgrade_rake1 x:413 y:772
+gclick 1 - upgrade_pickaxe1 x:407 y:670
+gclick 1 - upgrade_lab1 x:413 y:726
+gclick 2 - upgrade_upgrade1 x:427 y:628
+gclick 1 - upgrade_mystery_box x:566 y:821
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+AngelWeaveLoop started :29000
+gclick 2 - menu2 x:372 y:937
+gclick 2 - angel x:340 y:888
+gclick 2 - st_slot_3 x:272 y:521
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_4 x:476 y:524
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_5 x:265 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_6 x:464 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_7 x:265 y:654
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_8 x:472 y:655
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_9 x:266 y:727
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_10 x:469 y:726
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+
+start lootBestiary
+lootBestiary started :600000
+gclick 2 - menu3 x:488 y:933
+gclick 2 - explore_bestiary x:576 y:402
+gclick 2 - bestiary_lootAll x:422 y:276
+gclick 2 - bestiary_close x:1117 y:278
+end ok
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+BankBalanceScanner started 90000
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 2 - slime_bank x:485 y:883
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+putOnEquipAction started
+Checking equipment every :340000
+checking menu button:7
+menu id hwnd0xec11b2 check for:0x001800 x:488 y:958 result:0
+gclick 2 - menu4 x:608 y:934
+gclick 2 - craft_check_Box x:248 y:400
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip6
+gclick 2 - equip6 x:278 y:595
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip7
+gclick 2 - equip7 x:358 y:592
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip8
+gclick 2 - equip8 x:436 y:600
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip9
+gclick 2 - equip9 x:521 y:595
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip10
+gclick 2 - equip10 x:606 y:592
+gclick clone EquipClassD
+gclick 2 - EquipClassD x:517 y:445
+gclick clone equip5
+gclick 2 - equip5 x:595 y:498
+gclick clone EquipClassC
+gclick 2 - EquipClassC x:556 y:444
+gclick clone equip6
+gclick 2 - equip6 x:278 y:595
+gclick clone EquipClassC
+gclick 2 - EquipClassC x:556 y:444
+gclick clone equip7
+gclick 2 - equip7 x:358 y:592
+gclick clone EquipClassC
+gclick 2 - EquipClassC x:556 y:444
+gclick clone equip8
+gclick 2 - equip8 x:436 y:600
+gclick clone EquipClassC
+gclick 2 - EquipClassC x:556 y:444
+gclick clone equip10
+gclick 2 - equip10 x:606 y:592
+gclick clone EquipClassC
+gclick 2 - EquipClassC x:556 y:444
+gclick clone equip5
+gclick 2 - equip5 x:595 y:498
+gclick clone EquipClassD
+gclick 2 - EquipClassD x:517 y:445
+gclick clone equip6
+gclick 2 - equip6 x:278 y:595
+gclick clone EquipClassD
+gclick 2 - EquipClassD x:517 y:445
+gclick clone equip7
+gclick 2 - equip7 x:358 y:592
+gclick clone EquipClassD
+gclick 2 - EquipClassD x:517 y:445
+gclick clone equip8
+gclick 2 - equip8 x:436 y:600
+gclick clone EquipClassD
+gclick 2 - EquipClassD x:517 y:445
+gclick clone equip9
+gclick 2 - equip9 x:521 y:595
+gclick clone EquipClassD
+gclick 2 - EquipClassD x:517 y:445
+gclick clone equip10
+gclick 2 - equip10 x:606 y:592
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip1
+gclick 2 - equip1 x:274 y:494
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip2
+gclick 2 - equip2 x:349 y:494
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip3
+gclick 2 - equip3 x:440 y:496
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip4
+gclick 2 - equip4 x:515 y:497
+gclick clone EquipClassC
+gclick 2 - EquipClassC x:556 y:444
+gclick clone equip4
+gclick 2 - equip4 x:515 y:497
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 2 - upgrade_upgradeMax x:593 y:628
+gclick 1 - upgrade_exp_bonus x:307 y:819
+gclick 1 - upgrade_gold_bonus x:254 y:820
+gclick 1 - upgrade_expand_equip x:360 y:819
+gclick 1 - upgrade_crystal_ritual x:464 y:820
+gclick 1 - upgrade_stone_ritual x:413 y:822
+gclick 1 - upgrade_leaf_ritual x:517 y:822
+gclick 1 - upgrade_rake4 x:568 y:768
+gclick 1 - upgrade_pickaxe4 x:569 y:671
+gclick 1 - upgrade_lab4 x:569 y:724
+gclick 1 - upgrade_rake3 x:516 y:771
+gclick 1 - upgrade_pickaxe3 x:512 y:669
+gclick 1 - upgrade_lab3 x:514 y:721
+gclick 1 - upgrade_rake2 x:463 y:774
+gclick 1 - upgrade_pickaxe2 x:461 y:672
+gclick 1 - upgrade_lab2 x:462 y:725
+gclick 1 - upgrade_rake1 x:413 y:772
+gclick 1 - upgrade_pickaxe1 x:407 y:670
+gclick 1 - upgrade_lab1 x:413 y:726
+gclick 2 - upgrade_upgrade1 x:427 y:628
+gclick 1 - upgrade_mystery_box x:566 y:821
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+gclick 2 - menu2 x:372 y:937
+gclick 2 - angel x:340 y:888
+gclick 2 - st_slot_3 x:272 y:521
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_4 x:476 y:524
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_5 x:265 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_6 x:464 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_7 x:265 y:654
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_8 x:472 y:655
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_9 x:266 y:727
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_10 x:469 y:726
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 2 - upgrade_upgradeMax x:593 y:628
+gclick 1 - upgrade_exp_bonus x:307 y:819
+gclick 1 - upgrade_gold_bonus x:254 y:820
+gclick 1 - upgrade_expand_equip x:360 y:819
+gclick 1 - upgrade_crystal_ritual x:464 y:820
+gclick 1 - upgrade_stone_ritual x:413 y:822
+gclick 1 - upgrade_leaf_ritual x:517 y:822
+gclick 1 - upgrade_rake4 x:568 y:768
+gclick 1 - upgrade_pickaxe4 x:569 y:671
+gclick 1 - upgrade_lab4 x:569 y:724
+gclick 1 - upgrade_rake3 x:516 y:771
+gclick 1 - upgrade_pickaxe3 x:512 y:669
+gclick 1 - upgrade_lab3 x:514 y:721
+gclick 1 - upgrade_rake2 x:463 y:774
+gclick 1 - upgrade_pickaxe2 x:461 y:672
+gclick 1 - upgrade_lab2 x:462 y:725
+gclick 1 - upgrade_rake1 x:413 y:772
+gclick 1 - upgrade_pickaxe1 x:407 y:670
+gclick 1 - upgrade_lab1 x:413 y:726
+gclick 2 - upgrade_upgrade1 x:427 y:628
+gclick 1 - upgrade_mystery_box x:566 y:821
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+gclick 2 - menu2 x:372 y:937
+gclick 2 - angel x:340 y:888
+gclick 2 - st_slot_3 x:272 y:521
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_4 x:476 y:524
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_5 x:265 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_6 x:464 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_7 x:265 y:654
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_8 x:472 y:655
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_9 x:266 y:727
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_10 x:469 y:726
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 2 - upgrade_upgradeMax x:593 y:628
+gclick 1 - upgrade_exp_bonus x:307 y:819
+gclick 1 - upgrade_gold_bonus x:254 y:820
+gclick 1 - upgrade_expand_equip x:360 y:819
+gclick 1 - upgrade_crystal_ritual x:464 y:820
+gclick 1 - upgrade_stone_ritual x:413 y:822
+gclick 1 - upgrade_leaf_ritual x:517 y:822
+gclick 1 - upgrade_rake4 x:568 y:768
+gclick 1 - upgrade_pickaxe4 x:569 y:671
+gclick 1 - upgrade_lab4 x:569 y:724
+gclick 1 - upgrade_rake3 x:516 y:771
+gclick 1 - upgrade_pickaxe3 x:512 y:669
+gclick 1 - upgrade_lab3 x:514 y:721
+gclick 1 - upgrade_rake2 x:463 y:774
+gclick 1 - upgrade_pickaxe2 x:461 y:672
+gclick 1 - upgrade_lab2 x:462 y:725
+gclick 1 - upgrade_rake1 x:413 y:772
+gclick 1 - upgrade_pickaxe1 x:407 y:670
+gclick 1 - upgrade_lab1 x:413 y:726
+gclick 2 - upgrade_upgrade1 x:427 y:628
+gclick 1 - upgrade_mystery_box x:566 y:821
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+gclick 2 - menu2 x:372 y:937
+gclick 2 - angel x:340 y:888
+gclick 2 - st_slot_3 x:272 y:521
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_4 x:476 y:524
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_5 x:265 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_6 x:464 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_7 x:265 y:654
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_8 x:472 y:655
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_9 x:266 y:727
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_10 x:469 y:726
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 2 - upgrade_upgradeMax x:593 y:628
+gclick 1 - upgrade_exp_bonus x:307 y:819
+gclick 1 - upgrade_gold_bonus x:254 y:820
+gclick 1 - upgrade_expand_equip x:360 y:819
+gclick 1 - upgrade_crystal_ritual x:464 y:820
+gclick 1 - upgrade_stone_ritual x:413 y:822
+gclick 1 - upgrade_leaf_ritual x:517 y:822
+gclick 1 - upgrade_rake4 x:568 y:768
+gclick 1 - upgrade_pickaxe4 x:569 y:671
+gclick 1 - upgrade_lab4 x:569 y:724
+gclick 1 - upgrade_rake3 x:516 y:771
+gclick 1 - upgrade_pickaxe3 x:512 y:669
+gclick 1 - upgrade_lab3 x:514 y:721
+gclick 1 - upgrade_rake2 x:463 y:774
+gclick 1 - upgrade_pickaxe2 x:461 y:672
+gclick 1 - upgrade_lab2 x:462 y:725
+gclick 1 - upgrade_rake1 x:413 y:772
+gclick 1 - upgrade_pickaxe1 x:407 y:670
+gclick 1 - upgrade_lab1 x:413 y:726
+gclick 2 - upgrade_upgrade1 x:427 y:628
+gclick 1 - upgrade_mystery_box x:566 y:821
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 2 - slime_bank x:485 y:883
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+gclick 2 - menu2 x:372 y:937
+gclick 2 - angel x:340 y:888
+gclick 2 - st_slot_3 x:272 y:521
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_4 x:476 y:524
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_5 x:265 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_6 x:464 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_7 x:265 y:654
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_8 x:472 y:655
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_9 x:266 y:727
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_10 x:469 y:726
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 2 - upgrade_upgradeMax x:593 y:628
+gclick 1 - upgrade_exp_bonus x:307 y:819
+gclick 1 - upgrade_gold_bonus x:254 y:820
+gclick 1 - upgrade_expand_equip x:360 y:819
+gclick 1 - upgrade_crystal_ritual x:464 y:820
+gclick 1 - upgrade_stone_ritual x:413 y:822
+gclick 1 - upgrade_leaf_ritual x:517 y:822
+gclick 1 - upgrade_rake4 x:568 y:768
+gclick 1 - upgrade_pickaxe4 x:569 y:671
+gclick 1 - upgrade_lab4 x:569 y:724
+gclick 1 - upgrade_rake3 x:516 y:771
+gclick 1 - upgrade_pickaxe3 x:512 y:669
+gclick 1 - upgrade_lab3 x:514 y:721
+gclick 1 - upgrade_rake2 x:463 y:774
+gclick 1 - upgrade_pickaxe2 x:461 y:672
+gclick 1 - upgrade_lab2 x:462 y:725
+gclick 1 - upgrade_rake1 x:413 y:772
+gclick 1 - upgrade_pickaxe1 x:407 y:670
+gclick 1 - upgrade_lab1 x:413 y:726
+gclick 2 - upgrade_upgrade1 x:427 y:628
+gclick 1 - upgrade_mystery_box x:566 y:821
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+gclick 2 - menu2 x:372 y:937
+gclick 2 - angel x:340 y:888
+gclick 2 - st_slot_3 x:272 y:521
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_4 x:476 y:524
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_5 x:265 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_6 x:464 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_7 x:265 y:654
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_8 x:472 y:655
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_9 x:266 y:727
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_10 x:469 y:726
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 2 - upgrade_upgradeMax x:593 y:628
+gclick 1 - upgrade_exp_bonus x:307 y:819
+gclick 1 - upgrade_gold_bonus x:254 y:820
+gclick 1 - upgrade_expand_equip x:360 y:819
+gclick 1 - upgrade_crystal_ritual x:464 y:820
+gclick 1 - upgrade_stone_ritual x:413 y:822
+gclick 1 - upgrade_leaf_ritual x:517 y:822
+gclick 1 - upgrade_rake4 x:568 y:768
+gclick 1 - upgrade_pickaxe4 x:569 y:671
+gclick 1 - upgrade_lab4 x:569 y:724
+gclick 1 - upgrade_rake3 x:516 y:771
+gclick 1 - upgrade_pickaxe3 x:512 y:669
+gclick 1 - upgrade_lab3 x:514 y:721
+gclick 1 - upgrade_rake2 x:463 y:774
+gclick 1 - upgrade_pickaxe2 x:461 y:672
+gclick 1 - upgrade_lab2 x:462 y:725
+gclick 1 - upgrade_rake1 x:413 y:772
+gclick 1 - upgrade_pickaxe1 x:407 y:670
+gclick 1 - upgrade_lab1 x:413 y:726
+gclick 2 - upgrade_upgrade1 x:427 y:628
+gclick 1 - upgrade_mystery_box x:566 y:821
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+gclick 2 - menu2 x:372 y:937
+gclick 2 - angel x:340 y:888
+gclick 2 - st_slot_3 x:272 y:521
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_4 x:476 y:524
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_5 x:265 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_6 x:464 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_7 x:265 y:654
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_8 x:472 y:655
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_9 x:266 y:727
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_10 x:469 y:726
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 2 - upgrade_upgradeMax x:593 y:628
+gclick 1 - upgrade_exp_bonus x:307 y:819
+gclick 1 - upgrade_gold_bonus x:254 y:820
+gclick 1 - upgrade_expand_equip x:360 y:819
+gclick 1 - upgrade_crystal_ritual x:464 y:820
+gclick 1 - upgrade_stone_ritual x:413 y:822
+gclick 1 - upgrade_leaf_ritual x:517 y:822
+gclick 1 - upgrade_rake4 x:568 y:768
+gclick 1 - upgrade_pickaxe4 x:569 y:671
+gclick 1 - upgrade_lab4 x:569 y:724
+gclick 1 - upgrade_rake3 x:516 y:771
+gclick 1 - upgrade_pickaxe3 x:512 y:669
+gclick 1 - upgrade_lab3 x:514 y:721
+gclick 1 - upgrade_rake2 x:463 y:774
+gclick 1 - upgrade_pickaxe2 x:461 y:672
+gclick 1 - upgrade_lab2 x:462 y:725
+gclick 1 - upgrade_rake1 x:413 y:772
+gclick 1 - upgrade_pickaxe1 x:407 y:670
+gclick 1 - upgrade_lab1 x:413 y:726
+gclick 2 - upgrade_upgrade1 x:427 y:628
+gclick 1 - upgrade_mystery_box x:566 y:821
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 2 - slime_bank x:485 y:883
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+gclick 2 - menu2 x:372 y:937
+gclick 2 - angel x:340 y:888
+gclick 2 - st_slot_3 x:272 y:521
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_4 x:476 y:524
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_5 x:265 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_6 x:464 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_7 x:265 y:654
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_8 x:472 y:655
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_9 x:266 y:727
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_10 x:469 y:726
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 2 - upgrade_upgradeMax x:593 y:628
+gclick 1 - upgrade_exp_bonus x:307 y:819
+gclick 1 - upgrade_gold_bonus x:254 y:820
+gclick 1 - upgrade_expand_equip x:360 y:819
+gclick 1 - upgrade_crystal_ritual x:464 y:820
+gclick 1 - upgrade_stone_ritual x:413 y:822
+gclick 1 - upgrade_leaf_ritual x:517 y:822
+gclick 1 - upgrade_rake4 x:568 y:768
+gclick 1 - upgrade_pickaxe4 x:569 y:671
+gclick 1 - upgrade_lab4 x:569 y:724
+gclick 1 - upgrade_rake3 x:516 y:771
+gclick 1 - upgrade_pickaxe3 x:512 y:669
+gclick 1 - upgrade_lab3 x:514 y:721
+gclick 1 - upgrade_rake2 x:463 y:774
+gclick 1 - upgrade_pickaxe2 x:461 y:672
+gclick 1 - upgrade_lab2 x:462 y:725
+gclick 1 - upgrade_rake1 x:413 y:772
+gclick 1 - upgrade_pickaxe1 x:407 y:670
+gclick 1 - upgrade_lab1 x:413 y:726
+gclick 2 - upgrade_upgrade1 x:427 y:628
+gclick 1 - upgrade_mystery_box x:566 y:821
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+kingexp farm try
+checking menu button:7
+menu id hwnd0xec11b2 check for:0x001800 x:488 y:958 result:1
+gclick 2 - menu4 x:608 y:934
+gclick 3 - challenge1 x:262 y:461
+gclick 4 - challenge_start x:334 y:868
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+gclick 2 - menu2 x:372 y:937
+gclick 2 - angel x:340 y:888
+gclick 2 - st_slot_3 x:272 y:521
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_4 x:476 y:524
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_5 x:265 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_6 x:464 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_7 x:265 y:654
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_8 x:472 y:655
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_9 x:266 y:727
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_10 x:469 y:726
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 2 - upgrade_upgradeMax x:593 y:628
+gclick 1 - upgrade_exp_bonus x:307 y:819
+gclick 1 - upgrade_gold_bonus x:254 y:820
+gclick 1 - upgrade_expand_equip x:360 y:819
+gclick 1 - upgrade_crystal_ritual x:464 y:820
+gclick 1 - upgrade_stone_ritual x:413 y:822
+gclick 1 - upgrade_leaf_ritual x:517 y:822
+gclick 1 - upgrade_rake4 x:568 y:768
+gclick 1 - upgrade_pickaxe4 x:569 y:671
+gclick 1 - upgrade_lab4 x:569 y:724
+gclick 1 - upgrade_rake3 x:516 y:771
+gclick 1 - upgrade_pickaxe3 x:512 y:669
+gclick 1 - upgrade_lab3 x:514 y:721
+gclick 1 - upgrade_rake2 x:463 y:774
+gclick 1 - upgrade_pickaxe2 x:461 y:672
+gclick 1 - upgrade_lab2 x:462 y:725
+gclick 1 - upgrade_rake1 x:413 y:772
+gclick 1 - upgrade_pickaxe1 x:407 y:670
+gclick 1 - upgrade_lab1 x:413 y:726
+gclick 2 - upgrade_upgrade1 x:427 y:628
+gclick 1 - upgrade_mystery_box x:566 y:821
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+auto rebirth
+checking menu button:7
+menu id hwnd0xec11b2 check for:0x001800 x:488 y:958 result:1
+gclick 2 - menu7 x:491 y:961
+gclick 2 - rebirthSelect x:385 y:892
+gclick 2 - rebirthConfirm x:693 y:808
+gclick 2 - gameStart x:740 y:501
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+found wizard
+vAutoRebirth started
+turning on PutOnEquip
+turning on autosKills
+turning on AngelWeave
+turning on upgradeCycle
+turning on lootBestiary
+turning on BankCapBuyer
+turning on vAutoKingChallange
+putOnEquipAction started
+Checking equipment every :340000
+checking menu button:7
+menu id hwnd0xec11b2 check for:0x001800 x:488 y:958 result:1
+gclick 2 - menu5 x:254 y:958
+gclick 2 - craft_check_Box x:248 y:400
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip6
+gclick 2 - equip6 x:278 y:595
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip7
+gclick 2 - equip7 x:358 y:592
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip8
+gclick 2 - equip8 x:436 y:600
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip9
+gclick 2 - equip9 x:521 y:595
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip10
+gclick 2 - equip10 x:606 y:592
+gclick clone EquipClassD
+gclick 2 - EquipClassD x:517 y:445
+gclick clone equip5
+gclick 2 - equip5 x:595 y:498
+gclick clone EquipClassC
+gclick 2 - EquipClassC x:556 y:444
+gclick clone equip6
+gclick 2 - equip6 x:278 y:595
+gclick clone EquipClassC
+gclick 2 - EquipClassC x:556 y:444
+gclick clone equip7
+gclick 2 - equip7 x:358 y:592
+gclick clone EquipClassC
+gclick 2 - EquipClassC x:556 y:444
+gclick clone equip8
+gclick 2 - equip8 x:436 y:600
+gclick clone EquipClassC
+gclick 2 - EquipClassC x:556 y:444
+gclick clone equip10
+gclick 2 - equip10 x:606 y:592
+gclick clone EquipClassC
+gclick 2 - EquipClassC x:556 y:444
+gclick clone equip5
+gclick 2 - equip5 x:595 y:498
+gclick clone EquipClassD
+gclick 2 - EquipClassD x:517 y:445
+gclick clone equip6
+gclick 2 - equip6 x:278 y:595
+gclick clone EquipClassD
+gclick 2 - EquipClassD x:517 y:445
+gclick clone equip7
+gclick 2 - equip7 x:358 y:592
+gclick clone EquipClassD
+gclick 2 - EquipClassD x:517 y:445
+gclick clone equip8
+gclick 2 - equip8 x:436 y:600
+gclick clone EquipClassD
+gclick 2 - EquipClassD x:517 y:445
+gclick clone equip9
+gclick 2 - equip9 x:521 y:595
+gclick clone EquipClassD
+gclick 2 - EquipClassD x:517 y:445
+gclick clone equip10
+gclick 2 - equip10 x:606 y:592
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip1
+gclick 2 - equip1 x:274 y:494
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip2
+gclick 2 - equip2 x:349 y:494
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip3
+gclick 2 - equip3 x:440 y:496
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip4
+gclick 2 - equip4 x:515 y:497
+gclick clone EquipClassC
+gclick 2 - EquipClassC x:556 y:444
+gclick clone equip4
+gclick 2 - equip4 x:515 y:497
+autoskills started for: wizard
+gclick 2 - menu2 x:372 y:937
+gclick 2 - wizard x:340 y:841
+Setting wizard skills
+gclick 2 - st_slot_2 x:472 y:451
+gclick 2 - skillbar_class_top_1 x:793 y:881
+gclick 2 - st_slot_7 x:265 y:654
+gclick 2 - skillbar_class_top_2 x:847 y:879
+gclick 2 - st_slot_9 x:266 y:727
+gclick 2 - skillbar_class_top_3 x:901 y:876
+gclick 2 - st_slot_5 x:265 y:589
+gclick 2 - skillbar_class_bottom_1 x:792 y:936
+gclick 2 - st_slot_10 x:469 y:726
+gclick 2 - skillbar_class_bottom_2 x:839 y:936
+gclick 1 - skill_table_skill_2_stance x:628 y:446
+gclick 2 - warrior x:340 y:798
+gclick 2 - st_slot_7 x:265 y:654
+gclick 2 - skillbar_global_top_2 x:1097 y:871
+gclick 2 - st_slot_8 x:472 y:655
+gclick 2 - skillbar_global_top_3 x:1140 y:871
+AngelWeaveLoop started :29000
+gclick 2 - menu2 x:372 y:937
+gclick 2 - angel x:340 y:888
+gclick 2 - st_slot_3 x:272 y:521
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_4 x:476 y:524
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_5 x:265 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_6 x:464 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_7 x:265 y:654
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_8 x:472 y:655
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_9 x:266 y:727
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_10 x:469 y:726
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+timedupgradeCycle started :20000
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 2 - upgrade_upgradeMax x:593 y:628
+gclick 1 - upgrade_exp_bonus x:307 y:819
+gclick 1 - upgrade_gold_bonus x:254 y:820
+gclick 1 - upgrade_expand_equip x:360 y:819
+gclick 1 - upgrade_crystal_ritual x:464 y:820
+gclick 1 - upgrade_stone_ritual x:413 y:822
+gclick 1 - upgrade_leaf_ritual x:517 y:822
+gclick 1 - upgrade_rake4 x:568 y:768
+gclick 1 - upgrade_pickaxe4 x:569 y:671
+gclick 1 - upgrade_lab4 x:569 y:724
+gclick 1 - upgrade_rake3 x:516 y:771
+gclick 1 - upgrade_pickaxe3 x:512 y:669
+gclick 1 - upgrade_lab3 x:514 y:721
+gclick 1 - upgrade_rake2 x:463 y:774
+gclick 1 - upgrade_pickaxe2 x:461 y:672
+gclick 1 - upgrade_lab2 x:462 y:725
+gclick 1 - upgrade_rake1 x:413 y:772
+gclick 1 - upgrade_pickaxe1 x:407 y:670
+gclick 1 - upgrade_lab1 x:413 y:726
+gclick 2 - upgrade_upgrade1 x:427 y:628
+gclick 1 - upgrade_mystery_box x:566 y:821
 
 start lootBestiary
 lootBestiary started :600000
@@ -16,1232 +1211,666 @@ gclick 2 - menu1 x:257 y:933
 gclick 2 - sb_GoBack x:596 y:397
 gclick 2 - slime_bank x:485 y:883
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 2 - upgrade_upgradeMax x:593 y:628
+gclick 1 - upgrade_exp_bonus x:307 y:819
+gclick 1 - upgrade_gold_bonus x:254 y:820
+gclick 1 - upgrade_expand_equip x:360 y:819
+gclick 1 - upgrade_crystal_ritual x:464 y:820
+gclick 1 - upgrade_stone_ritual x:413 y:822
+gclick 1 - upgrade_leaf_ritual x:517 y:822
+gclick 1 - upgrade_rake4 x:568 y:768
+gclick 1 - upgrade_pickaxe4 x:569 y:671
+gclick 1 - upgrade_lab4 x:569 y:724
+gclick 1 - upgrade_rake3 x:516 y:771
+gclick 1 - upgrade_pickaxe3 x:512 y:669
+gclick 1 - upgrade_lab3 x:514 y:721
+gclick 1 - upgrade_rake2 x:463 y:774
+gclick 1 - upgrade_pickaxe2 x:461 y:672
+gclick 1 - upgrade_lab2 x:462 y:725
+gclick 1 - upgrade_rake1 x:413 y:772
+gclick 1 - upgrade_pickaxe1 x:407 y:670
+gclick 1 - upgrade_lab1 x:413 y:726
+gclick 2 - upgrade_upgrade1 x:427 y:628
+gclick 1 - upgrade_mystery_box x:566 y:821
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+gclick 2 - menu2 x:372 y:937
+gclick 2 - angel x:340 y:888
+gclick 2 - st_slot_3 x:272 y:521
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_4 x:476 y:524
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_5 x:265 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_6 x:464 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_7 x:265 y:654
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_8 x:472 y:655
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_9 x:266 y:727
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_10 x:469 y:726
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 2 - upgrade_upgradeMax x:593 y:628
+gclick 1 - upgrade_exp_bonus x:307 y:819
+gclick 1 - upgrade_gold_bonus x:254 y:820
+gclick 1 - upgrade_expand_equip x:360 y:819
+gclick 1 - upgrade_crystal_ritual x:464 y:820
+gclick 1 - upgrade_stone_ritual x:413 y:822
+gclick 1 - upgrade_leaf_ritual x:517 y:822
+gclick 1 - upgrade_rake4 x:568 y:768
+gclick 1 - upgrade_pickaxe4 x:569 y:671
+gclick 1 - upgrade_lab4 x:569 y:724
+gclick 1 - upgrade_rake3 x:516 y:771
+gclick 1 - upgrade_pickaxe3 x:512 y:669
+gclick 1 - upgrade_lab3 x:514 y:721
+gclick 1 - upgrade_rake2 x:463 y:774
+gclick 1 - upgrade_pickaxe2 x:461 y:672
+gclick 1 - upgrade_lab2 x:462 y:725
+gclick 1 - upgrade_rake1 x:413 y:772
+gclick 1 - upgrade_pickaxe1 x:407 y:670
+gclick 1 - upgrade_lab1 x:413 y:726
+gclick 2 - upgrade_upgrade1 x:427 y:628
+gclick 1 - upgrade_mystery_box x:566 y:821
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+gclick 2 - menu2 x:372 y:937
+gclick 2 - angel x:340 y:888
+gclick 2 - st_slot_3 x:272 y:521
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_4 x:476 y:524
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_5 x:265 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_6 x:464 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_7 x:265 y:654
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_8 x:472 y:655
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_9 x:266 y:727
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_10 x:469 y:726
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 2 - upgrade_upgradeMax x:593 y:628
+gclick 1 - upgrade_exp_bonus x:307 y:819
+gclick 1 - upgrade_gold_bonus x:254 y:820
+gclick 1 - upgrade_expand_equip x:360 y:819
+gclick 1 - upgrade_crystal_ritual x:464 y:820
+gclick 1 - upgrade_stone_ritual x:413 y:822
+gclick 1 - upgrade_leaf_ritual x:517 y:822
+gclick 1 - upgrade_rake4 x:568 y:768
+gclick 1 - upgrade_pickaxe4 x:569 y:671
+gclick 1 - upgrade_lab4 x:569 y:724
+gclick 1 - upgrade_rake3 x:516 y:771
+gclick 1 - upgrade_pickaxe3 x:512 y:669
+gclick 1 - upgrade_lab3 x:514 y:721
+gclick 1 - upgrade_rake2 x:463 y:774
+gclick 1 - upgrade_pickaxe2 x:461 y:672
+gclick 1 - upgrade_lab2 x:462 y:725
+gclick 1 - upgrade_rake1 x:413 y:772
+gclick 1 - upgrade_pickaxe1 x:407 y:670
+gclick 1 - upgrade_lab1 x:413 y:726
+gclick 2 - upgrade_upgrade1 x:427 y:628
+gclick 1 - upgrade_mystery_box x:566 y:821
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+gclick 2 - menu2 x:372 y:937
+gclick 2 - angel x:340 y:888
+gclick 2 - st_slot_3 x:272 y:521
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_4 x:476 y:524
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_5 x:265 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_6 x:464 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_7 x:265 y:654
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_8 x:472 y:655
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_9 x:266 y:727
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_10 x:469 y:726
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 2 - upgrade_upgradeMax x:593 y:628
+gclick 1 - upgrade_exp_bonus x:307 y:819
+gclick 1 - upgrade_gold_bonus x:254 y:820
+gclick 1 - upgrade_expand_equip x:360 y:819
+gclick 1 - upgrade_crystal_ritual x:464 y:820
+gclick 1 - upgrade_stone_ritual x:413 y:822
+gclick 1 - upgrade_leaf_ritual x:517 y:822
+gclick 1 - upgrade_rake4 x:568 y:768
+gclick 1 - upgrade_pickaxe4 x:569 y:671
+gclick 1 - upgrade_lab4 x:569 y:724
+gclick 1 - upgrade_rake3 x:516 y:771
+gclick 1 - upgrade_pickaxe3 x:512 y:669
+gclick 1 - upgrade_lab3 x:514 y:721
+gclick 1 - upgrade_rake2 x:463 y:774
+gclick 1 - upgrade_pickaxe2 x:461 y:672
+gclick 1 - upgrade_lab2 x:462 y:725
+gclick 1 - upgrade_rake1 x:413 y:772
+gclick 1 - upgrade_pickaxe1 x:407 y:670
+gclick 1 - upgrade_lab1 x:413 y:726
+gclick 2 - upgrade_upgrade1 x:427 y:628
+gclick 1 - upgrade_mystery_box x:566 y:821
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 2 - slime_bank x:485 y:883
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+gclick 2 - menu2 x:372 y:937
+gclick 2 - angel x:340 y:888
+gclick 2 - st_slot_3 x:272 y:521
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_4 x:476 y:524
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_5 x:265 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_6 x:464 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_7 x:265 y:654
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_8 x:472 y:655
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_9 x:266 y:727
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_10 x:469 y:726
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 2 - upgrade_upgradeMax x:593 y:628
+gclick 1 - upgrade_exp_bonus x:307 y:819
+gclick 1 - upgrade_gold_bonus x:254 y:820
+gclick 1 - upgrade_expand_equip x:360 y:819
+gclick 1 - upgrade_crystal_ritual x:464 y:820
+gclick 1 - upgrade_stone_ritual x:413 y:822
+gclick 1 - upgrade_leaf_ritual x:517 y:822
+gclick 1 - upgrade_rake4 x:568 y:768
+gclick 1 - upgrade_pickaxe4 x:569 y:671
+gclick 1 - upgrade_lab4 x:569 y:724
+gclick 1 - upgrade_rake3 x:516 y:771
+gclick 1 - upgrade_pickaxe3 x:512 y:669
+gclick 1 - upgrade_lab3 x:514 y:721
+gclick 1 - upgrade_rake2 x:463 y:774
+gclick 1 - upgrade_pickaxe2 x:461 y:672
+gclick 1 - upgrade_lab2 x:462 y:725
+gclick 1 - upgrade_rake1 x:413 y:772
+gclick 1 - upgrade_pickaxe1 x:407 y:670
+gclick 1 - upgrade_lab1 x:413 y:726
+gclick 2 - upgrade_upgrade1 x:427 y:628
+gclick 1 - upgrade_mystery_box x:566 y:821
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+gclick 2 - menu2 x:372 y:937
+gclick 2 - angel x:340 y:888
+gclick 2 - st_slot_3 x:272 y:521
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_4 x:476 y:524
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_5 x:265 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_6 x:464 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_7 x:265 y:654
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_8 x:472 y:655
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_9 x:266 y:727
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_10 x:469 y:726
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 2 - upgrade_upgradeMax x:593 y:628
+gclick 1 - upgrade_exp_bonus x:307 y:819
+gclick 1 - upgrade_gold_bonus x:254 y:820
+gclick 1 - upgrade_expand_equip x:360 y:819
+gclick 1 - upgrade_crystal_ritual x:464 y:820
+gclick 1 - upgrade_stone_ritual x:413 y:822
+gclick 1 - upgrade_leaf_ritual x:517 y:822
+gclick 1 - upgrade_rake4 x:568 y:768
+gclick 1 - upgrade_pickaxe4 x:569 y:671
+gclick 1 - upgrade_lab4 x:569 y:724
+gclick 1 - upgrade_rake3 x:516 y:771
+gclick 1 - upgrade_pickaxe3 x:512 y:669
+gclick 1 - upgrade_lab3 x:514 y:721
+gclick 1 - upgrade_rake2 x:463 y:774
+gclick 1 - upgrade_pickaxe2 x:461 y:672
+gclick 1 - upgrade_lab2 x:462 y:725
+gclick 1 - upgrade_rake1 x:413 y:772
+gclick 1 - upgrade_pickaxe1 x:407 y:670
+gclick 1 - upgrade_lab1 x:413 y:726
+gclick 2 - upgrade_upgrade1 x:427 y:628
+gclick 1 - upgrade_mystery_box x:566 y:821
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+gclick 2 - menu2 x:372 y:937
+gclick 2 - angel x:340 y:888
+gclick 2 - st_slot_3 x:272 y:521
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_4 x:476 y:524
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_5 x:265 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_6 x:464 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_7 x:265 y:654
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_8 x:472 y:655
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_9 x:266 y:727
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_10 x:469 y:726
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 2 - upgrade_upgradeMax x:593 y:628
+gclick 1 - upgrade_exp_bonus x:307 y:819
+gclick 1 - upgrade_gold_bonus x:254 y:820
+gclick 1 - upgrade_expand_equip x:360 y:819
+gclick 1 - upgrade_crystal_ritual x:464 y:820
+gclick 1 - upgrade_stone_ritual x:413 y:822
+gclick 1 - upgrade_leaf_ritual x:517 y:822
+gclick 1 - upgrade_rake4 x:568 y:768
+gclick 1 - upgrade_pickaxe4 x:569 y:671
+gclick 1 - upgrade_lab4 x:569 y:724
+gclick 1 - upgrade_rake3 x:516 y:771
+gclick 1 - upgrade_pickaxe3 x:512 y:669
+gclick 1 - upgrade_lab3 x:514 y:721
+gclick 1 - upgrade_rake2 x:463 y:774
+gclick 1 - upgrade_pickaxe2 x:461 y:672
+gclick 1 - upgrade_lab2 x:462 y:725
+gclick 1 - upgrade_rake1 x:413 y:772
+gclick 1 - upgrade_pickaxe1 x:407 y:670
+gclick 1 - upgrade_lab1 x:413 y:726
+gclick 2 - upgrade_upgrade1 x:427 y:628
+gclick 1 - upgrade_mystery_box x:566 y:821
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 2 - slime_bank x:485 y:883
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+gclick 2 - menu2 x:372 y:937
+gclick 2 - angel x:340 y:888
+gclick 2 - st_slot_3 x:272 y:521
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_4 x:476 y:524
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_5 x:265 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_6 x:464 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_7 x:265 y:654
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_8 x:472 y:655
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_9 x:266 y:727
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_10 x:469 y:726
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 2 - upgrade_upgradeMax x:593 y:628
+gclick 1 - upgrade_exp_bonus x:307 y:819
+gclick 1 - upgrade_gold_bonus x:254 y:820
+gclick 1 - upgrade_expand_equip x:360 y:819
+gclick 1 - upgrade_crystal_ritual x:464 y:820
+gclick 1 - upgrade_stone_ritual x:413 y:822
+gclick 1 - upgrade_leaf_ritual x:517 y:822
+gclick 1 - upgrade_rake4 x:568 y:768
+gclick 1 - upgrade_pickaxe4 x:569 y:671
+gclick 1 - upgrade_lab4 x:569 y:724
+gclick 1 - upgrade_rake3 x:516 y:771
+gclick 1 - upgrade_pickaxe3 x:512 y:669
+gclick 1 - upgrade_lab3 x:514 y:721
+gclick 1 - upgrade_rake2 x:463 y:774
+gclick 1 - upgrade_pickaxe2 x:461 y:672
+gclick 1 - upgrade_lab2 x:462 y:725
+gclick 1 - upgrade_rake1 x:413 y:772
+gclick 1 - upgrade_pickaxe1 x:407 y:670
+gclick 1 - upgrade_lab1 x:413 y:726
+gclick 2 - upgrade_upgrade1 x:427 y:628
+gclick 1 - upgrade_mystery_box x:566 y:821
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+kingexp farm try
+checking menu button:7
+menu id hwnd0xec11b2 check for:0x001800 x:488 y:958 result:1
+gclick 2 - menu4 x:608 y:934
+gclick 3 - challenge1 x:262 y:461
+gclick 4 - challenge_start x:334 y:868
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+gclick 2 - menu2 x:372 y:937
+gclick 2 - angel x:340 y:888
+gclick 2 - st_slot_3 x:272 y:521
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_4 x:476 y:524
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_5 x:265 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_6 x:464 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_7 x:265 y:654
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_8 x:472 y:655
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_9 x:266 y:727
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_10 x:469 y:726
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 2 - upgrade_upgradeMax x:593 y:628
+gclick 1 - upgrade_exp_bonus x:307 y:819
+gclick 1 - upgrade_gold_bonus x:254 y:820
+gclick 1 - upgrade_expand_equip x:360 y:819
+gclick 1 - upgrade_crystal_ritual x:464 y:820
+gclick 1 - upgrade_stone_ritual x:413 y:822
+gclick 1 - upgrade_leaf_ritual x:517 y:822
+gclick 1 - upgrade_rake4 x:568 y:768
+gclick 1 - upgrade_pickaxe4 x:569 y:671
+gclick 1 - upgrade_lab4 x:569 y:724
+gclick 1 - upgrade_rake3 x:516 y:771
+gclick 1 - upgrade_pickaxe3 x:512 y:669
+gclick 1 - upgrade_lab3 x:514 y:721
+gclick 1 - upgrade_rake2 x:463 y:774
+gclick 1 - upgrade_pickaxe2 x:461 y:672
+gclick 1 - upgrade_lab2 x:462 y:725
+gclick 1 - upgrade_rake1 x:413 y:772
+gclick 1 - upgrade_pickaxe1 x:407 y:670
+gclick 1 - upgrade_lab1 x:413 y:726
+gclick 2 - upgrade_upgrade1 x:427 y:628
+gclick 1 - upgrade_mystery_box x:566 y:821
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+auto rebirth
+checking menu button:7
+menu id hwnd0xec11b2 check for:0x001800 x:488 y:958 result:1
+gclick 2 - menu7 x:491 y:961
+gclick 2 - rebirthSelect x:385 y:892
+gclick 2 - rebirthConfirm x:693 y:808
+gclick 2 - gameStart x:740 y:501
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+found wizard
+vAutoRebirth started
+turning on PutOnEquip
+turning on autosKills
+turning on AngelWeave
+turning on upgradeCycle
+turning on lootBestiary
+turning on BankCapBuyer
+turning on vAutoKingChallange
+putOnEquipAction started
+Checking equipment every :340000
+checking menu button:7
+menu id hwnd0xec11b2 check for:0x001800 x:488 y:958 result:0
+gclick 2 - menu4 x:608 y:934
+gclick 2 - craft_check_Box x:248 y:400
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip6
+gclick 2 - equip6 x:278 y:595
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip7
+gclick 2 - equip7 x:358 y:592
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip8
+gclick 2 - equip8 x:436 y:600
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip9
+gclick 2 - equip9 x:521 y:595
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip10
+gclick 2 - equip10 x:606 y:592
+gclick clone EquipClassD
+gclick 2 - EquipClassD x:517 y:445
+gclick clone equip5
+gclick 2 - equip5 x:595 y:498
+gclick clone EquipClassC
+gclick 2 - EquipClassC x:556 y:444
+gclick clone equip6
+gclick 2 - equip6 x:278 y:595
+gclick clone EquipClassC
+gclick 2 - EquipClassC x:556 y:444
+gclick clone equip7
+gclick 2 - equip7 x:358 y:592
+gclick clone EquipClassC
+gclick 2 - EquipClassC x:556 y:444
+gclick clone equip8
+gclick 2 - equip8 x:436 y:600
+gclick clone EquipClassC
+gclick 2 - EquipClassC x:556 y:444
+gclick clone equip10
+gclick 2 - equip10 x:606 y:592
+gclick clone EquipClassC
+gclick 2 - EquipClassC x:556 y:444
+gclick clone equip5
+gclick 2 - equip5 x:595 y:498
+gclick clone EquipClassD
+gclick 2 - EquipClassD x:517 y:445
+gclick clone equip6
+gclick 2 - equip6 x:278 y:595
+gclick clone EquipClassD
+gclick 2 - EquipClassD x:517 y:445
+gclick clone equip7
+gclick 2 - equip7 x:358 y:592
+gclick clone EquipClassD
+gclick 2 - EquipClassD x:517 y:445
+gclick clone equip8
+gclick 2 - equip8 x:436 y:600
+gclick clone EquipClassD
+gclick 2 - EquipClassD x:517 y:445
+gclick clone equip9
+gclick 2 - equip9 x:521 y:595
+gclick clone EquipClassD
+gclick 2 - EquipClassD x:517 y:445
+gclick clone equip10
+gclick 2 - equip10 x:606 y:592
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip1
+gclick 2 - equip1 x:274 y:494
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip2
+gclick 2 - equip2 x:349 y:494
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip3
+gclick 2 - equip3 x:440 y:496
+gclick clone EquipClassB
+gclick 2 - EquipClassB x:588 y:444
+gclick clone equip4
+gclick 2 - equip4 x:515 y:497
+gclick clone EquipClassC
+gclick 2 - EquipClassC x:556 y:444
+gclick clone equip4
+gclick 2 - equip4 x:515 y:497
+autoskills started for: wizard
+gclick 2 - menu2 x:372 y:937
+gclick 2 - wizard x:340 y:841
+Setting wizard skills
+gclick 2 - st_slot_2 x:472 y:451
+gclick 2 - skillbar_class_top_1 x:793 y:881
+gclick 2 - st_slot_7 x:265 y:654
+gclick 2 - skillbar_class_top_2 x:847 y:879
+gclick 2 - st_slot_9 x:266 y:727
+gclick 2 - skillbar_class_top_3 x:901 y:876
+gclick 2 - st_slot_5 x:265 y:589
+gclick 2 - skillbar_class_bottom_1 x:792 y:936
+gclick 2 - st_slot_10 x:469 y:726
+gclick 2 - skillbar_class_bottom_2 x:839 y:936
+gclick 1 - skill_table_skill_2_stance x:628 y:446
+gclick 2 - warrior x:340 y:798
+gclick 2 - st_slot_7 x:265 y:654
+gclick 2 - skillbar_global_top_2 x:1097 y:871
+gclick 2 - st_slot_8 x:472 y:655
+gclick 2 - skillbar_global_top_3 x:1140 y:871
+AngelWeaveLoop started :29000
+gclick 2 - menu2 x:372 y:937
+gclick 2 - angel x:340 y:888
+gclick 2 - st_slot_3 x:272 y:521
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_4 x:476 y:524
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_5 x:265 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_6 x:464 y:589
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_7 x:265 y:654
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_8 x:472 y:655
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_9 x:266 y:727
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+gclick 2 - st_slot_10 x:469 y:726
+gclick 2 - skillbar_global_top_1 x:1055 y:871
+timedupgradeCycle started :20000
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 2 - upgrade_upgradeMax x:593 y:628
+gclick 1 - upgrade_exp_bonus x:307 y:819
+gclick 1 - upgrade_gold_bonus x:254 y:820
+gclick 1 - upgrade_expand_equip x:360 y:819
+gclick 1 - upgrade_crystal_ritual x:464 y:820
+gclick 1 - upgrade_stone_ritual x:413 y:822
+gclick 1 - upgrade_leaf_ritual x:517 y:822
+gclick 1 - upgrade_rake4 x:568 y:768
+gclick 1 - upgrade_pickaxe4 x:569 y:671
+gclick 1 - upgrade_lab4 x:569 y:724
+gclick 1 - upgrade_rake3 x:516 y:771
+gclick 1 - upgrade_pickaxe3 x:512 y:669
+gclick 1 - upgrade_lab3 x:514 y:721
+gclick 1 - upgrade_rake2 x:463 y:774
+gclick 1 - upgrade_pickaxe2 x:461 y:672
+gclick 1 - upgrade_lab2 x:462 y:725
+gclick 1 - upgrade_rake1 x:413 y:772
+gclick 1 - upgrade_pickaxe1 x:407 y:670
+gclick 1 - upgrade_lab1 x:413 y:726
+gclick 2 - upgrade_upgrade1 x:427 y:628
+gclick 1 - upgrade_mystery_box x:566 y:821
 
 start lootBestiary
+lootBestiary started :600000
+gclick 2 - menu3 x:488 y:933
+gclick 2 - explore_bestiary x:576 y:402
+gclick 2 - bestiary_lootAll x:422 y:276
+gclick 2 - bestiary_close x:1117 y:278
+end ok
+BankBalanceScanner started 90000
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 2 - slime_bank x:485 y:883
 rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-checking menu button:7
-menu id hwnd0xec11b2 check for:0x001800 x:488 y:958 result:1
-gclick 2 - menu5 x:254 y:958
-gclick 2 - Alchemy_check_Box x:365 y:398
-gclick 2 - alchemy_10L x:492 y:437
-gclick 2 - alchOption_8 x:254 y:621
-gclick 2 - alchInv16 x:619 y:885
-gclick 2 - menu4 x:608 y:934
-gclick 3 - challenge2 x:326 y:462
-gclick 2 - challenge_start x:334 y:868
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-checking menu button:7
-menu id hwnd0xec11b2 check for:0x001800 x:488 y:958 result:1
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-gclick 2 - menu5 x:254 y:958
-gclick 2 - Alchemy_check_Box x:365 y:398
-gclick 2 - alchemy_10L x:492 y:437
-gclick 2 - alchOption_9 x:323 y:616
-gclick 2 - alchInv16 x:619 y:885
-gclick 2 - menu4 x:608 y:934
-gclick 3 - challenge3 x:401 y:463
-gclick 2 - challenge_start x:334 y:868
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-hero id attempt
-"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
 hero id attempt
 "pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
 "pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
@@ -1249,17 +1878,4 @@ rebirthWatch
 hero id attempt
 "pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
 "pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
-rebirthWatch
-client not main focus - hero id aborted - vCurrentHero: wizard
+paused

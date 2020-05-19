@@ -28,7 +28,7 @@ ChilliScavanger(){
 MoveToChilli(aRN:=0,aRE:=0){
     critical on
     global vMovingToChilli
-    static runNorth:=2,runEast:=1
+    static runNorth:=11,runEast:=1
     if aRN {
         runNorth:=runNorth+aRN
         tooltip %runNorth% %runEast%

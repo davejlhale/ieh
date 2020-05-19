@@ -19,12 +19,15 @@ upgradeCycle:
             tracelog("timedupgradeCycle started :"vCurrentUpgradCycleInterval)
         } 
         timedupgradeCycle:
-        vCurrentUpgradCycleInterval+=%UpdateDelaySlowdownRate%
-        SetTimer, timedupgradeCycle, %vCurrentUpgradCycleInterval%
+            vCurrentUpgradCycleInterval+=%UpdateDelaySlowdownRate%
+            SetTimer, timedupgradeCycle, %vCurrentUpgradCycleInterval%
             MovementBlock()
             gClick(menu1,2,200)
             gClick(sb_GoBack,2,200)
             gClick(upgrade_upgradeMax,2)
+            gClick(upgrade_exp_bonus) 
+            gClick(upgrade_gold_bonus)
+            gClick(upgrade_expand_equip)
             gClick(upgrade_crystal_ritual)
             gClick(upgrade_stone_ritual)
             gClick(upgrade_leaf_ritual)
@@ -40,9 +43,6 @@ upgradeCycle:
             gClick(upgrade_rake1)
             gClick(upgrade_pickaxe1)
             gClick(upgrade_lab1)
-            gClick(upgrade_exp_bonus) 
-            gClick(upgrade_gold_bonus)
-            gClick(upgrade_expand_equip)
             gClick(upgrade_upgrade1,2)
             gClick(upgrade_mystery_box)
             UnblockMovement()

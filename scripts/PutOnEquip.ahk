@@ -35,7 +35,7 @@ putOnEquipAction() {
     x2:= x+5
     y2:= y+5
     
-    global vHwnd,vStartTime
+    
     
     critical on
     

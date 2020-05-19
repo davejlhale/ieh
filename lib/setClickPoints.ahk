@@ -2,7 +2,7 @@
 setClickPoints(){
     Critical on
     
-    global begin_x, begin_y
+    global vGameContainerX1, vGameContainerY1
     global vGameContainerWidth, vGameContainerHeight
     global tt_msg
     checkPoints:=[]
@@ -61,8 +61,8 @@ setClickPoints(){
         KeyWait, RButton, D
         
         MouseGetPos, xpos, ypos
-        clickXabs:=Abs(begin_x-xpos)
-        clickYabs:=Abs(begin_y-ypos)
+        clickXabs:=Abs(vGameContainerX1-xpos)
+        clickYabs:=Abs(vGameContainerY1-ypos)
         xOffsetRation:=clickXabs/vGameContainerWidth
         yOffsetRation:=clickYabs/vGameContainerHeight
         

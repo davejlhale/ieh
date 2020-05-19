@@ -4,7 +4,7 @@ findKongGameContainer(){
     Critical on
     global vWinTitle
     global vHwnd
-    global begin_x:=0, begin_y:=0, end_x:=0, end_y:=0
+    global vGameContainerX1:=0, vGameContainerY1:=0, vGameContainerX2:=0, vGameContainerY2:=0
     global vGameContainerWidth:=0,vGameContainerHeight:=0
     
     WinGet, id, ,%vWinTitle%
@@ -46,14 +46,14 @@ findKongGameContainer(){
     if ErrorLevel 
         return ErrorLevel
     
-    end_x:=aend_x
-    end_y:=aend_y
-    begin_y:=abegin_y
-    begin_x:=abegin_x
+    vGameContainerX2:=aend_x
+    vGameContainerY2:=aend_y
+    vGameContainerY1:=abegin_y
+    vGameContainerX1:=abegin_x
     
     ;game resolution
-    vGameContainerWidth:=Abs(begin_x-end_x)
-    vGameContainerHeight:=Abs(begin_y-end_y)
+    vGameContainerWidth:=Abs(vGameContainerX1-vGameContainerX2)
+    vGameContainerHeight:=Abs(vGameContainerY1-vGameContainerY2)
     
     return 
 }

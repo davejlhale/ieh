@@ -2,12 +2,9 @@
 gClick( aClickPoint,aClickCount:=1,aDelay:=20) { 
     
     Critical on
-    global vWinTitle
     global vHwnd
     global vGameContainerWidth,vGameContainerHeight
-    global begin_x, begin_y
-    global vMouseBlocked
-    
+    global vGameContainerX1, vGameContainerY1    
     
     if ! isObject(aClickPoint) {
         aClickPoint :=%aClickPoint%.clone()
@@ -18,8 +15,8 @@ gClick( aClickPoint,aClickCount:=1,aDelay:=20) {
         }
     }
     
-    gameClickX :=round((vGameContainerWidth * aClickPoint.x)+begin_x)
-    gameClickY := round((vGameContainerHeight * aClickPoint.y)+begin_y)
+    gameClickX :=round((vGameContainerWidth * aClickPoint.x)+vGameContainerX1)
+    gameClickY := round((vGameContainerHeight * aClickPoint.y)+vGameContainerY1)
    
     TraceLog("gclick " . aClickCount . " - " aClickpoint.name . " x:" . gameClickX . " y:" . gameClickY )
     loop %aClickCount%

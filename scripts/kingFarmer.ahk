@@ -8,7 +8,7 @@ kingFarmer(pDelay:=60000)
     global vKingRepeatInterval 
     static kingToggle:=false
     global vGameContainerWidth,vGameContainerHeight
-    global begin_x, begin_y
+    global vGameContainerX1, vGameContainerY1
     
 
        if (CheckAllMenuaAreActive()) ;found bk col
@@ -20,8 +20,8 @@ kingFarmer(pDelay:=60000)
         setTimer, kingLoop,Off
         return
     }
-    x:=round((vGameContainerWidth * menu7.x)+begin_x)
-    y := round((vGameContainerHeight * menu7.y)+begin_y)
+    x:=round((vGameContainerWidth * menu7.x)+vGameContainerX1)
+    y := round((vGameContainerHeight * menu7.y)+vGameContainerY1)
     PixelSearch, , , x, y, x, y, 0x001800 , 5
     ;;if menu button covers color
     if ! ErrorLevel

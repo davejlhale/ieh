@@ -234,12 +234,12 @@ return
 !F1::
 findGameWindow:
     findKongGameContainer()
-    showBox(begin_x, begin_y, end_x, end_y) 
+    showBox(vGameContainerX1, vGameContainerY1, vGameContainerX2, vGameContainerY2) 
 return
 
 !F2::
     showGameWindow: 
-    showBox(begin_x, begin_y, end_x, end_y) 
+    showBox(vGameContainerX1, vGameContainerY1, vGameContainerX2, vGameContainerY2) 
 return
 
 !F4::

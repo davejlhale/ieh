@@ -25,13 +25,13 @@ return
 
 putOnEquipAction() {
     global vGameContainerWidth,vGameContainerHeight
-    global begin_x, begin_y, menu7, vCheckEquipInterval
+    global vGameContainerX1, vGameContainerY1, menu7, vCheckEquipInterval
     tracelog("Checking equipment every :" vCheckEquipInterval)
     
     vEquipmentSet:= checkEquipConfig(aEquipmeentSet)
     MovementBlock()
-    x:=round((vGameContainerWidth * menu7.x)+begin_x) -2
-    y := round((vGameContainerHeight * menu7.y)+begin_y) -2
+    x:=round((vGameContainerWidth * menu7.x)+vGameContainerX1) -2
+    y := round((vGameContainerHeight * menu7.y)+vGameContainerY1) -2
     x2:= x+5
     y2:= y+5
     

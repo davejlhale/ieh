@@ -9,8 +9,8 @@ showBox(X1:=0, Y1:=0, X2:=0, Y2:=0,Speed:=10)
         WinActivate, %vWinTitle%
         if ErrorLevel
         return
-        global begin_x, begin_y, end_x, end_y
-        ;  %begin_x%, %begin_y%, %end_x%, %end_y%
+        global vGameContainerX1, vGameContainerY1, vGameContainerX2, vGameContainerY2
+        ;  %vGameContainerX1%, %vGameContainerY1%, %vGameContainerX2%, %vGameContainerY2%
         mousemove, X1,Y1,Speed
         mousemove, X2,Y1,Speed
         mousemove, X2,Y2,Speed

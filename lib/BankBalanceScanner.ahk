@@ -2,11 +2,10 @@
 
 BankBalanceScanner()
 { 
-    global vMouseMemoryX,vMouseMemoryY
     static currentBank:=0
     global interestIncomeOnly
     global SC_ScanPoint	, GB_ScanPoint,vHwnd,vMonitorCount
-    global vGameContainerWidth,vGameContainerHeight, begin_x, begin_y
+    global vGameContainerWidth,vGameContainerHeight, vGameContainerX1, vGameContainerY1
     if interestIncomeOnly
         currentBank:=1
 
@@ -19,19 +18,17 @@ BankBalanceScanner()
     switch currentBank { 
         case 0: {
             gosub changeToWatchGoldBank
-            bankx :=round((vGameContainerWidth * GB_ScanPoint.x)+begin_x)
-            banky := round((vGameContainerHeight * GB_ScanPoint.y)+begin_y)
+            bankx :=round((vGameContainerWidth * GB_ScanPoint.x)+vGameContainerX1)
+            banky := round((vGameContainerHeight * GB_ScanPoint.y)+vGameContainerY1)
             ; MouseGetPos, bankx,banky
         }
         case 1: {
             gosub changeToWatchSCBank
-            bankx :=round((vGameContainerWidth * SC_ScanPoint.x)+begin_x)
-            banky := round((vGameContainerHeight * SC_ScanPoint.y)+begin_y)
+            bankx :=round((vGameContainerWidth * SC_ScanPoint.x)+vGameContainerX1)
+            banky := round((vGameContainerHeight * SC_ScanPoint.y)+vGameContainerY1)
             ; MouseGetPos, bankx,banky
         }
     }
-    mousemove vMouseMemoryX,vMouseMemoryY
-    BlockInput mousemoveoff
     funcreturn := bankread(bankx,banky)
     ; returned bank read matches last read
     if (funcreturn) {
@@ -72,7 +69,6 @@ bankread(x,y)
         col:=[vred,vgreen,vblue]
         pixline.=dist2(col)
         PixelGetColor col, x++, y
-        ;mousemove x,y
     } 
     if (instr(lastpixline,pixline)) {
         lastpixline:=pixline

@@ -5,7 +5,7 @@ kingExpFarm()
     global menu4, challenge1,challenge_start,challenge_quit
     global kfToggle
     global vGameContainerWidth,vGameContainerHeight
-    global begin_x, begin_y
+    global vGameContainerX1, vGameContainerY1
     global kingEXPLoopTimer,KingAfter
     global vWinTitle
 
@@ -14,8 +14,8 @@ kingExpFarm()
         return
     kfToggle:=!kfToggle
     
-    x:=round((vGameContainerWidth * menu7.x)+begin_x)
-    y := round((vGameContainerHeight * menu7.y)+begin_y)
+    x:=round((vGameContainerWidth * menu7.x)+vGameContainerX1)
+    y := round((vGameContainerHeight * menu7.y)+vGameContainerY1)
     PixelSearch, , , x, y, x, y, 0x001800 , 5
     ;;if menu button covers color
     if ! ErrorLevel

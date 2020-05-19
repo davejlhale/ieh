@@ -3,7 +3,7 @@ MonsterSearch() {
     global vCaptureCount 
     global vGameContainerWidth , vGameContainerHeight
     global trapAreaTL , trapAreaBR 
-    global begin_x , begin_y
+    global vGameContainerX1 , vGameContainerY1
 
 	;TraceLog("start monster search")
     ;define capture area

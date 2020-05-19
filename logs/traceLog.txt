@@ -1,298 +1,280 @@
 rebirthWatch
 hero id attempt
-"pixelSearch on id " 0x1f11116 1 307 278 311 282 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0x1f11116 0 307 278 314 285 0x7683B1  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 found wizard
+
+nitro start
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 1 - nitro x:239 y:874
+gclick 2 - menu5 x:254 y:958
+gclick 2 - Alchemy_check_Box x:365 y:398
+gclick 2 - alchemy_1ml x:250 y:434
+gclick 20 - alchOption_5 x:494 y:556
+gclick 2 - alchemy_use_all x:614 y:790
+end nitro ok
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 1 - nitro x:239 y:874
+gclick 2 - menu5 x:254 y:958
+gclick 2 - Alchemy_check_Box x:365 y:398
+gclick 2 - alchemy_1ml x:250 y:434
+gclick 20 - alchOption_5 x:494 y:556
+gclick 2 - alchemy_use_all x:614 y:790
+end nitro ok
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 1 - nitro x:239 y:874
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 1 - nitro x:239 y:874
+gclick 2 - menu5 x:254 y:958
+gclick 2 - Alchemy_check_Box x:365 y:398
+gclick 2 - alchemy_1ml x:250 y:434
+gclick 20 - alchOption_5 x:494 y:556
+gclick 2 - alchemy_use_all x:614 y:790
+end nitro ok
+
+nitro start
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+
+nitro start
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 1 - nitro x:239 y:874
+gclick 2 - menu5 x:254 y:958
+gclick 2 - Alchemy_check_Box x:365 y:398
+gclick 2 - alchemy_1ml x:250 y:434
+gclick 20 - alchOption_5 x:494 y:556
+gclick 2 - alchemy_use_all x:614 y:790
+end nitro ok
+
+nitro start
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+
+nitro start
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 1 - nitro x:239 y:874
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+
+nitro start
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+
+nitro start
+gclick 2 - menu1 x:257 y:933
+gclick 2 - sb_GoBack x:596 y:397
+gclick 1 - nitro x:239 y:874
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+
+nitro start
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+hero id attempt
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
 rebirthWatch
 hero id attempt
-"pixelSearch on id " 0x1f11116 1 307 278 311 282 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0x1f11116 0 307 278 314 285 0x7683B1  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 1 307 299 311 303 0x73685D  "color found " 0x818EBE "end"
+"pixelSearch on id " 0xec11b2 0 307 299 314 306 0x7683B1  "color found " 0x818EBE "end"
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
-chillscavanger started
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-chillscavanger started
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
-chillscavanger started
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
 rebirthWatch
 client not main focus - hero id aborted - vCurrentHero: wizard
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
 rebirthWatch
-hero id attempt
-"pixelSearch on id " 0x1f11116 1 307 278 311 282 0x73685D  "color found " 0x818EBE "end"
-"pixelSearch on id " 0x1f11116 0 307 278 314 285 0x7683B1  "color found " 0x818EBE "end"
-gclick 1 - menu3 x:488 y:912
-gclick 1 - explore_area6 x:342 y:449
-gclick 1 - explore_map2 x:337 y:541
-paused
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard
+rebirthWatch
+client not main focus - hero id aborted - vCurrentHero: wizard

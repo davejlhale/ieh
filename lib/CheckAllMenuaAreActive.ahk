@@ -3,9 +3,9 @@ CheckAllMenuaAreActive(pMenuNumber:=7)
     tracelog("checking menu button:" pMenuNumber)
     vMenu :=menu%pMenuNumber%
     
-    global vGameContainerWidth,vGameContainerHeight,begin_x,begin_y,vMenuColor,vHwnd
-    gameClickX :=round((vGameContainerWidth * vMenu.x)+begin_x) -3
-    gameClickY := round((vGameContainerHeight * vMenu.y)+begin_y) -3
+    global vGameContainerWidth,vGameContainerHeight,vGameContainerX1,vGameContainerY1,vMenuColor,vHwnd
+    gameClickX :=round((vGameContainerWidth * vMenu.x)+vGameContainerX1) -3
+    gameClickY := round((vGameContainerHeight * vMenu.y)+vGameContainerY1) -3
     gameClickX2:=gameClickX+6
     gameClickY2:=gameClickY+6
     

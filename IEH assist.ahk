@@ -118,6 +118,21 @@ AutoRebirth:
     UnblockMovement()
 return
 
+!Left::
+    MoveToChilli(0,-1)
+return
+!Right::
+    MoveToChilli(0,1)
+return
+!Up::
+    MoveToChilli(1,0)
+return
+!Down::
+    MoveToChilli(-1,0)
+return
+
+
+
 !7::
 !c::
 Capture:

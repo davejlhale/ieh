@@ -4,6 +4,19 @@ download and extract this project  https://github.com/davejlhale/ieh.git
 start "ieh assist.ahk" by double clicking the file icon	
 should work out the box 		
 
+
+improved chilli farmer
+
+keys to start  f9 or top menu button 
+options in general.ini 
+
+vChilliFarmAreaRefresh:=true - he will refresh the map every time a chilli is not found. uses map 6.2. turn off to use in dungeon
+
+if hero runs short, to far west/east etc use
+ALT + arrow keys to push his run that way
+
+its an afk only as its mouse and pizel search heavy. 
+
 Currently 
 
 auto rebirth started with alt +r - first rebirth will happen after 10mins

@@ -7,7 +7,7 @@ global trapAreaTL,trapAreaBR,menu1,menu2,menu3,menu4,menu5,menu6,menu7,menu8,exp
 SetBatchLines, -1
 SetTitleMatchMode, 2
 DetectHiddenWindows, On
- 
+
 coordMode, Mouse, client
 coordMode, Pixel, Client
 SysGet, vMonitorCount, MonitorCount
@@ -31,14 +31,14 @@ While findKongGameContainer() {
 
 ;;add menus and gui
 menu := new GUIMenu("home")
-lootBestiaryIcon := new gIcon("LootBestiary",856,730,"lootBestiary","Auto Loots Bestiary every so often")
-EquipIcon := new gIcon("EquipIcon",956,730,"Equip","Equip Hero Gear")
-BankCapBuyerIcon:= new gIcon("d",908,730,"BankCapBuyer","Buy Slime Bank item when Full`n(needs active window)")
-buffCycleIcon := new gIcon("AngelWeave",760,730,"AngelWeave","Weave Angels buffs in global slot 1")
-CaptureIcon := new gIcon("Capture",1004,730,"Capture","Auto captures mobs selected in MonsterList config`n(needs active window)")
-NitroIcon := new gIcon("Nitro",1052,730,"doNitro","Auto Nitro`n(needs active window)")
-upgradeCycleIcon := new gIcon("upgradeCycle",808,730,"upgradeCycle","Clicks your upgrades for you")
-    AutoRebirthIcon :=new gIcon("AutoRebirth",1100,730,"ToggleAutoRebith","Auto Rebirths after set time. see general.ini for several options")
+lootBestiaryIcon := new gIcon("LootBestiary",856,730,"lootBestiary","Auto Loot Bestiary (alt+l)`nevery so often")
+EquipIcon := new gIcon("EquipIcon",956,730,"Equip","Auto Equip (alt+e)`nEquip Hero Gear")
+BankCapBuyerIcon:= new gIcon("d",908,730,"BankCapBuyer","Auto Buyer (alt+b) `nBuy Slime Bank item when Full`n(needs active window)")
+buffCycleIcon := new gIcon("AngelWeave",760,730,"AngelWeave","Weave (alt+w)`nAngels buffs in global slot 1")
+CaptureIcon := new gIcon("Capture",1004,730,"Capture","Auto capture (alt+c) `nmobs selected in MonsterList config`n(needs active window)")
+NitroIcon := new gIcon("Nitro",1052,730,"doNitro","Auto Nitro (alt+n)`n(needs active window)")
+upgradeCycleIcon := new gIcon("upgradeCycle",808,730,"upgradeCycle","Auto Upgrade (alt+u)`nClicks your upgrades for you")
+    AutoRebirthIcon :=new gIcon("AutoRebirth",1100,730,"ToggleAutoRebith","Auto Rebirth (alt+r)`nafter set time. see general.ini for several options")
     
 rebirthWatch()
 
@@ -69,13 +69,41 @@ return
 #include ChilliScavanger.ahk
 #include AutoRebirth.ahk
 #include TrapMaker.ahk
+
+!l::
+gosub lootBestiary
+return
+!b::
+    gosub BankCapBuyer
+return
+!w::
+    gosub AngelWeave
+return
 !r::
 ToggleAutoRebith:
     AutoRebirthToggle()
 return
-
+!u::
+    gosub upgradeCycle
+return
 !s::
-    autoSkills()return
+autoSkills()return
+return
+
+!c::
+Capture:
+    Capture()
+return
+
+!n::
+doNitro:
+    doNitro()
+return
+
+!e::
+    Equip: 
+    ;supplying a named equipment set here will put that on over default war/angel/wiz/general setups
+    PutOnEquipToggle()
 return
 
 ;X4 to push chilli run path in the directions
@@ -90,18 +118,6 @@ return
 return
 !Down::
     MoveToChilli(-1,0)
-return
-
-
-!7::
-!c::
-Capture:
-    Capture()
-return
-
-!n::
-doNitro:
-    doNitro()
 return
 
 ;;general hotkeys
@@ -213,8 +229,3 @@ SetClickPoints:
     setClickPoints()
 return
 
-!e::
-    Equip: 
-    ;supplying a named equipment set here will put that on over default war/angel/wiz/general setups
-    PutOnEquipToggle()
-return

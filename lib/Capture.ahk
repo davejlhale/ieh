@@ -7,9 +7,9 @@ Capture() {
     global vGameContainerX1 , vGameContainerY1
     global CaptureIcon
     global vTrapColor
-    global alchInv1, alchOption_14 
+    global alchInv1, alchOption_14 ,alchemy_1L
     
-    traceLog("`nstop capture")
+    traceLog("stop capture")
     CaptureIcon.toggle()
     if !(CaptureIcon.isactive) {
         SetTimer, TrapMaker,off
@@ -38,7 +38,9 @@ Capture() {
         alchOption_14_y := round(vGameContainerHeight * alchOption_14.y)+vGameContainerY1 -3
         alchOption_14_x2:= alchOption_14_x + 8
         alchOption_14_y2:= alchOption_14_y + 8
-        
+
+        ;global alchemy_1Lx1,alchemy_1Ly1,alchemy_1Lx2,alchemy_1Lxy
+
         global NitroIcon
         if ! NitroIcon.isactive && vDoAutoNitroWhileCaputre {
             doNitro()

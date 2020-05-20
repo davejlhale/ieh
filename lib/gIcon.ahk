@@ -26,6 +26,7 @@ class gIcon
         
         GUI, %aImage%:+HWNDhIcon
         this.ahwnd := hIcon 
+        Gui, %aImage%:Color, 808080
         Gui, %aImage%:Margin, 2, 2
         Gui, %aImage%:+AlwaysOnTop -Caption +ToolWindow
         

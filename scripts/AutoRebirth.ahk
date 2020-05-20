@@ -1,3 +1,5 @@
+
+!y::
 AutoRebirth:
     critical on
     tracelog("auto rebirth")

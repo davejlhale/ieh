@@ -16,7 +16,7 @@ BankBalanceScanner()
         tracelog("Game focus not availiable")
         return
         }
-    WinWaitActive, ahk_id %vHwnd%
+    WinActivate, ahk_id %vHwnd%
     switch currentBank { 
         case 0: {
             gosub changeToWatchGoldBank

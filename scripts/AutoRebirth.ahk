@@ -16,7 +16,6 @@ AutoRebirth:
     SetTimer, doNitroLoop, off
     kfToggle:=false
     SetTimer, kingExpLoop,off
-    settimer,keyrepeat,off
     vCurrentHero:=""
     MovementBlock()
     if CheckAllMenuaAreActive() { ;returns false when cant find background ie all there

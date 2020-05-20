@@ -7,6 +7,7 @@ global trapAreaTL,trapAreaBR,menu1,menu2,menu3,menu4,menu5,menu6,menu7,menu8,exp
 SetBatchLines, -1
 SetTitleMatchMode, 2
 DetectHiddenWindows, On
+ 
 coordMode, Mouse, client
 coordMode, Pixel, Client
 SysGet, vMonitorCount, MonitorCount

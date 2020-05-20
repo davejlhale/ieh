@@ -36,14 +36,8 @@ rebirthWatch(){
             
             if AutoRebirthIcon.isactive {
                 tracelog("vAutoRebirth script options started")
-                global EquipIcon,BankCapBuyerIcon,buffCycleIcon,upgradeCycleIcon,lootBestiaryIcon,NitroIcon
-                
-                ;reset any increase to upgrade interval
-                global vCurrentUpgradCycleInterval
-                send {s up}
-                send {w up}
-                send (d up)
-                
+                global EquipIcon,BankCapBuyerIcon,buffCycleIcon,upgradeCycleIcon,lootBestiaryIcon,NitroIcon    
+                global vCurrentUpgradCycleInterval          
                 global vAutoNitro,vAutoEquip,vAutoSkills,vAutoBufGlobalAngels,vAutoUgrade,vAutoLootBestiary,vAutoBankBuy,vAutoKingChallange
                 
                 if vAutoEquip{

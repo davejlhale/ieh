@@ -14,7 +14,9 @@ AutoRebirth:
     SetTimer, timedlootBestiary, off
     NitroIcon.turnOff()
     SetTimer, doNitroLoop, off
-    kfToggle:=false
+    if kfToggle 
+        kingExpFarm()
+    
     SetTimer, kingExpLoop,off
     vCurrentHero:=""
     MovementBlock()

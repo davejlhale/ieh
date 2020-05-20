@@ -23,7 +23,7 @@ gClick( aClickPoint,aClickCount:=1,aDelay:=20) {
     {
         if (MovementBlock())
         {
-            Send {click, %gameClickX%, %gameClickY%}
+            click, %gameClickX%, %gameClickY%
             sleep %aDelay%
         } else {
             PostMessage, 0x200, 0, gameClickX&0xFFFF | gameClickY<<16,, ahk_id %vHwnd% ; WM_MOUSEMOVE

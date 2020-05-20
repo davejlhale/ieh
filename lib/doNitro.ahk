@@ -24,8 +24,8 @@ doNitroLoop(){
         return
     
     WinActivate, ahk_id %vHwnd%
-    WinWaitActive, ahk_id %vHwnd%
-    WinRestore, ahk_id %vHwnd%
+ 
+    
     MovementBlock()
     nsx :=round(vGameContainerWidth * nitro_pixel_start.x)+vGameContainerX1 
     nsy := round(vGameContainerHeight * nitro_pixel_start.y)+vGameContainerY1 -3

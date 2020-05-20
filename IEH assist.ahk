@@ -13,12 +13,12 @@ SysGet, vMonitorCount, MonitorCount
 
 global vAutoRebirth:=off
 global vWinTitle:="Incremental Epic Hero"
-global vStartTime:= A_TickCount
 FileOpen("logs\traceLog.txt", "w `n")
 #include configs
 #include general.ini
 
 loadClickPoints()
+vStartTime:= A_TickCount
 While findKongGameContainer() { 
     if (A_TickCount-vStartTime > 10000) {
         MsgBox,36,IEH Asist , Click the game window to start 
@@ -28,24 +28,23 @@ While findKongGameContainer() {
     }
 }
 
-rebirthWatch()
-
 ;;add menus and gui
 menu := new GUIMenu("home")
 lootBestiaryIcon := new gIcon("LootBestiary",856,730,"lootBestiary","Auto Loots Bestiary every so often")
-EquipIcon  := new gIcon("EquipIcon",956,730,"Equip","Equip Hero Gear")
+EquipIcon := new gIcon("EquipIcon",956,730,"Equip","Equip Hero Gear")
 BankCapBuyerIcon:= new gIcon("d",908,730,"BankCapBuyer","Buy Slime Bank item when Full`n(needs active window)")
 buffCycleIcon := new gIcon("AngelWeave",760,730,"AngelWeave","Weave Angels buffs in global slot 1")
 CaptureIcon := new gIcon("Capture",1004,730,"Capture","Auto captures mobs selected in MonsterList config`n(needs active window)")
 NitroIcon := new gIcon("Nitro",1052,730,"doNitro","Auto Nitro`n(needs active window)")
-AutoRebirthIcon :=new gIcon("AutoRebirth",1100,730,"ToggleAutoRebith","Auto Rebirths after set time. see general.ini for several options")
-    upgradeCycleIcon := new gIcon("upgradeCycle",808,730,"upgradeCycle","Clicks your upgrades for you")
+upgradeCycleIcon := new gIcon("upgradeCycle",808,730,"upgradeCycle","Clicks your upgrades for you")
+    AutoRebirthIcon :=new gIcon("AutoRebirth",1100,730,"ToggleAutoRebith","Auto Rebirths after set time. see general.ini for several options")
     
+rebirthWatch()
 
 ;;end of autoexec 
 return
 
-;;KEEP INCLUDES BELOW autoexec
+;;KEEP NONE CONFIG INCLUDES BELOW autoexec TO AVOID SUBS 
 
 #include ..\lib
 #include GUIMenu.ahk
@@ -74,6 +73,11 @@ ToggleAutoRebith:
     AutoRebirthToggle()
 return
 
+!s::
+    autoSkills()return
+return
+
+;X4 to push chilli run path in the directions
 !Left::
     MoveToChilli(0,-1)
 return
@@ -87,11 +91,13 @@ return
     MoveToChilli(-1,0)
 return
 
+
 !7::
 !c::
 Capture:
     Capture()
 return
+
 !n::
 doNitro:
     doNitro()
@@ -165,7 +171,6 @@ JustRun:
     global vHwnd
     tracelog("justrun started")
     WinActivate ahk_id %vHwnd%
-    WinWaitActive, ahk_id %vHwnd%
     
     jrToggle:=!jrToggle
     if (jrToggle){

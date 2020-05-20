@@ -23,13 +23,13 @@ doNitroLoop(){
     if (vHwnd != hWinUnderMouse && vMonitorCount ==1 )
         return
     
-    WinActivate ahk_id %vHwnd%
+    WinActivate, ahk_id %vHwnd%
     WinWaitActive, ahk_id %vHwnd%
-    
+    WinRestore, ahk_id %vHwnd%
     MovementBlock()
-    nsx :=round(vGameContainerWidth * nitro_pixel_start.x)+vGameContainerX1
-    nsy := round(vGameContainerHeight * nitro_pixel_start.y)+vGameContainerY1
-    nsx2:=nsx +4
+    nsx :=round(vGameContainerWidth * nitro_pixel_start.x)+vGameContainerX1 
+    nsy := round(vGameContainerHeight * nitro_pixel_start.y)+vGameContainerY1 -3
+    nsx2:=nsx 
     nsy2:=nsy +8
     gclick(menu1,2,100)
     gClick(sb_GoBack,2,100)
@@ -38,13 +38,13 @@ doNitroLoop(){
     nitroButtonY := round(vGameContainerHeight * nitro.y) +vGameContainerY1 -2
     nitroButtonX2:=nitroButtonX +5
     nitroButtonY2:=nitroButtonY +5
-    
-    PixelSearch,rx ,ry , %nitroButtonX%, %nitroButtonY%, %nitroButtonX2%, %nitroButtonY2%, %VNitroTest% ,20
+    cNitroButton:=0x112435
+    PixelSearch,rx ,ry , %nitroButtonX%, %nitroButtonY%, %nitroButtonX2%, %nitroButtonY2%, %cNitroButton% ,20
     if ErrorLevel {
         gClick(nitro,1,150)
     } 
-    
-    PixelSearch, , , %nsx%, %nsy%, %nsx2%, %nsy2%, %vNitroBarBlueColor%, 8, Fast 
+    ;msgbox % nsx . " " . nsy . " " .  nsx2 . " " .  nsy2
+    PixelSearch, , , %nsx%, %nsy%, %nsx2%, %nsy2%, %vNitroBarBlueColor%, 30
     if ErrorLevel { ;not found 
         
         MouseGetPos,,, hWinUnderMouse

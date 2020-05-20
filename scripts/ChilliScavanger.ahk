@@ -2,9 +2,8 @@ ChilliScavanger(){
     static scToggle, 
     global vHwnd,vChilliFarmAreaRefresh
     
-    tracelog("chillscavanger started")
+    tracelog("started chillscavanger")
     WinActivate ahk_id %vHwnd%
-    WinWaitActive, ahk_id %vHwnd%
     
     scToggle:=!scToggle
     if scToggle 

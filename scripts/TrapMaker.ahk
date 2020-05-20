@@ -10,7 +10,6 @@ TrapMaker() {
     if (vHwnd != hWinUnderMouse && vMonitorCount ==1 )
         return
     WinActivate ahk_id %vHwnd%
-    WinWaitActive, ahk_id %vHwnd%
     critical on
     MovementBlock()
         if CheckAllMenuaAreActive() { ;returns false when cant find background ie all there

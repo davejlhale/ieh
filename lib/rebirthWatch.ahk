@@ -51,7 +51,7 @@ rebirthWatch(){
                 }
                 
                 if vAutoBufGlobalAngels {
-                    if (vCurrentHero!="angel") {
+                    if (! vCurrentHero=="angel") {
                         tracelog("turning on AngelWeave")
                         SetTimer, AngelWeave, -3000
                     }

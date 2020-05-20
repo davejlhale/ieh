@@ -1,8 +1,8 @@
 identifyHero()
 { 
-    global warriorColorScanLocation
-    global angelColorScanLocation
-    global wizardColorScanLocation
+    global warriorColorScanLocation,cWarrior
+    global angelColorScanLocation,cWizard
+    global wizardColorScanLocation,cAngel
     global vFoundHero
     global vHwnd
   
@@ -14,12 +14,7 @@ identifyHero()
     } 
     WinActivate ahk_id %vHwnd%
     
-    
-    cWarrior:=0x73685D
-    cWizard:=0x7683B1
-    cAngel:=0xCCD0C7
-    
-    tracelog("hero id attempt")
+    tracelog("attempting hero id")
     if ! checkPixel(warriorColorScanLocation,cWarrior,4,4){
         return "warrior"
     }else if ! checkPixel(wizardColorScanLocation,cWizard,7,7){

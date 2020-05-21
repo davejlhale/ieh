@@ -19,19 +19,14 @@ PutOnEquipToggle(aEquipmeentSet:="general")
     
 }
 
-!d::
-ListVars
-return
-
 putOnEquipAction() {
-    global vGameContainerWidth,vGameContainerHeight
-    global vGameContainerX1, vGameContainerY1, menu7, vCheckEquipInterval
+    global menu7, vCheckEquipInterval
     tracelog("Checking equipment every :" vCheckEquipInterval)
     
     vEquipmentSet:= checkEquipConfig(aEquipmeentSet)
     MovementBlock()
-    x := menu7.x  -2
-    y := menu7.y  -2
+    x := menu7.x -2
+    y := menu7.y -2
     x2:= x+5
     y2:= y+5
     
@@ -39,12 +34,12 @@ putOnEquipAction() {
     
     critical on
     
-  
     
-
+    
+    
     if CheckAllMenuaAreActive()
         gClick(menu4,2,100) 
-        else
+    else
         gClick(menu5,2,100)
     
     gClick(craft_check_Box,2,100)
@@ -74,5 +69,5 @@ putOnEquipAction() {
     
     UnblockMovement()
     critical off
-    return
+return
 }

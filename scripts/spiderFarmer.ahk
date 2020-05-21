@@ -2,13 +2,8 @@
 ;;sets spider farming at interval
 spiderFarmer() 
 {
-    global Alchemy_check_Box, alchemy_10L, alchOption_9,alchInv16
-    global challenge_start, challenge3
-    global menu5,menu4
     global vSpiderRepeatInterval
     static spiderToggle:=false
-    global vGameContainerWidth,vGameContainerHeight
-    global vGameContainerX1, vGameContainerY1
 
     spiderToggle:=!spiderToggle
     if !spiderToggle {

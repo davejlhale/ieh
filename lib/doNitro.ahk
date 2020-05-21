@@ -15,16 +15,13 @@ doNitro() {
 
 doNitroLoop(){
     
-    global nitro, nitro_pixel_start, NitroIcon, vNitroBarBlueColor
-    global vGameContainerWidth,vGameContainerHeight, vGameContainerX1, vGameContainerY1 
+    global nitro, nitro_pixel_start, vNitroBarBlueColor
     global vHwnd, vMonitorCount
     
     MouseGetPos,,, hWinUnderMouse
     if (vHwnd != hWinUnderMouse && vMonitorCount ==1 )
         return
-    
     WinActivate, ahk_id %vHwnd%
-    
     
     MovementBlock()
     nsx :=nitro_pixel_start.x

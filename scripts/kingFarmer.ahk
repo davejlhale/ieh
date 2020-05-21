@@ -2,13 +2,8 @@
 ;;sets golem farming at interval
 kingFarmer(pDelay:=60000) 
 {
-    global Alchemy_check_Box, alchemy_10L, alchOption_7,alchInv16
-    global challenge_start, challenge1
-    global menu5,menu4
     global vKingRepeatInterval 
     static kingToggle:=false
-    global vGameContainerWidth,vGameContainerHeight
-    global vGameContainerX1, vGameContainerY1
     
     
     if (CheckAllMenuaAreActive()) ;found bk col

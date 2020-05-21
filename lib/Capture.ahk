@@ -1,13 +1,10 @@
 Capture() {
     Critical on
     
-    global vCaptureCount 
-    global vGameContainerWidth , vGameContainerHeight
+    
     global trapAreaTL , trapAreaBR 
-    global vGameContainerX1 , vGameContainerY1
     global CaptureIcon
-    global vTrapColor
-    global alchInv1, alchOption_14 ,alchemy_1L
+    global alchInv1, alchOption_14 
     
     traceLog("stop capture")
     CaptureIcon.toggle()

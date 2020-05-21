@@ -2,13 +2,9 @@
 ;;sets golem farming at interval
 golemFarmer() 
 {
-    global Alchemy_check_Box, alchemy_10L, alchOption_8,alchInv16
-    global challenge_start, challenge2
-    global menu5,menu4
+   
     global vGolemRepeatEntryInterval
     static golemToggle:=false
-    global vGameContainerWidth,vGameContainerHeight
-    global vGameContainerX1, vGameContainerY1
     
        if (CheckAllMenuaAreActive()) 
         return ;found bk col

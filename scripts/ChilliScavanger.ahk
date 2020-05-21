@@ -56,9 +56,7 @@ MoveToChilli(aRN:=0,aRE:=0){
 
 WatchForChilli(){
     
-    global vChilliFarmAreaRefresh,vChilliArea,vChilliMap,vChilliColor
-    global vGameContainerWidth,vGameContainerHeight
-    global vGameContainerX1, vGameContainerY1 ,ChilliScanPoint
+    global vChilliColor, ChilliScanPoint
     global vHwnd
     
     WinActivate ahk_id %vHwnd%

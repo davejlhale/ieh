@@ -1,7 +1,5 @@
 checkPixel(ColorScanLocation,pcolor,pdimentionX:=3,pdimentionY:=8,variance:=10)
 {
-    global vGameContainerWidth,vGameContainerHeight
-    global vGameContainerX1, vGameContainerY1
     global vHwnd
     WinActivate, ahk_id %vHwnd%
     

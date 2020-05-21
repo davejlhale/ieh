@@ -2,14 +2,8 @@
 ;;sets fairy farming at interval
 fairyFarmer() 
 {
-    global Alchemy_check_Box, alchemy_10L, alchOption_10,alchInv16
-    global challenge_start, challenge4
-    global menu5,menu4,menu7
     global vFairyRepeatInterval 
     static fairyToggle:=false
-    global vGameContainerWidth,vGameContainerHeight
-    global vGameContainerX1, vGameContainerY1
-    
     if (CheckAllMenuaAreActive()) ;found bk col
         return
     fairyToggle:=!fairyToggle

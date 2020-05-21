@@ -108,6 +108,9 @@ return
     ;supplying a named equipment set here will put that on over default war/angel/wiz/general setups
     PutOnEquipToggle()
 return
+!d::
+    ListVars
+return
 
 ;X4 to push chilli run path in the directions
 !Left::

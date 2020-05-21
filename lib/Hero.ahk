@@ -45,8 +45,6 @@ class Hero {
         }
         ;called only be constructor - can be slow
         SetSearchCoords(){
-            global vGameContainerWidth,vGameContainerHeight
-            global vGameContainerX1, vGameContainerY1 
             global HeroColorScanLocation
             iniread vScanPointSearchDeviation, %A_WorkingDir%\configs\main.ini,Heros,ScanPointSearchDeviation
             

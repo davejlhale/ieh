@@ -3,8 +3,6 @@ gClick( aClickPoint,aClickCount:=1,aDelay:=20) {
     
     Critical on
     global vHwnd
-    global vGameContainerWidth,vGameContainerHeight
-    global vGameContainerX1, vGameContainerY1 
     
     if ! isObject(aClickPoint) {
         aClickPoint :=%aClickPoint%.clone()

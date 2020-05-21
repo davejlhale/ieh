@@ -5,7 +5,6 @@ BankBalanceScanner()
     static currentBank:=0
     global interestIncomeOnly
     global SC_ScanPoint	, GB_ScanPoint,vHwnd
-    global vGameContainerWidth,vGameContainerHeight, vGameContainerX1, vGameContainerY1
     if interestIncomeOnly
         currentBank:=1
 

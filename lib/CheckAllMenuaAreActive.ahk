@@ -3,7 +3,7 @@ CheckAllMenuaAreActive(pMenuNumber:=7)
     tracelog("checking menu button:" . pMenuNumber)
     vMenu :=menu%pMenuNumber%
     
-    global vGameContainerWidth,vGameContainerHeight,vGameContainerX1,vGameContainerY1,vMenuColor,vHwnd
+    global vMenuColor,vHwnd
     gameClickX :=vMenu.x -3
     gameClickY :=vMenu.y -3
     gameClickX2:=gameClickX+6
@@ -18,7 +18,5 @@ CheckAllMenuaAreActive(pMenuNumber:=7)
         return false ;not all found
     } Else {
         return true ;background col found
-    }
-    
-    
+    }   
 }

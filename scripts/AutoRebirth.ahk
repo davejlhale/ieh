@@ -20,7 +20,7 @@ AutoRebirth:
         kingExpFarm()
     
     SetTimer, kingExpLoop,off
-    vCurrentHero:=""
+    vHero.CurrentHero:=""
     MovementBlock()
     if CheckAllMenuaAreActive() { ;returns false when cant find background ie all there
         gclick(menu6,2,200)

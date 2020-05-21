@@ -250,9 +250,7 @@ EquipClassC	0.325918	0.341246
 EquipClassB	0.355951	0.341246
 SC_ScanPoint	0.037531	0.462736
 GB_ScanPoint	0.055046	0.209121
-warriorColorScanLocation	0.095913	0.162403
-angelColorScanLocation	0.095913	0.162403
-wizardColorScanLocation	0.095913	0.162403
+HeroColorScanLocation	0.095913	0.162403
 trapAreaTL	0.565430	0.161290
 trapAreaBR	0.849099	0.560701
 rebirthSelect	0.167748	0.894932

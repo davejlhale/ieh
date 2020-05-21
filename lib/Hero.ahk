@@ -1,21 +1,14 @@
 class Hero {
     
-    __new(){
-        iniread cWizard , %A_WorkingDir%\configs\main.ini,Heros,cWizard
-        iniread cWarrior , %A_WorkingDir%\configs\main.ini,Heros,cWarrior
-        iniread cAngel , %A_WorkingDir%\configs\main.ini,Heros,cAngel
-        
-        global warriorColorScanLocation
-        global angelColorScanLocation
-        global wizardColorScanLocation
-        
-        this.vWarrior := new this.HeroClass(warriorColorScanLocation,"Warrior",cWarrior)
-        this.vAngel := new this.HeroClass(angelColorScanLocation,"Angel",cAngel)
-        this.vWizard := new this.HeroClass(wizardColorScanLocation,"Wizard",cWizard)
-        this.vHeros := [this.vWarrior,this.vAngel,this.vWizard] 
+    __new(){ 
+        ;nested class below
+        vWarrior := new this.HeroClass("Warrior")
+        vAngel := new this.HeroClass("Angel")
+        vWizard := new this.HeroClass("Wizard")
+        this.vHeros := [vWarrior,vAngel,vWizard] 
         this.Indentify()
     }
-    
+    ;used when checkactive returns no class
     Indentify() {
         for each,ahero in this.vHeros {
             if ahero.IdentifyClass() {
@@ -24,75 +17,72 @@ class Hero {
             }
         } 
         this.CurrentHero:=0
+        return false
     }
+
+    ;use to identify current hero class
     CheckActive(){
-        ahero:=this.CurrentHero
-        if ahero.CheckActive() 
+        if this.CurrentHero.CheckActive() 
             return this.CurrentHero.Class
         tracelog("No Active Hero Found")
-        return false
+        return 
     }
     
     /* 
     *** nested class ***
     */
     class HeroClass {
-        __new(pScanLocation:=0,pClass:="",pColor:=0){
-            this.ScanLocation:=pScanLocation
-            this.Class:=pClass
+        __new(pClass:=""){
+            iniread ScanColorVariance , %A_WorkingDir%\configs\main.ini,Heros,ScanColorVariance
+            this.ScanColorVariance:=ScanColorVariance
+            
+            iniread pColor , %A_WorkingDir%\configs\main.ini,Heros,c%pClass%
             this.Color:=pColor
+            this.Class:=pClass
             this.IsActive:=False
-            this.GameX:=0
-            this.GameY:=0
             this.KnownLocation:=false
             this.SetSearchCoords()
         }
-        
+        ;called only be constructor - can be slow
         SetSearchCoords(){
             global vGameContainerWidth,vGameContainerHeight
             global vGameContainerX1, vGameContainerY1 
-            this.GameX :=round((vGameContainerWidth * this.ScanLocation.x)+vGameContainerX1) - 7
-            this.GameY := round((vGameContainerHeight * this.ScanLocation.y)+vGameContainerY1) -7
-            this.GameX2 := this.GameX + 14
-            this.GameY2 := this.GameY + 14
+            global HeroColorScanLocation
+            iniread vScanPointSearchDeviation, %A_WorkingDir%\configs\main.ini,Heros,ScanPointSearchDeviation
+            
+            this.GameX :=round((vGameContainerWidth * HeroColorScanLocation.x)+vGameContainerX1) - vScanPointSearchDeviation
+            this.GameY := round((vGameContainerHeight * HeroColorScanLocation.y)+vGameContainerY1) -vScanPointSearchDeviation
+            this.GameX2 := this.GameX + vScanPointSearchDeviation + vScanPointSearchDeviation
+            this.GameY2 := this.GameY + vScanPointSearchDeviation + vScanPointSearchDeviation
         }
         
         IdentifyClass(){
-            
             this.IsActive:=False
             if ! this.KnownLocation {
-                mousemove this.GameX,this.GameY
-                PixelSearch,tx ,ty ,this.GameX, this.GameY, this.GameX2, this.GameY2, this.Color , 5
+                PixelSearch,tx ,ty ,this.GameX, this.GameY, this.GameX2, this.GameY2, this.Color , this.ScanColorVariance
                 if ErrorLevel ;not found 
                     return 0
                 this.GameX := tx
                 this.GameY := ty
                 this.KnownLocation:=true
-                PixelGetColor,tColor,tx,ty
-                this.Color:=tColor
+                PixelGetColor,exactColor,tx,ty
+                this.Color:=exactColor
                 tracelog(this.class " identified pixelsearch")
+                this.IsActive:=True
+                return this.class
             }
             else {
-                mousemove this.GameX,this.GameY
                 PixelGetColor, vFoundColor,this.GameX,this.GameY
                 if ! (vFoundColor == this.Color)
-                    return 0
+                    return false
                 this.KnownLocation:=true
                 tracelog(this.class " identified pixelgetcolor")
+                this.IsActive:=True
+                return this.class
             }
-            
-            this.IsActive:=True
-            return this.class
+            return false  
         }
-        MoveTo(){
-            mousemove this.GameX,this.GameY
-        }
-        Debug(){
-            for each,value in this
-                msg=%msg%%each% = %value%`n
-            msgbox %msg%
-        }
-        
+          
         CheckActive() {
             PixelGetColor, vFoundColor,this.GameX,this.GameY
             if ! (vFoundColor == this.Color) {
@@ -100,7 +90,6 @@ class Hero {
             }
             tracelog(this.class " Active")
             return true
-            
         }
     } 
 }

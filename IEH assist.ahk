@@ -28,6 +28,9 @@ While findKongGameContainer() {
         vStartTime:=A_TickCount
     }
 }
+vHero := new Hero()
+rebirthWatch()
+
 
 ;;add menus and gui
 menu := new GUIMenu("home")
@@ -38,12 +41,8 @@ buffCycleIcon := new gIcon("AngelWeave",760,730,"AngelWeave","Weave (alt+w)`nAng
 CaptureIcon := new gIcon("Capture",1004,730,"Capture","Auto capture (alt+c) `nmobs selected in MonsterList config`n(needs active window)")
 NitroIcon := new gIcon("Nitro",1052,730,"doNitro","Auto Nitro (alt+n)`n(needs active window)")
 upgradeCycleIcon := new gIcon("upgradeCycle",808,730,"upgradeCycle","Auto Upgrade (alt+u)`nClicks your upgrades for you")
-    AutoRebirthIcon :=new gIcon("AutoRebirth",1100,730,"ToggleAutoRebith","Auto Rebirth (alt+r)`nafter set time. see general.ini for several options")
+AutoRebirthIcon :=new gIcon("AutoRebirth",1100,730,"ToggleAutoRebith","Auto Rebirth (alt+r)`nafter set time. see general.ini for several options")
     
-
-
-vHero := new Hero()
-rebirthWatch()
 
 ;;end of autoexec 
 return

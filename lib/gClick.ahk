@@ -13,13 +13,13 @@ gClick( aClickPoint,aClickCount:=1,aDelay:=20) {
         }
     }
     
-    gameClickX:=aClickPoint.x
-    gameClickY:=aClickPoint.y
+    
     TraceLog("gclick " . aClickCount . " - " aClickpoint.name . " x:" . gameClickX . " y:" . gameClickY )
     loop %aClickCount%
     {
-        if (MovementBlock())
-        {
+        if (MovementBlock()) { 
+            gameClickX:=aClickPoint.x
+            gameClickY:=aClickPoint.y
             click, %gameClickX%, %gameClickY%
             sleep %aDelay%
         } else {
@@ -27,7 +27,6 @@ gClick( aClickPoint,aClickCount:=1,aDelay:=20) {
             PostMessage, 0x201, 0, aClickPoint.x&0xFFFF | aClickPoint.y<<16,, ahk_id %vHwnd% ; WM_LBUTTONDOWN 
             PostMessage, 0x202, 0, aClickPoint.x&0xFFFF | aClickPoint.y<<16,, ahk_id %vHwnd% ; WM_LBUTTONUP 
             sleep %aDelay% 
-            
         }
     }
     return

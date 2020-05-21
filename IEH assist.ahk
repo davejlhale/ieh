@@ -216,6 +216,7 @@ return
 !F1::
 findGameWindow:
     findKongGameContainer()
+    loadClickPoints()
     showBox(vGameContainerX1, vGameContainerY1, vGameContainerX2, vGameContainerY2) 
 return
 

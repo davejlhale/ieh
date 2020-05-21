@@ -9,7 +9,6 @@ golemFarmer()
        if (CheckAllMenuaAreActive()) 
         return ;found bk col
 
-
     golemToggle:=!golemToggle
     if !golemToggle {
         showTip("")

@@ -3,7 +3,7 @@ global trapAreaTL,trapAreaBR,menu1,menu2,menu3,menu4,menu5,menu6,menu7,menu8,exp
 
 rebirthWatch(){
     static vReBirthWatchInterval
-    IniRead, vReBirthWatchInterval,  %A_WorkingDir%\configs\main.ini,Heros,ReBirthWatchInterval
+    IniRead, vReBirthWatchInterval, %A_WorkingDir%\configs\main.ini,Heros,ReBirthWatchInterval
     global vHwnd, AutoRebirthIcon ,vHero,vMonitorCount
     
     tracelog("reBirthWatch started")
@@ -22,10 +22,18 @@ rebirthWatch(){
         if ! vHero.CheckActive(){ ;a current hero not set or found
             vRebirthd:=true
             if ! vHero.Indentify() {
+                static vIDFails
+                vIDFails++
                 ShowTip("Rebirthing")
                 vHero.CurrentHero.Class:=""
                 settimer forceOff,-1000
                 settimer, reBirthWatch, 500
+                if (vIDFails == 10) {
+                    findKongGameContainer()
+                    loadClickPoints()
+                    vHero:= new Hero()
+                    vIDFails:=0
+                }
                 return
             }
         } 
@@ -35,7 +43,7 @@ rebirthWatch(){
         
         tracelog("Rebirthed as " vHero.CurrentHero.Class)
         settimer forceOff,-5000 ;label in ShowTip 
-        ShowTip("Welcome back brave "  vHero.CurrentHero.Class)
+        ShowTip("Welcome back brave " vHero.CurrentHero.Class)
         
         vRebirthd:=false 
         

@@ -19,7 +19,7 @@ class Hero {
         this.CurrentHero:=0
         return false
     }
-
+    
     ;use to identify current hero class
     CheckActive(){
         if this.CurrentHero.CheckActive() 
@@ -50,8 +50,8 @@ class Hero {
             global HeroColorScanLocation
             iniread vScanPointSearchDeviation, %A_WorkingDir%\configs\main.ini,Heros,ScanPointSearchDeviation
             
-            this.GameX :=round((vGameContainerWidth * HeroColorScanLocation.x)+vGameContainerX1) - vScanPointSearchDeviation
-            this.GameY := round((vGameContainerHeight * HeroColorScanLocation.y)+vGameContainerY1) -vScanPointSearchDeviation
+            this.GameX := HeroColorScanLocation.x - vScanPointSearchDeviation
+            this.GameY := HeroColorScanLocation.y - vScanPointSearchDeviation
             this.GameX2 := this.GameX + vScanPointSearchDeviation + vScanPointSearchDeviation
             this.GameY2 := this.GameY + vScanPointSearchDeviation + vScanPointSearchDeviation
         }
@@ -80,9 +80,9 @@ class Hero {
                 this.IsActive:=True
                 return this.class
             }
-            return false  
+            return false 
         }
-          
+        
         CheckActive() {
             PixelGetColor, vFoundColor,this.GameX,this.GameY
             if ! (vFoundColor == this.Color) {

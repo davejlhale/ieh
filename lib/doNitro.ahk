@@ -24,18 +24,18 @@ doNitroLoop(){
         return
     
     WinActivate, ahk_id %vHwnd%
- 
+    
     
     MovementBlock()
-    nsx :=round(vGameContainerWidth * nitro_pixel_start.x)+vGameContainerX1 
-    nsy := round(vGameContainerHeight * nitro_pixel_start.y)+vGameContainerY1 -3
+    nsx :=nitro_pixel_start.x
+    nsy := nitro_pixel_start.y -3
     nsx2:=nsx 
     nsy2:=nsy +8
     gclick(menu1,2,100)
     gClick(sb_GoBack,2,100)
     
-    nitroButtonX :=round(vGameContainerWidth * nitro.x)+vGameContainerX1 -2
-    nitroButtonY := round(vGameContainerHeight * nitro.y) +vGameContainerY1 -2
+    nitroButtonX := nitro.x -2
+    nitroButtonY := nitro.y -2
     nitroButtonX2:=nitroButtonX +5
     nitroButtonY2:=nitroButtonY +5
     cNitroButton:=0x112435
@@ -43,7 +43,7 @@ doNitroLoop(){
     if ErrorLevel {
         gClick(nitro,1,150)
     } 
-    ;msgbox % nsx . " " . nsy . " " .  nsx2 . " " .  nsy2
+    ;msgbox % nsx . " " . nsy . " " . nsx2 . " " . nsy2
     PixelSearch, , , %nsx%, %nsy%, %nsx2%, %nsy2%, %vNitroBarBlueColor%, 30
     if ErrorLevel { ;not found 
         

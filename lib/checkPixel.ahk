@@ -6,12 +6,12 @@ checkPixel(ColorScanLocation,pcolor,pdimentionX:=3,pdimentionY:=8,variance:=10)
     WinActivate, ahk_id %vHwnd%
     
     
-    X :=round((vGameContainerWidth * ColorScanLocation.x)+vGameContainerX1) - pdimentionX
-    Y := round((vGameContainerHeight * ColorScanLocation.y)+vGameContainerY1)-pdimentionY
-    X2:=X+pdimentionX + pdimentionX
-    Y2:=Y+pdimentionY +pdimentionY
+    X := ColorScanLocation.x - pdimentionX
+    Y := ColorScanLocation.y - pdimentionY
+    X2:= ColorScanLocation.x + pdimentionX
+    Y2:= ColorScanLocation.y + pdimentionY
     
-  if ! isObject(ColorScanLocation) {
+    if ! isObject(ColorScanLocation) {
         ColorScanLocation :=%ColorScanLocation%.clone()
         TraceLog("gclick clone " . ColorScanLocation.name)
         if ! isObject(ColorScanLocation) && ColorScanLocation.class!="ClickPoint" {
@@ -19,10 +19,10 @@ checkPixel(ColorScanLocation,pcolor,pdimentionX:=3,pdimentionY:=8,variance:=10)
             return
         }
     }
-
-
-
-
+    
+    
+    
+    
     
     PixelGetColor,col, X,Y %pColor% 
     PixelSearch, , , %X%, %Y%, %X2%, %Y2%, pColor , variance

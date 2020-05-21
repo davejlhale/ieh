@@ -20,18 +20,14 @@ BankBalanceScanner()
     switch currentBank { 
         case 0: {
             gosub changeToWatchGoldBank
-            bankx :=round((vGameContainerWidth * GB_ScanPoint.x)+vGameContainerX1)
-            banky := round((vGameContainerHeight * GB_ScanPoint.y)+vGameContainerY1)
-            ; MouseGetPos, bankx,banky
+            funcreturn := bankread(GB_ScanPoint.x,GB_ScanPoint.y)
         }
         case 1: {
             gosub changeToWatchSCBank
-            bankx :=round((vGameContainerWidth * SC_ScanPoint.x)+vGameContainerX1)
-            banky := round((vGameContainerHeight * SC_ScanPoint.y)+vGameContainerY1)
-            ; MouseGetPos, bankx,banky
+            funcreturn := bankread(SC_ScanPoint.x,SC_ScanPoint.y)
         }
     }
-    funcreturn := bankread(bankx,banky)
+    
     ; returned bank read matches last read
     if (funcreturn) {
         

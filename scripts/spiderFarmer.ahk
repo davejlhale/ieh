@@ -16,8 +16,8 @@ spiderFarmer()
         setTimer, spiderLoop,Off
         return
     }
-    x:=round((vGameContainerWidth * menu7.x)+vGameContainerX1)
-    y := round((vGameContainerHeight * menu7.y)+vGameContainerY1)
+    x :=  menu7.x 
+    y :=  menu7.y 
     PixelSearch, , , x, y, x, y, 0x001800 , 5
     ;;if menu button covers color
     if ! ErrorLevel
@@ -34,9 +34,9 @@ spiderFarmer()
         
         gclick(alchemy_10L,2,50)
         
-        gclick(alchOption_9,2,50)
+        gclick(alchOption_9,1,50)
         
-        gclick(alchInv16,2,50)
+        gclick(alchInv1,2,50)
         
         gclick(menu4,2,300)
         

@@ -4,11 +4,13 @@ global clickPoints := {}
 
 loadClickPoints()
 {
+    global vGameContainerWidth,vGameContainerHeight
+    global vGameContainerX1, vGameContainerY1   
     Critical on
     try {
         clickPoints := {}
-       if ! FileExist("configs\offsets.txt") 
-       throw "Cant Load offsets.txt"
+        if ! FileExist("configs\offsets.txt") 
+            throw "Cant Load offsets.txt"
         Loop, read, configs\offsets.txt 
         {
             Loop, parse, A_LoopReadLine, %A_Tab%
@@ -18,13 +20,16 @@ loadClickPoints()
                     Case "1":
                         name:= A_LoopField	
                     Case "2":
-                        x:= A_LoopField	
+                        Xoffset:= A_LoopField	
                     Case "3":
-                        y:= A_LoopField	
+                        Yoffset:= A_LoopField	
                         Default:							
                     }
                 } 
                 
+                x :=round((vGameContainerWidth * Xoffset)+vGameContainerX1)
+                y := round((vGameContainerHeight * Yoffset)+vGameContainerY1)
+
                 %name% :=new ClickPoint(name,x,y)
             }
             tracelog("Clickpoints loaded")

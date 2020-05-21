@@ -18,7 +18,7 @@ FileOpen("logs\traceLog.txt", "w `n")
 #include configs
 #include general.ini
 
-loadClickPoints()
+
 vStartTime:= A_TickCount
 While findKongGameContainer() { 
     if (A_TickCount-vStartTime > 10000) {
@@ -28,6 +28,7 @@ While findKongGameContainer() {
         vStartTime:=A_TickCount
     }
 }
+loadClickPoints()
 vHero := new Hero()
 rebirthWatch()
 

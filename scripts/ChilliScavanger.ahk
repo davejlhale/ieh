@@ -62,14 +62,12 @@ WatchForChilli(){
     global vHwnd
     
     WinActivate ahk_id %vHwnd%
-    
-    gameClickX :=round((vGameContainerWidth * ChilliScanPoint.x)+vGameContainerX1)
-    gameClickY := round((vGameContainerHeight * ChilliScanPoint.y)+vGameContainerY1)
+     
     static cx1,cx2,cy1,cy2
-    cx1:=gameClickX - 1
-    cx2:=gameClickX + 1 
-    cy1:=gameClickY - 1
-    cy2:=gameClickY + 1
+    cx1:=ChilliScanPoint.x  - 1
+    cx2:=ChilliScanPoint.x  + 1 
+    cy1:=ChilliScanPoint.y - 1
+    cy2:=ChilliScanPoint.y + 1
     settimer watchForChill,30
     
     watchForChill:

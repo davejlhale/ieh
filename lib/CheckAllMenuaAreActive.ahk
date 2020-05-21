@@ -4,8 +4,8 @@ CheckAllMenuaAreActive(pMenuNumber:=7)
     vMenu :=menu%pMenuNumber%
     
     global vGameContainerWidth,vGameContainerHeight,vGameContainerX1,vGameContainerY1,vMenuColor,vHwnd
-    gameClickX :=round((vGameContainerWidth * vMenu.x)+vGameContainerX1) -3
-    gameClickY := round((vGameContainerHeight * vMenu.y)+vGameContainerY1) -3
+    gameClickX :=vMenu.x -3
+    gameClickY :=vMenu.y -3
     gameClickX2:=gameClickX+6
     gameClickY2:=gameClickY+6
     

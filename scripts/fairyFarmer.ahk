@@ -21,8 +21,8 @@ fairyFarmer()
         return
     }
     
-    x:=round((vGameContainerWidth * menu7.x)+vGameContainerX1)
-    y := round((vGameContainerHeight * menu7.y)+vGameContainerY1)
+    x := menu7.x 
+    y := menu7.y 
     PixelSearch, , , x, y, x, y, 0x001800 , 5
     ;;if menu button covers color
     if ! ErrorLevel
@@ -37,8 +37,8 @@ fairyFarmer()
         gClick(menu5,2,100)
         gclick(Alchemy_check_Box,2,100)
         gclick(alchemy_10L,2,50)
-        gclick(alchOption_10,2,50)
-        gclick(alchInv16,2,50)
+        gclick(alchOption_10,1,50)
+        gclick(alchInv1,1,50)
         gclick(menu4,2,330)
         gclick(challenge4,3,300)
         gclick(challenge_start,2,100)

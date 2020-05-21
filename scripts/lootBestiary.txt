@@ -4,7 +4,7 @@ lootBestiary:
     {
         global LootBestiaryInterval
         Critical on
-         traceLog("`nstart lootBestiary")
+         traceLog("start lootBestiary")
         lootBestiaryIcon.toggle()
         if !(lootBestiaryIcon.isactive) {
             SetTimer, timedlootBestiary, off

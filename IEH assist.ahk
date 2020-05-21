@@ -40,6 +40,9 @@ NitroIcon := new gIcon("Nitro",1052,730,"doNitro","Auto Nitro (alt+n)`n(needs ac
 upgradeCycleIcon := new gIcon("upgradeCycle",808,730,"upgradeCycle","Auto Upgrade (alt+u)`nClicks your upgrades for you")
     AutoRebirthIcon :=new gIcon("AutoRebirth",1100,730,"ToggleAutoRebith","Auto Rebirth (alt+r)`nafter set time. see general.ini for several options")
     
+
+
+vHero := new Hero()
 rebirthWatch()
 
 ;;end of autoexec 
@@ -54,7 +57,7 @@ return
 #include MonsterSearch.ahk
 #include ConvertSCtoG.ahk
 #include autoSkills.ahk
-
+#include hero.ahk
 #include ..\scripts
 #include lootBestiary.txt
 #Include upgradeClicks.txt
@@ -71,7 +74,7 @@ return
 #include TrapMaker.ahk
 
 !l::
-gosub lootBestiary
+    gosub lootBestiary
 return
 !b::
     gosub BankCapBuyer

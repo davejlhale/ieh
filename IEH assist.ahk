@@ -3,10 +3,13 @@ global trapAreaTL,trapAreaBR,menu1,menu2,menu3,menu4,menu5,menu6,menu7,menu8,exp
 
 #NoEnv
 #SingleInstance, force
-
+#WinActivateForce 
 SetBatchLines, -1
 SetTitleMatchMode, 2
 DetectHiddenWindows, On
+ListLines, Off
+
+
 
 coordMode, Mouse, client
 coordMode, Pixel, Client
@@ -28,6 +31,9 @@ While findKongGameContainer() {
         vStartTime:=A_TickCount
     }
 }
+
+
+
 loadClickPoints()
 vHero := new Hero()
 rebirthWatch()

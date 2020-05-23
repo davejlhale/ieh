@@ -28,6 +28,7 @@ TrapMaker() {
     if skipAlchProgress { ;if we met trap making criteria from below
         gclick(alchemy_1L,1,88) ;select our trap size ;todo make ini option
         MouseClick, Right , alchOption_14_x,alchOption_14_y ,2,0	 
+         gclick(GB_ScanPoint)
     } else { ;otherwise progress through menus so it defaults at our highest made.
         for each, size in vAllSizes {
             gclick(size,1,88)

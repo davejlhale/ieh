@@ -17,8 +17,6 @@ AngelWeave:
             MovementBlock()
             gClick(menu2,2,100)
             gClick(angel,2,220)
-            gClick(st_slot_3,2,20)
-            gClick(skillbar_global_top_1,2)
             gClick(st_slot_4,2,20)
             gClick(skillbar_global_top_1,2)
             gClick(st_slot_5,2,20)
@@ -33,9 +31,9 @@ AngelWeave:
             gClick(skillbar_global_top_1,2)
             gClick(st_slot_10,2,20)
             gClick(skillbar_global_top_1,2)
-            if vAddBlizardToEndOfAngelWeave {
-            gClick(wizard,2,220)
-            gclick( st_slot_7 ,1,100)
+            if vAddSkillToEndOfAngelWeave {
+            gClick(angel,2,150)
+            gclick( st_slot_3 ,1,100)
             gclick( skillbar_global_top_1 ,2,50)
             }
             

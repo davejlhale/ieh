@@ -155,7 +155,6 @@ gclick( skillbar_global_top_2 ) 		and adds to a global slot
 
 
 
-
 auto upgrade alt +u 
 see scripts\upgradeClicks.txt 
 reorder is possible or add a ; to the beginning of any upgrade you dont want to have clicked

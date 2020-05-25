@@ -4,19 +4,22 @@ to confirm / refind your game you need to be past the initial 'click to start' s
 
 Keys + top Menu / Icon Driven
 
-	Alt + n = auto nitro
-	alt + w = auto angel buff weave in global slot 1
-	alt + u = auto upgrades resources etc
-	alt + L = auto loot bestiary
-	alt + b = auto buy slime bank upgrade
-	alt + e = auto equip gear
-	alt + s = auto equip hero skills
-	alt + r = auto rebirth
-	alt + c = auto capture
-	F7 = king exp farm - kills minions
-	F8 = holds run forward
-	F9 = run toward chilli 
-	Alt + p  = pause	
+	Alt + n 	= auto nitro
+	alt + w 	= auto angel buff weave in global slot 1
+	alt + u 	= auto upgrades resources etc
+	alt + L 	= auto loot bestiary
+	alt + b 	= auto buy slime bank upgrade
+	alt + e 	= auto equip gear
+	alt + s 	= auto equip hero skills
+	alt + r 	= auto rebirth
+	alt + c 	= auto capture
+	F7 			= king exp farm - kills minions
+	F8 			= holds run forward
+	F9 			= run toward chilli 
+	Alt + arrow keys will help extend the chilli run in the
+	corresponding direction to help your hero land on the chilli more
+	Alt + p  	= pause	
+	
 	holding right mouse down and left click also pause(there will be a dely on either pause if lots of scripts running)
 	left click mouse on icons to turn on off thier scripts	
 	hold right mouse and drag to move icons	
@@ -173,7 +176,7 @@ also settings in general.ini for auto capture
 
 vDoAutoNitroWhileCaputre:=true 			this tries to auto nitro (1mil only) 
 vAutoConvertSCtoG:=true 				will use slimebank to make gold 
-MobColorVariance:=2 					ncrease if cant capture mobs - 
+MobColorVariance:=2 					increase if cant capture mobs - 
 										will select wrong ones + background more ie slower
 										
 

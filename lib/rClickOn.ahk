@@ -9,8 +9,8 @@ rClickOn(theColor) {
         return false
     }
 
-    x:= Px + 3
-    y:= Py + 3
+    x:= Px + 15
+    y:= Py + 15
     MouseGetPos, ,,_hwnd
     if (vHwnd == _hwnd) {
         MouseClick, Right , x,y ,1,0

@@ -10,7 +10,7 @@ ChilliScavanger(){
     {
         ShowTip("My Precious! if only someone would help me look !!")
         if vChilliFarmAreaRefresh {
-            tooltip watchfor
+            
             WatchForChilli()
         } else { ;run diagnol none stop
             settimer, MoveToChilli,50 
@@ -62,18 +62,20 @@ WatchForChilli(){
     WinActivate ahk_id %vHwnd%
      
     static cx1,cx2,cy1,cy2
-    cx1:=ChilliScanPoint.x  - 1
-    cx2:=ChilliScanPoint.x  + 1 
-    cy1:=ChilliScanPoint.y - 1
-    cy2:=ChilliScanPoint.y + 1
+    cx1:=ChilliScanPoint.x  - 2
+    cx2:=ChilliScanPoint.x  + 2 
+    cy1:=ChilliScanPoint.y - 2
+    cy2:=ChilliScanPoint.y + 2
     settimer watchForChill,30
     
     watchForChill:
         global vMovingToChilli
-        PixelSearch,a , b, %cx1%, %cy1%, %cx2%, %cy2%, vChilliColor ,3
+        PixelSearch,a , b, %cx1%, %cy1%, %cx2%, %cy2%, vChilliColor ,20,fast
         if errorlevel {
+            ;tracelog("no chilli " cx1   " " cy1 " "  cx2 " " cy1)
             refreshZone()
         }else {
+           ; tracelog("chilli spotted")
             MoveToChilli()
             refreshZone()
         } 
